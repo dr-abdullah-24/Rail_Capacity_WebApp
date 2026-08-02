@@ -1,0 +1,68 @@
+{
+  "crewe_parkside": {
+    "id": "crewe_parkside",
+    "name": "Crewe - Parkside SRFI",
+    "description": "West Coast Main Line slow line and Chat Moss corridor from Crewe Coal Yard to Parkside Junction.",
+    "km_length": 50.0,
+    "stations": [
+      {"seq": 0,  "name": "Crewe (Coal Yard / CS)", "tiploc": "CREWECS",  "crs": "XCR", "stanox": "42145", "stanme": "CREWE CS",   "lat": 53.0942, "lon": -2.4402, "chainage_km": 0.000},
+      {"seq": 1,  "name": "Winsford",               "tiploc": "WNSFD",    "crs": "WSF", "stanox": "37011", "stanme": "WINSFORD",   "lat": 53.1901, "lon": -2.4938, "chainage_km": 11.419},
+      {"seq": 2,  "name": "Hartford",               "tiploc": "HARTFD",   "crs": "HTF", "stanox": "37005", "stanme": "HARTFORD",   "lat": 53.2419, "lon": -2.5529, "chainage_km": 18.434},
+      {"seq": 3,  "name": "Hartford Junction",      "tiploc": "HARTFDJ",  "crs": "",    "stanox": "37003", "stanme": "HARTFORDJ",  "lat": 53.2473, "lon": -2.5649, "chainage_km": 19.432},
+      {"seq": 4,  "name": "Acton Bridge",           "tiploc": "ACBG",     "crs": "ACB", "stanox": "37001", "stanme": "ACTONBDGE",  "lat": 53.2660, "lon": -2.6027, "chainage_km": 22.697},
+      {"seq": 5,  "name": "Weaver Junction",        "tiploc": "WEAVERJ",  "crs": "XYJ", "stanox": "35591", "stanme": "WEAVER JN",  "lat": 53.2973, "lon": -2.6361, "chainage_km": 26.952},
+      {"seq": 6,  "name": "Acton Grange Junction",  "tiploc": "ACGJN",    "crs": "",    "stanox": "35555", "stanme": "ACTNGNGJN",  "lat": 53.3620, "lon": -2.6266, "chainage_km": 34.963},
+      {"seq": 7,  "name": "Warrington Bank Quay",   "tiploc": "WRGTNBQ",  "crs": "WBQ", "stanox": "35531", "stanme": "WARRTN BQ",  "lat": 53.3864, "lon": -2.6044, "chainage_km": 38.277},
+      {"seq": 8,  "name": "Winwick Junction",       "tiploc": "WINWCKJ",  "crs": "",    "stanox": "35505", "stanme": "WINWICK J",  "lat": 53.4340, "lon": -2.6231, "chainage_km": 43.979},
+      {"seq": 9,  "name": "Earlestown",             "tiploc": "ERLSTWN",  "crs": "ERL", "stanox": "35325", "stanme": "EARLESTWN",  "lat": 53.4510, "lon": -2.6430, "chainage_km": 46.500},
+      {"seq": 10, "name": "Newton-le-Willows",      "tiploc": "NWTNLW",   "crs": "NLW", "stanox": "35321", "stanme": "NEWTONLEW",  "lat": 53.4510, "lon": -2.6290, "chainage_km": 48.500},
+      {"seq": 11, "name": "Parkside Junction",      "tiploc": "PKSDJT",   "crs": "",    "stanox": "35309", "stanme": "PARKSIDEJ",  "lat": 53.4575, "lon": -2.5948, "chainage_km": 50.000}
+    ]
+  },
+  "wcml_slow": {
+    "id": "wcml_slow",
+    "name": "WCML Slow (Crewe -> Warrington)",
+    "description": "West Coast Main Line slow line, Crewe to Warrington Bank Quay.",
+    "km_length": 38.277,
+    "stations": [
+      {"seq": 0, "name": "Crewe",                 "tiploc": "CREWE",    "crs": "CRE", "stanox": "42112", "stanme": "CREWE",      "lat": 53.0894, "lon": -2.4327, "chainage_km": 0.000},
+      {"seq": 1, "name": "Winsford",              "tiploc": "WNSFD",    "crs": "WSF", "stanox": "37011", "stanme": "WINSFORD",   "lat": 53.1901, "lon": -2.4938, "chainage_km": 11.419},
+      {"seq": 2, "name": "Hartford",              "tiploc": "HARTFD",   "crs": "HTF", "stanox": "37005", "stanme": "HARTFORD",   "lat": 53.2419, "lon": -2.5529, "chainage_km": 18.434},
+      {"seq": 3, "name": "Acton Bridge",          "tiploc": "ACBG",     "crs": "ACB", "stanox": "37001", "stanme": "ACTONBDGE",  "lat": 53.2660, "lon": -2.6027, "chainage_km": 22.697},
+      {"seq": 4, "name": "Weaver Junction",       "tiploc": "WEAVERJ",  "crs": "XYJ", "stanox": "35591", "stanme": "WEAVER JN",  "lat": 53.2973, "lon": -2.6361, "chainage_km": 26.952},
+      {"seq": 5, "name": "Acton Grange Jn",       "tiploc": "ACGJN",    "crs": "",    "stanox": "35555", "stanme": "ACTNGNGJN",  "lat": 53.3620, "lon": -2.6266, "chainage_km": 34.963},
+      {"seq": 6, "name": "Warrington Bank Quay",  "tiploc": "WRGTNBQ",  "crs": "WBQ", "stanox": "35531", "stanme": "WARRTN BQ",  "lat": 53.3864, "lon": -2.6044, "chainage_km": 38.277}
+    ]
+  },
+  "chat_moss": {
+    "id": "chat_moss",
+    "name": "Chat Moss Line",
+    "description": "Manchester Victoria -> Liverpool Lime Street via Chat Moss (1830 Liverpool & Manchester Railway route).",
+    "km_length": 51.5,
+    "stations": [
+      {"seq": 0, "name": "Manchester Victoria",   "tiploc": "MNCRVIC", "crs": "MCV", "stanox": "32530", "stanme": "MNCR VIC",  "lat": 53.4877, "lon": -2.2426, "chainage_km": 0.0},
+      {"seq": 1, "name": "Salford Central",       "tiploc": "SLFDCEN", "crs": "SFD", "stanox": "32351", "stanme": "SALFDCEN",  "lat": 53.4839, "lon": -2.2513, "chainage_km": 0.9},
+      {"seq": 2, "name": "Eccles",                "tiploc": "ECCLES",  "crs": "ECC", "stanox": "35119", "stanme": "ECCLES",    "lat": 53.4830, "lon": -2.3389, "chainage_km": 6.4},
+      {"seq": 3, "name": "Patricroft",            "tiploc": "PATCRFT", "crs": "PAT", "stanox": "35117", "stanme": "PATRCROFT", "lat": 53.4837, "lon": -2.3644, "chainage_km": 8.1},
+      {"seq": 4, "name": "Newton-le-Willows",     "tiploc": "NWTNLW",  "crs": "NLW", "stanox": "35321", "stanme": "NEWTONLEW", "lat": 53.4510, "lon": -2.6290, "chainage_km": 22.0},
+      {"seq": 5, "name": "Earlestown",            "tiploc": "ERLSTWN", "crs": "ERL", "stanox": "35325", "stanme": "EARLESTWN", "lat": 53.4510, "lon": -2.6430, "chainage_km": 22.9},
+      {"seq": 6, "name": "Rainhill",              "tiploc": "RANHILL", "crs": "RNH", "stanox": "34081", "stanme": "RAINHILL",  "lat": 53.4160, "lon": -2.7621, "chainage_km": 33.0},
+      {"seq": 7, "name": "Huyton",                "tiploc": "HUYTON",  "crs": "HUY", "stanox": "34061", "stanme": "HUYTON",    "lat": 53.4102, "lon": -2.8452, "chainage_km": 40.0},
+      {"seq": 8, "name": "Liverpool Lime Street", "tiploc": "LVRPLSH", "crs": "LIV", "stanox": "34051", "stanme": "LIVERPOOL", "lat": 53.4076, "lon": -2.9779, "chainage_km": 51.5}
+    ]
+  },
+  "styal_line": {
+    "id": "styal_line",
+    "name": "Styal Line (Wilmslow -> Manchester)",
+    "description": "Alternative route from Manchester to Crewe area via Wilmslow.",
+    "km_length": 21.0,
+    "stations": [
+      {"seq": 0, "name": "Wilmslow",              "tiploc": "WLMSLOW", "crs": "WML", "stanox": "37092", "stanme": "WILMSLOW",  "lat": 53.3266, "lon": -2.2321, "chainage_km": 0.0},
+      {"seq": 1, "name": "Handforth",             "tiploc": "HNDFRTH", "crs": "HTH", "stanox": "37059", "stanme": "HANDFORTH", "lat": 53.3457, "lon": -2.2183, "chainage_km": 1.9},
+      {"seq": 2, "name": "Styal",                 "tiploc": "STYAL",   "crs": "SYA", "stanox": "37067", "stanme": "STYAL",     "lat": 53.3555, "lon": -2.2372, "chainage_km": 3.6},
+      {"seq": 3, "name": "Heald Green",           "tiploc": "HEALDGR", "crs": "HDG", "stanox": "35109", "stanme": "HEALDGRN",  "lat": 53.3763, "lon": -2.2461, "chainage_km": 6.5},
+      {"seq": 4, "name": "Gatley",                "tiploc": "GATLEY",  "crs": "GTY", "stanox": "35107", "stanme": "GATLEY",    "lat": 53.4030, "lon": -2.2312, "chainage_km": 9.5},
+      {"seq": 5, "name": "Manchester Piccadilly", "tiploc": "MNCRPIC", "crs": "MAN", "stanox": "32000", "stanme": "MCR PICC",  "lat": 53.4778, "lon": -2.2308, "chainage_km": 21.0}
+    ]
+  }
+}

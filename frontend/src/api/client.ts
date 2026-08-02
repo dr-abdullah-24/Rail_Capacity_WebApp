@@ -1,0 +1,220 @@
+import axios from "axios";
+
+export const api = axios.create({ baseURL: "/api", timeout: 60_000 });
+
+export interface Health {
+  status: string;
+  app: string;
+  milp_repo: string;
+  milp_repo_exists: boolean;
+}
+
+export interface Upload {
+  id: number;
+  original_name: string;
+  stored_path: string;
+  kind: string;
+  date_tag: string | null;
+  size_bytes: number;
+  available_dates: string[];
+  uploaded_at: string;
+}
+
+export interface Run {
+  id: number;
+  name: string;
+  status: "pending" | "running" | "complete" | "failed";
+  date_tag: string | null;
+  traction: string;
+  headway_min: number;
+  dwell_max: number;
+  block_hours: number;
+  time_limit_per_block: number;
+  operating_hours_enabled: boolean;
+  operating_start_hour: number;
+  operating_end_hour: number;
+  baseline_upload_id: number | null;
+  nb_inserted: number | null;
+  sb_inserted: number | null;
+  total_dwell_min: number | null;
+  blocks_hit_time_limit: number | null;
+  wall_solve_time_s: number | null;
+  result_dir: string | null;
+  error: string | null;
+  created_at: string;
+  started_at: string | null;
+  completed_at: string | null;
+}
+
+export interface CorridorSummary {
+  id: string;
+  name: string;
+  description: string;
+  km_length: number;
+  n_stations: number;
+  kind?: "builtin" | "user";
+}
+
+export interface LocationHit {
+  name: string;
+  station: string;
+  tiploc: string;
+  crs: string;
+  stanox: string;
+  stanme: string;
+  lat: number | null;
+  lon: number | null;
+}
+
+export interface Station {
+  seq: number;
+  name: string;
+  tiploc: string;
+  crs: string;
+  stanox: string;
+  stanme: string;
+  lat: number;
+  lon: number;
+  chainage_km: number;
+}
+
+export interface CorridorDetail extends CorridorSummary {
+  stations: Station[];
+}
+
+export interface Kpis {
+  method?: string;
+  date?: string;
+  headway_min?: number;
+  chat_moss_headway_min?: number;
+  nb_inserted?: number;
+  sb_inserted?: number;
+  total_dwell_min?: number;
+  wall_solve_time_s?: number;
+  blocks_hit_time_limit?: number;
+  candidates_total?: number;
+  nb_candidates?: number;
+  sb_candidates?: number;
+  steer_target?: { nb: number; sb: number; source: string };
+  per_block?: {
+    direction: string; block: number; inserted: number;
+    candidates: number; status: string; hit_time_limit: boolean;
+    solve_s: number;
+  }[];
+}
+
+export async function getHealth() {
+  return (await api.get<Health>("/health")).data;
+}
+
+export async function listUploads() {
+  return (await api.get<Upload[]>("/uploads/")).data;
+}
+
+export async function uploadFile(f: File, kind: string, date_tag: string) {
+  const fd = new FormData();
+  fd.append("file", f);
+  fd.append("kind", kind);
+  if (date_tag) fd.append("date_tag", date_tag);
+  const { data } = await api.post<Upload>("/uploads/", fd, {
+    headers: { "Content-Type": "multipart/form-data" },
+  });
+  return data;
+}
+
+export async function scanUpload(id: number) {
+  return (await api.post<Upload>(`/uploads/${id}/scan`)).data;
+}
+
+export async function deleteUpload(id: number) {
+  return (await api.delete(`/uploads/${id}`)).data;
+}
+
+export async function listRuns() {
+  return (await api.get<Run[]>("/runs/")).data;
+}
+
+export async function createRun(cfg: Partial<Run>) {
+  return (await api.post<Run>("/runs/", cfg)).data;
+}
+
+export async function getRun(id: number) {
+  return (await api.get<Run>(`/runs/${id}`)).data;
+}
+
+export async function getKpis(id: number) {
+  return (await api.get<Kpis>(`/runs/${id}/kpis`)).data;
+}
+
+export interface JunctionStop {
+  seq: number; name: string; t_min: number; hhmm: string;
+  line?: string; dwell?: number;
+}
+export interface CorridorTrain {
+  kind: "existing" | "inserted";
+  headcode?: string;
+  path_id?: string;
+  journey_num?: string;
+  direction: string;
+  class_digit?: string;
+  dep_min: number;
+  arr_min: number;
+  dep_hhmm: string;
+  arr_hhmm: string;
+  dwell_min?: number;
+  junctions: JunctionStop[];
+}
+export interface HeatmapCell {
+  junction_seq: number; direction: string; hour: number; count: number;
+}
+export interface InsertedOverlayCell {
+  junction_seq: number; direction: string; hour: number; path_id: string;
+}
+export interface RunTraffic {
+  corridor_names: string[];
+  existing: CorridorTrain[];
+  inserted: CorridorTrain[];
+  heatmap: HeatmapCell[];
+  inserted_overlay: InsertedOverlayCell[];
+}
+export async function getTraffic(id: number) {
+  return (await api.get<RunTraffic>(`/runs/${id}/traffic`)).data;
+}
+
+export async function listCorridors() {
+  return (await api.get<CorridorSummary[]>("/corridors/")).data;
+}
+
+export async function getCorridor(id: string) {
+  return (await api.get<CorridorDetail>(`/corridors/${id}`)).data;
+}
+
+export async function searchLocations(q: string, limit = 25) {
+  const { data } = await api.get<LocationHit[]>("/locations/search",
+                                                 { params: { q, limit } });
+  return data;
+}
+
+export async function createCorridor(payload: {
+  name: string; description: string; stations: LocationHit[];
+}) {
+  const { data } = await api.post<CorridorDetail>("/corridors/", payload);
+  return data;
+}
+
+export async function deleteCorridor(id: string) {
+  return (await api.delete(`/corridors/${id}`)).data;
+}
+
+export function runLogStream(id: number,
+                              onMessage: (m: any) => void,
+                              onClose?: () => void): WebSocket {
+  const proto = window.location.protocol === "https:" ? "wss:" : "ws:";
+  const ws = new WebSocket(`${proto}//${window.location.host}/api/ws/runs/${id}`);
+  ws.onmessage = (ev) => {
+    try { onMessage(JSON.parse(ev.data)); }
+    catch { onMessage(ev.data); }
+  };
+  if (onClose) ws.onclose = onClose;
+  return ws;
+}

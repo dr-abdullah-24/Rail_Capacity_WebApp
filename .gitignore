@@ -1,0 +1,44 @@
+# ─── Python / backend ───────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# SQLite (recreated on backend start-up)
+backend/data/app.db
+backend/data/app.db-journal
+backend/data/app.db-wal
+backend/data/app.db-shm
+
+# User-generated data (not source-controlled)
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+backend/data/runs/*
+!backend/data/runs/.gitkeep
+
+# ─── Node / frontend ────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/node_modules/.vite/
+*.log
+.pnp/
+.pnp.js
+
+# ─── Editor / OS ───────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Environment / secrets ──────────────────────────
+.env
+.env.local
+.env.*.local

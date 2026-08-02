@@ -1,0 +1,8 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+sqlmodel==0.0.22
+pydantic-settings==2.7.1
+websockets==14.1
+aiofiles==24.1.0
+pulp==2.9.0
