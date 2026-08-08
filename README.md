@@ -1,4 +1,4 @@
-# Rail Corridor Capacity Studio
+# Rail Insights OPERATIONS PLATFORM
 
 Interactive web app for capacity analysis on rail freight corridors,
 built as a companion to the `LIV_MAN_Capacity_MILP_2018` research
