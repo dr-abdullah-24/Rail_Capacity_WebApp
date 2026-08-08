@@ -28,14 +28,4 @@ npm run dev
 
 Open http://localhost:5173/ in the browser.
 
-## Roadmap (see the presentation for context)
 
-| Phase | Status | Notes |
-|---|---|---|
-| 1a Backend scaffold | done | `/health`, `/uploads`, `/runs` stubs, SQLModel setup |
-| 1b Frontend scaffold | done | Vite + React + TS; health-check panel wired |
-| 1c Upload + subprocess | in progress | POST files, spawn MILP scripts, WebSocket progress |
-| 2 Basic UI end-to-end | | Upload -> config -> run -> results table + CSV export |
-| 3 Space-time timeline | | vis-timeline with existing + inserted paths per junction |
-| 4 ATTune-like editor | | Drag paths, live conflict detection, scenarios |
-| 5 Stakeholder dashboards | | Operator / policy maker / facility manager views |
