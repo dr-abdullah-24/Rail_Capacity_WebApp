@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Activity, ArrowRight, BarChart3, CheckCircle2, ChevronRight,
   CircleDot, Clock3, Database, FileUp, Gauge, MapPinned,
@@ -15,6 +16,7 @@ const FLOW: { id: Page; label: string; Icon: typeof FileUp }[] = [
 ];
 
 export function HomePage() {
+  const [twinModeOverride, setTwinMode] = useState<"capacity" | "diversion" | null>(null);
   const setPage = useAppStore((s) => s.setPage);
   const runs = useAppStore((s) => s.runs);
   const uploads = useAppStore((s) => s.uploads);
@@ -26,7 +28,15 @@ export function HomePage() {
   const completed = runs.filter((run) => run.status === "complete");
   const active = runs.find((run) => run.status === "running" || run.status === "pending");
   const latest = completed[0] ?? runs[0];
-  const inserted = (latest?.nb_inserted ?? 0) + (latest?.sb_inserted ?? 0);
+  // Lead with the type of analysis the backend most recently completed,
+  // while still allowing the operator to switch modes manually.
+  const twinMode = twinModeOverride ?? latest?.model_type ?? "capacity";
+  const latestCapacity = completed.find((run) => run.model_type === "capacity");
+  const latestDiversion = completed.find((run) => run.model_type === "diversion");
+  const twinRun = twinMode === "capacity" ? latestCapacity : latestDiversion;
+  const twinResult = twinMode === "capacity"
+    ? (twinRun?.nb_inserted ?? 0) + (twinRun?.sb_inserted ?? 0)
+    : twinRun?.div_placed ?? 0;
   // A completed backend run proves the full workflow has been completed.
   // An additional active run must not make the overall workflow look unfinished.
   const completedSteps = completed.length > 0
@@ -75,11 +85,20 @@ export function HomePage() {
               {online ? "LIVE" : "OFFLINE"}
             </span>
           </div>
-          <div className="twin-route-title">
-            <div><small>ACTIVE CORRIDOR</small><strong>Crewe — Parkside</strong></div>
-            <span>24H VIEW</span>
+          <div className="twin-mode-switch" aria-label="Analysis mode">
+            <button className={twinMode === "capacity" ? "active" : ""} onClick={() => setTwinMode("capacity")}>
+              <Gauge size={12} /> Capacity assessment
+            </button>
+            <button className={twinMode === "diversion" ? "active" : ""} onClick={() => setTwinMode("diversion")}>
+              <Route size={12} /> Freight diversion
+            </button>
           </div>
-          <svg className="twin-canvas" viewBox="0 0 520 238" role="img" aria-label="Space-time diagram showing an available freight path">
+          <div className="twin-route-title">
+            <div><small>{twinMode === "capacity" ? "CAPACITY ASSESSMENT" : "DIVERSION ASSESSMENT"}</small><strong>{twinMode === "capacity" ? "Crewe to Parkside" : "Styal Line to Crewe–Parkside"}</strong></div>
+            <span>{twinMode === "capacity" ? "CONFLICT MAP" : "ROUTE OPTIONS"}</span>
+          </div>
+          {twinMode === "capacity" ? (
+          <svg className="twin-canvas" viewBox="0 0 520 238" role="img" aria-label="Capacity assessment showing a conflict and an optimised conflict-free path">
             <defs>
               <linearGradient id="pathGlow" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stopColor="#ffb800" />
@@ -102,21 +121,51 @@ export function HomePage() {
               <circle cx="54" cy="42" r="4" /><circle cx="54" cy="92" r="4" /><circle cx="54" cy="142" r="4" /><circle cx="54" cy="192" r="4" />
               <text x="2" y="46">PARKSIDE</text><text x="10" y="96">HARTFORD</text><text x="14" y="146">WINSFORD</text><text x="20" y="196">CREWE</text>
             </g>
-            <path id="opportunityPath" className="opportunity-path path-underlay" d="M62 192 C145 172 216 140 282 104 S410 59 494 42" />
-            <path className="opportunity-path" d="M62 192 C145 172 216 140 282 104 S410 59 494 42" />
+            <path className="rejected-path" d="M62 192 C156 158 220 119 282 92 S405 53 494 42" />
+            <g className="conflict-zone">
+              <circle className="conflict-pulse" cx="282" cy="92" r="17" />
+              <circle cx="282" cy="92" r="6" />
+              <path d="M278 88 L286 96 M286 88 L278 96" />
+            </g>
+            <g className="conflict-callout">
+              <rect x="306" y="70" width="133" height="35" rx="3" />
+              <text x="318" y="85">CONFLICT DETECTED</text><text className="callout-sub" x="318" y="97">PATH REJECTED</text>
+            </g>
+            <path className="opportunity-path path-underlay" d="M62 192 C143 179 214 157 282 121 S407 65 494 42" />
+            <path className="opportunity-path" d="M62 192 C143 179 214 157 282 121 S407 65 494 42" />
             <circle className="moving-train" r="5" filter="url(#glow)">
-              <animateMotion dur="5.5s" repeatCount="indefinite" path="M62 192 C145 172 216 140 282 104 S410 59 494 42" />
+              <animateMotion dur="5.5s" repeatCount="indefinite" path="M62 192 C143 179 214 157 282 121 S407 65 494 42" />
             </circle>
             <g className="path-callout">
-              <rect x="292" y="117" width="147" height="40" rx="3" />
-              <circle cx="307" cy="137" r="4" />
-              <text x="319" y="134">FEASIBLE PATH</text><text className="callout-sub" x="319" y="147">CONFLICT-FREE</text>
+              <rect x="300" y="125" width="139" height="40" rx="3" />
+              <circle cx="315" cy="145" r="4" />
+              <text x="327" y="142">PATH OPTIMISED</text><text className="callout-sub" x="327" y="155">CONFLICT AVOIDED</text>
             </g>
             <g className="twin-time"><text x="84" y="230">06:00</text><text x="244" y="230">12:00</text><text x="404" y="230">18:00</text></g>
           </svg>
+          ) : (
+          <svg className="twin-canvas diversion-canvas" viewBox="0 0 520 238" role="img" aria-label="Freight diverted from a constrained source corridor to an available alternative corridor">
+            <defs>
+              <linearGradient id="diversionGlow" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#ffb800" /><stop offset="1" stopColor="#fff0a3" /></linearGradient>
+              <filter id="divGlow"><feGaussianBlur stdDeviation="3" result="blur" /><feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+            </defs>
+            <g className="diversion-grid"><line x1="35" y1="76" x2="497" y2="76" /><line x1="35" y1="168" x2="497" y2="168" /></g>
+            <g className="corridor-label source"><text x="35" y="35">SOURCE CORRIDOR</text><text x="35" y="50">STYAL LINE</text></g>
+            <g className="corridor-label target"><text x="35" y="198">ALTERNATIVE CORRIDOR</text><text x="35" y="213">CREWE TO PARKSIDE</text></g>
+            <g className="base-tracks"><path d="M37 76 C145 60 235 91 330 72 S430 63 495 76" /><path d="M37 168 C145 153 235 182 330 164 S430 154 495 168" /></g>
+            <g className="route-nodes">{[72,175,298,420,490].map((x) => <circle key={`s${x}`} cx={x} cy="76" r="4" />)}{[72,175,298,420,490].map((x) => <circle key={`t${x}`} cx={x} cy="168" r="4" />)}</g>
+            <path className="blocked-route" d="M40 76 C145 60 235 91 330 72 S430 63 494 76" />
+            <g className="blockage-zone"><circle className="conflict-pulse" cx="298" cy="78" r="18" /><circle cx="298" cy="78" r="8" /><path d="M293 73 L303 83 M303 73 L293 83" /></g>
+            <g className="blockage-callout"><rect x="324" y="27" width="145" height="37" rx="3" /><text x="336" y="43">CORRIDOR CONFLICT</text><text className="callout-sub" x="336" y="55">FREIGHT PATH BLOCKED</text></g>
+            <path className="diversion-path path-underlay" d="M40 76 C105 67 145 71 175 76 C211 83 224 147 298 168 C365 181 433 153 494 168" />
+            <path className="diversion-path" d="M40 76 C105 67 145 71 175 76 C211 83 224 147 298 168 C365 181 433 153 494 168" />
+            <circle className="moving-train" r="5" filter="url(#divGlow)"><animateMotion dur="5.5s" repeatCount="indefinite" path="M40 76 C105 67 145 71 175 76 C211 83 224 147 298 168 C365 181 433 153 494 168" /></circle>
+            <g className="switch-label"><rect x="185" y="107" width="124" height="35" rx="3" /><circle cx="199" cy="124" r="4" /><text x="211" y="121">FREIGHT DIVERTED</text><text className="callout-sub" x="211" y="134">ALTERNATIVE PATH FITS</text></g>
+          </svg>
+          )}
           <div className="instrument-result">
-            <div className="result-number">+{latest ? inserted : "—"}</div>
-            <div><strong>paths unlocked</strong><span>{latest ? "in latest completed study" : "awaiting first study"}</span></div>
+            {twinRun && <div className="result-number">{twinResult}</div>}
+            <div><strong>{twinMode === "capacity" ? "paths unlocked" : "freight paths diverted"}</strong><span>{twinRun ? "in latest completed study" : `awaiting first ${twinMode} study`}</span></div>
             <button aria-label="Open evidence" onClick={() => setPage("results")}><ArrowRight size={15} /></button>
           </div>
         </div>
@@ -124,7 +173,7 @@ export function HomePage() {
 
       <section className="status-ribbon">
         <StatusItem Icon={online ? CheckCircle2 : WifiOff} value={online ? "Operational" : "Unavailable"} label="analysis engine" tone={online ? "green" : "red"} />
-        <StatusItem Icon={MapPinned} value={corridors.length || "—"} label="mapped corridors" />
+        <StatusItem Icon={MapPinned} value={corridors.length} label="mapped corridors" />
         <StatusItem Icon={Database} value={uploads.length} label="TD datasets ready" />
         <StatusItem Icon={Gauge} value={completed.length} label="studies completed" />
         <div className="ribbon-action">
@@ -171,19 +220,31 @@ export function HomePage() {
             <>
               <div className="run-name">{latest.name}</div>
               <div className="run-metrics">
-                <div><small>NORTHBOUND</small><strong>{latest.nb_inserted ?? "—"}<em> paths</em></strong></div>
-                <div><small>SOUTHBOUND</small><strong>{latest.sb_inserted ?? "—"}<em> paths</em></strong></div>
+                {latest.model_type === "diversion" ? (
+                  <>
+                    <div><small>FREIGHT DIVERTED</small><strong>{latest.div_placed ?? 0}<em> paths</em></strong></div>
+                    <div><small>CONFLICTS</small><strong>{latest.div_conflict ?? 0}<em> paths</em></strong></div>
+                  </>
+                ) : (
+                  <>
+                    <div><small>NORTHBOUND</small><strong>{latest.nb_inserted ?? 0}<em> paths</em></strong></div>
+                    <div><small>SOUTHBOUND</small><strong>{latest.sb_inserted ?? 0}<em> paths</em></strong></div>
+                  </>
+                )}
               </div>
               <div className="run-detail"><span>Model</span><strong>{latest.model_type === "diversion" ? "Diversion" : "Capacity"}</strong></div>
-              <div className="run-detail"><span>Solve time</span><strong>{latest.wall_solve_time_s ? `${Math.round(latest.wall_solve_time_s)} sec` : "—"}</strong></div>
+              <div className="run-detail"><span>Solve time</span><strong>{latest.wall_solve_time_s ? `${Math.round(latest.wall_solve_time_s)} sec` : "Not recorded"}</strong></div>
+              <div className="run-detail"><span>Created</span><strong>{formatStudyTime(latest.created_at)}</strong></div>
               <button className="panel-button" onClick={() => setPage(latest.status === "complete" ? "results" : "runs")}>
                 {latest.status === "complete" ? "Inspect full analysis" : "Monitor study"} <ArrowRight size={15} />
               </button>
             </>
           ) : (
             <div className="empty-run">
-              <TrendingUp size={30} />
-              <p>Your first optimisation result will appear here.</p>
+              <div className="empty-run-message">
+                <TrendingUp size={30} />
+                <p>Your first optimisation result will appear here.</p>
+              </div>
               <button className="panel-button" onClick={() => setPage("upload")}>Begin study <ArrowRight size={15} /></button>
             </div>
           )}
@@ -191,11 +252,22 @@ export function HomePage() {
       </section>
 
       <footer className="home-proof">
-        <span><strong>RailInsights</strong> · operational research for UK rail capacity</span>
+        <span><strong>Rail Insights</strong> · operational research for UK rail capacity</span>
         <span>Developed at Liverpool John Moores University</span>
       </footer>
     </div>
   );
+}
+
+function formatStudyTime(value: string | null): string {
+  if (!value) return "Not recorded";
+  return new Date(value).toLocaleString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 }
 
 function StatusItem({ Icon, value, label, tone = "blue" }: { Icon: typeof Activity; value: React.ReactNode; label: string; tone?: string }) {

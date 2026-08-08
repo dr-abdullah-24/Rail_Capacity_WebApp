@@ -19,7 +19,7 @@ export function Header() {
   return (
     <div className="app-header">
       <div className="header-heading">
-        <span className="header-context">RAILINSIGHTS / {page.toUpperCase()}</span>
+        <span className="header-context">RAIL INSIGHTS PLATFORM / {page.toUpperCase()}</span>
         <div className="header-title">{TITLES[page]}</div>
       </div>
       <div className="header-status">

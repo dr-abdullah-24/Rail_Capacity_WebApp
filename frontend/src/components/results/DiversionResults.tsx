@@ -4,12 +4,13 @@ import {
   ResponsiveContainer, Tooltip, XAxis, YAxis,
 } from "recharts";
 import {
-  ChevronDown, ChevronRight, Clock, Download, Shuffle, Split,
-  Table2, Timer, TrendingUp,
+  AlertTriangle, CheckCircle2, ChevronDown, ChevronRight, Clock, Download,
+  Route, Split, Table2, TrainFront,
 } from "lucide-react";
 import {
   DiversionOutcome, Run, getDiversionOutcome,
 } from "../../api/client";
+import { TRACTION_CLASSES } from "../../constants/tractionClasses";
 
 export function DiversionResults({ run }: { run: Run }) {
   const [outcome, setOutcome] = useState<DiversionOutcome | null>(null);
@@ -64,39 +65,38 @@ export function DiversionResults({ run }: { run: Run }) {
 
   const filteredRows = (outcome?.outcomes ?? [])
     .filter((r) => filter === "all" ? true : r.outcome === filter);
+  const verdict = pct >= 90 ? "Strong diversion case"
+    : pct >= 70 ? "Viable with timetable intervention"
+    : "Material constraints remain";
+  const classFilter = outcome?.class_filter ?? run.class_filter ?? "";
+  const trainClassLabel = classFilter.split(",").map((value) => {
+    const digit = value.trim();
+    const match = TRACTION_CLASSES.find((item) => String(item.digit) === digit);
+    return match ? `Class ${match.digit} · ${match.category} · ${match.mphTypical} mph` : `Class ${digit}`;
+  }).filter(Boolean).join(" | ") || "Train class not specified";
 
   return (
     <>
-      <div className="grid cols-4">
-        <div className="kpi">
-          <div className="kpi-label"><Shuffle size={12} /> Divertibles</div>
-          <div className="kpi-value">{total}</div>
-          <div className="kpi-hint">class {outcome?.class_filter ?? "?"}</div>
-        </div>
-        <div className="kpi">
-          <div className="kpi-label"><TrendingUp size={12} /> Placed on target</div>
-          <div className="kpi-value">{placed}</div>
-          <div className="kpi-hint">{pct.toFixed(1)}% of divertibles</div>
-        </div>
-        <div className="kpi">
-          <div className="kpi-label"><Clock size={12} /> Mean |shift|</div>
-          <div className="kpi-value">
-            {meanShift.toFixed(1)}
-            <span style={{ fontSize: 14, color: "var(--grey-5)" }}> min</span>
-          </div>
-          <div className="kpi-hint">across placed trains</div>
-        </div>
-        <div className="kpi">
-          <div className="kpi-label"><Timer size={12} /> Solve time</div>
-          <div className="kpi-value">
-            {Math.round(run.wall_solve_time_s ?? 0)}
-            <span style={{ fontSize: 14, color: "var(--grey-5)" }}> s</span>
-          </div>
-          <div className="kpi-hint">
-            {run.source_corridor_id} &rarr; {run.target_corridor_id}
+      <section className="results-hero diversion-results-hero">
+        <div className="results-hero-copy">
+          <div className="results-eyebrow"><CheckCircle2 size={13} /> RUN #{run.id} COMPLETE · FREIGHT DIVERSION</div>
+          <h1><span>{placed}</span> of {total} freight paths can be diverted</h1>
+          <div className="results-class-chip"><TrainFront size={14} /><span>TRAIN CLASS</span><strong>{trainClassLabel}</strong></div>
+          <p><Route size={15} /> {run.source_corridor_id || "Source corridor"} <span className="route-arrow">→</span> {run.target_corridor_id || "Target corridor"}</p>
+          <div className={`results-verdict ${pct >= 90 ? "positive" : pct >= 70 ? "caution" : "risk"}`}>
+            {pct >= 70 ? <CheckCircle2 size={17} /> : <AlertTriangle size={17} />}
+            <div><small>OPERATOR VERDICT</small><strong>{verdict}</strong></div>
           </div>
         </div>
-      </div>
+        <div className="results-score" style={{ "--score": `${Math.max(0, Math.min(100, pct)) * 3.6}deg` } as React.CSSProperties}>
+          <div><strong>{pct.toFixed(1)}%</strong><span>successfully<br />placed</span></div>
+        </div>
+        <div className="results-hero-facts">
+          <div><small>CONFLICTS REMAINING</small><strong className={conflict > 0 ? "danger-text" : "success-text"}>{conflict}</strong></div>
+          <div><small>MEAN TIMETABLE SHIFT</small><strong>{meanShift.toFixed(1)} <em>min</em></strong></div>
+          <div><small>SOLVER TIME</small><strong>{Math.round(run.wall_solve_time_s ?? 0)} <em>sec</em></strong></div>
+        </div>
+      </section>
 
       {/* ── Outcome breakdown bar ── */}
       <div className="card" style={{ padding: "14px 20px" }}>

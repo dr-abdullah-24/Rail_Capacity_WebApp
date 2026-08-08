@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="title desc">
+  <title id="title">Rail Insights</title>
+  <desc id="desc">An R monogram formed from a railway route and intelligent signal</desc>
+  <rect width="48" height="48" rx="8" fill="#ffb800"/>
+
+  <!-- Continuous route forms the Rail Insights R -->
+  <path d="M13 38V10h12.2c7.1 0 11.3 3.7 11.3 9.5S32.3 29 25.2 29H13m12 0 12 9"
+        fill="none" stroke="#071722" stroke-width="3.6"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- The inner route suggests a parallel rail and forward movement -->
+  <path d="M19 23V16h6.2c3 0 4.8 1.2 4.8 3.5S28.2 23 25.2 23H19"
+        fill="none" stroke="#071722" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Sleeper marks turn the monogram into track geometry -->
+  <g stroke="#071722" stroke-width="1.7" stroke-linecap="round">
+    <path d="M9.5 14h7M9.5 21h7M9.5 28h7M9.5 35h7"/>
+    <path d="m27.7 31.2-4 5.3m8.7-1.8-3.5 4.6"/>
+  </g>
+
+  <!-- Live intelligence signal at the decision point -->
+  <circle cx="36.5" cy="19.5" r="4.4" fill="#071722"/>
+  <circle cx="36.5" cy="19.5" r="2" fill="#65e0ac"/>
+  <path d="M39.7 16.3c1.7 1.8 1.7 4.6 0 6.4" fill="none"
+        stroke="#071722" stroke-width="1.4" stroke-linecap="round"/>
+</svg>

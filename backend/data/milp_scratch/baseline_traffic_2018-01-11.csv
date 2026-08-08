@@ -1,0 +1,2589 @@
+date,headcode,journey_num,train_class,direction,junction_seq,junction_name,line,t_min
+2018-01-11,003K,1,other,northbound,0,CREWE,,1033
+2018-01-11,003K,1,other,northbound,1,WINSFORD,S,1038
+2018-01-11,003K,1,other,northbound,2,HARTFORD,,1045
+2018-01-11,003K,1,other,northbound,3,HARTFORD JN,S,1043
+2018-01-11,003K,1,other,northbound,4,ACTON BRIDGE,,1048
+2018-01-11,003K,1,other,northbound,5,WEAVER JN,L,1050
+2018-01-11,013I,1,other,northbound,0,CREWE,G,407
+2018-01-11,013I,1,other,northbound,1,WINSFORD,F,400
+2018-01-11,013I,1,other,northbound,2,HARTFORD,,397
+2018-01-11,013I,1,other,northbound,3,HARTFORD JN,,396
+2018-01-11,013I,1,other,northbound,4,ACTON BRIDGE,,393
+2018-01-11,013I,1,other,northbound,5,WEAVER JN,M,392
+2018-01-11,014I,1,other,northbound,0,CREWE,G,508
+2018-01-11,014I,1,other,northbound,1,WINSFORD,F,502
+2018-01-11,014I,1,other,northbound,2,HARTFORD,,499
+2018-01-11,014I,1,other,northbound,3,HARTFORD JN,,498
+2018-01-11,014I,1,other,northbound,4,ACTON BRIDGE,,495
+2018-01-11,014I,1,other,northbound,5,WEAVER JN,M,494
+2018-01-11,049K,1,other,northbound,0,CREWE,,1392
+2018-01-11,049K,1,other,northbound,1,WINSFORD,S,1398
+2018-01-11,049K,1,other,northbound,2,HARTFORD,,1402
+2018-01-11,049K,1,other,northbound,3,HARTFORD JN,S,1400
+2018-01-11,049K,1,other,northbound,4,ACTON BRIDGE,,1405
+2018-01-11,049K,1,other,northbound,5,WEAVER JN,L,1407
+2018-01-11,074H,1,other,northbound,0,CREWE,,108
+2018-01-11,074H,1,other,northbound,1,WINSFORD,S,113
+2018-01-11,074H,1,other,northbound,2,HARTFORD,,117
+2018-01-11,074H,1,other,northbound,3,HARTFORD JN,S,115
+2018-01-11,074H,1,other,northbound,4,ACTON BRIDGE,,119
+2018-01-11,074H,1,other,northbound,5,WEAVER JN,L,121
+2018-01-11,074H,1,other,northbound,6,ACTON GRANGE JN,H,125
+2018-01-11,074H,1,other,northbound,7,WARRINGTON BQ,,126
+2018-01-11,074H,1,other,northbound,8,WINWICK JN,M,129
+2018-01-11,075H,1,other,northbound,0,CREWE,,264
+2018-01-11,075H,1,other,northbound,1,WINSFORD,S,270
+2018-01-11,075H,1,other,northbound,2,HARTFORD,,275
+2018-01-11,075H,1,other,northbound,3,HARTFORD JN,S,274
+2018-01-11,075H,1,other,northbound,4,ACTON BRIDGE,,278
+2018-01-11,075H,1,other,northbound,5,WEAVER JN,L,280
+2018-01-11,075H,1,other,northbound,6,ACTON GRANGE JN,H,285
+2018-01-11,075H,1,other,northbound,7,WARRINGTON BQ,,286
+2018-01-11,075H,1,other,northbound,8,WINWICK JN,M,290
+2018-01-11,102O,1,passenger,northbound,8,WINWICK JN,M,1411
+2018-01-11,176N,1,passenger,northbound,0,CREWE,,199
+2018-01-11,176N,1,passenger,northbound,1,WINSFORD,F,202
+2018-01-11,176N,1,passenger,northbound,2,HARTFORD,,205
+2018-01-11,176N,1,passenger,northbound,3,HARTFORD JN,S,203
+2018-01-11,176N,1,passenger,northbound,4,ACTON BRIDGE,,208
+2018-01-11,176N,1,passenger,northbound,5,WEAVER JN,L,210
+2018-01-11,176N,1,passenger,northbound,6,ACTON GRANGE JN,H,213
+2018-01-11,176N,1,passenger,northbound,7,WARRINGTON BQ,,214
+2018-01-11,184N,1,passenger,northbound,8,WINWICK JN,S,1123
+2018-01-11,185N,1,passenger,northbound,8,WINWICK JN,S,1221
+2018-01-11,186N,1,passenger,southbound,0,CREWE,G,1046
+2018-01-11,186N,1,passenger,southbound,1,WINSFORD,F,1040
+2018-01-11,186N,1,passenger,southbound,2,HARTFORD,,1038
+2018-01-11,186N,1,passenger,southbound,3,HARTFORD JN,,1036
+2018-01-11,186N,1,passenger,southbound,4,ACTON BRIDGE,,1027
+2018-01-11,186N,1,passenger,southbound,5,WEAVER JN,M,1025
+2018-01-11,186N,1,passenger,southbound,6,ACTON GRANGE JN,,1022
+2018-01-11,186N,1,passenger,southbound,7,WARRINGTON BQ,F,1020
+2018-01-11,187N,1,passenger,northbound,0,CREWE,,1130
+2018-01-11,187N,1,passenger,northbound,1,WINSFORD,F,1135
+2018-01-11,187N,1,passenger,northbound,2,HARTFORD,,1139
+2018-01-11,187N,1,passenger,northbound,3,HARTFORD JN,S,1137
+2018-01-11,187N,1,passenger,northbound,4,ACTON BRIDGE,,1143
+2018-01-11,187N,1,passenger,northbound,5,WEAVER JN,L,1149
+2018-01-11,187N,1,passenger,northbound,6,ACTON GRANGE JN,H,1154
+2018-01-11,187N,1,passenger,northbound,7,WARRINGTON BQ,,1156
+2018-01-11,187N,2,passenger,northbound,8,WINWICK JN,M,1208
+2018-01-11,198N,1,passenger,southbound,0,CREWE,G,1168
+2018-01-11,198N,1,passenger,southbound,1,WINSFORD,F,1163
+2018-01-11,198N,1,passenger,southbound,2,HARTFORD,,1160
+2018-01-11,198N,1,passenger,southbound,3,HARTFORD JN,,1160
+2018-01-11,198N,1,passenger,southbound,4,ACTON BRIDGE,,1158
+2018-01-11,198N,1,passenger,southbound,5,WEAVER JN,M,1156
+2018-01-11,198N,1,passenger,southbound,6,ACTON GRANGE JN,,1153
+2018-01-11,198N,1,passenger,southbound,7,WARRINGTON BQ,F,1151
+2018-01-11,1A15,1,passenger,northbound,0,CREWE,G,558
+2018-01-11,1A15,1,passenger,northbound,1,WINSFORD,F,553
+2018-01-11,1A15,1,passenger,northbound,2,HARTFORD,,551
+2018-01-11,1A15,1,passenger,northbound,3,HARTFORD JN,,551
+2018-01-11,1A15,1,passenger,northbound,4,ACTON BRIDGE,,549
+2018-01-11,1A15,1,passenger,northbound,5,WEAVER JN,M,548
+2018-01-11,1A20,1,passenger,northbound,0,CREWE,G,617
+2018-01-11,1A20,1,passenger,northbound,1,WINSFORD,F,613
+2018-01-11,1A20,1,passenger,northbound,2,HARTFORD,,611
+2018-01-11,1A20,1,passenger,northbound,3,HARTFORD JN,,610
+2018-01-11,1A20,1,passenger,northbound,4,ACTON BRIDGE,,609
+2018-01-11,1A20,1,passenger,northbound,5,WEAVER JN,M,608
+2018-01-11,1A25,1,passenger,northbound,0,CREWE,G,678
+2018-01-11,1A25,1,passenger,northbound,1,WINSFORD,F,674
+2018-01-11,1A25,1,passenger,northbound,2,HARTFORD,,672
+2018-01-11,1A25,1,passenger,northbound,3,HARTFORD JN,,672
+2018-01-11,1A25,1,passenger,northbound,4,ACTON BRIDGE,,670
+2018-01-11,1A25,1,passenger,northbound,5,WEAVER JN,M,669
+2018-01-11,1A30,1,passenger,northbound,0,CREWE,G,742
+2018-01-11,1A30,1,passenger,northbound,1,WINSFORD,F,735
+2018-01-11,1A30,1,passenger,northbound,2,HARTFORD,,732
+2018-01-11,1A30,1,passenger,northbound,3,HARTFORD JN,,731
+2018-01-11,1A30,1,passenger,northbound,4,ACTON BRIDGE,,729
+2018-01-11,1A30,1,passenger,northbound,5,WEAVER JN,M,728
+2018-01-11,1A35,1,passenger,northbound,0,CREWE,G,799
+2018-01-11,1A35,1,passenger,northbound,1,WINSFORD,F,794
+2018-01-11,1A35,1,passenger,northbound,2,HARTFORD,,791
+2018-01-11,1A35,1,passenger,northbound,3,HARTFORD JN,,791
+2018-01-11,1A35,1,passenger,northbound,4,ACTON BRIDGE,,789
+2018-01-11,1A35,1,passenger,northbound,5,WEAVER JN,M,788
+2018-01-11,1A40,1,passenger,northbound,0,CREWE,G,857
+2018-01-11,1A40,1,passenger,northbound,1,WINSFORD,F,853
+2018-01-11,1A40,1,passenger,northbound,2,HARTFORD,,851
+2018-01-11,1A40,1,passenger,northbound,3,HARTFORD JN,,851
+2018-01-11,1A40,1,passenger,northbound,4,ACTON BRIDGE,,849
+2018-01-11,1A40,1,passenger,northbound,5,WEAVER JN,M,848
+2018-01-11,1A45,1,passenger,northbound,0,CREWE,G,917
+2018-01-11,1A45,1,passenger,northbound,1,WINSFORD,F,914
+2018-01-11,1A45,1,passenger,northbound,2,HARTFORD,,912
+2018-01-11,1A45,1,passenger,northbound,3,HARTFORD JN,,912
+2018-01-11,1A45,1,passenger,northbound,4,ACTON BRIDGE,,910
+2018-01-11,1A45,1,passenger,northbound,5,WEAVER JN,M,909
+2018-01-11,1A50,1,passenger,northbound,0,CREWE,G,978
+2018-01-11,1A50,1,passenger,northbound,1,WINSFORD,F,973
+2018-01-11,1A50,1,passenger,northbound,2,HARTFORD,,971
+2018-01-11,1A50,1,passenger,northbound,3,HARTFORD JN,,971
+2018-01-11,1A50,1,passenger,northbound,4,ACTON BRIDGE,,969
+2018-01-11,1A50,1,passenger,northbound,5,WEAVER JN,M,968
+2018-01-11,1A55,1,passenger,northbound,0,CREWE,G,1040
+2018-01-11,1A55,1,passenger,northbound,1,WINSFORD,F,1037
+2018-01-11,1A55,1,passenger,northbound,2,HARTFORD,,1035
+2018-01-11,1A55,1,passenger,northbound,3,HARTFORD JN,,1035
+2018-01-11,1A55,1,passenger,northbound,4,ACTON BRIDGE,,1033
+2018-01-11,1A55,1,passenger,northbound,5,WEAVER JN,M,1032
+2018-01-11,1A60,1,passenger,northbound,0,CREWE,G,1099
+2018-01-11,1A60,1,passenger,northbound,1,WINSFORD,F,1093
+2018-01-11,1A60,1,passenger,northbound,2,HARTFORD,,1091
+2018-01-11,1A60,1,passenger,northbound,3,HARTFORD JN,,1091
+2018-01-11,1A60,1,passenger,northbound,4,ACTON BRIDGE,,1089
+2018-01-11,1A60,1,passenger,northbound,5,WEAVER JN,M,1088
+2018-01-11,1A65,1,passenger,northbound,0,CREWE,G,1158
+2018-01-11,1A65,1,passenger,northbound,1,WINSFORD,F,1153
+2018-01-11,1A65,1,passenger,northbound,2,HARTFORD,,1151
+2018-01-11,1A65,1,passenger,northbound,3,HARTFORD JN,,1151
+2018-01-11,1A65,1,passenger,northbound,4,ACTON BRIDGE,,1149
+2018-01-11,1A65,1,passenger,northbound,5,WEAVER JN,M,1148
+2018-01-11,1A70,1,passenger,northbound,0,CREWE,G,1217
+2018-01-11,1A70,1,passenger,northbound,1,WINSFORD,F,1213
+2018-01-11,1A70,1,passenger,northbound,2,HARTFORD,,1211
+2018-01-11,1A70,1,passenger,northbound,3,HARTFORD JN,,1211
+2018-01-11,1A70,1,passenger,northbound,4,ACTON BRIDGE,,1209
+2018-01-11,1A70,1,passenger,northbound,5,WEAVER JN,M,1208
+2018-01-11,1A74,1,passenger,northbound,0,CREWE,G,1277
+2018-01-11,1A74,1,passenger,northbound,1,WINSFORD,F,1273
+2018-01-11,1A74,1,passenger,northbound,2,HARTFORD,,1271
+2018-01-11,1A74,1,passenger,northbound,3,HARTFORD JN,,1270
+2018-01-11,1A74,1,passenger,northbound,4,ACTON BRIDGE,,1269
+2018-01-11,1A74,1,passenger,northbound,5,WEAVER JN,M,1268
+2018-01-11,1C59,1,passenger,northbound,11,PARKSIDE JN,C,1356
+2018-01-11,1C94,1,passenger,northbound,0,CREWE,,1174
+2018-01-11,1C94,1,passenger,northbound,1,WINSFORD,F,1176
+2018-01-11,1C94,1,passenger,northbound,2,HARTFORD,,1179
+2018-01-11,1C94,1,passenger,northbound,3,HARTFORD JN,S,1178
+2018-01-11,1C94,1,passenger,northbound,4,ACTON BRIDGE,,1180
+2018-01-11,1C94,1,passenger,northbound,5,WEAVER JN,L,1181
+2018-01-11,1C94,1,passenger,northbound,6,ACTON GRANGE JN,H,1184
+2018-01-11,1C94,1,passenger,northbound,7,WARRINGTON BQ,,1185
+2018-01-11,1C94,1,passenger,northbound,8,WINWICK JN,M,1192
+2018-01-11,1D30,1,passenger,northbound,6,ACTON GRANGE JN,,384
+2018-01-11,1D30,1,passenger,northbound,7,WARRINGTON BQ,H,380
+2018-01-11,1D30,1,passenger,northbound,8,WINWICK JN,S,376
+2018-01-11,1D30,1,passenger,northbound,9,EARLESTOWN,,375
+2018-01-11,1D30,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,369
+2018-01-11,1D30,1,passenger,northbound,11,PARKSIDE JN,C,368
+2018-01-11,1D30,2,passenger,northbound,6,ACTON GRANGE JN,,992
+2018-01-11,1D30,2,passenger,northbound,7,WARRINGTON BQ,F,988
+2018-01-11,1D30,2,passenger,northbound,8,WINWICK JN,S,984
+2018-01-11,1D30,2,passenger,northbound,9,EARLESTOWN,,983
+2018-01-11,1D30,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,977
+2018-01-11,1D30,2,passenger,northbound,11,PARKSIDE JN,C,976
+2018-01-11,1D31,1,passenger,northbound,6,ACTON GRANGE JN,,446
+2018-01-11,1D31,1,passenger,northbound,7,WARRINGTON BQ,H,442
+2018-01-11,1D31,1,passenger,northbound,8,WINWICK JN,S,437
+2018-01-11,1D31,1,passenger,northbound,9,EARLESTOWN,,436
+2018-01-11,1D31,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,427
+2018-01-11,1D31,1,passenger,northbound,11,PARKSIDE JN,C,426
+2018-01-11,1D31,3,passenger,northbound,6,ACTON GRANGE JN,,1050
+2018-01-11,1D31,3,passenger,northbound,7,WARRINGTON BQ,F,1045
+2018-01-11,1D31,3,passenger,northbound,8,WINWICK JN,S,1041
+2018-01-11,1D31,3,passenger,northbound,9,EARLESTOWN,,1040
+2018-01-11,1D31,3,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1029
+2018-01-11,1D31,3,passenger,northbound,11,PARKSIDE JN,C,1028
+2018-01-11,1D32,1,passenger,northbound,6,ACTON GRANGE JN,,513
+2018-01-11,1D32,1,passenger,northbound,7,WARRINGTON BQ,H,509
+2018-01-11,1D32,1,passenger,northbound,8,WINWICK JN,S,505
+2018-01-11,1D32,1,passenger,northbound,9,EARLESTOWN,,504
+2018-01-11,1D32,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,498
+2018-01-11,1D32,1,passenger,northbound,11,PARKSIDE JN,C,496
+2018-01-11,1D32,2,passenger,northbound,6,ACTON GRANGE JN,,1111
+2018-01-11,1D32,2,passenger,northbound,7,WARRINGTON BQ,H,1107
+2018-01-11,1D32,2,passenger,northbound,8,WINWICK JN,S,1102
+2018-01-11,1D32,2,passenger,northbound,9,EARLESTOWN,,1100
+2018-01-11,1D32,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1093
+2018-01-11,1D32,2,passenger,northbound,11,PARKSIDE JN,C,1092
+2018-01-11,1D33,1,passenger,northbound,6,ACTON GRANGE JN,,572
+2018-01-11,1D33,1,passenger,northbound,7,WARRINGTON BQ,H,568
+2018-01-11,1D33,1,passenger,northbound,8,WINWICK JN,S,558
+2018-01-11,1D33,1,passenger,northbound,9,EARLESTOWN,,557
+2018-01-11,1D33,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,550
+2018-01-11,1D33,1,passenger,northbound,11,PARKSIDE JN,C,549
+2018-01-11,1D33,2,passenger,northbound,6,ACTON GRANGE JN,,1165
+2018-01-11,1D33,2,passenger,northbound,7,WARRINGTON BQ,F,1161
+2018-01-11,1D33,2,passenger,northbound,8,WINWICK JN,S,1156
+2018-01-11,1D33,2,passenger,northbound,9,EARLESTOWN,,1154
+2018-01-11,1D33,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1148
+2018-01-11,1D33,2,passenger,northbound,11,PARKSIDE JN,C,1147
+2018-01-11,1D34,1,passenger,northbound,6,ACTON GRANGE JN,,629
+2018-01-11,1D34,1,passenger,northbound,7,WARRINGTON BQ,F,625
+2018-01-11,1D34,1,passenger,northbound,8,WINWICK JN,S,619
+2018-01-11,1D34,1,passenger,northbound,9,EARLESTOWN,,618
+2018-01-11,1D34,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,609
+2018-01-11,1D34,1,passenger,northbound,11,PARKSIDE JN,C,608
+2018-01-11,1D35,1,passenger,northbound,6,ACTON GRANGE JN,,690
+2018-01-11,1D35,1,passenger,northbound,7,WARRINGTON BQ,F,685
+2018-01-11,1D35,1,passenger,northbound,8,WINWICK JN,S,680
+2018-01-11,1D35,1,passenger,northbound,9,EARLESTOWN,,679
+2018-01-11,1D35,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,673
+2018-01-11,1D35,1,passenger,northbound,11,PARKSIDE JN,C,672
+2018-01-11,1D35,2,passenger,northbound,6,ACTON GRANGE JN,,1288
+2018-01-11,1D35,2,passenger,northbound,7,WARRINGTON BQ,H,1284
+2018-01-11,1D35,2,passenger,northbound,8,WINWICK JN,S,1277
+2018-01-11,1D35,2,passenger,northbound,9,EARLESTOWN,,1276
+2018-01-11,1D35,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1270
+2018-01-11,1D35,2,passenger,northbound,11,PARKSIDE JN,C,1269
+2018-01-11,1D36,1,passenger,northbound,6,ACTON GRANGE JN,,748
+2018-01-11,1D36,1,passenger,northbound,7,WARRINGTON BQ,F,743
+2018-01-11,1D36,1,passenger,northbound,8,WINWICK JN,S,736
+2018-01-11,1D36,1,passenger,northbound,9,EARLESTOWN,,735
+2018-01-11,1D36,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,729
+2018-01-11,1D36,1,passenger,northbound,11,PARKSIDE JN,C,728
+2018-01-11,1D36,2,passenger,northbound,6,ACTON GRANGE JN,,1345
+2018-01-11,1D36,2,passenger,northbound,7,WARRINGTON BQ,H,1341
+2018-01-11,1D36,2,passenger,northbound,8,WINWICK JN,S,1336
+2018-01-11,1D36,2,passenger,northbound,9,EARLESTOWN,,1335
+2018-01-11,1D36,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1329
+2018-01-11,1D36,2,passenger,northbound,11,PARKSIDE JN,C,1328
+2018-01-11,1D37,1,passenger,northbound,6,ACTON GRANGE JN,,808
+2018-01-11,1D37,1,passenger,northbound,7,WARRINGTON BQ,F,804
+2018-01-11,1D37,1,passenger,northbound,8,WINWICK JN,S,798
+2018-01-11,1D37,1,passenger,northbound,9,EARLESTOWN,,797
+2018-01-11,1D37,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,791
+2018-01-11,1D37,1,passenger,northbound,11,PARKSIDE JN,C,790
+2018-01-11,1D38,1,passenger,northbound,6,ACTON GRANGE JN,,869
+2018-01-11,1D38,1,passenger,northbound,7,WARRINGTON BQ,F,860
+2018-01-11,1D38,1,passenger,northbound,8,WINWICK JN,S,857
+2018-01-11,1D38,1,passenger,northbound,9,EARLESTOWN,,855
+2018-01-11,1D38,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,850
+2018-01-11,1D38,1,passenger,northbound,11,PARKSIDE JN,C,849
+2018-01-11,1D39,1,passenger,northbound,6,ACTON GRANGE JN,,928
+2018-01-11,1D39,1,passenger,northbound,7,WARRINGTON BQ,F,924
+2018-01-11,1D39,1,passenger,northbound,8,WINWICK JN,S,919
+2018-01-11,1D39,1,passenger,northbound,9,EARLESTOWN,,918
+2018-01-11,1D39,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,912
+2018-01-11,1D39,1,passenger,northbound,11,PARKSIDE JN,C,911
+2018-01-11,1D40,1,passenger,northbound,6,ACTON GRANGE JN,,1078
+2018-01-11,1D40,1,passenger,northbound,7,WARRINGTON BQ,H,1074
+2018-01-11,1D40,1,passenger,northbound,8,WINWICK JN,S,1069
+2018-01-11,1D40,1,passenger,northbound,9,EARLESTOWN,,1068
+2018-01-11,1D40,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1061
+2018-01-11,1D40,1,passenger,northbound,11,PARKSIDE JN,C,1060
+2018-01-11,1D44,1,passenger,northbound,6,ACTON GRANGE JN,,1231
+2018-01-11,1D44,1,passenger,northbound,7,WARRINGTON BQ,F,1227
+2018-01-11,1D44,1,passenger,northbound,8,WINWICK JN,S,1222
+2018-01-11,1D44,1,passenger,northbound,9,EARLESTOWN,,1220
+2018-01-11,1D44,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1215
+2018-01-11,1D44,1,passenger,northbound,11,PARKSIDE JN,C,1214
+2018-01-11,1D47,1,passenger,northbound,6,ACTON GRANGE JN,,1378
+2018-01-11,1D47,1,passenger,northbound,7,WARRINGTON BQ,F,1374
+2018-01-11,1D47,1,passenger,northbound,8,WINWICK JN,S,1370
+2018-01-11,1D47,1,passenger,northbound,9,EARLESTOWN,,1369
+2018-01-11,1D47,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1364
+2018-01-11,1D47,1,passenger,northbound,11,PARKSIDE JN,C,1362
+2018-01-11,1D48,1,passenger,northbound,6,ACTON GRANGE JN,,1430
+2018-01-11,1D48,1,passenger,northbound,7,WARRINGTON BQ,H,1425
+2018-01-11,1D48,1,passenger,northbound,8,WINWICK JN,S,1421
+2018-01-11,1D48,1,passenger,northbound,9,EARLESTOWN,,1420
+2018-01-11,1D48,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1414
+2018-01-11,1D48,1,passenger,northbound,11,PARKSIDE JN,C,1412
+2018-01-11,1E61,1,passenger,northbound,9,EARLESTOWN,,385
+2018-01-11,1E61,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,387
+2018-01-11,1E61,1,passenger,northbound,11,PARKSIDE JN,M,387
+2018-01-11,1E62,1,passenger,northbound,9,EARLESTOWN,,449
+2018-01-11,1E62,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,450
+2018-01-11,1E62,1,passenger,northbound,11,PARKSIDE JN,M,450
+2018-01-11,1E64,1,passenger,northbound,9,EARLESTOWN,,505
+2018-01-11,1E64,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,509
+2018-01-11,1E64,1,passenger,northbound,11,PARKSIDE JN,M,512
+2018-01-11,1E66,1,passenger,northbound,9,EARLESTOWN,,564
+2018-01-11,1E66,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,565
+2018-01-11,1E66,1,passenger,northbound,11,PARKSIDE JN,M,566
+2018-01-11,1E69,1,passenger,northbound,9,EARLESTOWN,,624
+2018-01-11,1E69,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,625
+2018-01-11,1E69,1,passenger,northbound,11,PARKSIDE JN,M,626
+2018-01-11,1E70,1,passenger,northbound,9,EARLESTOWN,,684
+2018-01-11,1E70,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,685
+2018-01-11,1E70,1,passenger,northbound,11,PARKSIDE JN,M,685
+2018-01-11,1E71,1,passenger,northbound,9,EARLESTOWN,,745
+2018-01-11,1E71,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,746
+2018-01-11,1E71,1,passenger,northbound,11,PARKSIDE JN,M,746
+2018-01-11,1E72,1,passenger,northbound,9,EARLESTOWN,,805
+2018-01-11,1E72,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,806
+2018-01-11,1E72,1,passenger,northbound,11,PARKSIDE JN,M,806
+2018-01-11,1E74,1,passenger,northbound,9,EARLESTOWN,,866
+2018-01-11,1E74,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,867
+2018-01-11,1E74,1,passenger,northbound,11,PARKSIDE JN,,869
+2018-01-11,1E75,1,passenger,northbound,9,EARLESTOWN,,923
+2018-01-11,1E75,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,924
+2018-01-11,1E75,1,passenger,northbound,11,PARKSIDE JN,M,925
+2018-01-11,1E76,1,passenger,northbound,9,EARLESTOWN,,986
+2018-01-11,1E76,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,987
+2018-01-11,1E76,1,passenger,northbound,11,PARKSIDE JN,M,988
+2018-01-11,1E77,1,passenger,northbound,9,EARLESTOWN,,1045
+2018-01-11,1E77,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1046
+2018-01-11,1E77,1,passenger,northbound,11,PARKSIDE JN,M,1046
+2018-01-11,1E79,1,passenger,northbound,9,EARLESTOWN,,1165
+2018-01-11,1E79,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1166
+2018-01-11,1E79,1,passenger,northbound,11,PARKSIDE JN,M,1167
+2018-01-11,1F10,1,passenger,northbound,0,CREWE,,450
+2018-01-11,1F10,1,passenger,northbound,1,WINSFORD,F,453
+2018-01-11,1F10,1,passenger,northbound,2,HARTFORD,,455
+2018-01-11,1F10,1,passenger,northbound,3,HARTFORD JN,S,454
+2018-01-11,1F10,1,passenger,northbound,4,ACTON BRIDGE,,457
+2018-01-11,1F10,1,passenger,northbound,5,WEAVER JN,L,458
+2018-01-11,1F11,1,passenger,northbound,0,CREWE,,525
+2018-01-11,1F11,1,passenger,northbound,1,WINSFORD,F,528
+2018-01-11,1F11,1,passenger,northbound,2,HARTFORD,,530
+2018-01-11,1F11,1,passenger,northbound,3,HARTFORD JN,S,529
+2018-01-11,1F11,1,passenger,northbound,4,ACTON BRIDGE,,532
+2018-01-11,1F11,1,passenger,northbound,5,WEAVER JN,L,533
+2018-01-11,1F12,1,passenger,northbound,0,CREWE,,584
+2018-01-11,1F12,1,passenger,northbound,1,WINSFORD,F,587
+2018-01-11,1F12,1,passenger,northbound,2,HARTFORD,,589
+2018-01-11,1F12,1,passenger,northbound,3,HARTFORD JN,S,588
+2018-01-11,1F12,1,passenger,northbound,4,ACTON BRIDGE,,591
+2018-01-11,1F12,1,passenger,northbound,5,WEAVER JN,L,593
+2018-01-11,1F13,1,passenger,northbound,0,CREWE,,645
+2018-01-11,1F13,1,passenger,northbound,1,WINSFORD,F,648
+2018-01-11,1F13,1,passenger,northbound,2,HARTFORD,,650
+2018-01-11,1F13,1,passenger,northbound,3,HARTFORD JN,F,650
+2018-01-11,1F13,1,passenger,northbound,4,ACTON BRIDGE,,652
+2018-01-11,1F13,1,passenger,northbound,5,WEAVER JN,L,653
+2018-01-11,1F14,1,passenger,northbound,0,CREWE,,705
+2018-01-11,1F14,1,passenger,northbound,1,WINSFORD,F,708
+2018-01-11,1F14,1,passenger,northbound,2,HARTFORD,,710
+2018-01-11,1F14,1,passenger,northbound,3,HARTFORD JN,S,709
+2018-01-11,1F14,1,passenger,northbound,4,ACTON BRIDGE,,711
+2018-01-11,1F14,1,passenger,northbound,5,WEAVER JN,L,712
+2018-01-11,1F15,1,passenger,northbound,0,CREWE,,765
+2018-01-11,1F15,1,passenger,northbound,1,WINSFORD,F,768
+2018-01-11,1F15,1,passenger,northbound,2,HARTFORD,,770
+2018-01-11,1F15,1,passenger,northbound,3,HARTFORD JN,S,769
+2018-01-11,1F15,1,passenger,northbound,4,ACTON BRIDGE,,772
+2018-01-11,1F15,1,passenger,northbound,5,WEAVER JN,L,773
+2018-01-11,1F16,1,passenger,northbound,0,CREWE,,825
+2018-01-11,1F16,1,passenger,northbound,1,WINSFORD,F,828
+2018-01-11,1F16,1,passenger,northbound,2,HARTFORD,,830
+2018-01-11,1F16,1,passenger,northbound,3,HARTFORD JN,S,829
+2018-01-11,1F16,1,passenger,northbound,4,ACTON BRIDGE,,831
+2018-01-11,1F16,1,passenger,northbound,5,WEAVER JN,L,832
+2018-01-11,1F17,1,passenger,northbound,0,CREWE,,886
+2018-01-11,1F17,1,passenger,northbound,1,WINSFORD,,889
+2018-01-11,1F17,1,passenger,northbound,5,WEAVER JN,,894
+2018-01-11,1F18,1,passenger,northbound,0,CREWE,,958
+2018-01-11,1F18,1,passenger,northbound,1,WINSFORD,F,961
+2018-01-11,1F18,1,passenger,northbound,2,HARTFORD,,963
+2018-01-11,1F18,1,passenger,northbound,3,HARTFORD JN,S,962
+2018-01-11,1F18,1,passenger,northbound,4,ACTON BRIDGE,,964
+2018-01-11,1F18,1,passenger,northbound,5,WEAVER JN,L,965
+2018-01-11,1F19,1,passenger,northbound,0,CREWE,,1005
+2018-01-11,1F19,1,passenger,northbound,1,WINSFORD,F,1008
+2018-01-11,1F19,1,passenger,northbound,2,HARTFORD,,1010
+2018-01-11,1F19,1,passenger,northbound,3,HARTFORD JN,S,1009
+2018-01-11,1F19,1,passenger,northbound,4,ACTON BRIDGE,,1011
+2018-01-11,1F19,1,passenger,northbound,5,WEAVER JN,L,1012
+2018-01-11,1F20,1,passenger,northbound,0,CREWE,,1066
+2018-01-11,1F20,1,passenger,northbound,1,WINSFORD,F,1068
+2018-01-11,1F20,1,passenger,northbound,2,HARTFORD,,1071
+2018-01-11,1F20,1,passenger,northbound,3,HARTFORD JN,S,1070
+2018-01-11,1F20,1,passenger,northbound,4,ACTON BRIDGE,,1073
+2018-01-11,1F20,1,passenger,northbound,5,WEAVER JN,L,1075
+2018-01-11,1F22,1,passenger,northbound,0,CREWE,,1128
+2018-01-11,1F22,1,passenger,northbound,1,WINSFORD,F,1131
+2018-01-11,1F22,1,passenger,northbound,2,HARTFORD,,1133
+2018-01-11,1F22,1,passenger,northbound,3,HARTFORD JN,S,1132
+2018-01-11,1F22,1,passenger,northbound,4,ACTON BRIDGE,,1136
+2018-01-11,1F22,1,passenger,northbound,5,WEAVER JN,L,1138
+2018-01-11,1F23,1,passenger,northbound,0,CREWE,,1164
+2018-01-11,1F23,1,passenger,northbound,1,WINSFORD,F,1167
+2018-01-11,1F23,1,passenger,northbound,2,HARTFORD,,1169
+2018-01-11,1F23,1,passenger,northbound,3,HARTFORD JN,S,1168
+2018-01-11,1F23,1,passenger,northbound,4,ACTON BRIDGE,,1170
+2018-01-11,1F23,1,passenger,northbound,5,WEAVER JN,L,1171
+2018-01-11,1F24,1,passenger,northbound,0,CREWE,,1195
+2018-01-11,1F24,1,passenger,northbound,1,WINSFORD,F,1198
+2018-01-11,1F24,1,passenger,northbound,2,HARTFORD,,1200
+2018-01-11,1F24,1,passenger,northbound,3,HARTFORD JN,S,1199
+2018-01-11,1F24,1,passenger,northbound,4,ACTON BRIDGE,,1202
+2018-01-11,1F24,1,passenger,northbound,5,WEAVER JN,L,1203
+2018-01-11,1F25,1,passenger,northbound,0,CREWE,,1218
+2018-01-11,1F25,1,passenger,northbound,1,WINSFORD,F,1221
+2018-01-11,1F25,1,passenger,northbound,2,HARTFORD,,1224
+2018-01-11,1F25,1,passenger,northbound,3,HARTFORD JN,S,1223
+2018-01-11,1F25,1,passenger,northbound,4,ACTON BRIDGE,,1225
+2018-01-11,1F25,1,passenger,northbound,5,WEAVER JN,L,1226
+2018-01-11,1F26,1,passenger,northbound,0,CREWE,,1240
+2018-01-11,1F26,1,passenger,northbound,1,WINSFORD,F,1242
+2018-01-11,1F26,1,passenger,northbound,2,HARTFORD,,1245
+2018-01-11,1F26,1,passenger,northbound,3,HARTFORD JN,S,1244
+2018-01-11,1F26,1,passenger,northbound,4,ACTON BRIDGE,,1246
+2018-01-11,1F26,1,passenger,northbound,5,WEAVER JN,L,1247
+2018-01-11,1F27,1,passenger,northbound,0,CREWE,,342
+2018-01-11,1F27,1,passenger,northbound,1,WINSFORD,F,345
+2018-01-11,1F27,1,passenger,northbound,2,HARTFORD,,348
+2018-01-11,1F27,1,passenger,northbound,3,HARTFORD JN,S,347
+2018-01-11,1F27,1,passenger,northbound,4,ACTON BRIDGE,,349
+2018-01-11,1F27,1,passenger,northbound,5,WEAVER JN,L,350
+2018-01-11,1F27,2,passenger,northbound,0,CREWE,,1313
+2018-01-11,1F27,2,passenger,northbound,1,WINSFORD,F,1316
+2018-01-11,1F27,2,passenger,northbound,2,HARTFORD,,1318
+2018-01-11,1F27,2,passenger,northbound,3,HARTFORD JN,S,1317
+2018-01-11,1F27,2,passenger,northbound,4,ACTON BRIDGE,,1319
+2018-01-11,1F27,2,passenger,northbound,5,WEAVER JN,L,1320
+2018-01-11,1F28,1,passenger,northbound,0,CREWE,,365
+2018-01-11,1F28,1,passenger,northbound,1,WINSFORD,F,368
+2018-01-11,1F28,1,passenger,northbound,2,HARTFORD,,374
+2018-01-11,1F28,1,passenger,northbound,3,HARTFORD JN,S,373
+2018-01-11,1F28,1,passenger,northbound,4,ACTON BRIDGE,,378
+2018-01-11,1F28,1,passenger,northbound,5,WEAVER JN,L,382
+2018-01-11,1F28,2,passenger,northbound,0,CREWE,,1373
+2018-01-11,1F28,2,passenger,northbound,1,WINSFORD,F,1376
+2018-01-11,1F28,2,passenger,northbound,2,HARTFORD,,1379
+2018-01-11,1F28,2,passenger,northbound,3,HARTFORD JN,S,1378
+2018-01-11,1F28,2,passenger,northbound,4,ACTON BRIDGE,,1380
+2018-01-11,1F28,2,passenger,northbound,5,WEAVER JN,L,1381
+2018-01-11,1F29,2,passenger,northbound,0,CREWE,,395
+2018-01-11,1F29,2,passenger,northbound,1,WINSFORD,F,398
+2018-01-11,1F29,2,passenger,northbound,2,HARTFORD,,404
+2018-01-11,1F29,2,passenger,northbound,3,HARTFORD JN,S,403
+2018-01-11,1F29,2,passenger,northbound,4,ACTON BRIDGE,,408
+2018-01-11,1F29,2,passenger,northbound,5,WEAVER JN,L,412
+2018-01-11,1F30,1,passenger,northbound,0,CREWE,,421
+2018-01-11,1F30,1,passenger,northbound,1,WINSFORD,F,424
+2018-01-11,1F30,1,passenger,northbound,2,HARTFORD,,429
+2018-01-11,1F30,1,passenger,northbound,3,HARTFORD JN,S,428
+2018-01-11,1F30,1,passenger,northbound,4,ACTON BRIDGE,,433
+2018-01-11,1F30,1,passenger,northbound,5,WEAVER JN,L,437
+2018-01-11,1F31,1,passenger,northbound,0,CREWE,,455
+2018-01-11,1F31,1,passenger,northbound,1,WINSFORD,S,461
+2018-01-11,1F31,1,passenger,northbound,2,HARTFORD,,468
+2018-01-11,1F31,1,passenger,northbound,3,HARTFORD JN,S,466
+2018-01-11,1F31,1,passenger,northbound,4,ACTON BRIDGE,,473
+2018-01-11,1F31,1,passenger,northbound,5,WEAVER JN,L,476
+2018-01-11,1F32,1,passenger,northbound,0,CREWE,,481
+2018-01-11,1F32,1,passenger,northbound,1,WINSFORD,F,484
+2018-01-11,1F32,1,passenger,northbound,2,HARTFORD,,489
+2018-01-11,1F32,1,passenger,northbound,3,HARTFORD JN,S,488
+2018-01-11,1F32,1,passenger,northbound,4,ACTON BRIDGE,,493
+2018-01-11,1F32,1,passenger,northbound,5,WEAVER JN,L,497
+2018-01-11,1F33,1,passenger,northbound,0,CREWE,,515
+2018-01-11,1F33,1,passenger,northbound,1,WINSFORD,F,518
+2018-01-11,1F33,1,passenger,northbound,2,HARTFORD,,521
+2018-01-11,1F33,1,passenger,northbound,3,HARTFORD JN,S,520
+2018-01-11,1F33,1,passenger,northbound,4,ACTON BRIDGE,,525
+2018-01-11,1F33,1,passenger,northbound,5,WEAVER JN,L,526
+2018-01-11,1F34,1,passenger,northbound,0,CREWE,,540
+2018-01-11,1F34,1,passenger,northbound,1,WINSFORD,S,544
+2018-01-11,1F34,1,passenger,northbound,2,HARTFORD,,554
+2018-01-11,1F34,1,passenger,northbound,3,HARTFORD JN,S,552
+2018-01-11,1F34,1,passenger,northbound,4,ACTON BRIDGE,,558
+2018-01-11,1F34,1,passenger,northbound,5,WEAVER JN,L,559
+2018-01-11,1F35,1,passenger,northbound,0,CREWE,,576
+2018-01-11,1F35,1,passenger,northbound,1,WINSFORD,F,579
+2018-01-11,1F35,1,passenger,northbound,2,HARTFORD,,582
+2018-01-11,1F35,1,passenger,northbound,3,HARTFORD JN,S,581
+2018-01-11,1F35,1,passenger,northbound,4,ACTON BRIDGE,,586
+2018-01-11,1F35,1,passenger,northbound,5,WEAVER JN,L,587
+2018-01-11,1F36,1,passenger,northbound,0,CREWE,,602
+2018-01-11,1F36,1,passenger,northbound,1,WINSFORD,S,606
+2018-01-11,1F36,1,passenger,northbound,2,HARTFORD,,611
+2018-01-11,1F36,1,passenger,northbound,3,HARTFORD JN,S,610
+2018-01-11,1F36,1,passenger,northbound,4,ACTON BRIDGE,,616
+2018-01-11,1F36,1,passenger,northbound,5,WEAVER JN,L,619
+2018-01-11,1F37,1,passenger,northbound,0,CREWE,,635
+2018-01-11,1F37,1,passenger,northbound,1,WINSFORD,F,638
+2018-01-11,1F37,1,passenger,northbound,2,HARTFORD,,641
+2018-01-11,1F37,1,passenger,northbound,3,HARTFORD JN,S,640
+2018-01-11,1F37,1,passenger,northbound,4,ACTON BRIDGE,,642
+2018-01-11,1F37,1,passenger,northbound,5,WEAVER JN,L,643
+2018-01-11,1F38,1,passenger,northbound,0,CREWE,,659
+2018-01-11,1F38,1,passenger,northbound,1,WINSFORD,S,663
+2018-01-11,1F38,1,passenger,northbound,2,HARTFORD,,670
+2018-01-11,1F38,1,passenger,northbound,3,HARTFORD JN,S,668
+2018-01-11,1F38,1,passenger,northbound,4,ACTON BRIDGE,,674
+2018-01-11,1F38,1,passenger,northbound,5,WEAVER JN,L,675
+2018-01-11,1F39,1,passenger,northbound,0,CREWE,,699
+2018-01-11,1F39,1,passenger,northbound,1,WINSFORD,F,702
+2018-01-11,1F39,1,passenger,northbound,2,HARTFORD,,705
+2018-01-11,1F39,1,passenger,northbound,3,HARTFORD JN,S,703
+2018-01-11,1F39,1,passenger,northbound,4,ACTON BRIDGE,,706
+2018-01-11,1F39,1,passenger,northbound,5,WEAVER JN,L,708
+2018-01-11,1F40,1,passenger,northbound,0,CREWE,,719
+2018-01-11,1F40,1,passenger,northbound,1,WINSFORD,S,723
+2018-01-11,1F40,1,passenger,northbound,2,HARTFORD,,729
+2018-01-11,1F40,1,passenger,northbound,3,HARTFORD JN,S,728
+2018-01-11,1F40,1,passenger,northbound,4,ACTON BRIDGE,,733
+2018-01-11,1F40,1,passenger,northbound,5,WEAVER JN,L,737
+2018-01-11,1F41,1,passenger,northbound,0,CREWE,,755
+2018-01-11,1F41,1,passenger,northbound,1,WINSFORD,F,758
+2018-01-11,1F41,1,passenger,northbound,2,HARTFORD,,761
+2018-01-11,1F41,1,passenger,northbound,3,HARTFORD JN,S,760
+2018-01-11,1F41,1,passenger,northbound,4,ACTON BRIDGE,,762
+2018-01-11,1F41,1,passenger,northbound,5,WEAVER JN,L,764
+2018-01-11,1F42,1,passenger,northbound,0,CREWE,,779
+2018-01-11,1F42,1,passenger,northbound,1,WINSFORD,S,783
+2018-01-11,1F42,1,passenger,northbound,2,HARTFORD,,791
+2018-01-11,1F42,1,passenger,northbound,3,HARTFORD JN,S,790
+2018-01-11,1F42,1,passenger,northbound,4,ACTON BRIDGE,,796
+2018-01-11,1F42,1,passenger,northbound,5,WEAVER JN,L,797
+2018-01-11,1F43,1,passenger,northbound,0,CREWE,,815
+2018-01-11,1F43,1,passenger,northbound,1,WINSFORD,F,818
+2018-01-11,1F43,1,passenger,northbound,2,HARTFORD,,821
+2018-01-11,1F43,1,passenger,northbound,3,HARTFORD JN,S,819
+2018-01-11,1F43,1,passenger,northbound,4,ACTON BRIDGE,,822
+2018-01-11,1F43,1,passenger,northbound,5,WEAVER JN,L,823
+2018-01-11,1F44,1,passenger,northbound,0,CREWE,,839
+2018-01-11,1F44,1,passenger,northbound,1,WINSFORD,S,843
+2018-01-11,1F44,1,passenger,northbound,2,HARTFORD,,853
+2018-01-11,1F44,1,passenger,northbound,3,HARTFORD JN,S,851
+2018-01-11,1F44,1,passenger,northbound,4,ACTON BRIDGE,,857
+2018-01-11,1F44,1,passenger,northbound,5,WEAVER JN,L,858
+2018-01-11,1F45,1,passenger,northbound,0,CREWE,,875
+2018-01-11,1F45,1,passenger,northbound,3,HARTFORD JN,S,880
+2018-01-11,1F45,1,passenger,northbound,4,ACTON BRIDGE,,883
+2018-01-11,1F45,1,passenger,northbound,5,WEAVER JN,,885
+2018-01-11,1F46,1,passenger,northbound,0,CREWE,,899
+2018-01-11,1F46,1,passenger,northbound,1,WINSFORD,S,903
+2018-01-11,1F46,1,passenger,northbound,2,HARTFORD,,909
+2018-01-11,1F46,1,passenger,northbound,3,HARTFORD JN,S,908
+2018-01-11,1F46,1,passenger,northbound,4,ACTON BRIDGE,,913
+2018-01-11,1F46,1,passenger,northbound,5,WEAVER JN,L,914
+2018-01-11,1F47,1,passenger,northbound,0,CREWE,,935
+2018-01-11,1F47,1,passenger,northbound,1,WINSFORD,F,938
+2018-01-11,1F47,1,passenger,northbound,2,HARTFORD,,941
+2018-01-11,1F47,1,passenger,northbound,3,HARTFORD JN,S,940
+2018-01-11,1F47,1,passenger,northbound,4,ACTON BRIDGE,,943
+2018-01-11,1F47,1,passenger,northbound,5,WEAVER JN,L,944
+2018-01-11,1F48,1,passenger,northbound,0,CREWE,,963
+2018-01-11,1F48,1,passenger,northbound,1,WINSFORD,S,967
+2018-01-11,1F48,1,passenger,northbound,2,HARTFORD,,973
+2018-01-11,1F48,1,passenger,northbound,3,HARTFORD JN,S,972
+2018-01-11,1F48,1,passenger,northbound,4,ACTON BRIDGE,,977
+2018-01-11,1F48,1,passenger,northbound,5,WEAVER JN,L,981
+2018-01-11,1F49,1,passenger,northbound,0,CREWE,,996
+2018-01-11,1F49,1,passenger,northbound,1,WINSFORD,F,999
+2018-01-11,1F49,1,passenger,northbound,2,HARTFORD,,1002
+2018-01-11,1F49,1,passenger,northbound,3,HARTFORD JN,S,1000
+2018-01-11,1F49,1,passenger,northbound,4,ACTON BRIDGE,,1003
+2018-01-11,1F49,1,passenger,northbound,5,WEAVER JN,L,1005
+2018-01-11,1F50,1,passenger,northbound,0,CREWE,,1020
+2018-01-11,1F50,1,passenger,northbound,1,WINSFORD,F,1023
+2018-01-11,1F50,1,passenger,northbound,2,HARTFORD,,1029
+2018-01-11,1F50,1,passenger,northbound,3,HARTFORD JN,S,1028
+2018-01-11,1F50,1,passenger,northbound,4,ACTON BRIDGE,,1033
+2018-01-11,1F50,1,passenger,northbound,5,WEAVER JN,L,1037
+2018-01-11,1F51,1,passenger,northbound,0,CREWE,,1054
+2018-01-11,1F51,1,passenger,northbound,1,WINSFORD,F,1057
+2018-01-11,1F51,1,passenger,northbound,2,HARTFORD,,1060
+2018-01-11,1F51,1,passenger,northbound,3,HARTFORD JN,S,1059
+2018-01-11,1F51,1,passenger,northbound,4,ACTON BRIDGE,,1064
+2018-01-11,1F51,1,passenger,northbound,5,WEAVER JN,L,1066
+2018-01-11,1F52,1,passenger,northbound,0,CREWE,,1110
+2018-01-11,1F52,1,passenger,northbound,1,WINSFORD,S,1114
+2018-01-11,1F52,1,passenger,northbound,2,HARTFORD,,1123
+2018-01-11,1F52,1,passenger,northbound,3,HARTFORD JN,S,1122
+2018-01-11,1F52,1,passenger,northbound,4,ACTON BRIDGE,,1128
+2018-01-11,1F52,1,passenger,northbound,5,WEAVER JN,L,1132
+2018-01-11,1F53,1,passenger,northbound,0,CREWE,,1115
+2018-01-11,1F53,1,passenger,northbound,1,WINSFORD,S,1119
+2018-01-11,1F53,1,passenger,northbound,2,HARTFORD,,1125
+2018-01-11,1F53,1,passenger,northbound,3,HARTFORD JN,S,1124
+2018-01-11,1F53,1,passenger,northbound,4,ACTON BRIDGE,,1131
+2018-01-11,1F53,1,passenger,northbound,5,WEAVER JN,L,1135
+2018-01-11,1F54,1,passenger,northbound,0,CREWE,,1141
+2018-01-11,1F54,1,passenger,northbound,1,WINSFORD,S,1145
+2018-01-11,1F54,1,passenger,northbound,2,HARTFORD,,1150
+2018-01-11,1F54,1,passenger,northbound,3,HARTFORD JN,S,1148
+2018-01-11,1F54,1,passenger,northbound,4,ACTON BRIDGE,,1154
+2018-01-11,1F54,1,passenger,northbound,5,WEAVER JN,L,1155
+2018-01-11,1F55,1,passenger,northbound,0,CREWE,,1175
+2018-01-11,1F55,1,passenger,northbound,1,WINSFORD,S,1179
+2018-01-11,1F55,1,passenger,northbound,2,HARTFORD,,1184
+2018-01-11,1F55,1,passenger,northbound,3,HARTFORD JN,S,1183
+2018-01-11,1F55,1,passenger,northbound,4,ACTON BRIDGE,,1188
+2018-01-11,1F55,1,passenger,northbound,5,WEAVER JN,L,1189
+2018-01-11,1F57,1,passenger,northbound,0,CREWE,,1239
+2018-01-11,1F57,1,passenger,northbound,1,WINSFORD,S,1244
+2018-01-11,1F57,1,passenger,northbound,2,HARTFORD,,1250
+2018-01-11,1F57,1,passenger,northbound,3,HARTFORD JN,S,1248
+2018-01-11,1F57,1,passenger,northbound,4,ACTON BRIDGE,,1254
+2018-01-11,1F57,1,passenger,northbound,5,WEAVER JN,L,1255
+2018-01-11,1F59,1,passenger,northbound,0,CREWE,,1294
+2018-01-11,1F59,1,passenger,northbound,1,WINSFORD,F,1297
+2018-01-11,1F59,1,passenger,northbound,2,HARTFORD,,1304
+2018-01-11,1F59,1,passenger,northbound,3,HARTFORD JN,S,1303
+2018-01-11,1F59,1,passenger,northbound,4,ACTON BRIDGE,,1308
+2018-01-11,1F59,1,passenger,northbound,5,WEAVER JN,L,1310
+2018-01-11,1F61,1,passenger,northbound,9,EARLESTOWN,,473
+2018-01-11,1F61,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,471
+2018-01-11,1F61,1,passenger,northbound,11,PARKSIDE JN,C,469
+2018-01-11,1F61,2,passenger,northbound,0,CREWE,,1358
+2018-01-11,1F61,2,passenger,northbound,1,WINSFORD,F,1361
+2018-01-11,1F61,2,passenger,northbound,2,HARTFORD,,1367
+2018-01-11,1F61,2,passenger,northbound,3,HARTFORD JN,S,1365
+2018-01-11,1F61,2,passenger,northbound,4,ACTON BRIDGE,,1370
+2018-01-11,1F61,2,passenger,northbound,5,WEAVER JN,L,1374
+2018-01-11,1F62,1,passenger,northbound,9,EARLESTOWN,,532
+2018-01-11,1F62,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,530
+2018-01-11,1F62,1,passenger,northbound,11,PARKSIDE JN,C,529
+2018-01-11,1F63,1,passenger,northbound,9,EARLESTOWN,,592
+2018-01-11,1F63,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,590
+2018-01-11,1F63,1,passenger,northbound,11,PARKSIDE JN,C,589
+2018-01-11,1F64,1,passenger,northbound,9,EARLESTOWN,,651
+2018-01-11,1F64,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,649
+2018-01-11,1F64,1,passenger,northbound,11,PARKSIDE JN,C,648
+2018-01-11,1F65,1,passenger,northbound,9,EARLESTOWN,,753
+2018-01-11,1F65,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,750
+2018-01-11,1F65,1,passenger,northbound,11,PARKSIDE JN,C,749
+2018-01-11,1F66,1,passenger,northbound,9,EARLESTOWN,,774
+2018-01-11,1F66,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,772
+2018-01-11,1F66,1,passenger,northbound,11,PARKSIDE JN,C,771
+2018-01-11,1F67,1,passenger,northbound,9,EARLESTOWN,,831
+2018-01-11,1F67,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,829
+2018-01-11,1F67,1,passenger,northbound,11,PARKSIDE JN,C,828
+2018-01-11,1F68,1,passenger,northbound,11,PARKSIDE JN,C,889
+2018-01-11,1F69,1,passenger,northbound,9,EARLESTOWN,,952
+2018-01-11,1F69,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,950
+2018-01-11,1F69,1,passenger,northbound,11,PARKSIDE JN,C,949
+2018-01-11,1F70,1,passenger,northbound,9,EARLESTOWN,,1016
+2018-01-11,1F70,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1014
+2018-01-11,1F70,1,passenger,northbound,11,PARKSIDE JN,C,1013
+2018-01-11,1F71,1,passenger,northbound,9,EARLESTOWN,,1074
+2018-01-11,1F71,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1072
+2018-01-11,1F71,1,passenger,northbound,11,PARKSIDE JN,C,1071
+2018-01-11,1F72,1,passenger,northbound,9,EARLESTOWN,,1144
+2018-01-11,1F72,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1138
+2018-01-11,1F72,1,passenger,northbound,11,PARKSIDE JN,C,1137
+2018-01-11,1F73,1,passenger,northbound,9,EARLESTOWN,,1196
+2018-01-11,1F73,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1195
+2018-01-11,1F73,1,passenger,northbound,11,PARKSIDE JN,C,1193
+2018-01-11,1F74,1,passenger,northbound,9,EARLESTOWN,,1282
+2018-01-11,1F74,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1278
+2018-01-11,1F74,1,passenger,northbound,11,PARKSIDE JN,C,1276
+2018-01-11,1F90,1,passenger,northbound,9,EARLESTOWN,,309
+2018-01-11,1F90,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,307
+2018-01-11,1F90,1,passenger,northbound,11,PARKSIDE JN,C,305
+2018-01-11,1F90,2,passenger,northbound,9,EARLESTOWN,,986
+2018-01-11,1F90,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,982
+2018-01-11,1F90,2,passenger,northbound,11,PARKSIDE JN,C,979
+2018-01-11,1F91,1,passenger,northbound,9,EARLESTOWN,,439
+2018-01-11,1F91,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,435
+2018-01-11,1F91,1,passenger,northbound,11,PARKSIDE JN,C,432
+2018-01-11,1F91,2,passenger,northbound,9,EARLESTOWN,,1042
+2018-01-11,1F91,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1037
+2018-01-11,1F91,2,passenger,northbound,11,PARKSIDE JN,C,1032
+2018-01-11,1F92,1,passenger,northbound,9,EARLESTOWN,,498
+2018-01-11,1F92,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,494
+2018-01-11,1F92,1,passenger,northbound,11,PARKSIDE JN,C,492
+2018-01-11,1F92,2,passenger,northbound,9,EARLESTOWN,,1103
+2018-01-11,1F92,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1098
+2018-01-11,1F92,2,passenger,northbound,11,PARKSIDE JN,C,1095
+2018-01-11,1F93,1,passenger,northbound,9,EARLESTOWN,,559
+2018-01-11,1F93,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,555
+2018-01-11,1F93,1,passenger,northbound,11,PARKSIDE JN,C,552
+2018-01-11,1F93,2,passenger,northbound,9,EARLESTOWN,,1159
+2018-01-11,1F93,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1155
+2018-01-11,1F93,2,passenger,northbound,11,PARKSIDE JN,C,1153
+2018-01-11,1F94,1,passenger,northbound,9,EARLESTOWN,,620
+2018-01-11,1F94,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,616
+2018-01-11,1F94,1,passenger,northbound,11,PARKSIDE JN,C,613
+2018-01-11,1F94,2,passenger,northbound,9,EARLESTOWN,,1231
+2018-01-11,1F94,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1225
+2018-01-11,1F94,2,passenger,northbound,11,PARKSIDE JN,C,1223
+2018-01-11,1F95,1,passenger,northbound,9,EARLESTOWN,,682
+2018-01-11,1F95,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,678
+2018-01-11,1F95,1,passenger,northbound,11,PARKSIDE JN,C,674
+2018-01-11,1F95,2,passenger,northbound,9,EARLESTOWN,,1338
+2018-01-11,1F95,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1334
+2018-01-11,1F95,2,passenger,northbound,11,PARKSIDE JN,C,1332
+2018-01-11,1F96,1,passenger,northbound,9,EARLESTOWN,,739
+2018-01-11,1F96,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,735
+2018-01-11,1F96,1,passenger,northbound,11,PARKSIDE JN,C,733
+2018-01-11,1F97,1,passenger,northbound,9,EARLESTOWN,,800
+2018-01-11,1F97,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,796
+2018-01-11,1F97,1,passenger,northbound,11,PARKSIDE JN,C,793
+2018-01-11,1F98,1,passenger,northbound,9,EARLESTOWN,,858
+2018-01-11,1F98,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,854
+2018-01-11,1F98,1,passenger,northbound,11,PARKSIDE JN,C,852
+2018-01-11,1F99,1,passenger,northbound,9,EARLESTOWN,,922
+2018-01-11,1F99,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,917
+2018-01-11,1F99,1,passenger,northbound,11,PARKSIDE JN,C,916
+2018-01-11,1H40,1,passenger,northbound,9,EARLESTOWN,,233
+2018-01-11,1H40,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,235
+2018-01-11,1H40,1,passenger,northbound,11,PARKSIDE JN,M,235
+2018-01-11,1H40,2,passenger,northbound,9,EARLESTOWN,,874
+2018-01-11,1H40,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,875
+2018-01-11,1H40,2,passenger,northbound,11,PARKSIDE JN,M,876
+2018-01-11,1H41,1,passenger,northbound,9,EARLESTOWN,,339
+2018-01-11,1H41,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,340
+2018-01-11,1H41,1,passenger,northbound,11,PARKSIDE JN,M,341
+2018-01-11,1H41,2,passenger,northbound,9,EARLESTOWN,,932
+2018-01-11,1H41,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,935
+2018-01-11,1H41,2,passenger,northbound,11,PARKSIDE JN,M,935
+2018-01-11,1H42,1,passenger,northbound,9,EARLESTOWN,,393
+2018-01-11,1H42,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,395
+2018-01-11,1H42,1,passenger,northbound,11,PARKSIDE JN,M,395
+2018-01-11,1H42,2,passenger,northbound,9,EARLESTOWN,,994
+2018-01-11,1H42,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,995
+2018-01-11,1H42,2,passenger,northbound,11,PARKSIDE JN,M,995
+2018-01-11,1H43,1,passenger,northbound,9,EARLESTOWN,,457
+2018-01-11,1H43,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,458
+2018-01-11,1H43,1,passenger,northbound,11,PARKSIDE JN,M,459
+2018-01-11,1H43,2,passenger,northbound,9,EARLESTOWN,,1060
+2018-01-11,1H43,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1062
+2018-01-11,1H43,2,passenger,northbound,11,PARKSIDE JN,M,1062
+2018-01-11,1H44,1,passenger,northbound,9,EARLESTOWN,,513
+2018-01-11,1H44,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,515
+2018-01-11,1H44,1,passenger,northbound,11,PARKSIDE JN,M,516
+2018-01-11,1H44,2,passenger,northbound,9,EARLESTOWN,,1127
+2018-01-11,1H44,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1128
+2018-01-11,1H44,2,passenger,northbound,11,PARKSIDE JN,M,1129
+2018-01-11,1H45,1,passenger,northbound,9,EARLESTOWN,,575
+2018-01-11,1H45,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,576
+2018-01-11,1H45,1,passenger,northbound,11,PARKSIDE JN,M,577
+2018-01-11,1H45,2,passenger,northbound,9,EARLESTOWN,,1233
+2018-01-11,1H45,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1235
+2018-01-11,1H45,2,passenger,northbound,11,PARKSIDE JN,M,1235
+2018-01-11,1H46,1,passenger,northbound,9,EARLESTOWN,,632
+2018-01-11,1H46,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,634
+2018-01-11,1H46,1,passenger,northbound,11,PARKSIDE JN,M,634
+2018-01-11,1H47,1,passenger,northbound,9,EARLESTOWN,,692
+2018-01-11,1H47,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,693
+2018-01-11,1H47,1,passenger,northbound,11,PARKSIDE JN,M,694
+2018-01-11,1H48,1,passenger,northbound,9,EARLESTOWN,,752
+2018-01-11,1H48,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,754
+2018-01-11,1H48,1,passenger,northbound,11,PARKSIDE JN,M,754
+2018-01-11,1H49,1,passenger,northbound,9,EARLESTOWN,,815
+2018-01-11,1H49,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,816
+2018-01-11,1H49,1,passenger,northbound,11,PARKSIDE JN,M,817
+2018-01-11,1H79,1,passenger,northbound,6,ACTON GRANGE JN,H,359
+2018-01-11,1H79,1,passenger,northbound,7,WARRINGTON BQ,,362
+2018-01-11,1H79,1,passenger,northbound,8,WINWICK JN,M,369
+2018-01-11,1H79,1,passenger,northbound,9,EARLESTOWN,,371
+2018-01-11,1H79,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,374
+2018-01-11,1H79,1,passenger,northbound,11,PARKSIDE JN,M,375
+2018-01-11,1H80,1,passenger,northbound,6,ACTON GRANGE JN,H,422
+2018-01-11,1H80,1,passenger,northbound,7,WARRINGTON BQ,,425
+2018-01-11,1H80,1,passenger,northbound,8,WINWICK JN,M,432
+2018-01-11,1H80,1,passenger,northbound,9,EARLESTOWN,,434
+2018-01-11,1H80,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,437
+2018-01-11,1H80,1,passenger,northbound,11,PARKSIDE JN,M,438
+2018-01-11,1H81,1,passenger,northbound,6,ACTON GRANGE JN,H,455
+2018-01-11,1H81,1,passenger,northbound,7,WARRINGTON BQ,,457
+2018-01-11,1H81,1,passenger,northbound,8,WINWICK JN,M,464
+2018-01-11,1H81,1,passenger,northbound,9,EARLESTOWN,,466
+2018-01-11,1H81,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,469
+2018-01-11,1H81,1,passenger,northbound,11,PARKSIDE JN,M,470
+2018-01-11,1H82,1,passenger,northbound,6,ACTON GRANGE JN,H,485
+2018-01-11,1H82,1,passenger,northbound,7,WARRINGTON BQ,,487
+2018-01-11,1H82,1,passenger,northbound,8,WINWICK JN,M,495
+2018-01-11,1H82,1,passenger,northbound,9,EARLESTOWN,,497
+2018-01-11,1H82,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,505
+2018-01-11,1H82,1,passenger,northbound,11,PARKSIDE JN,M,508
+2018-01-11,1H83,1,passenger,northbound,6,ACTON GRANGE JN,H,553
+2018-01-11,1H83,1,passenger,northbound,7,WARRINGTON BQ,,559
+2018-01-11,1H83,1,passenger,northbound,8,WINWICK JN,M,566
+2018-01-11,1H83,1,passenger,northbound,9,EARLESTOWN,,568
+2018-01-11,1H83,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,572
+2018-01-11,1H83,1,passenger,northbound,11,PARKSIDE JN,M,573
+2018-01-11,1H84,1,passenger,northbound,6,ACTON GRANGE JN,H,614
+2018-01-11,1H84,1,passenger,northbound,7,WARRINGTON BQ,,616
+2018-01-11,1H84,1,passenger,northbound,8,WINWICK JN,M,623
+2018-01-11,1H84,1,passenger,northbound,9,EARLESTOWN,,626
+2018-01-11,1H84,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,629
+2018-01-11,1H84,1,passenger,northbound,11,PARKSIDE JN,M,630
+2018-01-11,1H85,1,passenger,northbound,6,ACTON GRANGE JN,H,673
+2018-01-11,1H85,1,passenger,northbound,7,WARRINGTON BQ,,675
+2018-01-11,1H85,1,passenger,northbound,8,WINWICK JN,M,682
+2018-01-11,1H85,1,passenger,northbound,9,EARLESTOWN,,684
+2018-01-11,1H85,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,689
+2018-01-11,1H85,1,passenger,northbound,11,PARKSIDE JN,M,690
+2018-01-11,1H86,1,passenger,northbound,6,ACTON GRANGE JN,H,732
+2018-01-11,1H86,1,passenger,northbound,7,WARRINGTON BQ,,735
+2018-01-11,1H86,1,passenger,northbound,8,WINWICK JN,M,743
+2018-01-11,1H86,1,passenger,northbound,9,EARLESTOWN,,745
+2018-01-11,1H86,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,749
+2018-01-11,1H86,1,passenger,northbound,11,PARKSIDE JN,M,750
+2018-01-11,1H87,1,passenger,northbound,6,ACTON GRANGE JN,H,794
+2018-01-11,1H87,1,passenger,northbound,7,WARRINGTON BQ,,796
+2018-01-11,1H87,1,passenger,northbound,8,WINWICK JN,M,803
+2018-01-11,1H87,1,passenger,northbound,9,EARLESTOWN,,805
+2018-01-11,1H87,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,809
+2018-01-11,1H87,1,passenger,northbound,11,PARKSIDE JN,M,810
+2018-01-11,1H88,1,passenger,northbound,6,ACTON GRANGE JN,H,852
+2018-01-11,1H88,1,passenger,northbound,7,WARRINGTON BQ,,855
+2018-01-11,1H88,1,passenger,northbound,8,WINWICK JN,M,863
+2018-01-11,1H88,1,passenger,northbound,9,EARLESTOWN,,868
+2018-01-11,1H88,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,871
+2018-01-11,1H88,1,passenger,northbound,11,PARKSIDE JN,M,871
+2018-01-11,1H89,1,passenger,northbound,6,ACTON GRANGE JN,H,916
+2018-01-11,1H89,1,passenger,northbound,7,WARRINGTON BQ,,918
+2018-01-11,1H89,1,passenger,northbound,8,WINWICK JN,M,925
+2018-01-11,1H89,1,passenger,northbound,9,EARLESTOWN,,928
+2018-01-11,1H89,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,932
+2018-01-11,1H89,1,passenger,northbound,11,PARKSIDE JN,M,933
+2018-01-11,1H90,1,passenger,northbound,6,ACTON GRANGE JN,H,970
+2018-01-11,1H90,1,passenger,northbound,7,WARRINGTON BQ,,973
+2018-01-11,1H90,1,passenger,northbound,8,WINWICK JN,M,983
+2018-01-11,1H90,1,passenger,northbound,9,EARLESTOWN,,985
+2018-01-11,1H90,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,990
+2018-01-11,1H90,1,passenger,northbound,11,PARKSIDE JN,M,991
+2018-01-11,1H91,1,passenger,northbound,6,ACTON GRANGE JN,H,1005
+2018-01-11,1H91,1,passenger,northbound,7,WARRINGTON BQ,,1007
+2018-01-11,1H91,1,passenger,northbound,8,WINWICK JN,M,1014
+2018-01-11,1H91,1,passenger,northbound,9,EARLESTOWN,,1016
+2018-01-11,1H91,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1019
+2018-01-11,1H91,1,passenger,northbound,11,PARKSIDE JN,M,1020
+2018-01-11,1H92,1,passenger,northbound,6,ACTON GRANGE JN,H,1063
+2018-01-11,1H92,1,passenger,northbound,7,WARRINGTON BQ,,1066
+2018-01-11,1H92,1,passenger,northbound,8,WINWICK JN,M,1073
+2018-01-11,1H92,1,passenger,northbound,9,EARLESTOWN,,1076
+2018-01-11,1H92,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1081
+2018-01-11,1H92,1,passenger,northbound,11,PARKSIDE JN,M,1082
+2018-01-11,1H93,1,passenger,northbound,6,ACTON GRANGE JN,H,1118
+2018-01-11,1H93,1,passenger,northbound,7,WARRINGTON BQ,,1122
+2018-01-11,1H93,1,passenger,northbound,8,WINWICK JN,M,1129
+2018-01-11,1H93,1,passenger,northbound,9,EARLESTOWN,,1131
+2018-01-11,1H93,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1137
+2018-01-11,1H93,1,passenger,northbound,11,PARKSIDE JN,M,1138
+2018-01-11,1H94,1,passenger,northbound,6,ACTON GRANGE JN,H,1152
+2018-01-11,1H94,1,passenger,northbound,7,WARRINGTON BQ,,1155
+2018-01-11,1H94,1,passenger,northbound,8,WINWICK JN,M,1162
+2018-01-11,1H94,1,passenger,northbound,9,EARLESTOWN,,1164
+2018-01-11,1H94,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1171
+2018-01-11,1H94,1,passenger,northbound,11,PARKSIDE JN,M,1172
+2018-01-11,1H95,1,passenger,northbound,6,ACTON GRANGE JN,H,1213
+2018-01-11,1H95,1,passenger,northbound,7,WARRINGTON BQ,,1216
+2018-01-11,1H95,1,passenger,northbound,8,WINWICK JN,M,1223
+2018-01-11,1H95,1,passenger,northbound,9,EARLESTOWN,,1226
+2018-01-11,1H95,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1229
+2018-01-11,1H95,1,passenger,northbound,11,PARKSIDE JN,M,1230
+2018-01-11,1H96,1,passenger,northbound,6,ACTON GRANGE JN,H,1272
+2018-01-11,1H96,1,passenger,northbound,7,WARRINGTON BQ,,1277
+2018-01-11,1H96,1,passenger,northbound,8,WINWICK JN,M,1283
+2018-01-11,1H96,1,passenger,northbound,9,EARLESTOWN,,1285
+2018-01-11,1H96,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1288
+2018-01-11,1H96,1,passenger,northbound,11,PARKSIDE JN,M,1289
+2018-01-11,1H97,1,passenger,northbound,6,ACTON GRANGE JN,H,1332
+2018-01-11,1H97,1,passenger,northbound,7,WARRINGTON BQ,,1334
+2018-01-11,1H97,1,passenger,northbound,8,WINWICK JN,M,1341
+2018-01-11,1H97,1,passenger,northbound,9,EARLESTOWN,,1343
+2018-01-11,1H97,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1346
+2018-01-11,1H97,1,passenger,northbound,11,PARKSIDE JN,M,1347
+2018-01-11,1H98,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,0
+2018-01-11,1H98,1,passenger,northbound,11,PARKSIDE JN,M,0
+2018-01-11,1H98,2,passenger,northbound,11,PARKSIDE JN,M,2
+2018-01-11,1H98,3,passenger,northbound,6,ACTON GRANGE JN,H,1424
+2018-01-11,1H98,3,passenger,northbound,7,WARRINGTON BQ,,1426
+2018-01-11,1H98,3,passenger,northbound,8,WINWICK JN,M,1434
+2018-01-11,1H98,3,passenger,northbound,9,EARLESTOWN,,1436
+2018-01-11,1K14,1,passenger,southbound,0,CREWE,G,398
+2018-01-11,1K14,1,passenger,southbound,1,WINSFORD,F,394
+2018-01-11,1K14,1,passenger,southbound,2,HARTFORD,,392
+2018-01-11,1K14,1,passenger,southbound,3,HARTFORD JN,,391
+2018-01-11,1K14,1,passenger,southbound,4,ACTON BRIDGE,,390
+2018-01-11,1K14,1,passenger,southbound,5,WEAVER JN,M,389
+2018-01-11,1K14,1,passenger,southbound,6,ACTON GRANGE JN,,385
+2018-01-11,1K14,1,passenger,southbound,7,WARRINGTON BQ,F,382
+2018-01-11,1K14,1,passenger,southbound,8,WINWICK JN,S,379
+2018-01-11,1L65,1,passenger,northbound,0,CREWE,G,432
+2018-01-11,1L65,1,passenger,northbound,1,WINSFORD,F,424
+2018-01-11,1L65,1,passenger,northbound,2,HARTFORD,,419
+2018-01-11,1L65,1,passenger,northbound,3,HARTFORD JN,,418
+2018-01-11,1L65,1,passenger,northbound,4,ACTON BRIDGE,,414
+2018-01-11,1L65,1,passenger,northbound,5,WEAVER JN,M,413
+2018-01-11,1L66,1,passenger,northbound,0,CREWE,G,463
+2018-01-11,1L66,1,passenger,northbound,1,WINSFORD,F,459
+2018-01-11,1L66,1,passenger,northbound,2,HARTFORD,,454
+2018-01-11,1L66,1,passenger,northbound,3,HARTFORD JN,,453
+2018-01-11,1L66,1,passenger,northbound,4,ACTON BRIDGE,,449
+2018-01-11,1L66,1,passenger,northbound,5,WEAVER JN,M,447
+2018-01-11,1L67,1,passenger,northbound,0,CREWE,G,494
+2018-01-11,1L67,1,passenger,northbound,1,WINSFORD,F,486
+2018-01-11,1L67,1,passenger,northbound,2,HARTFORD,,482
+2018-01-11,1L67,1,passenger,northbound,3,HARTFORD JN,,481
+2018-01-11,1L67,1,passenger,northbound,4,ACTON BRIDGE,,479
+2018-01-11,1L67,1,passenger,northbound,5,WEAVER JN,M,478
+2018-01-11,1L68,1,passenger,northbound,0,CREWE,G,523
+2018-01-11,1L68,1,passenger,northbound,1,WINSFORD,F,520
+2018-01-11,1L68,1,passenger,northbound,2,HARTFORD,,517
+2018-01-11,1L68,1,passenger,northbound,3,HARTFORD JN,,517
+2018-01-11,1L68,1,passenger,northbound,4,ACTON BRIDGE,,512
+2018-01-11,1L68,1,passenger,northbound,5,WEAVER JN,M,507
+2018-01-11,1L69,1,passenger,northbound,0,CREWE,G,555
+2018-01-11,1L69,1,passenger,northbound,1,WINSFORD,F,548
+2018-01-11,1L69,1,passenger,northbound,2,HARTFORD,,543
+2018-01-11,1L69,1,passenger,northbound,3,HARTFORD JN,,543
+2018-01-11,1L69,1,passenger,northbound,4,ACTON BRIDGE,,539
+2018-01-11,1L69,1,passenger,northbound,5,WEAVER JN,M,537
+2018-01-11,1L70,1,passenger,northbound,0,CREWE,G,582
+2018-01-11,1L70,1,passenger,northbound,1,WINSFORD,F,579
+2018-01-11,1L70,1,passenger,northbound,2,HARTFORD,,575
+2018-01-11,1L70,1,passenger,northbound,3,HARTFORD JN,,574
+2018-01-11,1L70,1,passenger,northbound,4,ACTON BRIDGE,,571
+2018-01-11,1L70,1,passenger,northbound,5,WEAVER JN,M,569
+2018-01-11,1L71,1,passenger,northbound,0,CREWE,G,612
+2018-01-11,1L71,1,passenger,northbound,1,WINSFORD,F,605
+2018-01-11,1L71,1,passenger,northbound,2,HARTFORD,,600
+2018-01-11,1L71,1,passenger,northbound,3,HARTFORD JN,,599
+2018-01-11,1L71,1,passenger,northbound,4,ACTON BRIDGE,,597
+2018-01-11,1L71,1,passenger,northbound,5,WEAVER JN,M,596
+2018-01-11,1L72,1,passenger,northbound,0,CREWE,G,643
+2018-01-11,1L72,1,passenger,northbound,1,WINSFORD,F,639
+2018-01-11,1L72,1,passenger,northbound,2,HARTFORD,,635
+2018-01-11,1L72,1,passenger,northbound,3,HARTFORD JN,,634
+2018-01-11,1L72,1,passenger,northbound,4,ACTON BRIDGE,,632
+2018-01-11,1L72,1,passenger,northbound,5,WEAVER JN,M,629
+2018-01-11,1L73,1,passenger,northbound,0,CREWE,G,675
+2018-01-11,1L73,1,passenger,northbound,1,WINSFORD,F,668
+2018-01-11,1L73,1,passenger,northbound,2,HARTFORD,,663
+2018-01-11,1L73,1,passenger,northbound,3,HARTFORD JN,,662
+2018-01-11,1L73,1,passenger,northbound,4,ACTON BRIDGE,,661
+2018-01-11,1L73,1,passenger,northbound,5,WEAVER JN,M,660
+2018-01-11,1L74,1,passenger,northbound,0,CREWE,G,702
+2018-01-11,1L74,1,passenger,northbound,1,WINSFORD,F,699
+2018-01-11,1L74,1,passenger,northbound,2,HARTFORD,,694
+2018-01-11,1L74,1,passenger,northbound,3,HARTFORD JN,,693
+2018-01-11,1L74,1,passenger,northbound,4,ACTON BRIDGE,,691
+2018-01-11,1L74,1,passenger,northbound,5,WEAVER JN,M,689
+2018-01-11,1L75,1,passenger,northbound,0,CREWE,G,739
+2018-01-11,1L75,1,passenger,northbound,1,WINSFORD,F,732
+2018-01-11,1L75,1,passenger,northbound,2,HARTFORD,,728
+2018-01-11,1L75,1,passenger,northbound,3,HARTFORD JN,,727
+2018-01-11,1L75,1,passenger,northbound,4,ACTON BRIDGE,,725
+2018-01-11,1L75,1,passenger,northbound,5,WEAVER JN,M,724
+2018-01-11,1L76,1,passenger,northbound,0,CREWE,G,763
+2018-01-11,1L76,1,passenger,northbound,1,WINSFORD,F,758
+2018-01-11,1L76,1,passenger,northbound,2,HARTFORD,,753
+2018-01-11,1L76,1,passenger,northbound,3,HARTFORD JN,,752
+2018-01-11,1L76,1,passenger,northbound,4,ACTON BRIDGE,,750
+2018-01-11,1L76,1,passenger,northbound,5,WEAVER JN,M,749
+2018-01-11,1L77,1,passenger,northbound,0,CREWE,G,796
+2018-01-11,1L77,1,passenger,northbound,1,WINSFORD,F,790
+2018-01-11,1L77,1,passenger,northbound,2,HARTFORD,,785
+2018-01-11,1L77,1,passenger,northbound,3,HARTFORD JN,,784
+2018-01-11,1L77,1,passenger,northbound,4,ACTON BRIDGE,,780
+2018-01-11,1L77,1,passenger,northbound,5,WEAVER JN,M,779
+2018-01-11,1L78,1,passenger,northbound,0,CREWE,G,822
+2018-01-11,1L78,1,passenger,northbound,1,WINSFORD,F,818
+2018-01-11,1L78,1,passenger,northbound,2,HARTFORD,,813
+2018-01-11,1L78,1,passenger,northbound,3,HARTFORD JN,,812
+2018-01-11,1L78,1,passenger,northbound,4,ACTON BRIDGE,,810
+2018-01-11,1L78,1,passenger,northbound,5,WEAVER JN,M,809
+2018-01-11,1L79,1,passenger,northbound,0,CREWE,G,851
+2018-01-11,1L79,1,passenger,northbound,1,WINSFORD,F,845
+2018-01-11,1L79,1,passenger,northbound,2,HARTFORD,,840
+2018-01-11,1L79,1,passenger,northbound,3,HARTFORD JN,,840
+2018-01-11,1L79,1,passenger,northbound,4,ACTON BRIDGE,,838
+2018-01-11,1L79,1,passenger,northbound,5,WEAVER JN,M,837
+2018-01-11,1L80,1,passenger,northbound,0,CREWE,G,881
+2018-01-11,1L80,1,passenger,northbound,1,WINSFORD,F,877
+2018-01-11,1L80,1,passenger,northbound,2,HARTFORD,,873
+2018-01-11,1L80,1,passenger,northbound,3,HARTFORD JN,,873
+2018-01-11,1L80,1,passenger,northbound,4,ACTON BRIDGE,,870
+2018-01-11,1L80,1,passenger,northbound,5,WEAVER JN,M,869
+2018-01-11,1L81,1,passenger,northbound,0,CREWE,G,911
+2018-01-11,1L81,1,passenger,northbound,1,WINSFORD,F,905
+2018-01-11,1L81,1,passenger,northbound,2,HARTFORD,,900
+2018-01-11,1L81,1,passenger,northbound,3,HARTFORD JN,,899
+2018-01-11,1L81,1,passenger,northbound,4,ACTON BRIDGE,,898
+2018-01-11,1L81,1,passenger,northbound,5,WEAVER JN,M,897
+2018-01-11,1L82,1,passenger,northbound,0,CREWE,G,968
+2018-01-11,1L82,1,passenger,northbound,1,WINSFORD,F,964
+2018-01-11,1L82,1,passenger,northbound,2,HARTFORD,,960
+2018-01-11,1L82,1,passenger,northbound,3,HARTFORD JN,,959
+2018-01-11,1L82,1,passenger,northbound,4,ACTON BRIDGE,,957
+2018-01-11,1L82,1,passenger,northbound,5,WEAVER JN,M,956
+2018-01-11,1L83,1,passenger,northbound,0,CREWE,G,975
+2018-01-11,1L83,1,passenger,northbound,1,WINSFORD,F,969
+2018-01-11,1L83,1,passenger,northbound,2,HARTFORD,,964
+2018-01-11,1L83,1,passenger,northbound,3,HARTFORD JN,,963
+2018-01-11,1L83,1,passenger,northbound,4,ACTON BRIDGE,,961
+2018-01-11,1L83,1,passenger,northbound,5,WEAVER JN,M,960
+2018-01-11,1L84,1,passenger,northbound,0,CREWE,G,1005
+2018-01-11,1L84,1,passenger,northbound,1,WINSFORD,F,1001
+2018-01-11,1L84,1,passenger,northbound,2,HARTFORD,,996
+2018-01-11,1L84,1,passenger,northbound,3,HARTFORD JN,,996
+2018-01-11,1L84,1,passenger,northbound,4,ACTON BRIDGE,,994
+2018-01-11,1L84,1,passenger,northbound,5,WEAVER JN,M,989
+2018-01-11,1L85,1,passenger,northbound,0,CREWE,G,1039
+2018-01-11,1L85,1,passenger,northbound,1,WINSFORD,F,1029
+2018-01-11,1L85,1,passenger,northbound,2,HARTFORD,,1025
+2018-01-11,1L85,1,passenger,northbound,3,HARTFORD JN,,1024
+2018-01-11,1L85,1,passenger,northbound,4,ACTON BRIDGE,,1020
+2018-01-11,1L85,1,passenger,northbound,5,WEAVER JN,M,1019
+2018-01-11,1L86,1,passenger,northbound,0,CREWE,G,1066
+2018-01-11,1L86,1,passenger,northbound,1,WINSFORD,F,1057
+2018-01-11,1L86,1,passenger,northbound,2,HARTFORD,,1053
+2018-01-11,1L86,1,passenger,northbound,3,HARTFORD JN,,1052
+2018-01-11,1L86,1,passenger,northbound,4,ACTON BRIDGE,,1050
+2018-01-11,1L86,1,passenger,northbound,5,WEAVER JN,M,1049
+2018-01-11,1L87,1,passenger,northbound,0,CREWE,G,1096
+2018-01-11,1L87,1,passenger,northbound,1,WINSFORD,F,1089
+2018-01-11,1L87,1,passenger,northbound,2,HARTFORD,,1084
+2018-01-11,1L87,1,passenger,northbound,3,HARTFORD JN,,1083
+2018-01-11,1L87,1,passenger,northbound,4,ACTON BRIDGE,,1079
+2018-01-11,1L87,1,passenger,northbound,5,WEAVER JN,M,1078
+2018-01-11,1L88,1,passenger,northbound,0,CREWE,G,1130
+2018-01-11,1L88,1,passenger,northbound,1,WINSFORD,F,1123
+2018-01-11,1L88,1,passenger,northbound,2,HARTFORD,,1118
+2018-01-11,1L88,1,passenger,northbound,3,HARTFORD JN,,1117
+2018-01-11,1L88,1,passenger,northbound,4,ACTON BRIDGE,,1115
+2018-01-11,1L88,1,passenger,northbound,5,WEAVER JN,M,1109
+2018-01-11,1L89,1,passenger,northbound,0,CREWE,G,1153
+2018-01-11,1L89,1,passenger,northbound,1,WINSFORD,F,1146
+2018-01-11,1L89,1,passenger,northbound,2,HARTFORD,,1141
+2018-01-11,1L89,1,passenger,northbound,3,HARTFORD JN,,1140
+2018-01-11,1L89,1,passenger,northbound,4,ACTON BRIDGE,,1139
+2018-01-11,1L89,1,passenger,northbound,5,WEAVER JN,M,1138
+2018-01-11,1L90,1,passenger,northbound,0,CREWE,G,1191
+2018-01-11,1L90,1,passenger,northbound,1,WINSFORD,F,1187
+2018-01-11,1L90,1,passenger,northbound,2,HARTFORD,,1185
+2018-01-11,1L90,1,passenger,northbound,3,HARTFORD JN,,1185
+2018-01-11,1L90,1,passenger,northbound,4,ACTON BRIDGE,,1180
+2018-01-11,1L90,1,passenger,northbound,5,WEAVER JN,M,1178
+2018-01-11,1L91,1,passenger,northbound,0,CREWE,G,1213
+2018-01-11,1L91,1,passenger,northbound,1,WINSFORD,F,1206
+2018-01-11,1L91,1,passenger,northbound,2,HARTFORD,,1202
+2018-01-11,1L91,1,passenger,northbound,3,HARTFORD JN,,1201
+2018-01-11,1L91,1,passenger,northbound,4,ACTON BRIDGE,,1197
+2018-01-11,1L91,1,passenger,northbound,5,WEAVER JN,M,1196
+2018-01-11,1L92,1,passenger,northbound,0,CREWE,G,1242
+2018-01-11,1L92,1,passenger,northbound,1,WINSFORD,F,1237
+2018-01-11,1L92,1,passenger,northbound,2,HARTFORD,,1234
+2018-01-11,1L92,1,passenger,northbound,3,HARTFORD JN,,1234
+2018-01-11,1L92,1,passenger,northbound,4,ACTON BRIDGE,,1232
+2018-01-11,1L92,1,passenger,northbound,5,WEAVER JN,M,1229
+2018-01-11,1L93,1,passenger,northbound,0,CREWE,G,1272
+2018-01-11,1L93,1,passenger,northbound,1,WINSFORD,F,1266
+2018-01-11,1L93,1,passenger,northbound,2,HARTFORD,,1260
+2018-01-11,1L93,1,passenger,northbound,3,HARTFORD JN,,1259
+2018-01-11,1L93,1,passenger,northbound,4,ACTON BRIDGE,,1257
+2018-01-11,1L93,1,passenger,northbound,5,WEAVER JN,M,1256
+2018-01-11,1L95,1,passenger,northbound,0,CREWE,G,1339
+2018-01-11,1L95,1,passenger,northbound,1,WINSFORD,F,1330
+2018-01-11,1L95,1,passenger,northbound,2,HARTFORD,,1326
+2018-01-11,1L95,1,passenger,northbound,3,HARTFORD JN,,1325
+2018-01-11,1L95,1,passenger,northbound,4,ACTON BRIDGE,,1322
+2018-01-11,1L95,1,passenger,northbound,5,WEAVER JN,M,1319
+2018-01-11,1M06,1,passenger,southbound,0,CREWE,G,519
+2018-01-11,1M06,1,passenger,southbound,1,WINSFORD,F,515
+2018-01-11,1M06,1,passenger,southbound,2,HARTFORD,,513
+2018-01-11,1M06,1,passenger,southbound,3,HARTFORD JN,,512
+2018-01-11,1M06,1,passenger,southbound,4,ACTON BRIDGE,,511
+2018-01-11,1M06,1,passenger,southbound,5,WEAVER JN,M,509
+2018-01-11,1M06,1,passenger,southbound,6,ACTON GRANGE JN,,506
+2018-01-11,1M06,1,passenger,southbound,7,WARRINGTON BQ,F,502
+2018-01-11,1M06,1,passenger,southbound,8,WINWICK JN,S,499
+2018-01-11,1M07,1,passenger,southbound,0,CREWE,G,577
+2018-01-11,1M07,1,passenger,southbound,1,WINSFORD,F,574
+2018-01-11,1M07,1,passenger,southbound,2,HARTFORD,,572
+2018-01-11,1M07,1,passenger,southbound,3,HARTFORD JN,,571
+2018-01-11,1M07,1,passenger,southbound,4,ACTON BRIDGE,,570
+2018-01-11,1M07,1,passenger,southbound,5,WEAVER JN,M,568
+2018-01-11,1M07,1,passenger,southbound,6,ACTON GRANGE JN,,565
+2018-01-11,1M07,1,passenger,southbound,7,WARRINGTON BQ,F,561
+2018-01-11,1M07,1,passenger,southbound,8,WINWICK JN,S,558
+2018-01-11,1M08,1,passenger,southbound,0,CREWE,G,636
+2018-01-11,1M08,1,passenger,southbound,1,WINSFORD,F,633
+2018-01-11,1M08,1,passenger,southbound,2,HARTFORD,,631
+2018-01-11,1M08,1,passenger,southbound,3,HARTFORD JN,,631
+2018-01-11,1M08,1,passenger,southbound,4,ACTON BRIDGE,,629
+2018-01-11,1M08,1,passenger,southbound,5,WEAVER JN,M,628
+2018-01-11,1M08,1,passenger,southbound,6,ACTON GRANGE JN,,625
+2018-01-11,1M08,1,passenger,southbound,7,WARRINGTON BQ,F,621
+2018-01-11,1M08,1,passenger,southbound,8,WINWICK JN,S,618
+2018-01-11,1M09,1,passenger,southbound,0,CREWE,G,696
+2018-01-11,1M09,1,passenger,southbound,1,WINSFORD,F,693
+2018-01-11,1M09,1,passenger,southbound,2,HARTFORD,,691
+2018-01-11,1M09,1,passenger,southbound,3,HARTFORD JN,,690
+2018-01-11,1M09,1,passenger,southbound,4,ACTON BRIDGE,,689
+2018-01-11,1M09,1,passenger,southbound,5,WEAVER JN,M,688
+2018-01-11,1M09,1,passenger,southbound,6,ACTON GRANGE JN,,685
+2018-01-11,1M09,1,passenger,southbound,7,WARRINGTON BQ,F,680
+2018-01-11,1M09,1,passenger,southbound,8,WINWICK JN,S,677
+2018-01-11,1M10,1,passenger,southbound,0,CREWE,G,768
+2018-01-11,1M10,1,passenger,southbound,1,WINSFORD,F,765
+2018-01-11,1M10,1,passenger,southbound,2,HARTFORD,,763
+2018-01-11,1M10,1,passenger,southbound,3,HARTFORD JN,,762
+2018-01-11,1M10,1,passenger,southbound,4,ACTON BRIDGE,,761
+2018-01-11,1M10,1,passenger,southbound,5,WEAVER JN,M,760
+2018-01-11,1M10,1,passenger,southbound,6,ACTON GRANGE JN,,757
+2018-01-11,1M10,1,passenger,southbound,7,WARRINGTON BQ,F,753
+2018-01-11,1M10,1,passenger,southbound,8,WINWICK JN,S,750
+2018-01-11,1M11,1,passenger,southbound,0,CREWE,G,238
+2018-01-11,1M11,1,passenger,southbound,1,WINSFORD,F,232
+2018-01-11,1M11,1,passenger,southbound,2,HARTFORD,,229
+2018-01-11,1M11,1,passenger,southbound,3,HARTFORD JN,,228
+2018-01-11,1M11,1,passenger,southbound,4,ACTON BRIDGE,,226
+2018-01-11,1M11,1,passenger,southbound,5,WEAVER JN,M,224
+2018-01-11,1M11,1,passenger,southbound,6,ACTON GRANGE JN,,220
+2018-01-11,1M11,1,passenger,southbound,7,WARRINGTON BQ,F,219
+2018-01-11,1M11,1,passenger,southbound,8,WINWICK JN,S,215
+2018-01-11,1M11,2,passenger,southbound,0,CREWE,G,827
+2018-01-11,1M11,2,passenger,southbound,1,WINSFORD,F,824
+2018-01-11,1M11,2,passenger,southbound,2,HARTFORD,,822
+2018-01-11,1M11,2,passenger,southbound,3,HARTFORD JN,,821
+2018-01-11,1M11,2,passenger,southbound,4,ACTON BRIDGE,,820
+2018-01-11,1M11,2,passenger,southbound,5,WEAVER JN,M,819
+2018-01-11,1M11,2,passenger,southbound,6,ACTON GRANGE JN,,816
+2018-01-11,1M11,2,passenger,southbound,7,WARRINGTON BQ,F,812
+2018-01-11,1M11,2,passenger,southbound,8,WINWICK JN,S,809
+2018-01-11,1M12,1,passenger,southbound,0,CREWE,G,930
+2018-01-11,1M12,1,passenger,southbound,1,WINSFORD,F,926
+2018-01-11,1M12,1,passenger,southbound,2,HARTFORD,,924
+2018-01-11,1M12,1,passenger,southbound,3,HARTFORD JN,,924
+2018-01-11,1M12,1,passenger,southbound,4,ACTON BRIDGE,,922
+2018-01-11,1M12,1,passenger,southbound,5,WEAVER JN,M,921
+2018-01-11,1M12,1,passenger,southbound,6,ACTON GRANGE JN,,918
+2018-01-11,1M12,1,passenger,southbound,7,WARRINGTON BQ,F,914
+2018-01-11,1M12,1,passenger,southbound,8,WINWICK JN,S,911
+2018-01-11,1M13,1,passenger,southbound,0,CREWE,G,935
+2018-01-11,1M13,1,passenger,southbound,1,WINSFORD,F,932
+2018-01-11,1M13,1,passenger,southbound,2,HARTFORD,,930
+2018-01-11,1M13,1,passenger,southbound,3,HARTFORD JN,,930
+2018-01-11,1M13,1,passenger,southbound,4,ACTON BRIDGE,,928
+2018-01-11,1M13,1,passenger,southbound,5,WEAVER JN,M,927
+2018-01-11,1M13,1,passenger,southbound,6,ACTON GRANGE JN,,923
+2018-01-11,1M13,1,passenger,southbound,7,WARRINGTON BQ,F,919
+2018-01-11,1M13,1,passenger,southbound,8,WINWICK JN,S,916
+2018-01-11,1M14,1,passenger,southbound,0,CREWE,G,999
+2018-01-11,1M14,1,passenger,southbound,1,WINSFORD,F,995
+2018-01-11,1M14,1,passenger,southbound,2,HARTFORD,,993
+2018-01-11,1M14,1,passenger,southbound,3,HARTFORD JN,,993
+2018-01-11,1M14,1,passenger,southbound,4,ACTON BRIDGE,,991
+2018-01-11,1M14,1,passenger,southbound,5,WEAVER JN,M,990
+2018-01-11,1M14,1,passenger,southbound,6,ACTON GRANGE JN,,987
+2018-01-11,1M14,1,passenger,southbound,7,WARRINGTON BQ,F,983
+2018-01-11,1M14,1,passenger,southbound,8,WINWICK JN,S,980
+2018-01-11,1M15,1,passenger,southbound,0,CREWE,G,1069
+2018-01-11,1M15,1,passenger,southbound,1,WINSFORD,F,1063
+2018-01-11,1M15,1,passenger,southbound,2,HARTFORD,,1061
+2018-01-11,1M15,1,passenger,southbound,3,HARTFORD JN,,1060
+2018-01-11,1M15,1,passenger,southbound,4,ACTON BRIDGE,,1059
+2018-01-11,1M15,1,passenger,southbound,5,WEAVER JN,M,1058
+2018-01-11,1M15,1,passenger,southbound,6,ACTON GRANGE JN,,1055
+2018-01-11,1M15,1,passenger,southbound,7,WARRINGTON BQ,F,1050
+2018-01-11,1M15,1,passenger,southbound,8,WINWICK JN,S,1046
+2018-01-11,1M16,1,passenger,southbound,0,CREWE,G,323
+2018-01-11,1M16,1,passenger,southbound,1,WINSFORD,F,315
+2018-01-11,1M16,1,passenger,southbound,2,HARTFORD,,312
+2018-01-11,1M16,1,passenger,southbound,3,HARTFORD JN,,311
+2018-01-11,1M16,1,passenger,southbound,4,ACTON BRIDGE,,309
+2018-01-11,1M16,1,passenger,southbound,5,WEAVER JN,M,307
+2018-01-11,1M16,1,passenger,southbound,6,ACTON GRANGE JN,,303
+2018-01-11,1M16,1,passenger,southbound,7,WARRINGTON BQ,F,301
+2018-01-11,1M16,1,passenger,southbound,8,WINWICK JN,S,298
+2018-01-11,1M16,2,passenger,southbound,0,CREWE,G,1120
+2018-01-11,1M16,2,passenger,southbound,1,WINSFORD,F,1117
+2018-01-11,1M16,2,passenger,southbound,2,HARTFORD,,1115
+2018-01-11,1M16,2,passenger,southbound,3,HARTFORD JN,,1114
+2018-01-11,1M16,2,passenger,southbound,4,ACTON BRIDGE,,1113
+2018-01-11,1M16,2,passenger,southbound,5,WEAVER JN,M,1112
+2018-01-11,1M16,2,passenger,southbound,6,ACTON GRANGE JN,,1109
+2018-01-11,1M16,2,passenger,southbound,7,WARRINGTON BQ,F,1104
+2018-01-11,1M16,2,passenger,southbound,8,WINWICK JN,S,1101
+2018-01-11,1M17,1,passenger,southbound,0,CREWE,G,1182
+2018-01-11,1M17,1,passenger,southbound,1,WINSFORD,F,1178
+2018-01-11,1M17,1,passenger,southbound,2,HARTFORD,,1176
+2018-01-11,1M17,1,passenger,southbound,3,HARTFORD JN,,1176
+2018-01-11,1M17,1,passenger,southbound,4,ACTON BRIDGE,,1174
+2018-01-11,1M17,1,passenger,southbound,5,WEAVER JN,M,1173
+2018-01-11,1M17,1,passenger,southbound,6,ACTON GRANGE JN,,1170
+2018-01-11,1M17,1,passenger,southbound,7,WARRINGTON BQ,F,1166
+2018-01-11,1M17,1,passenger,southbound,8,WINWICK JN,S,1163
+2018-01-11,1M18,1,passenger,southbound,0,CREWE,G,1239
+2018-01-11,1M18,1,passenger,southbound,1,WINSFORD,F,1234
+2018-01-11,1M18,1,passenger,southbound,2,HARTFORD,,1232
+2018-01-11,1M18,1,passenger,southbound,3,HARTFORD JN,,1231
+2018-01-11,1M18,1,passenger,southbound,4,ACTON BRIDGE,,1230
+2018-01-11,1M18,1,passenger,southbound,5,WEAVER JN,M,1228
+2018-01-11,1M18,1,passenger,southbound,6,ACTON GRANGE JN,,1225
+2018-01-11,1M18,1,passenger,southbound,7,WARRINGTON BQ,F,1221
+2018-01-11,1M18,1,passenger,southbound,8,WINWICK JN,S,1218
+2018-01-11,1M19,1,passenger,southbound,0,CREWE,G,1305
+2018-01-11,1M19,1,passenger,southbound,1,WINSFORD,F,1302
+2018-01-11,1M19,1,passenger,southbound,2,HARTFORD,,1300
+2018-01-11,1M19,1,passenger,southbound,3,HARTFORD JN,,1299
+2018-01-11,1M19,1,passenger,southbound,4,ACTON BRIDGE,,1298
+2018-01-11,1M19,1,passenger,southbound,5,WEAVER JN,M,1297
+2018-01-11,1M19,1,passenger,southbound,6,ACTON GRANGE JN,,1294
+2018-01-11,1M19,1,passenger,southbound,7,WARRINGTON BQ,F,1289
+2018-01-11,1M19,1,passenger,southbound,8,WINWICK JN,S,1286
+2018-01-11,1M87,1,passenger,southbound,0,CREWE,G,44
+2018-01-11,1M87,1,passenger,southbound,1,WINSFORD,F,40
+2018-01-11,1M87,1,passenger,southbound,2,HARTFORD,,37
+2018-01-11,1M87,1,passenger,southbound,3,HARTFORD JN,,37
+2018-01-11,1M87,1,passenger,southbound,4,ACTON BRIDGE,,32
+2018-01-11,1M87,1,passenger,southbound,5,WEAVER JN,M,30
+2018-01-11,1M87,1,passenger,southbound,6,ACTON GRANGE JN,,27
+2018-01-11,1M87,1,passenger,southbound,7,WARRINGTON BQ,F,24
+2018-01-11,1M87,1,passenger,southbound,8,WINWICK JN,S,20
+2018-01-11,1M87,2,passenger,southbound,0,CREWE,G,1401
+2018-01-11,1M87,2,passenger,southbound,1,WINSFORD,F,1396
+2018-01-11,1M87,2,passenger,southbound,2,HARTFORD,,1395
+2018-01-11,1M87,2,passenger,southbound,3,HARTFORD JN,,1394
+2018-01-11,1M87,2,passenger,southbound,4,ACTON BRIDGE,,1393
+2018-01-11,1M87,2,passenger,southbound,5,WEAVER JN,M,1392
+2018-01-11,1M87,2,passenger,southbound,6,ACTON GRANGE JN,,1388
+2018-01-11,1M87,2,passenger,southbound,7,WARRINGTON BQ,F,1385
+2018-01-11,1M87,2,passenger,southbound,8,WINWICK JN,S,1382
+2018-01-11,1M90,1,passenger,northbound,11,PARKSIDE JN,,484
+2018-01-11,1M90,2,passenger,northbound,11,PARKSIDE JN,,1097
+2018-01-11,1M91,1,passenger,northbound,11,PARKSIDE JN,,550
+2018-01-11,1M91,2,passenger,northbound,11,PARKSIDE JN,,1150
+2018-01-11,1M92,1,passenger,northbound,11,PARKSIDE JN,,610
+2018-01-11,1M92,2,passenger,northbound,11,PARKSIDE JN,,1207
+2018-01-11,1M93,1,passenger,northbound,11,PARKSIDE JN,,668
+2018-01-11,1M93,2,passenger,northbound,11,PARKSIDE JN,,1272
+2018-01-11,1M94,1,passenger,northbound,11,PARKSIDE JN,,731
+2018-01-11,1M94,2,passenger,northbound,11,PARKSIDE JN,,1389
+2018-01-11,1M95,1,passenger,northbound,11,PARKSIDE JN,,791
+2018-01-11,1M96,1,passenger,northbound,11,PARKSIDE JN,,849
+2018-01-11,1M96,2,passenger,northbound,11,PARKSIDE JN,,1326
+2018-01-11,1M97,1,passenger,northbound,11,PARKSIDE JN,,99
+2018-01-11,1M97,2,passenger,northbound,11,PARKSIDE JN,,908
+2018-01-11,1M98,1,passenger,northbound,11,PARKSIDE JN,,967
+2018-01-11,1M99,1,passenger,northbound,11,PARKSIDE JN,,395
+2018-01-11,1M99,2,passenger,northbound,11,PARKSIDE JN,,1039
+2018-01-11,1N76,1,passenger,northbound,11,PARKSIDE JN,C,1385
+2018-01-11,1P07,1,passenger,northbound,0,CREWE,,1341
+2018-01-11,1P07,1,passenger,northbound,1,WINSFORD,F,1343
+2018-01-11,1P07,1,passenger,northbound,2,HARTFORD,,1346
+2018-01-11,1P07,1,passenger,northbound,3,HARTFORD JN,S,1345
+2018-01-11,1P07,1,passenger,northbound,4,ACTON BRIDGE,,1347
+2018-01-11,1P07,1,passenger,northbound,5,WEAVER JN,L,1348
+2018-01-11,1P07,1,passenger,northbound,6,ACTON GRANGE JN,H,1351
+2018-01-11,1P07,1,passenger,northbound,7,WARRINGTON BQ,,1352
+2018-01-11,1P07,1,passenger,northbound,8,WINWICK JN,M,1358
+2018-01-11,1P09,1,passenger,northbound,0,CREWE,,1381
+2018-01-11,1P09,1,passenger,northbound,1,WINSFORD,F,1384
+2018-01-11,1P09,1,passenger,northbound,2,HARTFORD,,1386
+2018-01-11,1P09,1,passenger,northbound,3,HARTFORD JN,S,1385
+2018-01-11,1P09,1,passenger,northbound,4,ACTON BRIDGE,,1388
+2018-01-11,1P09,1,passenger,northbound,5,WEAVER JN,L,1389
+2018-01-11,1P09,1,passenger,northbound,6,ACTON GRANGE JN,H,1392
+2018-01-11,1P09,1,passenger,northbound,7,WARRINGTON BQ,,1393
+2018-01-11,1P09,1,passenger,northbound,8,WINWICK JN,M,1403
+2018-01-11,1P21,1,passenger,northbound,0,CREWE,,1108
+2018-01-11,1P21,1,passenger,northbound,1,WINSFORD,F,1110
+2018-01-11,1P21,1,passenger,northbound,2,HARTFORD,,1113
+2018-01-11,1P21,1,passenger,northbound,3,HARTFORD JN,S,1112
+2018-01-11,1P21,1,passenger,northbound,4,ACTON BRIDGE,,1114
+2018-01-11,1P21,1,passenger,northbound,5,WEAVER JN,L,1115
+2018-01-11,1P21,1,passenger,northbound,6,ACTON GRANGE JN,H,1118
+2018-01-11,1P21,1,passenger,northbound,7,WARRINGTON BQ,,1119
+2018-01-11,1P21,1,passenger,northbound,8,WINWICK JN,M,1126
+2018-01-11,1R05,1,passenger,northbound,0,CREWE,G,355
+2018-01-11,1R05,1,passenger,northbound,1,WINSFORD,F,352
+2018-01-11,1R05,1,passenger,northbound,2,HARTFORD,,350
+2018-01-11,1R05,1,passenger,northbound,3,HARTFORD JN,,349
+2018-01-11,1R05,1,passenger,northbound,4,ACTON BRIDGE,,348
+2018-01-11,1R05,1,passenger,northbound,5,WEAVER JN,M,347
+2018-01-11,1R07,1,passenger,southbound,0,CREWE,G,372
+2018-01-11,1R07,1,passenger,southbound,1,WINSFORD,F,369
+2018-01-11,1R07,1,passenger,southbound,2,HARTFORD,,367
+2018-01-11,1R07,1,passenger,southbound,3,HARTFORD JN,,366
+2018-01-11,1R07,1,passenger,southbound,4,ACTON BRIDGE,,365
+2018-01-11,1R07,1,passenger,southbound,5,WEAVER JN,M,364
+2018-01-11,1R07,1,passenger,southbound,6,ACTON GRANGE JN,,361
+2018-01-11,1R07,1,passenger,southbound,7,WARRINGTON BQ,F,356
+2018-01-11,1R07,1,passenger,southbound,8,WINWICK JN,S,353
+2018-01-11,1R11,1,passenger,northbound,0,CREWE,G,394
+2018-01-11,1R11,1,passenger,northbound,1,WINSFORD,F,391
+2018-01-11,1R11,1,passenger,northbound,2,HARTFORD,,389
+2018-01-11,1R11,1,passenger,northbound,3,HARTFORD JN,,389
+2018-01-11,1R11,1,passenger,northbound,4,ACTON BRIDGE,,387
+2018-01-11,1R11,1,passenger,northbound,5,WEAVER JN,M,386
+2018-01-11,1R19,1,passenger,northbound,0,CREWE,G,449
+2018-01-11,1R19,1,passenger,northbound,1,WINSFORD,F,446
+2018-01-11,1R19,1,passenger,northbound,2,HARTFORD,,444
+2018-01-11,1R19,1,passenger,northbound,3,HARTFORD JN,,443
+2018-01-11,1R19,1,passenger,northbound,4,ACTON BRIDGE,,442
+2018-01-11,1R19,1,passenger,northbound,5,WEAVER JN,M,441
+2018-01-11,1R20,1,passenger,southbound,0,CREWE,G,454
+2018-01-11,1R20,1,passenger,southbound,1,WINSFORD,F,451
+2018-01-11,1R20,1,passenger,southbound,2,HARTFORD,,449
+2018-01-11,1R20,1,passenger,southbound,3,HARTFORD JN,,448
+2018-01-11,1R20,1,passenger,southbound,4,ACTON BRIDGE,,447
+2018-01-11,1R20,1,passenger,southbound,5,WEAVER JN,M,446
+2018-01-11,1R20,1,passenger,southbound,6,ACTON GRANGE JN,,443
+2018-01-11,1R20,1,passenger,southbound,7,WARRINGTON BQ,F,438
+2018-01-11,1R20,1,passenger,southbound,8,WINWICK JN,S,435
+2018-01-11,1R27,1,passenger,northbound,0,CREWE,G,499
+2018-01-11,1R27,1,passenger,northbound,1,WINSFORD,F,495
+2018-01-11,1R27,1,passenger,northbound,2,HARTFORD,,493
+2018-01-11,1R27,1,passenger,northbound,3,HARTFORD JN,,493
+2018-01-11,1R27,1,passenger,northbound,4,ACTON BRIDGE,,491
+2018-01-11,1R27,1,passenger,northbound,5,WEAVER JN,M,490
+2018-01-11,1S06,1,passenger,northbound,0,CREWE,,1260
+2018-01-11,1S06,1,passenger,northbound,1,WINSFORD,F,1263
+2018-01-11,1S06,1,passenger,northbound,2,HARTFORD,,1265
+2018-01-11,1S06,1,passenger,northbound,3,HARTFORD JN,S,1264
+2018-01-11,1S06,1,passenger,northbound,4,ACTON BRIDGE,,1266
+2018-01-11,1S06,1,passenger,northbound,5,WEAVER JN,L,1267
+2018-01-11,1S06,1,passenger,northbound,6,ACTON GRANGE JN,H,1270
+2018-01-11,1S06,1,passenger,northbound,7,WARRINGTON BQ,,1271
+2018-01-11,1S06,1,passenger,northbound,8,WINWICK JN,M,1278
+2018-01-11,1S25,2,passenger,northbound,1,WINSFORD,F,3
+2018-01-11,1S25,2,passenger,northbound,2,HARTFORD,,7
+2018-01-11,1S25,2,passenger,northbound,3,HARTFORD JN,S,5
+2018-01-11,1S25,2,passenger,northbound,4,ACTON BRIDGE,,9
+2018-01-11,1S25,2,passenger,northbound,5,WEAVER JN,L,10
+2018-01-11,1S25,2,passenger,northbound,6,ACTON GRANGE JN,H,15
+2018-01-11,1S25,2,passenger,northbound,7,WARRINGTON BQ,,17
+2018-01-11,1S25,2,passenger,northbound,8,WINWICK JN,M,20
+2018-01-11,1S26,1,passenger,northbound,0,CREWE,,145
+2018-01-11,1S26,1,passenger,northbound,1,WINSFORD,F,150
+2018-01-11,1S26,1,passenger,northbound,2,HARTFORD,,153
+2018-01-11,1S26,1,passenger,northbound,3,HARTFORD JN,S,152
+2018-01-11,1S26,1,passenger,northbound,4,ACTON BRIDGE,,155
+2018-01-11,1S26,1,passenger,northbound,5,WEAVER JN,L,157
+2018-01-11,1S26,1,passenger,northbound,6,ACTON GRANGE JN,H,161
+2018-01-11,1S26,1,passenger,northbound,7,WARRINGTON BQ,,162
+2018-01-11,1S26,1,passenger,northbound,8,WINWICK JN,M,166
+2018-01-11,1S30,1,passenger,northbound,11,PARKSIDE JN,C,312
+2018-01-11,1S32,1,passenger,northbound,11,PARKSIDE JN,C,391
+2018-01-11,1S34,1,passenger,northbound,0,CREWE,,359
+2018-01-11,1S34,1,passenger,northbound,1,WINSFORD,F,362
+2018-01-11,1S34,1,passenger,northbound,2,HARTFORD,,364
+2018-01-11,1S34,1,passenger,northbound,3,HARTFORD JN,S,364
+2018-01-11,1S34,1,passenger,northbound,4,ACTON BRIDGE,,366
+2018-01-11,1S34,1,passenger,northbound,5,WEAVER JN,L,367
+2018-01-11,1S34,1,passenger,northbound,6,ACTON GRANGE JN,H,370
+2018-01-11,1S34,1,passenger,northbound,7,WARRINGTON BQ,,371
+2018-01-11,1S34,1,passenger,northbound,8,WINWICK JN,M,378
+2018-01-11,1S35,1,passenger,northbound,11,PARKSIDE JN,C,453
+2018-01-11,1S36,1,passenger,northbound,0,CREWE,,432
+2018-01-11,1S36,1,passenger,northbound,1,WINSFORD,F,435
+2018-01-11,1S36,1,passenger,northbound,2,HARTFORD,,437
+2018-01-11,1S36,1,passenger,northbound,3,HARTFORD JN,S,436
+2018-01-11,1S36,1,passenger,northbound,4,ACTON BRIDGE,,439
+2018-01-11,1S36,1,passenger,northbound,5,WEAVER JN,L,440
+2018-01-11,1S36,1,passenger,northbound,6,ACTON GRANGE JN,H,443
+2018-01-11,1S36,1,passenger,northbound,7,WARRINGTON BQ,,444
+2018-01-11,1S36,1,passenger,northbound,8,WINWICK JN,M,450
+2018-01-11,1S37,1,passenger,northbound,0,CREWE,,455
+2018-01-11,1S37,1,passenger,northbound,1,WINSFORD,F,458
+2018-01-11,1S37,1,passenger,northbound,2,HARTFORD,,460
+2018-01-11,1S37,1,passenger,northbound,3,HARTFORD JN,S,459
+2018-01-11,1S37,1,passenger,northbound,4,ACTON BRIDGE,,461
+2018-01-11,1S37,1,passenger,northbound,5,WEAVER JN,L,463
+2018-01-11,1S37,1,passenger,northbound,6,ACTON GRANGE JN,H,465
+2018-01-11,1S37,1,passenger,northbound,7,WARRINGTON BQ,,466
+2018-01-11,1S37,1,passenger,northbound,8,WINWICK JN,M,472
+2018-01-11,1S38,1,passenger,northbound,11,PARKSIDE JN,C,482
+2018-01-11,1S39,1,passenger,northbound,0,CREWE,,492
+2018-01-11,1S39,1,passenger,northbound,1,WINSFORD,F,494
+2018-01-11,1S39,1,passenger,northbound,2,HARTFORD,,497
+2018-01-11,1S39,1,passenger,northbound,3,HARTFORD JN,S,496
+2018-01-11,1S39,1,passenger,northbound,4,ACTON BRIDGE,,498
+2018-01-11,1S39,1,passenger,northbound,5,WEAVER JN,L,499
+2018-01-11,1S39,1,passenger,northbound,6,ACTON GRANGE JN,H,502
+2018-01-11,1S39,1,passenger,northbound,7,WARRINGTON BQ,,503
+2018-01-11,1S39,1,passenger,northbound,8,WINWICK JN,M,509
+2018-01-11,1S40,1,passenger,northbound,11,PARKSIDE JN,C,575
+2018-01-11,1S42,1,passenger,northbound,0,CREWE,,545
+2018-01-11,1S42,1,passenger,northbound,1,WINSFORD,F,548
+2018-01-11,1S42,1,passenger,northbound,2,HARTFORD,,550
+2018-01-11,1S42,1,passenger,northbound,3,HARTFORD JN,S,549
+2018-01-11,1S42,1,passenger,northbound,4,ACTON BRIDGE,,551
+2018-01-11,1S42,1,passenger,northbound,5,WEAVER JN,L,552
+2018-01-11,1S42,1,passenger,northbound,6,ACTON GRANGE JN,H,555
+2018-01-11,1S42,1,passenger,northbound,7,WARRINGTON BQ,,556
+2018-01-11,1S42,1,passenger,northbound,8,WINWICK JN,M,561
+2018-01-11,1S45,1,passenger,northbound,0,CREWE,,599
+2018-01-11,1S45,1,passenger,northbound,1,WINSFORD,F,602
+2018-01-11,1S45,1,passenger,northbound,2,HARTFORD,,604
+2018-01-11,1S45,1,passenger,northbound,3,HARTFORD JN,S,603
+2018-01-11,1S45,1,passenger,northbound,4,ACTON BRIDGE,,605
+2018-01-11,1S45,1,passenger,northbound,5,WEAVER JN,L,606
+2018-01-11,1S45,1,passenger,northbound,6,ACTON GRANGE JN,H,609
+2018-01-11,1S45,1,passenger,northbound,7,WARRINGTON BQ,,610
+2018-01-11,1S45,1,passenger,northbound,8,WINWICK JN,M,616
+2018-01-11,1S46,1,passenger,northbound,11,PARKSIDE JN,C,633
+2018-01-11,1S48,1,passenger,northbound,0,CREWE,,661
+2018-01-11,1S48,1,passenger,northbound,1,WINSFORD,F,663
+2018-01-11,1S48,1,passenger,northbound,2,HARTFORD,,665
+2018-01-11,1S48,1,passenger,northbound,3,HARTFORD JN,S,665
+2018-01-11,1S48,1,passenger,northbound,4,ACTON BRIDGE,,667
+2018-01-11,1S48,1,passenger,northbound,5,WEAVER JN,L,668
+2018-01-11,1S48,1,passenger,northbound,6,ACTON GRANGE JN,H,671
+2018-01-11,1S48,1,passenger,northbound,7,WARRINGTON BQ,,672
+2018-01-11,1S48,1,passenger,northbound,8,WINWICK JN,M,677
+2018-01-11,1S51,1,passenger,northbound,11,PARKSIDE JN,C,691
+2018-01-11,1S52,1,passenger,northbound,0,CREWE,,721
+2018-01-11,1S52,1,passenger,northbound,1,WINSFORD,F,723
+2018-01-11,1S52,1,passenger,northbound,2,HARTFORD,,725
+2018-01-11,1S52,1,passenger,northbound,3,HARTFORD JN,S,724
+2018-01-11,1S52,1,passenger,northbound,4,ACTON BRIDGE,,727
+2018-01-11,1S52,1,passenger,northbound,5,WEAVER JN,L,728
+2018-01-11,1S52,1,passenger,northbound,6,ACTON GRANGE JN,H,731
+2018-01-11,1S52,1,passenger,northbound,7,WARRINGTON BQ,,732
+2018-01-11,1S52,1,passenger,northbound,8,WINWICK JN,M,737
+2018-01-11,1S56,1,passenger,northbound,11,PARKSIDE JN,C,759
+2018-01-11,1S58,1,passenger,northbound,0,CREWE,,783
+2018-01-11,1S58,1,passenger,northbound,1,WINSFORD,F,785
+2018-01-11,1S58,1,passenger,northbound,2,HARTFORD,,787
+2018-01-11,1S58,1,passenger,northbound,3,HARTFORD JN,S,786
+2018-01-11,1S58,1,passenger,northbound,4,ACTON BRIDGE,,789
+2018-01-11,1S58,1,passenger,northbound,5,WEAVER JN,L,790
+2018-01-11,1S58,1,passenger,northbound,6,ACTON GRANGE JN,H,792
+2018-01-11,1S58,1,passenger,northbound,7,WARRINGTON BQ,,793
+2018-01-11,1S58,1,passenger,northbound,8,WINWICK JN,M,799
+2018-01-11,1S61,1,passenger,northbound,11,PARKSIDE JN,C,812
+2018-01-11,1S63,1,passenger,northbound,0,CREWE,,844
+2018-01-11,1S63,1,passenger,northbound,1,WINSFORD,F,847
+2018-01-11,1S63,1,passenger,northbound,2,HARTFORD,,849
+2018-01-11,1S63,1,passenger,northbound,3,HARTFORD JN,S,848
+2018-01-11,1S63,1,passenger,northbound,4,ACTON BRIDGE,,850
+2018-01-11,1S63,1,passenger,northbound,5,WEAVER JN,L,851
+2018-01-11,1S63,1,passenger,northbound,6,ACTON GRANGE JN,H,854
+2018-01-11,1S63,1,passenger,northbound,7,WARRINGTON BQ,,855
+2018-01-11,1S63,1,passenger,northbound,8,WINWICK JN,M,860
+2018-01-11,1S66,1,passenger,northbound,11,PARKSIDE JN,C,877
+2018-01-11,1S69,1,passenger,northbound,0,CREWE,,897
+2018-01-11,1S69,1,passenger,northbound,1,WINSFORD,F,900
+2018-01-11,1S69,1,passenger,northbound,2,HARTFORD,,902
+2018-01-11,1S69,1,passenger,northbound,3,HARTFORD JN,S,901
+2018-01-11,1S69,1,passenger,northbound,4,ACTON BRIDGE,,904
+2018-01-11,1S69,1,passenger,northbound,5,WEAVER JN,L,905
+2018-01-11,1S69,1,passenger,northbound,6,ACTON GRANGE JN,H,908
+2018-01-11,1S69,1,passenger,northbound,7,WARRINGTON BQ,,909
+2018-01-11,1S69,1,passenger,northbound,8,WINWICK JN,M,916
+2018-01-11,1S71,1,passenger,northbound,11,PARKSIDE JN,C,932
+2018-01-11,1S72,1,passenger,northbound,0,CREWE,,964
+2018-01-11,1S72,1,passenger,northbound,1,WINSFORD,F,967
+2018-01-11,1S72,1,passenger,northbound,2,HARTFORD,,969
+2018-01-11,1S72,1,passenger,northbound,3,HARTFORD JN,S,968
+2018-01-11,1S72,1,passenger,northbound,4,ACTON BRIDGE,,971
+2018-01-11,1S72,1,passenger,northbound,5,WEAVER JN,L,972
+2018-01-11,1S72,1,passenger,northbound,6,ACTON GRANGE JN,H,975
+2018-01-11,1S72,1,passenger,northbound,7,WARRINGTON BQ,,976
+2018-01-11,1S72,1,passenger,northbound,8,WINWICK JN,M,982
+2018-01-11,1S75,1,passenger,northbound,11,PARKSIDE JN,C,995
+2018-01-11,1S78,1,passenger,northbound,0,CREWE,,1017
+2018-01-11,1S78,1,passenger,northbound,1,WINSFORD,F,1020
+2018-01-11,1S78,1,passenger,northbound,2,HARTFORD,,1022
+2018-01-11,1S78,1,passenger,northbound,3,HARTFORD JN,S,1021
+2018-01-11,1S78,1,passenger,northbound,4,ACTON BRIDGE,,1023
+2018-01-11,1S78,1,passenger,northbound,5,WEAVER JN,L,1025
+2018-01-11,1S78,1,passenger,northbound,6,ACTON GRANGE JN,H,1027
+2018-01-11,1S78,1,passenger,northbound,7,WARRINGTON BQ,,1028
+2018-01-11,1S78,1,passenger,northbound,8,WINWICK JN,M,1036
+2018-01-11,1S81,1,passenger,northbound,11,PARKSIDE JN,C,1056
+2018-01-11,1S82,1,passenger,northbound,0,CREWE,,1076
+2018-01-11,1S82,1,passenger,northbound,1,WINSFORD,F,1078
+2018-01-11,1S82,1,passenger,northbound,2,HARTFORD,,1081
+2018-01-11,1S82,1,passenger,northbound,3,HARTFORD JN,S,1080
+2018-01-11,1S82,1,passenger,northbound,4,ACTON BRIDGE,,1082
+2018-01-11,1S82,1,passenger,northbound,5,WEAVER JN,L,1083
+2018-01-11,1S82,1,passenger,northbound,6,ACTON GRANGE JN,H,1086
+2018-01-11,1S82,1,passenger,northbound,7,WARRINGTON BQ,,1087
+2018-01-11,1S82,1,passenger,northbound,8,WINWICK JN,M,1097
+2018-01-11,1S83,1,passenger,northbound,11,PARKSIDE JN,C,1119
+2018-01-11,1S85,1,passenger,northbound,11,PARKSIDE JN,C,1177
+2018-01-11,1S87,1,passenger,northbound,0,CREWE,,1114
+2018-01-11,1S87,1,passenger,northbound,1,WINSFORD,F,1116
+2018-01-11,1S87,1,passenger,northbound,2,HARTFORD,,1118
+2018-01-11,1S87,1,passenger,northbound,3,HARTFORD JN,S,1117
+2018-01-11,1S87,1,passenger,northbound,4,ACTON BRIDGE,,1120
+2018-01-11,1S87,1,passenger,northbound,5,WEAVER JN,L,1121
+2018-01-11,1S87,1,passenger,northbound,6,ACTON GRANGE JN,H,1124
+2018-01-11,1S87,1,passenger,northbound,7,WARRINGTON BQ,,1125
+2018-01-11,1S87,1,passenger,northbound,8,WINWICK JN,M,1132
+2018-01-11,1S90,1,passenger,northbound,0,CREWE,,1139
+2018-01-11,1S90,1,passenger,northbound,1,WINSFORD,F,1142
+2018-01-11,1S90,1,passenger,northbound,2,HARTFORD,,1144
+2018-01-11,1S90,1,passenger,northbound,3,HARTFORD JN,S,1143
+2018-01-11,1S90,1,passenger,northbound,4,ACTON BRIDGE,,1145
+2018-01-11,1S90,1,passenger,northbound,5,WEAVER JN,L,1146
+2018-01-11,1S90,1,passenger,northbound,6,ACTON GRANGE JN,H,1149
+2018-01-11,1S90,1,passenger,northbound,7,WARRINGTON BQ,,1150
+2018-01-11,1S90,1,passenger,northbound,8,WINWICK JN,M,1156
+2018-01-11,1S95,1,passenger,northbound,0,CREWE,,1200
+2018-01-11,1S95,1,passenger,northbound,1,WINSFORD,F,1203
+2018-01-11,1S95,1,passenger,northbound,2,HARTFORD,,1205
+2018-01-11,1S95,1,passenger,northbound,3,HARTFORD JN,S,1204
+2018-01-11,1S95,1,passenger,northbound,4,ACTON BRIDGE,,1207
+2018-01-11,1S95,1,passenger,northbound,5,WEAVER JN,L,1209
+2018-01-11,1S95,1,passenger,northbound,6,ACTON GRANGE JN,H,1212
+2018-01-11,1S95,1,passenger,northbound,7,WARRINGTON BQ,,1213
+2018-01-11,1S95,1,passenger,northbound,8,WINWICK JN,M,1218
+2018-01-11,1S98,1,passenger,northbound,11,PARKSIDE JN,C,1238
+2018-01-11,1S99,1,passenger,northbound,11,PARKSIDE JN,C,1293
+2018-01-11,1U02,1,passenger,northbound,11,PARKSIDE JN,,265
+2018-01-11,1U50,1,passenger,northbound,11,PARKSIDE JN,,327
+2018-01-11,1U84,1,passenger,northbound,11,PARKSIDE JN,,1351
+2018-01-11,1U86,1,passenger,northbound,11,PARKSIDE JN,,1413
+2018-01-11,2F10,1,passenger,northbound,6,ACTON GRANGE JN,,351
+2018-01-11,2F10,1,passenger,northbound,7,WARRINGTON BQ,H,349
+2018-01-11,2F13,1,passenger,northbound,6,ACTON GRANGE JN,H,437
+2018-01-11,2F13,1,passenger,northbound,7,WARRINGTON BQ,,439
+2018-01-11,2F17,1,passenger,northbound,6,ACTON GRANGE JN,H,988
+2018-01-11,2F17,1,passenger,northbound,7,WARRINGTON BQ,,992
+2018-01-11,2F20,1,passenger,northbound,7,WARRINGTON BQ,H,449
+2018-01-11,2F20,1,passenger,northbound,8,WINWICK JN,S,445
+2018-01-11,2F20,1,passenger,northbound,9,EARLESTOWN,,438
+2018-01-11,2F20,2,passenger,northbound,7,WARRINGTON BQ,H,1131
+2018-01-11,2F20,2,passenger,northbound,8,WINWICK JN,S,1124
+2018-01-11,2F20,2,passenger,northbound,9,EARLESTOWN,,1119
+2018-01-11,2F21,1,passenger,northbound,9,EARLESTOWN,,365
+2018-01-11,2F21,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,357
+2018-01-11,2F21,1,passenger,northbound,11,PARKSIDE JN,C,356
+2018-01-11,2F21,2,passenger,northbound,9,EARLESTOWN,,628
+2018-01-11,2F21,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,622
+2018-01-11,2F21,2,passenger,northbound,11,PARKSIDE JN,C,620
+2018-01-11,2F21,3,passenger,northbound,9,EARLESTOWN,,928
+2018-01-11,2F21,3,passenger,northbound,10,NEWTON-LE-WILLOWS,E,922
+2018-01-11,2F21,3,passenger,northbound,11,PARKSIDE JN,C,921
+2018-01-11,2F21,4,passenger,northbound,9,EARLESTOWN,,1293
+2018-01-11,2F21,4,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1287
+2018-01-11,2F21,4,passenger,northbound,11,PARKSIDE JN,C,1286
+2018-01-11,2F23,1,passenger,northbound,9,EARLESTOWN,,383
+2018-01-11,2F23,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,378
+2018-01-11,2F23,1,passenger,northbound,11,PARKSIDE JN,C,377
+2018-01-11,2F23,2,passenger,northbound,7,WARRINGTON BQ,H,692
+2018-01-11,2F23,2,passenger,northbound,8,WINWICK JN,M,713
+2018-01-11,2F23,2,passenger,northbound,9,EARLESTOWN,,718
+2018-01-11,2F23,3,passenger,northbound,7,WARRINGTON BQ,S,1011
+2018-01-11,2F23,3,passenger,northbound,8,WINWICK JN,M,1014
+2018-01-11,2F23,3,passenger,northbound,9,EARLESTOWN,,1019
+2018-01-11,2F23,4,passenger,northbound,9,EARLESTOWN,,1355
+2018-01-11,2F23,4,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1348
+2018-01-11,2F23,4,passenger,northbound,11,PARKSIDE JN,C,1347
+2018-01-11,2F24,1,passenger,northbound,7,WARRINGTON BQ,H,571
+2018-01-11,2F24,1,passenger,northbound,8,WINWICK JN,S,565
+2018-01-11,2F24,1,passenger,northbound,9,EARLESTOWN,,557
+2018-01-11,2F24,2,passenger,northbound,7,WARRINGTON BQ,H,1170
+2018-01-11,2F24,2,passenger,northbound,8,WINWICK JN,S,1161
+2018-01-11,2F24,2,passenger,northbound,9,EARLESTOWN,,1153
+2018-01-11,2F25,1,passenger,northbound,9,EARLESTOWN,,425
+2018-01-11,2F25,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,419
+2018-01-11,2F25,2,passenger,northbound,9,EARLESTOWN,,688
+2018-01-11,2F25,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,682
+2018-01-11,2F25,2,passenger,northbound,11,PARKSIDE JN,C,680
+2018-01-11,2F25,3,passenger,northbound,9,EARLESTOWN,,994
+2018-01-11,2F25,3,passenger,northbound,10,NEWTON-LE-WILLOWS,E,987
+2018-01-11,2F25,3,passenger,northbound,11,PARKSIDE JN,C,986
+2018-01-11,2F25,4,passenger,northbound,9,EARLESTOWN,,1415
+2018-01-11,2F25,4,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1410
+2018-01-11,2F25,4,passenger,northbound,11,PARKSIDE JN,C,1409
+2018-01-11,2F26,1,passenger,northbound,7,WARRINGTON BQ,H,630
+2018-01-11,2F26,1,passenger,northbound,8,WINWICK JN,S,625
+2018-01-11,2F26,1,passenger,northbound,9,EARLESTOWN,,617
+2018-01-11,2F27,1,passenger,northbound,9,EARLESTOWN,,447
+2018-01-11,2F27,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,441
+2018-01-11,2F27,1,passenger,northbound,11,PARKSIDE JN,C,440
+2018-01-11,2F27,2,passenger,northbound,7,WARRINGTON BQ,H,768
+2018-01-11,2F27,2,passenger,northbound,8,WINWICK JN,M,774
+2018-01-11,2F27,2,passenger,northbound,9,EARLESTOWN,,777
+2018-01-11,2F27,3,passenger,northbound,9,EARLESTOWN,,1048
+2018-01-11,2F27,3,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1042
+2018-01-11,2F27,3,passenger,northbound,11,PARKSIDE JN,C,1039
+2018-01-11,2F28,1,passenger,northbound,7,WARRINGTON BQ,H,688
+2018-01-11,2F28,1,passenger,northbound,8,WINWICK JN,S,683
+2018-01-11,2F28,1,passenger,northbound,9,EARLESTOWN,,677
+2018-01-11,2F29,1,passenger,northbound,9,EARLESTOWN,,484
+2018-01-11,2F29,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,479
+2018-01-11,2F29,1,passenger,northbound,11,PARKSIDE JN,C,477
+2018-01-11,2F29,2,passenger,northbound,9,EARLESTOWN,,763
+2018-01-11,2F29,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,757
+2018-01-11,2F29,2,passenger,northbound,11,PARKSIDE JN,C,756
+2018-01-11,2F29,3,passenger,northbound,9,EARLESTOWN,,1086
+2018-01-11,2F29,3,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1080
+2018-01-11,2F29,3,passenger,northbound,11,PARKSIDE JN,C,1079
+2018-01-11,2F30,1,passenger,northbound,7,WARRINGTON BQ,H,749
+2018-01-11,2F30,1,passenger,northbound,8,WINWICK JN,S,744
+2018-01-11,2F30,1,passenger,northbound,9,EARLESTOWN,,738
+2018-01-11,2F31,1,passenger,northbound,9,EARLESTOWN,,509
+2018-01-11,2F31,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,503
+2018-01-11,2F31,1,passenger,northbound,11,PARKSIDE JN,C,502
+2018-01-11,2F31,2,passenger,northbound,7,WARRINGTON BQ,H,813
+2018-01-11,2F31,2,passenger,northbound,8,WINWICK JN,M,833
+2018-01-11,2F31,2,passenger,northbound,9,EARLESTOWN,,836
+2018-01-11,2F31,3,passenger,northbound,7,WARRINGTON BQ,S,1135
+2018-01-11,2F31,3,passenger,northbound,8,WINWICK JN,M,1138
+2018-01-11,2F31,3,passenger,northbound,9,EARLESTOWN,,1142
+2018-01-11,2F32,1,passenger,northbound,7,WARRINGTON BQ,H,806
+2018-01-11,2F32,1,passenger,northbound,8,WINWICK JN,S,801
+2018-01-11,2F32,1,passenger,northbound,9,EARLESTOWN,,795
+2018-01-11,2F33,1,passenger,northbound,9,EARLESTOWN,,543
+2018-01-11,2F33,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,537
+2018-01-11,2F33,1,passenger,northbound,11,PARKSIDE JN,C,536
+2018-01-11,2F33,2,passenger,northbound,9,EARLESTOWN,,806
+2018-01-11,2F33,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,801
+2018-01-11,2F33,2,passenger,northbound,11,PARKSIDE JN,C,800
+2018-01-11,2F33,3,passenger,northbound,9,EARLESTOWN,,1109
+2018-01-11,2F33,3,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1103
+2018-01-11,2F33,3,passenger,northbound,11,PARKSIDE JN,C,1102
+2018-01-11,2F34,1,passenger,northbound,8,WINWICK JN,S,864
+2018-01-11,2F34,1,passenger,northbound,9,EARLESTOWN,,858
+2018-01-11,2F35,1,passenger,northbound,7,WARRINGTON BQ,H,584
+2018-01-11,2F35,1,passenger,northbound,8,WINWICK JN,M,594
+2018-01-11,2F35,1,passenger,northbound,9,EARLESTOWN,,597
+2018-01-11,2F35,2,passenger,northbound,7,WARRINGTON BQ,H,875
+2018-01-11,2F35,2,passenger,northbound,8,WINWICK JN,M,894
+2018-01-11,2F35,2,passenger,northbound,9,EARLESTOWN,,897
+2018-01-11,2F35,3,passenger,northbound,7,WARRINGTON BQ,H,1183
+2018-01-11,2F35,3,passenger,northbound,8,WINWICK JN,M,1194
+2018-01-11,2F35,3,passenger,northbound,9,EARLESTOWN,,1198
+2018-01-11,2F36,1,passenger,northbound,7,WARRINGTON BQ,H,926
+2018-01-11,2F36,1,passenger,northbound,8,WINWICK JN,S,922
+2018-01-11,2F36,1,passenger,northbound,9,EARLESTOWN,,916
+2018-01-11,2F37,1,passenger,northbound,9,EARLESTOWN,,566
+2018-01-11,2F37,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,560
+2018-01-11,2F37,1,passenger,northbound,11,PARKSIDE JN,C,559
+2018-01-11,2F37,2,passenger,northbound,11,PARKSIDE JN,C,859
+2018-01-11,2F37,3,passenger,northbound,9,EARLESTOWN,,1170
+2018-01-11,2F37,3,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1165
+2018-01-11,2F37,3,passenger,northbound,11,PARKSIDE JN,C,1164
+2018-01-11,2F38,1,passenger,northbound,7,WARRINGTON BQ,H,991
+2018-01-11,2F38,1,passenger,northbound,8,WINWICK JN,S,986
+2018-01-11,2F38,1,passenger,northbound,9,EARLESTOWN,,977
+2018-01-11,2F39,1,passenger,northbound,7,WARRINGTON BQ,H,641
+2018-01-11,2F39,1,passenger,northbound,8,WINWICK JN,M,653
+2018-01-11,2F39,1,passenger,northbound,9,EARLESTOWN,,657
+2018-01-11,2F39,2,passenger,northbound,7,WARRINGTON BQ,H,932
+2018-01-11,2F39,2,passenger,northbound,8,WINWICK JN,M,953
+2018-01-11,2F39,2,passenger,northbound,9,EARLESTOWN,,956
+2018-01-11,2F39,3,passenger,northbound,9,EARLESTOWN,,1227
+2018-01-11,2F39,3,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1221
+2018-01-11,2F39,3,passenger,northbound,11,PARKSIDE JN,C,1220
+2018-01-11,2J20,1,passenger,northbound,9,EARLESTOWN,,355
+2018-01-11,2J20,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,358
+2018-01-11,2J20,1,passenger,northbound,11,PARKSIDE JN,M,359
+2018-01-11,2J20,2,passenger,northbound,9,EARLESTOWN,,951
+2018-01-11,2J20,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,954
+2018-01-11,2J20,2,passenger,northbound,11,PARKSIDE JN,M,955
+2018-01-11,2J20,3,passenger,northbound,9,EARLESTOWN,,1254
+2018-01-11,2J20,3,passenger,northbound,10,NEWTON-LE-WILLOWS,,1256
+2018-01-11,2J20,3,passenger,northbound,11,PARKSIDE JN,M,1257
+2018-01-11,2J22,1,passenger,northbound,9,EARLESTOWN,,411
+2018-01-11,2J22,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,414
+2018-01-11,2J22,1,passenger,northbound,11,PARKSIDE JN,M,415
+2018-01-11,2J22,2,passenger,northbound,9,EARLESTOWN,,1318
+2018-01-11,2J22,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1321
+2018-01-11,2J22,2,passenger,northbound,11,PARKSIDE JN,M,1322
+2018-01-11,2J24,1,passenger,northbound,9,EARLESTOWN,,472
+2018-01-11,2J24,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,475
+2018-01-11,2J24,1,passenger,northbound,11,PARKSIDE JN,M,476
+2018-01-11,2J24,2,passenger,northbound,9,EARLESTOWN,,1369
+2018-01-11,2J24,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1372
+2018-01-11,2J24,2,passenger,northbound,11,PARKSIDE JN,M,1373
+2018-01-11,2J26,1,passenger,northbound,9,EARLESTOWN,,531
+2018-01-11,2J26,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,534
+2018-01-11,2J26,1,passenger,northbound,11,PARKSIDE JN,M,534
+2018-01-11,2J26,2,passenger,northbound,9,EARLESTOWN,,1012
+2018-01-11,2J26,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1015
+2018-01-11,2J26,2,passenger,northbound,11,PARKSIDE JN,M,1016
+2018-01-11,2J26,3,passenger,northbound,9,EARLESTOWN,,1430
+2018-01-11,2J26,3,passenger,northbound,10,NEWTON-LE-WILLOWS,,1433
+2018-01-11,2J26,3,passenger,northbound,11,PARKSIDE JN,M,1434
+2018-01-11,2J28,1,passenger,northbound,9,EARLESTOWN,,591
+2018-01-11,2J28,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,594
+2018-01-11,2J28,1,passenger,northbound,11,PARKSIDE JN,M,595
+2018-01-11,2J28,2,passenger,northbound,9,EARLESTOWN,,1038
+2018-01-11,2J28,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1041
+2018-01-11,2J28,2,passenger,northbound,11,PARKSIDE JN,M,1042
+2018-01-11,2J30,1,passenger,northbound,9,EARLESTOWN,,650
+2018-01-11,2J30,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,653
+2018-01-11,2J30,1,passenger,northbound,11,PARKSIDE JN,M,653
+2018-01-11,2J30,2,passenger,northbound,9,EARLESTOWN,,1074
+2018-01-11,2J30,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1077
+2018-01-11,2J30,2,passenger,northbound,11,PARKSIDE JN,M,1078
+2018-01-11,2J32,1,passenger,northbound,9,EARLESTOWN,,711
+2018-01-11,2J32,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,714
+2018-01-11,2J32,1,passenger,northbound,11,PARKSIDE JN,M,715
+2018-01-11,2J32,2,passenger,northbound,9,EARLESTOWN,,1116
+2018-01-11,2J32,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1119
+2018-01-11,2J32,2,passenger,northbound,11,PARKSIDE JN,M,1120
+2018-01-11,2J34,1,passenger,northbound,9,EARLESTOWN,,771
+2018-01-11,2J34,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,774
+2018-01-11,2J34,1,passenger,northbound,11,PARKSIDE JN,M,774
+2018-01-11,2J36,1,passenger,northbound,9,EARLESTOWN,,829
+2018-01-11,2J36,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,832
+2018-01-11,2J36,1,passenger,northbound,11,PARKSIDE JN,M,833
+2018-01-11,2J36,2,passenger,northbound,9,EARLESTOWN,,1142
+2018-01-11,2J36,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1146
+2018-01-11,2J36,2,passenger,northbound,11,PARKSIDE JN,M,1147
+2018-01-11,2J38,1,passenger,northbound,9,EARLESTOWN,,499
+2018-01-11,2J38,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,503
+2018-01-11,2J38,1,passenger,northbound,11,PARKSIDE JN,M,504
+2018-01-11,2J38,2,passenger,northbound,9,EARLESTOWN,,891
+2018-01-11,2J38,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,894
+2018-01-11,2J38,2,passenger,northbound,11,PARKSIDE JN,M,894
+2018-01-11,2J38,3,passenger,northbound,9,EARLESTOWN,,1189
+2018-01-11,2J38,3,passenger,northbound,10,NEWTON-LE-WILLOWS,,1192
+2018-01-11,2J38,3,passenger,northbound,11,PARKSIDE JN,M,1193
+2018-01-11,2K97,1,passenger,northbound,0,CREWE,G,1398
+2018-01-11,2K97,1,passenger,northbound,1,WINSFORD,F,1391
+2018-01-11,2K97,1,passenger,northbound,2,HARTFORD,,1386
+2018-01-11,2K97,1,passenger,northbound,3,HARTFORD JN,,1385
+2018-01-11,2K97,1,passenger,northbound,4,ACTON BRIDGE,,1380
+2018-01-11,2K97,1,passenger,northbound,5,WEAVER JN,M,1379
+2018-01-11,2K99,1,passenger,northbound,4,ACTON BRIDGE,,0
+2018-01-11,2K99,2,passenger,northbound,0,CREWE,G,17
+2018-01-11,2K99,2,passenger,northbound,1,WINSFORD,F,10
+2018-01-11,2K99,2,passenger,northbound,2,HARTFORD,,6
+2018-01-11,2K99,2,passenger,northbound,3,HARTFORD JN,,5
+2018-01-11,2K99,2,passenger,northbound,4,ACTON BRIDGE,F,4
+2018-01-11,316F,1,freight,northbound,9,EARLESTOWN,,698
+2018-01-11,316F,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,695
+2018-01-11,366E,1,freight,northbound,0,CREWE,,69
+2018-01-11,366E,1,freight,northbound,1,WINSFORD,F,73
+2018-01-11,366E,1,freight,northbound,2,HARTFORD,,76
+2018-01-11,366E,1,freight,northbound,3,HARTFORD JN,S,75
+2018-01-11,366E,1,freight,northbound,4,ACTON BRIDGE,,79
+2018-01-11,366E,1,freight,northbound,5,WEAVER JN,L,81
+2018-01-11,366E,1,freight,northbound,6,ACTON GRANGE JN,H,87
+2018-01-11,366E,1,freight,northbound,7,WARRINGTON BQ,,90
+2018-01-11,366E,1,freight,northbound,8,WINWICK JN,M,99
+2018-01-11,3D32,1,freight,northbound,6,ACTON GRANGE JN,,307
+2018-01-11,3D32,1,freight,northbound,7,WARRINGTON BQ,F,305
+2018-01-11,3D32,1,freight,northbound,8,WINWICK JN,S,299
+2018-01-11,3D32,1,freight,northbound,9,EARLESTOWN,,298
+2018-01-11,3D32,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,294
+2018-01-11,3D32,1,freight,northbound,11,PARKSIDE JN,C,293
+2018-01-11,400J,2,freight,northbound,0,CREWE,,310
+2018-01-11,400J,2,freight,northbound,1,WINSFORD,S,316
+2018-01-11,400J,2,freight,northbound,2,HARTFORD,,320
+2018-01-11,400J,2,freight,northbound,3,HARTFORD JN,S,318
+2018-01-11,400J,2,freight,northbound,4,ACTON BRIDGE,,322
+2018-01-11,400J,2,freight,northbound,5,WEAVER JN,L,324
+2018-01-11,400L,1,freight,southbound,0,CREWE,G,745
+2018-01-11,400L,1,freight,southbound,1,WINSFORD,F,739
+2018-01-11,400L,1,freight,southbound,2,HARTFORD,,735
+2018-01-11,400L,1,freight,southbound,3,HARTFORD JN,,735
+2018-01-11,400L,1,freight,southbound,4,ACTON BRIDGE,,732
+2018-01-11,400L,1,freight,southbound,5,WEAVER JN,M,730
+2018-01-11,400L,1,freight,southbound,6,ACTON GRANGE JN,,722
+2018-01-11,400L,1,freight,southbound,7,WARRINGTON BQ,F,721
+2018-01-11,400L,1,freight,southbound,8,WINWICK JN,S,714
+2018-01-11,401J,2,freight,northbound,0,CREWE,,279
+2018-01-11,401J,2,freight,northbound,1,WINSFORD,S,285
+2018-01-11,401J,2,freight,northbound,2,HARTFORD,,289
+2018-01-11,401J,2,freight,northbound,3,HARTFORD JN,S,287
+2018-01-11,401J,2,freight,northbound,4,ACTON BRIDGE,,292
+2018-01-11,401J,2,freight,northbound,5,WEAVER JN,L,294
+2018-01-11,402J,1,freight,northbound,0,CREWE,,264
+2018-01-11,402J,1,freight,northbound,1,WINSFORD,F,268
+2018-01-11,402J,1,freight,northbound,2,HARTFORD,,272
+2018-01-11,402J,1,freight,northbound,3,HARTFORD JN,S,270
+2018-01-11,402J,1,freight,northbound,4,ACTON BRIDGE,,274
+2018-01-11,402J,1,freight,northbound,5,WEAVER JN,L,276
+2018-01-11,405K,1,freight,northbound,0,CREWE,,488
+2018-01-11,405K,1,freight,northbound,1,WINSFORD,S,496
+2018-01-11,405K,1,freight,northbound,2,HARTFORD,,501
+2018-01-11,405K,1,freight,northbound,3,HARTFORD JN,S,499
+2018-01-11,405K,1,freight,northbound,4,ACTON BRIDGE,,503
+2018-01-11,405K,1,freight,northbound,5,WEAVER JN,L,505
+2018-01-11,405K,1,freight,northbound,6,ACTON GRANGE JN,H,510
+2018-01-11,405K,1,freight,northbound,7,WARRINGTON BQ,,511
+2018-01-11,405K,1,freight,northbound,8,WINWICK JN,M,514
+2018-01-11,413I,2,freight,northbound,0,CREWE,,187
+2018-01-11,413I,2,freight,northbound,1,WINSFORD,S,193
+2018-01-11,413I,2,freight,northbound,2,HARTFORD,,202
+2018-01-11,413I,2,freight,northbound,3,HARTFORD JN,S,201
+2018-01-11,413I,2,freight,northbound,4,ACTON BRIDGE,,205
+2018-01-11,413I,2,freight,northbound,5,WEAVER JN,L,207
+2018-01-11,422L,1,freight,northbound,0,CREWE,,1253
+2018-01-11,422L,1,freight,northbound,1,WINSFORD,S,1261
+2018-01-11,422L,1,freight,northbound,2,HARTFORD,,1270
+2018-01-11,422L,1,freight,northbound,3,HARTFORD JN,S,1268
+2018-01-11,422L,1,freight,northbound,4,ACTON BRIDGE,,1273
+2018-01-11,422L,1,freight,northbound,5,WEAVER JN,L,1275
+2018-01-11,422M,1,freight,southbound,0,CREWE,G,1384
+2018-01-11,422M,1,freight,southbound,1,WINSFORD,F,1375
+2018-01-11,422M,1,freight,southbound,2,HARTFORD,,1371
+2018-01-11,422M,1,freight,southbound,3,HARTFORD JN,,1370
+2018-01-11,422M,1,freight,southbound,4,ACTON BRIDGE,,1366
+2018-01-11,422M,1,freight,southbound,5,WEAVER JN,M,1364
+2018-01-11,422M,1,freight,southbound,6,ACTON GRANGE JN,,1360
+2018-01-11,422M,1,freight,southbound,7,WARRINGTON BQ,F,1359
+2018-01-11,422M,1,freight,southbound,8,WINWICK JN,S,1356
+2018-01-11,423M,1,freight,northbound,0,CREWE,,1244
+2018-01-11,423M,1,freight,northbound,1,WINSFORD,S,1250
+2018-01-11,423M,1,freight,northbound,2,HARTFORD,,1254
+2018-01-11,423M,1,freight,northbound,3,HARTFORD JN,S,1252
+2018-01-11,423M,1,freight,northbound,4,ACTON BRIDGE,,1257
+2018-01-11,423M,1,freight,northbound,5,WEAVER JN,L,1259
+2018-01-11,423M,1,freight,northbound,6,ACTON GRANGE JN,H,1264
+2018-01-11,423M,1,freight,northbound,7,WARRINGTON BQ,,1265
+2018-01-11,423M,1,freight,northbound,8,WINWICK JN,M,1268
+2018-01-11,424L,1,freight,northbound,0,CREWE,G,901
+2018-01-11,424L,1,freight,northbound,1,WINSFORD,F,895
+2018-01-11,424L,1,freight,northbound,4,ACTON BRIDGE,,889
+2018-01-11,424L,1,freight,northbound,5,WEAVER JN,,887
+2018-01-11,425J,1,freight,southbound,0,CREWE,G,132
+2018-01-11,425J,1,freight,southbound,1,WINSFORD,F,126
+2018-01-11,425J,1,freight,southbound,2,HARTFORD,,122
+2018-01-11,425J,1,freight,southbound,3,HARTFORD JN,,121
+2018-01-11,425J,1,freight,southbound,4,ACTON BRIDGE,,117
+2018-01-11,425J,1,freight,southbound,5,WEAVER JN,M,114
+2018-01-11,425J,1,freight,southbound,6,ACTON GRANGE JN,,105
+2018-01-11,425J,1,freight,southbound,7,WARRINGTON BQ,F,98
+2018-01-11,425J,1,freight,southbound,8,WINWICK JN,S,94
+2018-01-11,431M,1,freight,northbound,1,WINSFORD,S,1277
+2018-01-11,431M,1,freight,northbound,2,HARTFORD,,1281
+2018-01-11,431M,1,freight,northbound,3,HARTFORD JN,S,1279
+2018-01-11,431M,1,freight,northbound,4,ACTON BRIDGE,,1284
+2018-01-11,431M,1,freight,northbound,5,WEAVER JN,L,1286
+2018-01-11,431M,1,freight,northbound,6,ACTON GRANGE JN,H,1290
+2018-01-11,431M,1,freight,northbound,7,WARRINGTON BQ,,1292
+2018-01-11,431M,1,freight,northbound,8,WINWICK JN,M,1298
+2018-01-11,434M,1,freight,southbound,0,CREWE,G,1438
+2018-01-11,434M,1,freight,southbound,1,WINSFORD,F,1433
+2018-01-11,434M,1,freight,southbound,2,HARTFORD,,1430
+2018-01-11,434M,1,freight,southbound,3,HARTFORD JN,,1429
+2018-01-11,434M,1,freight,southbound,4,ACTON BRIDGE,,1427
+2018-01-11,434M,1,freight,southbound,5,WEAVER JN,M,1425
+2018-01-11,434M,1,freight,southbound,6,ACTON GRANGE JN,,1420
+2018-01-11,434M,1,freight,southbound,7,WARRINGTON BQ,F,1419
+2018-01-11,434M,1,freight,southbound,8,WINWICK JN,S,1416
+2018-01-11,436J,2,freight,southbound,0,CREWE,G,32
+2018-01-11,436J,2,freight,southbound,1,WINSFORD,F,24
+2018-01-11,436J,2,freight,southbound,2,HARTFORD,,20
+2018-01-11,436J,2,freight,southbound,3,HARTFORD JN,,20
+2018-01-11,436J,2,freight,southbound,4,ACTON BRIDGE,,17
+2018-01-11,436J,2,freight,southbound,5,WEAVER JN,M,15
+2018-01-11,436J,2,freight,southbound,6,ACTON GRANGE JN,,9
+2018-01-11,436J,2,freight,southbound,7,WARRINGTON BQ,F,7
+2018-01-11,436J,2,freight,southbound,8,WINWICK JN,S,3
+2018-01-11,437M,1,freight,northbound,0,CREWE,,1387
+2018-01-11,437M,1,freight,northbound,1,WINSFORD,S,1394
+2018-01-11,437M,1,freight,northbound,2,HARTFORD,,1398
+2018-01-11,437M,1,freight,northbound,3,HARTFORD JN,S,1397
+2018-01-11,437M,1,freight,northbound,4,ACTON BRIDGE,,1401
+2018-01-11,437M,1,freight,northbound,5,WEAVER JN,L,1403
+2018-01-11,439M,1,freight,northbound,0,CREWE,G,1232
+2018-01-11,439M,1,freight,northbound,1,WINSFORD,F,1224
+2018-01-11,439M,1,freight,northbound,2,HARTFORD,,1221
+2018-01-11,439M,1,freight,northbound,3,HARTFORD JN,,1220
+2018-01-11,439M,1,freight,northbound,4,ACTON BRIDGE,,1218
+2018-01-11,439M,1,freight,northbound,5,WEAVER JN,M,1216
+2018-01-11,440M,1,freight,northbound,0,CREWE,,1264
+2018-01-11,440M,1,freight,northbound,1,WINSFORD,S,1270
+2018-01-11,440M,1,freight,northbound,2,HARTFORD,,1274
+2018-01-11,440M,1,freight,northbound,3,HARTFORD JN,S,1272
+2018-01-11,440M,1,freight,northbound,4,ACTON BRIDGE,,1277
+2018-01-11,440M,1,freight,northbound,5,WEAVER JN,L,1279
+2018-01-11,440M,1,freight,northbound,6,ACTON GRANGE JN,H,1284
+2018-01-11,440M,1,freight,northbound,7,WARRINGTON BQ,,1285
+2018-01-11,440M,1,freight,northbound,8,WINWICK JN,M,1288
+2018-01-11,445J,1,freight,northbound,0,CREWE,G,143
+2018-01-11,445J,1,freight,northbound,1,WINSFORD,F,136
+2018-01-11,445J,1,freight,northbound,2,HARTFORD,,133
+2018-01-11,445J,1,freight,northbound,3,HARTFORD JN,,132
+2018-01-11,445J,1,freight,northbound,4,ACTON BRIDGE,,128
+2018-01-11,445J,1,freight,northbound,5,WEAVER JN,M,125
+2018-01-11,445K,1,freight,northbound,0,CREWE,G,256
+2018-01-11,445K,1,freight,northbound,1,WINSFORD,F,248
+2018-01-11,445K,1,freight,northbound,2,HARTFORD,,244
+2018-01-11,445K,1,freight,northbound,3,HARTFORD JN,,244
+2018-01-11,445K,1,freight,northbound,4,ACTON BRIDGE,,241
+2018-01-11,445K,1,freight,northbound,5,WEAVER JN,M,239
+2018-01-11,446K,1,freight,northbound,0,CREWE,G,383
+2018-01-11,446K,1,freight,northbound,1,WINSFORD,F,376
+2018-01-11,446K,1,freight,northbound,2,HARTFORD,,372
+2018-01-11,446K,1,freight,northbound,3,HARTFORD JN,,371
+2018-01-11,446K,1,freight,northbound,4,ACTON BRIDGE,,368
+2018-01-11,446K,1,freight,northbound,5,WEAVER JN,M,356
+2018-01-11,446L,1,freight,northbound,0,CREWE,G,752
+2018-01-11,446L,1,freight,northbound,1,WINSFORD,F,744
+2018-01-11,446L,1,freight,northbound,2,HARTFORD,,741
+2018-01-11,446L,1,freight,northbound,3,HARTFORD JN,,740
+2018-01-11,446L,1,freight,northbound,4,ACTON BRIDGE,,736
+2018-01-11,446L,1,freight,northbound,5,WEAVER JN,M,734
+2018-01-11,447K,1,freight,northbound,0,CREWE,G,468
+2018-01-11,447K,1,freight,northbound,1,WINSFORD,F,462
+2018-01-11,447K,1,freight,northbound,2,HARTFORD,,458
+2018-01-11,447K,1,freight,northbound,3,HARTFORD JN,,457
+2018-01-11,447K,1,freight,northbound,4,ACTON BRIDGE,,454
+2018-01-11,447K,1,freight,northbound,5,WEAVER JN,M,452
+2018-01-11,448M,1,freight,northbound,0,CREWE,,1406
+2018-01-11,448M,1,freight,northbound,1,WINSFORD,F,1411
+2018-01-11,448M,1,freight,northbound,2,HARTFORD,,1415
+2018-01-11,448M,1,freight,northbound,3,HARTFORD JN,S,1413
+2018-01-11,448M,1,freight,northbound,4,ACTON BRIDGE,,1417
+2018-01-11,448M,1,freight,northbound,5,WEAVER JN,L,1419
+2018-01-11,448M,1,freight,northbound,6,ACTON GRANGE JN,H,1427
+2018-01-11,448M,1,freight,northbound,7,WARRINGTON BQ,,1430
+2018-01-11,451I,2,freight,northbound,0,CREWE,G,7
+2018-01-11,451I,2,freight,northbound,1,WINSFORD,F,1
+2018-01-11,454K,1,freight,southbound,0,CREWE,G,617
+2018-01-11,454K,1,freight,southbound,1,WINSFORD,F,609
+2018-01-11,454K,1,freight,southbound,2,HARTFORD,,605
+2018-01-11,454K,1,freight,southbound,3,HARTFORD JN,,604
+2018-01-11,454K,1,freight,southbound,4,ACTON BRIDGE,,600
+2018-01-11,454K,1,freight,southbound,5,WEAVER JN,M,596
+2018-01-11,454K,1,freight,southbound,6,ACTON GRANGE JN,,589
+2018-01-11,454K,1,freight,southbound,7,WARRINGTON BQ,F,588
+2018-01-11,454K,1,freight,southbound,8,WINWICK JN,S,584
+2018-01-11,455L,1,freight,northbound,0,CREWE,,848
+2018-01-11,455L,1,freight,northbound,1,WINSFORD,S,854
+2018-01-11,455L,1,freight,northbound,3,HARTFORD JN,S,859
+2018-01-11,455L,1,freight,northbound,4,ACTON BRIDGE,,864
+2018-01-11,455L,1,freight,northbound,6,ACTON GRANGE JN,H,870
+2018-01-11,455L,1,freight,northbound,7,WARRINGTON BQ,,871
+2018-01-11,455L,1,freight,northbound,8,WINWICK JN,M,874
+2018-01-11,459J,1,freight,northbound,7,WARRINGTON BQ,,0
+2018-01-11,459J,2,freight,northbound,7,WARRINGTON BQ,3,5
+2018-01-11,459J,2,freight,northbound,8,WINWICK JN,M,10
+2018-01-11,461M,1,freight,northbound,0,CREWE,G,1359
+2018-01-11,461M,1,freight,northbound,1,WINSFORD,F,1353
+2018-01-11,461M,1,freight,northbound,2,HARTFORD,,1350
+2018-01-11,461M,1,freight,northbound,3,HARTFORD JN,,1349
+2018-01-11,461M,1,freight,northbound,4,ACTON BRIDGE,,1346
+2018-01-11,461M,1,freight,northbound,5,WEAVER JN,M,1345
+2018-01-11,462L,1,freight,southbound,3,HARTFORD JN,,1089
+2018-01-11,462L,1,freight,southbound,4,ACTON BRIDGE,,1084
+2018-01-11,462L,1,freight,southbound,5,WEAVER JN,M,1082
+2018-01-11,462L,1,freight,southbound,6,ACTON GRANGE JN,,1075
+2018-01-11,462L,1,freight,southbound,7,WARRINGTON BQ,F,1068
+2018-01-11,462L,1,freight,southbound,8,WINWICK JN,S,1064
+2018-01-11,463J,1,freight,northbound,0,CREWE,,626
+2018-01-11,463J,1,freight,northbound,1,WINSFORD,S,634
+2018-01-11,463J,1,freight,northbound,2,HARTFORD,,646
+2018-01-11,463J,1,freight,northbound,3,HARTFORD JN,S,643
+2018-01-11,463J,1,freight,northbound,4,ACTON BRIDGE,,649
+2018-01-11,463J,1,freight,northbound,5,WEAVER JN,L,651
+2018-01-11,466K,1,freight,southbound,0,CREWE,G,655
+2018-01-11,466K,1,freight,southbound,1,WINSFORD,F,648
+2018-01-11,466K,1,freight,southbound,2,HARTFORD,,645
+2018-01-11,466K,1,freight,southbound,3,HARTFORD JN,,644
+2018-01-11,466K,1,freight,southbound,4,ACTON BRIDGE,,641
+2018-01-11,466K,1,freight,southbound,5,WEAVER JN,M,639
+2018-01-11,466K,1,freight,southbound,6,ACTON GRANGE JN,,629
+2018-01-11,468I,3,freight,northbound,0,CREWE,,126
+2018-01-11,468I,3,freight,northbound,1,WINSFORD,S,133
+2018-01-11,468I,3,freight,northbound,2,HARTFORD,,137
+2018-01-11,468I,3,freight,northbound,3,HARTFORD JN,S,136
+2018-01-11,468I,3,freight,northbound,4,ACTON BRIDGE,,140
+2018-01-11,468I,3,freight,northbound,5,WEAVER JN,L,141
+2018-01-11,468I,3,freight,northbound,6,ACTON GRANGE JN,H,146
+2018-01-11,468I,3,freight,northbound,7,WARRINGTON BQ,,148
+2018-01-11,468I,3,freight,northbound,8,WINWICK JN,M,151
+2018-01-11,472J,1,freight,southbound,0,CREWE,G,150
+2018-01-11,472J,1,freight,southbound,1,WINSFORD,F,143
+2018-01-11,472J,1,freight,southbound,2,HARTFORD,,140
+2018-01-11,472J,1,freight,southbound,3,HARTFORD JN,,139
+2018-01-11,472J,1,freight,southbound,4,ACTON BRIDGE,,137
+2018-01-11,472J,1,freight,southbound,5,WEAVER JN,M,134
+2018-01-11,472J,1,freight,southbound,6,ACTON GRANGE JN,,130
+2018-01-11,472J,1,freight,southbound,7,WARRINGTON BQ,F,129
+2018-01-11,472J,1,freight,southbound,8,WINWICK JN,S,125
+2018-01-11,474K,2,freight,northbound,0,CREWE,,990
+2018-01-11,474K,2,freight,northbound,1,WINSFORD,S,998
+2018-01-11,474K,2,freight,northbound,2,HARTFORD,,1015
+2018-01-11,474K,2,freight,northbound,3,HARTFORD JN,S,1012
+2018-01-11,474K,2,freight,northbound,4,ACTON BRIDGE,,1017
+2018-01-11,474K,2,freight,northbound,5,WEAVER JN,L,1019
+2018-01-11,482J,1,freight,northbound,0,CREWE,G,25
+2018-01-11,482J,1,freight,northbound,1,WINSFORD,F,18
+2018-01-11,482J,1,freight,northbound,2,HARTFORD,,15
+2018-01-11,482J,1,freight,northbound,3,HARTFORD JN,,14
+2018-01-11,482J,1,freight,northbound,4,ACTON BRIDGE,,12
+2018-01-11,482J,1,freight,northbound,5,WEAVER JN,M,11
+2018-01-11,486K,1,freight,northbound,0,CREWE,,513
+2018-01-11,486K,1,freight,northbound,1,WINSFORD,S,519
+2018-01-11,486K,1,freight,northbound,2,HARTFORD,,524
+2018-01-11,486K,1,freight,northbound,3,HARTFORD JN,S,522
+2018-01-11,486K,1,freight,northbound,4,ACTON BRIDGE,,528
+2018-01-11,486K,1,freight,northbound,5,WEAVER JN,L,530
+2018-01-11,489L,1,freight,northbound,0,CREWE,G,1179
+2018-01-11,489L,1,freight,northbound,1,WINSFORD,F,1172
+2018-01-11,489L,1,freight,northbound,2,HARTFORD,,1169
+2018-01-11,489L,1,freight,northbound,3,HARTFORD JN,,1168
+2018-01-11,489L,1,freight,northbound,4,ACTON BRIDGE,,1165
+2018-01-11,489L,1,freight,northbound,5,WEAVER JN,M,1164
+2018-01-11,493L,1,freight,southbound,0,CREWE,G,1408
+2018-01-11,493L,1,freight,southbound,1,WINSFORD,F,1402
+2018-01-11,493L,1,freight,southbound,2,HARTFORD,,1398
+2018-01-11,493L,1,freight,southbound,3,HARTFORD JN,,1396
+2018-01-11,493L,1,freight,southbound,4,ACTON BRIDGE,,1388
+2018-01-11,493L,1,freight,southbound,5,WEAVER JN,M,1386
+2018-01-11,493L,1,freight,southbound,6,ACTON GRANGE JN,,1381
+2018-01-11,493L,1,freight,southbound,7,WARRINGTON BQ,F,1379
+2018-01-11,493L,1,freight,southbound,8,WINWICK JN,S,1375
+2018-01-11,496I,1,freight,northbound,0,CREWE,,90
+2018-01-11,496I,1,freight,northbound,1,WINSFORD,S,96
+2018-01-11,496I,1,freight,northbound,2,HARTFORD,,101
+2018-01-11,496I,1,freight,northbound,3,HARTFORD JN,S,99
+2018-01-11,496I,1,freight,northbound,4,ACTON BRIDGE,,103
+2018-01-11,496I,1,freight,northbound,5,WEAVER JN,L,105
+2018-01-11,496I,1,freight,northbound,6,ACTON GRANGE JN,H,110
+2018-01-11,496I,1,freight,northbound,7,WARRINGTON BQ,,111
+2018-01-11,496I,1,freight,northbound,8,WINWICK JN,M,115
+2018-01-11,499K,2,freight,northbound,0,CREWE,,1121
+2018-01-11,499K,2,freight,northbound,1,WINSFORD,S,1128
+2018-01-11,499K,2,freight,northbound,2,HARTFORD,,1137
+2018-01-11,499K,2,freight,northbound,3,HARTFORD JN,S,1135
+2018-01-11,499K,2,freight,northbound,4,ACTON BRIDGE,,1140
+2018-01-11,499K,2,freight,northbound,5,WEAVER JN,L,1142
+2018-01-11,5C31,1,freight,northbound,11,PARKSIDE JN,C,242
+2018-01-11,5C55,1,freight,northbound,11,PARKSIDE JN,,951
+2018-01-11,5D21,1,freight,southbound,0,CREWE,G,1255
+2018-01-11,5D21,1,freight,southbound,1,WINSFORD,F,1250
+2018-01-11,5D21,1,freight,southbound,2,HARTFORD,,1248
+2018-01-11,5D21,1,freight,southbound,3,HARTFORD JN,,1248
+2018-01-11,5D21,1,freight,southbound,4,ACTON BRIDGE,,1246
+2018-01-11,5D21,1,freight,southbound,5,WEAVER JN,M,1245
+2018-01-11,5D21,1,freight,southbound,6,ACTON GRANGE JN,,1241
+2018-01-11,5D21,1,freight,southbound,7,WARRINGTON BQ,F,1239
+2018-01-11,5D21,1,freight,southbound,8,WINWICK JN,S,1235
+2018-01-11,5D39,1,freight,northbound,6,ACTON GRANGE JN,,850
+2018-01-11,5D39,1,freight,northbound,7,WARRINGTON BQ,F,848
+2018-01-11,5D39,1,freight,northbound,8,WINWICK JN,S,844
+2018-01-11,5D39,1,freight,northbound,9,EARLESTOWN,,834
+2018-01-11,5E62,1,freight,northbound,9,EARLESTOWN,,369
+2018-01-11,5E62,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,365
+2018-01-11,5E62,1,freight,northbound,11,PARKSIDE JN,C,363
+2018-01-11,5F02,1,freight,northbound,7,WARRINGTON BQ,4,444
+2018-01-11,5F02,1,freight,northbound,8,WINWICK JN,M,447
+2018-01-11,5F08,1,freight,northbound,9,EARLESTOWN,,1392
+2018-01-11,5F08,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,1390
+2018-01-11,5F08,1,freight,northbound,11,PARKSIDE JN,C,1388
+2018-01-11,5F10,1,freight,northbound,7,WARRINGTON BQ,H,332
+2018-01-11,5F10,1,freight,northbound,8,WINWICK JN,S,328
+2018-01-11,5F10,1,freight,northbound,9,EARLESTOWN,,323
+2018-01-11,5F25,1,freight,northbound,9,EARLESTOWN,,376
+2018-01-11,5F25,1,freight,northbound,10,NEWTON-LE-WILLOWS,,378
+2018-01-11,5F25,1,freight,northbound,11,PARKSIDE JN,M,379
+2018-01-11,5F66,1,freight,northbound,9,EARLESTOWN,,1325
+2018-01-11,5F66,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,1323
+2018-01-11,5F81,1,freight,northbound,7,WARRINGTON BQ,H,452
+2018-01-11,5F81,1,freight,northbound,8,WINWICK JN,M,457
+2018-01-11,5F81,1,freight,northbound,9,EARLESTOWN,,461
+2018-01-11,5F94,1,freight,southbound,0,CREWE,G,1329
+2018-01-11,5F94,1,freight,southbound,1,WINSFORD,F,1324
+2018-01-11,5F94,1,freight,southbound,2,HARTFORD,,1322
+2018-01-11,5F94,1,freight,southbound,3,HARTFORD JN,,1321
+2018-01-11,5F94,1,freight,southbound,4,ACTON BRIDGE,,1319
+2018-01-11,5F94,1,freight,southbound,5,WEAVER JN,M,1318
+2018-01-11,5F94,1,freight,southbound,6,ACTON GRANGE JN,,1314
+2018-01-11,5F94,1,freight,southbound,7,WARRINGTON BQ,F,1313
+2018-01-11,5F94,1,freight,southbound,8,WINWICK JN,S,1309
+2018-01-11,5H00,1,freight,northbound,11,PARKSIDE JN,,1422
+2018-01-11,5J08,1,freight,northbound,6,ACTON GRANGE JN,H,1236
+2018-01-11,5J08,1,freight,northbound,7,WARRINGTON BQ,,1239
+2018-01-11,5J08,1,freight,northbound,8,WINWICK JN,M,1246
+2018-01-11,5J08,1,freight,northbound,9,EARLESTOWN,,1249
+2018-01-11,5J08,1,freight,northbound,10,NEWTON-LE-WILLOWS,,1259
+2018-01-11,5J08,1,freight,northbound,11,PARKSIDE JN,M,1261
+2018-01-11,5J46,1,freight,northbound,7,WARRINGTON BQ,4,996
+2018-01-11,5J46,1,freight,northbound,8,WINWICK JN,M,999
+2018-01-11,5J46,1,freight,northbound,9,EARLESTOWN,,1001
+2018-01-11,5J46,1,freight,northbound,10,NEWTON-LE-WILLOWS,,1003
+2018-01-11,5J46,1,freight,northbound,11,PARKSIDE JN,M,1003
+2018-01-11,5J81,1,freight,northbound,11,PARKSIDE JN,,1319
+2018-01-11,5K60,1,freight,northbound,0,CREWE,G,340
+2018-01-11,5K60,1,freight,northbound,1,WINSFORD,F,335
+2018-01-11,5K60,1,freight,northbound,2,HARTFORD,,333
+2018-01-11,5K60,1,freight,northbound,3,HARTFORD JN,,332
+2018-01-11,5K60,1,freight,northbound,4,ACTON BRIDGE,,331
+2018-01-11,5K60,1,freight,northbound,5,WEAVER JN,M,330
+2018-01-11,5M06,1,freight,northbound,9,EARLESTOWN,,402
+2018-01-11,5M06,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,400
+2018-01-11,5M06,1,freight,northbound,11,PARKSIDE JN,C,399
+2018-01-11,5N14,1,freight,northbound,0,CREWE,,229
+2018-01-11,5N14,1,freight,northbound,1,WINSFORD,F,232
+2018-01-11,5N14,1,freight,northbound,2,HARTFORD,,234
+2018-01-11,5N14,1,freight,northbound,3,HARTFORD JN,S,233
+2018-01-11,5N14,1,freight,northbound,4,ACTON BRIDGE,,236
+2018-01-11,5N14,1,freight,northbound,5,WEAVER JN,L,237
+2018-01-11,5N14,1,freight,northbound,6,ACTON GRANGE JN,H,240
+2018-01-11,5N14,1,freight,northbound,7,WARRINGTON BQ,,241
+2018-01-11,5N14,1,freight,northbound,8,WINWICK JN,M,244
+2018-01-11,5P46,1,freight,northbound,0,CREWE,,273
+2018-01-11,5P46,1,freight,northbound,1,WINSFORD,F,276
+2018-01-11,5P46,1,freight,northbound,2,HARTFORD,,279
+2018-01-11,5P46,1,freight,northbound,3,HARTFORD JN,S,278
+2018-01-11,5P46,1,freight,northbound,4,ACTON BRIDGE,,281
+2018-01-11,5P46,1,freight,northbound,5,WEAVER JN,L,282
+2018-01-11,5P46,1,freight,northbound,6,ACTON GRANGE JN,H,288
+2018-01-11,5P46,1,freight,northbound,7,WARRINGTON BQ,,289
+2018-01-11,5P46,1,freight,northbound,8,WINWICK JN,M,292
+2018-01-11,5T16,1,freight,northbound,0,CREWE,G,330
+2018-01-11,5T16,1,freight,northbound,1,WINSFORD,F,325
+2018-01-11,5T16,1,freight,northbound,2,HARTFORD,,323
+2018-01-11,5T16,1,freight,northbound,3,HARTFORD JN,,323
+2018-01-11,5T16,1,freight,northbound,4,ACTON BRIDGE,,321
+2018-01-11,5T16,1,freight,northbound,5,WEAVER JN,M,320
+2018-01-11,5W72,1,freight,northbound,9,EARLESTOWN,,1299
+2018-01-11,5W72,1,freight,northbound,10,NEWTON-LE-WILLOWS,,1301
+2018-01-11,5W72,1,freight,northbound,11,PARKSIDE JN,M,1302
+2018-01-11,5W81,1,freight,northbound,9,EARLESTOWN,,1236
+2018-01-11,5W81,1,freight,northbound,10,NEWTON-LE-WILLOWS,,1239
+2018-01-11,5W81,1,freight,northbound,11,PARKSIDE JN,M,1240
+2018-01-11,606N,1,freight,northbound,0,CREWE,G,760
+2018-01-11,606N,1,freight,northbound,1,WINSFORD,F,753
+2018-01-11,606N,1,freight,northbound,2,HARTFORD,,749
+2018-01-11,606N,1,freight,northbound,3,HARTFORD JN,,748
+2018-01-11,606N,1,freight,northbound,4,ACTON BRIDGE,,745
+2018-01-11,606N,1,freight,northbound,5,WEAVER JN,M,743
+2018-01-11,607Q,1,freight,northbound,3,HARTFORD JN,,1177
+2018-01-11,607Q,1,freight,northbound,4,ACTON BRIDGE,,1180
+2018-01-11,607Q,1,freight,northbound,5,WEAVER JN,L,1206
+2018-01-11,609P,1,freight,southbound,0,CREWE,G,1354
+2018-01-11,609P,1,freight,southbound,1,WINSFORD,F,1345
+2018-01-11,609P,1,freight,southbound,2,HARTFORD,,1341
+2018-01-11,609P,1,freight,southbound,3,HARTFORD JN,,1339
+2018-01-11,609P,1,freight,southbound,4,ACTON BRIDGE,,1332
+2018-01-11,609P,1,freight,southbound,5,WEAVER JN,M,1329
+2018-01-11,609P,1,freight,southbound,6,ACTON GRANGE JN,,1321
+2018-01-11,609P,1,freight,southbound,7,WARRINGTON BQ,H,1312
+2018-01-11,609P,1,freight,southbound,8,WINWICK JN,S,1306
+2018-01-11,617M,1,freight,northbound,6,ACTON GRANGE JN,,1088
+2018-01-11,617M,1,freight,northbound,7,WARRINGTON BQ,H,1078
+2018-01-11,617M,1,freight,northbound,8,WINWICK JN,S,1071
+2018-01-11,618Q,1,freight,northbound,0,CREWE,,1334
+2018-01-11,618Q,1,freight,northbound,1,WINSFORD,S,1340
+2018-01-11,618Q,1,freight,northbound,2,HARTFORD,,1349
+2018-01-11,618Q,1,freight,northbound,3,HARTFORD JN,S,1347
+2018-01-11,618Q,1,freight,northbound,4,ACTON BRIDGE,,1352
+2018-01-11,618Q,1,freight,northbound,5,WEAVER JN,L,1355
+2018-01-11,618Q,1,freight,northbound,6,ACTON GRANGE JN,H,1361
+2018-01-11,621L,1,freight,southbound,0,CREWE,G,160
+2018-01-11,621L,1,freight,southbound,1,WINSFORD,F,153
+2018-01-11,621L,1,freight,southbound,2,HARTFORD,,149
+2018-01-11,621L,1,freight,southbound,3,HARTFORD JN,,148
+2018-01-11,621L,1,freight,southbound,4,ACTON BRIDGE,,145
+2018-01-11,621L,1,freight,southbound,5,WEAVER JN,M,143
+2018-01-11,621L,1,freight,southbound,6,ACTON GRANGE JN,,135
+2018-01-11,625N,1,freight,northbound,3,HARTFORD JN,,773
+2018-01-11,625N,1,freight,northbound,4,ACTON BRIDGE,,776
+2018-01-11,625N,1,freight,northbound,5,WEAVER JN,L,779
+2018-01-11,627O,1,freight,northbound,9,EARLESTOWN,,1423
+2018-01-11,627O,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,1421
+2018-01-11,627O,1,freight,northbound,11,PARKSIDE JN,C,1419
+2018-01-11,629I,1,freight,northbound,0,CREWE,,40
+2018-01-11,629I,1,freight,northbound,1,WINSFORD,F,45
+2018-01-11,629I,1,freight,northbound,2,HARTFORD,,49
+2018-01-11,629I,1,freight,northbound,3,HARTFORD JN,S,47
+2018-01-11,629I,1,freight,northbound,4,ACTON BRIDGE,,52
+2018-01-11,629I,1,freight,northbound,5,WEAVER JN,L,54
+2018-01-11,629I,1,freight,northbound,6,ACTON GRANGE JN,H,63
+2018-01-11,629I,1,freight,northbound,7,WARRINGTON BQ,,67
+2018-01-11,629I,1,freight,northbound,8,WINWICK JN,M,76
+2018-01-11,630N,1,freight,northbound,0,CREWE,,622
+2018-01-11,630N,1,freight,northbound,1,WINSFORD,S,626
+2018-01-11,630N,1,freight,northbound,2,HARTFORD,,631
+2018-01-11,630N,1,freight,northbound,3,HARTFORD JN,S,629
+2018-01-11,630N,1,freight,northbound,4,ACTON BRIDGE,,634
+2018-01-11,630N,1,freight,northbound,5,WEAVER JN,L,636
+2018-01-11,630N,1,freight,northbound,6,ACTON GRANGE JN,H,641
+2018-01-11,630N,1,freight,northbound,7,WARRINGTON BQ,,643
+2018-01-11,630N,1,freight,northbound,8,WINWICK JN,M,646
+2018-01-11,630P,1,freight,southbound,3,HARTFORD JN,,1235
+2018-01-11,630P,1,freight,southbound,4,ACTON BRIDGE,,1226
+2018-01-11,630P,1,freight,southbound,5,WEAVER JN,M,1224
+2018-01-11,630P,1,freight,southbound,6,ACTON GRANGE JN,,1218
+2018-01-11,630P,1,freight,southbound,7,WARRINGTON BQ,F,1216
+2018-01-11,630P,1,freight,southbound,8,WINWICK JN,S,1211
+2018-01-11,632Q,1,freight,northbound,0,CREWE,G,1372
+2018-01-11,632Q,1,freight,northbound,1,WINSFORD,F,1365
+2018-01-11,632Q,1,freight,northbound,2,HARTFORD,,1361
+2018-01-11,632Q,1,freight,northbound,3,HARTFORD JN,,1360
+2018-01-11,632Q,1,freight,northbound,4,ACTON BRIDGE,,1357
+2018-01-11,632Q,1,freight,northbound,5,WEAVER JN,M,1355
+2018-01-11,638M,1,freight,southbound,3,HARTFORD JN,,746
+2018-01-11,638M,1,freight,southbound,4,ACTON BRIDGE,,741
+2018-01-11,638M,1,freight,southbound,5,WEAVER JN,M,737
+2018-01-11,638M,1,freight,southbound,6,ACTON GRANGE JN,,720
+2018-01-11,638M,1,freight,southbound,7,WARRINGTON BQ,F,716
+2018-01-11,638M,1,freight,southbound,8,WINWICK JN,S,709
+2018-01-11,641N,1,freight,northbound,0,CREWE,,1269
+2018-01-11,641N,1,freight,northbound,1,WINSFORD,S,1274
+2018-01-11,641N,1,freight,northbound,2,HARTFORD,,1278
+2018-01-11,641N,1,freight,northbound,3,HARTFORD JN,S,1276
+2018-01-11,641N,1,freight,northbound,4,ACTON BRIDGE,,1283
+2018-01-11,641N,1,freight,northbound,5,WEAVER JN,L,1289
+2018-01-11,641N,1,freight,northbound,6,ACTON GRANGE JN,H,1297
+2018-01-11,641N,1,freight,northbound,7,WARRINGTON BQ,,1324
+2018-01-11,641N,1,freight,northbound,8,WINWICK JN,M,1330
+2018-01-11,641Q,1,freight,northbound,3,HARTFORD JN,,1305
+2018-01-11,641Q,1,freight,northbound,4,ACTON BRIDGE,,1301
+2018-01-11,641Q,1,freight,northbound,5,WEAVER JN,M,1293
+2018-01-11,642N,1,freight,northbound,6,ACTON GRANGE JN,H,857
+2018-01-11,648M,1,freight,northbound,3,HARTFORD JN,,683
+2018-01-11,648M,1,freight,northbound,4,ACTON BRIDGE,,679
+2018-01-11,648M,1,freight,northbound,5,WEAVER JN,M,677
+2018-01-11,649M,1,freight,northbound,3,HARTFORD JN,,697
+2018-01-11,649M,1,freight,northbound,4,ACTON BRIDGE,,715
+2018-01-11,649M,1,freight,northbound,5,WEAVER JN,L,719
+2018-01-11,650M,1,freight,northbound,3,HARTFORD JN,,827
+2018-01-11,650M,1,freight,northbound,4,ACTON BRIDGE,,823
+2018-01-11,650M,1,freight,northbound,5,WEAVER JN,M,818
+2018-01-11,650P,1,freight,northbound,3,HARTFORD JN,,1326
+2018-01-11,650P,1,freight,northbound,4,ACTON BRIDGE,,1328
+2018-01-11,650P,1,freight,northbound,5,WEAVER JN,L,1331
+2018-01-11,656L,1,freight,northbound,0,CREWE,,576
+2018-01-11,656L,1,freight,northbound,1,WINSFORD,S,582
+2018-01-11,656L,1,freight,northbound,2,HARTFORD,,587
+2018-01-11,656L,1,freight,northbound,3,HARTFORD JN,S,585
+2018-01-11,656L,1,freight,northbound,4,ACTON BRIDGE,,590
+2018-01-11,656L,1,freight,northbound,5,WEAVER JN,L,610
+2018-01-11,656L,1,freight,northbound,6,ACTON GRANGE JN,H,618
+2018-01-11,656L,1,freight,northbound,7,WARRINGTON BQ,,621
+2018-01-11,656L,1,freight,northbound,8,WINWICK JN,M,640
+2018-01-11,656M,1,freight,northbound,0,CREWE,,681
+2018-01-11,656M,1,freight,northbound,1,WINSFORD,S,688
+2018-01-11,656M,1,freight,northbound,2,HARTFORD,,692
+2018-01-11,656M,1,freight,northbound,3,HARTFORD JN,S,690
+2018-01-11,656M,1,freight,northbound,4,ACTON BRIDGE,,695
+2018-01-11,656M,1,freight,northbound,5,WEAVER JN,L,716
+2018-01-11,660H,1,freight,northbound,7,WARRINGTON BQ,H,75
+2018-01-11,660H,1,freight,northbound,8,WINWICK JN,S,67
+2018-01-11,660H,2,freight,southbound,0,CREWE,G,141
+2018-01-11,660H,2,freight,southbound,1,WINSFORD,F,133
+2018-01-11,660H,2,freight,southbound,2,HARTFORD,,128
+2018-01-11,660H,2,freight,southbound,3,HARTFORD JN,,127
+2018-01-11,660H,2,freight,southbound,4,ACTON BRIDGE,,123
+2018-01-11,660H,2,freight,southbound,5,WEAVER JN,M,120
+2018-01-11,660H,2,freight,southbound,6,ACTON GRANGE JN,,109
+2018-01-11,662N,1,freight,southbound,0,CREWE,G,1298
+2018-01-11,662N,1,freight,southbound,1,WINSFORD,F,1290
+2018-01-11,662N,1,freight,southbound,2,HARTFORD,,1287
+2018-01-11,662N,1,freight,southbound,3,HARTFORD JN,,1286
+2018-01-11,662N,1,freight,southbound,4,ACTON BRIDGE,,1283
+2018-01-11,662N,1,freight,southbound,5,WEAVER JN,M,1280
+2018-01-11,662N,1,freight,southbound,6,ACTON GRANGE JN,,1272
+2018-01-11,665P,1,freight,southbound,0,CREWE,G,1227
+2018-01-11,665P,1,freight,southbound,1,WINSFORD,F,1220
+2018-01-11,665P,1,freight,southbound,2,HARTFORD,,1216
+2018-01-11,665P,1,freight,southbound,3,HARTFORD JN,,1215
+2018-01-11,665P,1,freight,southbound,4,ACTON BRIDGE,,1212
+2018-01-11,665P,1,freight,southbound,5,WEAVER JN,M,1205
+2018-01-11,665P,1,freight,southbound,6,ACTON GRANGE JN,,1196
+2018-01-11,665P,1,freight,southbound,7,WARRINGTON BQ,F,1189
+2018-01-11,665P,1,freight,southbound,8,WINWICK JN,S,1185
+2018-01-11,673K,1,freight,northbound,9,EARLESTOWN,,174
+2018-01-11,673K,1,freight,northbound,10,NEWTON-LE-WILLOWS,,175
+2018-01-11,673K,1,freight,northbound,11,PARKSIDE JN,M,176
+2018-01-11,676M,1,freight,northbound,0,CREWE,,1282
+2018-01-11,676M,1,freight,northbound,1,WINSFORD,S,1289
+2018-01-11,676M,1,freight,northbound,2,HARTFORD,,1294
+2018-01-11,676M,1,freight,northbound,3,HARTFORD JN,S,1292
+2018-01-11,676M,1,freight,northbound,4,ACTON BRIDGE,,1297
+2018-01-11,676M,1,freight,northbound,5,WEAVER JN,L,1299
+2018-01-11,676M,1,freight,northbound,6,ACTON GRANGE JN,H,1308
+2018-01-11,679J,1,freight,northbound,0,CREWE,,301
+2018-01-11,679J,1,freight,northbound,1,WINSFORD,S,308
+2018-01-11,679J,1,freight,northbound,2,HARTFORD,,312
+2018-01-11,679J,1,freight,northbound,3,HARTFORD JN,S,310
+2018-01-11,679J,1,freight,northbound,4,ACTON BRIDGE,,315
+2018-01-11,679J,1,freight,northbound,5,WEAVER JN,L,317
+2018-01-11,679J,1,freight,northbound,6,ACTON GRANGE JN,H,324
+2018-01-11,692I,1,freight,northbound,11,PARKSIDE JN,C,281
+2018-01-11,694I,1,freight,northbound,0,CREWE,,345
+2018-01-11,694I,1,freight,northbound,1,WINSFORD,S,350
+2018-01-11,694I,1,freight,northbound,2,HARTFORD,,355
+2018-01-11,694I,1,freight,northbound,3,HARTFORD JN,S,353
+2018-01-11,694I,1,freight,northbound,4,ACTON BRIDGE,,358
+2018-01-11,694I,1,freight,northbound,5,WEAVER JN,L,360
+2018-01-11,695M,1,freight,northbound,0,CREWE,,1056
+2018-01-11,695M,1,freight,northbound,1,WINSFORD,S,1062
+2018-01-11,695M,1,freight,northbound,2,HARTFORD,,1067
+2018-01-11,695M,1,freight,northbound,3,HARTFORD JN,S,1065
+2018-01-11,695M,1,freight,northbound,4,ACTON BRIDGE,,1070
+2018-01-11,695M,1,freight,northbound,5,WEAVER JN,L,1072
+2018-01-11,698M,1,freight,southbound,0,CREWE,G,1057
+2018-01-11,698M,1,freight,southbound,1,WINSFORD,F,1048
+2018-01-11,698M,1,freight,southbound,2,HARTFORD,,1044
+2018-01-11,698M,1,freight,southbound,3,HARTFORD JN,,1043
+2018-01-11,698M,1,freight,southbound,4,ACTON BRIDGE,,1040
+2018-01-11,698M,1,freight,southbound,5,WEAVER JN,M,1037
+2018-01-11,698M,1,freight,southbound,6,ACTON GRANGE JN,,1030
+2018-01-11,698M,1,freight,southbound,7,WARRINGTON BQ,F,1024
+2018-01-11,698M,1,freight,southbound,8,WINWICK JN,S,1016
+2018-01-11,699M,1,freight,northbound,1,WINSFORD,S,454
+2018-01-11,699M,1,freight,northbound,2,HARTFORD,,465
+2018-01-11,699M,1,freight,northbound,3,HARTFORD JN,S,463
+2018-01-11,699M,1,freight,northbound,4,ACTON BRIDGE,,468
+2018-01-11,699M,1,freight,northbound,5,WEAVER JN,L,470
+2018-01-11,699M,1,freight,northbound,6,ACTON GRANGE JN,H,478
+2018-01-11,699M,2,freight,northbound,6,ACTON GRANGE JN,,522
+2018-01-11,6A02,1,freight,southbound,0,CREWE,G,44
+2018-01-11,6A02,1,freight,southbound,1,WINSFORD,F,37
+2018-01-11,6A02,1,freight,southbound,2,HARTFORD,,33
+2018-01-11,6A02,1,freight,southbound,3,HARTFORD JN,,32
+2018-01-11,6A02,1,freight,southbound,4,ACTON BRIDGE,,29
+2018-01-11,6A02,1,freight,southbound,5,WEAVER JN,M,26
+2018-01-11,6A02,1,freight,southbound,6,ACTON GRANGE JN,,21
+2018-01-11,6A02,1,freight,southbound,7,WARRINGTON BQ,F,20
+2018-01-11,6A02,1,freight,southbound,8,WINWICK JN,S,15
+2018-01-11,6F72,2,freight,northbound,8,WINWICK JN,M,2
+2018-01-11,6F72,2,freight,northbound,9,EARLESTOWN,,3
+2018-01-11,6G71,1,freight,southbound,0,CREWE,G,1378
+2018-01-11,6G71,1,freight,southbound,1,WINSFORD,F,1370
+2018-01-11,6G71,1,freight,southbound,2,HARTFORD,,1366
+2018-01-11,6G71,1,freight,southbound,3,HARTFORD JN,,1365
+2018-01-11,6G71,1,freight,southbound,4,ACTON BRIDGE,,1361
+2018-01-11,6G71,1,freight,southbound,5,WEAVER JN,M,1355
+2018-01-11,6G71,1,freight,southbound,6,ACTON GRANGE JN,,1346
+2018-01-11,6G71,1,freight,southbound,7,WARRINGTON BQ,F,1345
+2018-01-11,6G71,1,freight,southbound,8,WINWICK JN,S,1340
+2018-01-11,6G71,1,freight,southbound,9,EARLESTOWN,,1331
+2018-01-11,6L48,1,freight,northbound,0,CREWE,G,1031
+2018-01-11,6L48,1,freight,northbound,1,WINSFORD,F,1022
+2018-01-11,6L48,1,freight,northbound,2,HARTFORD,,1018
+2018-01-11,6L48,1,freight,northbound,3,HARTFORD JN,,1017
+2018-01-11,6L48,1,freight,northbound,4,ACTON BRIDGE,,1013
+2018-01-11,6L48,1,freight,northbound,5,WEAVER JN,M,1005
+2018-01-11,6X41,2,freight,northbound,0,CREWE,,393
+2018-01-11,6X41,2,freight,northbound,1,WINSFORD,S,402
+2018-01-11,6X41,2,freight,northbound,2,HARTFORD,,409
+2018-01-11,6X41,2,freight,northbound,3,HARTFORD JN,S,407
+2018-01-11,6X41,2,freight,northbound,4,ACTON BRIDGE,,414
+2018-01-11,6X41,2,freight,northbound,5,WEAVER JN,L,416
+2018-01-11,9A31,1,other,southbound,0,CREWE,G,477
+2018-01-11,9A31,1,other,southbound,1,WINSFORD,F,472
+2018-01-11,9A31,1,other,southbound,2,HARTFORD,,470
+2018-01-11,9A31,1,other,southbound,3,HARTFORD JN,,470
+2018-01-11,9A31,1,other,southbound,4,ACTON BRIDGE,,468
+2018-01-11,9A31,1,other,southbound,5,WEAVER JN,M,467
+2018-01-11,9A31,1,other,southbound,6,ACTON GRANGE JN,,464
+2018-01-11,9A31,1,other,southbound,7,WARRINGTON BQ,F,459
+2018-01-11,9A31,1,other,southbound,8,WINWICK JN,S,456
+2018-01-11,9G46,1,other,southbound,0,CREWE,G,414
+2018-01-11,9G46,1,other,southbound,1,WINSFORD,F,411
+2018-01-11,9G46,1,other,southbound,2,HARTFORD,,409
+2018-01-11,9G46,1,other,southbound,3,HARTFORD JN,,409
+2018-01-11,9G46,1,other,southbound,4,ACTON BRIDGE,,407
+2018-01-11,9G46,1,other,southbound,5,WEAVER JN,M,406
+2018-01-11,9G46,1,other,southbound,6,ACTON GRANGE JN,,403
+2018-01-11,9G46,1,other,southbound,7,WARRINGTON BQ,F,399
+2018-01-11,9G46,1,other,southbound,8,WINWICK JN,S,396
+2018-01-11,9M48,1,other,southbound,0,CREWE,G,533
+2018-01-11,9M48,1,other,southbound,1,WINSFORD,F,530
+2018-01-11,9M48,1,other,southbound,2,HARTFORD,,528
+2018-01-11,9M48,1,other,southbound,3,HARTFORD JN,,528
+2018-01-11,9M48,1,other,southbound,4,ACTON BRIDGE,,526
+2018-01-11,9M48,1,other,southbound,5,WEAVER JN,M,525
+2018-01-11,9M48,1,other,southbound,6,ACTON GRANGE JN,,522
+2018-01-11,9M48,1,other,southbound,7,WARRINGTON BQ,F,518
+2018-01-11,9M48,1,other,southbound,8,WINWICK JN,S,515
+2018-01-11,9M50,1,other,southbound,0,CREWE,G,595
+2018-01-11,9M50,1,other,southbound,1,WINSFORD,F,591
+2018-01-11,9M50,1,other,southbound,2,HARTFORD,,589
+2018-01-11,9M50,1,other,southbound,3,HARTFORD JN,,589
+2018-01-11,9M50,1,other,southbound,4,ACTON BRIDGE,,587
+2018-01-11,9M50,1,other,southbound,5,WEAVER JN,M,586
+2018-01-11,9M50,1,other,southbound,6,ACTON GRANGE JN,,583
+2018-01-11,9M50,1,other,southbound,7,WARRINGTON BQ,F,579
+2018-01-11,9M50,1,other,southbound,8,WINWICK JN,S,576
+2018-01-11,9M51,1,other,southbound,0,CREWE,G,657
+2018-01-11,9M51,1,other,southbound,1,WINSFORD,F,654
+2018-01-11,9M51,1,other,southbound,2,HARTFORD,,652
+2018-01-11,9M51,1,other,southbound,3,HARTFORD JN,,651
+2018-01-11,9M51,1,other,southbound,4,ACTON BRIDGE,,650
+2018-01-11,9M51,1,other,southbound,5,WEAVER JN,M,649
+2018-01-11,9M51,1,other,southbound,6,ACTON GRANGE JN,,646
+2018-01-11,9M51,1,other,southbound,7,WARRINGTON BQ,F,642
+2018-01-11,9M51,1,other,southbound,8,WINWICK JN,S,639
+2018-01-11,9M52,1,other,southbound,0,CREWE,G,719
+2018-01-11,9M52,1,other,southbound,1,WINSFORD,F,714
+2018-01-11,9M52,1,other,southbound,2,HARTFORD,,712
+2018-01-11,9M52,1,other,southbound,3,HARTFORD JN,,712
+2018-01-11,9M52,1,other,southbound,4,ACTON BRIDGE,,710
+2018-01-11,9M52,1,other,southbound,5,WEAVER JN,M,708
+2018-01-11,9M52,1,other,southbound,6,ACTON GRANGE JN,,704
+2018-01-11,9M52,1,other,southbound,7,WARRINGTON BQ,F,700
+2018-01-11,9M52,1,other,southbound,8,WINWICK JN,S,697
+2018-01-11,9M53,1,other,southbound,0,CREWE,G,774
+2018-01-11,9M53,1,other,southbound,1,WINSFORD,F,771
+2018-01-11,9M53,1,other,southbound,2,HARTFORD,,769
+2018-01-11,9M53,1,other,southbound,3,HARTFORD JN,,768
+2018-01-11,9M53,1,other,southbound,4,ACTON BRIDGE,,767
+2018-01-11,9M53,1,other,southbound,5,WEAVER JN,M,766
+2018-01-11,9M53,1,other,southbound,6,ACTON GRANGE JN,,762
+2018-01-11,9M53,1,other,southbound,7,WARRINGTON BQ,F,759
+2018-01-11,9M53,1,other,southbound,8,WINWICK JN,S,756
+2018-01-11,9M54,1,other,southbound,0,CREWE,G,834
+2018-01-11,9M54,1,other,southbound,1,WINSFORD,F,831
+2018-01-11,9M54,1,other,southbound,2,HARTFORD,,829
+2018-01-11,9M54,1,other,southbound,3,HARTFORD JN,,829
+2018-01-11,9M54,1,other,southbound,4,ACTON BRIDGE,,827
+2018-01-11,9M54,1,other,southbound,5,WEAVER JN,M,826
+2018-01-11,9M54,1,other,southbound,6,ACTON GRANGE JN,,823
+2018-01-11,9M54,1,other,southbound,7,WARRINGTON BQ,F,819
+2018-01-11,9M54,1,other,southbound,8,WINWICK JN,S,816
+2018-01-11,9M55,1,other,southbound,0,CREWE,,894
+2018-01-11,9M55,1,other,southbound,1,WINSFORD,F,890
+2018-01-11,9M55,1,other,southbound,2,HARTFORD,,889
+2018-01-11,9M55,1,other,southbound,4,ACTON BRIDGE,,886
+2018-01-11,9M55,1,other,southbound,5,WEAVER JN,M,885
+2018-01-11,9M55,1,other,southbound,6,ACTON GRANGE JN,,882
+2018-01-11,9M55,1,other,southbound,7,WARRINGTON BQ,F,878
+2018-01-11,9M55,1,other,southbound,8,WINWICK JN,,876
+2018-01-11,9M56,1,other,southbound,0,CREWE,G,954
+2018-01-11,9M56,1,other,southbound,1,WINSFORD,F,951
+2018-01-11,9M56,1,other,southbound,2,HARTFORD,,949
+2018-01-11,9M56,1,other,southbound,3,HARTFORD JN,,949
+2018-01-11,9M56,1,other,southbound,4,ACTON BRIDGE,,947
+2018-01-11,9M56,1,other,southbound,5,WEAVER JN,M,946
+2018-01-11,9M56,1,other,southbound,6,ACTON GRANGE JN,,943
+2018-01-11,9M56,1,other,southbound,7,WARRINGTON BQ,F,939
+2018-01-11,9M56,1,other,southbound,8,WINWICK JN,S,936
+2018-01-11,9M59,1,other,southbound,0,CREWE,G,1136
+2018-01-11,9M59,1,other,southbound,1,WINSFORD,F,1131
+2018-01-11,9M59,1,other,southbound,2,HARTFORD,,1129
+2018-01-11,9M59,1,other,southbound,3,HARTFORD JN,,1128
+2018-01-11,9M59,1,other,southbound,4,ACTON BRIDGE,,1127
+2018-01-11,9M59,1,other,southbound,5,WEAVER JN,M,1125
+2018-01-11,9M59,1,other,southbound,6,ACTON GRANGE JN,,1123
+2018-01-11,9M59,1,other,southbound,7,WARRINGTON BQ,F,1119
+2018-01-11,9M59,1,other,southbound,8,WINWICK JN,S,1116
+2018-01-11,9M60,1,other,southbound,0,CREWE,G,1195
+2018-01-11,9M60,1,other,southbound,1,WINSFORD,F,1191
+2018-01-11,9M60,1,other,southbound,2,HARTFORD,,1189
+2018-01-11,9M60,1,other,southbound,3,HARTFORD JN,,1188
+2018-01-11,9M60,1,other,southbound,4,ACTON BRIDGE,,1187
+2018-01-11,9M60,1,other,southbound,5,WEAVER JN,M,1186
+2018-01-11,9M60,1,other,southbound,6,ACTON GRANGE JN,,1183
+2018-01-11,9M60,1,other,southbound,7,WARRINGTON BQ,F,1179
+2018-01-11,9M60,1,other,southbound,8,WINWICK JN,S,1176
+2018-01-11,9M61,1,other,southbound,0,CREWE,G,1251
+2018-01-11,9M61,1,other,southbound,1,WINSFORD,F,1247
+2018-01-11,9M61,1,other,southbound,2,HARTFORD,,1245
+2018-01-11,9M61,1,other,southbound,3,HARTFORD JN,,1245
+2018-01-11,9M61,1,other,southbound,4,ACTON BRIDGE,,1243
+2018-01-11,9M61,1,other,southbound,5,WEAVER JN,M,1242
+2018-01-11,9M61,1,other,southbound,6,ACTON GRANGE JN,,1239
+2018-01-11,9M61,1,other,southbound,7,WARRINGTON BQ,F,1235
+2018-01-11,9M61,1,other,southbound,8,WINWICK JN,S,1232
+2018-01-11,9M62,1,other,southbound,0,CREWE,G,1313
+2018-01-11,9M62,1,other,southbound,1,WINSFORD,F,1309
+2018-01-11,9M62,1,other,southbound,2,HARTFORD,,1308
+2018-01-11,9M62,1,other,southbound,3,HARTFORD JN,,1307
+2018-01-11,9M62,1,other,southbound,4,ACTON BRIDGE,,1306
+2018-01-11,9M62,1,other,southbound,5,WEAVER JN,M,1305
+2018-01-11,9M62,1,other,southbound,6,ACTON GRANGE JN,,1301
+2018-01-11,9M62,1,other,southbound,7,WARRINGTON BQ,F,1298
+2018-01-11,9M62,1,other,southbound,8,WINWICK JN,S,1295
+2018-01-11,9M84,1,other,southbound,0,CREWE,G,1018
+2018-01-11,9M84,1,other,southbound,1,WINSFORD,F,1015
+2018-01-11,9M84,1,other,southbound,2,HARTFORD,,1013
+2018-01-11,9M84,1,other,southbound,3,HARTFORD JN,,1012
+2018-01-11,9M84,1,other,southbound,4,ACTON BRIDGE,,1011
+2018-01-11,9M84,1,other,southbound,5,WEAVER JN,M,1009
+2018-01-11,9M84,1,other,southbound,6,ACTON GRANGE JN,,1006
+2018-01-11,9M84,1,other,southbound,7,WARRINGTON BQ,F,1002
+2018-01-11,9M84,1,other,southbound,8,WINWICK JN,S,999
+2018-01-11,9M86,1,other,southbound,0,CREWE,G,1075
+2018-01-11,9M86,1,other,southbound,1,WINSFORD,F,1071
+2018-01-11,9M86,1,other,southbound,2,HARTFORD,,1069
+2018-01-11,9M86,1,other,southbound,3,HARTFORD JN,,1069
+2018-01-11,9M86,1,other,southbound,4,ACTON BRIDGE,,1067
+2018-01-11,9M86,1,other,southbound,5,WEAVER JN,M,1066
+2018-01-11,9M86,1,other,southbound,6,ACTON GRANGE JN,,1063
+2018-01-11,9M86,1,other,southbound,7,WARRINGTON BQ,F,1059
+2018-01-11,9M86,1,other,southbound,8,WINWICK JN,S,1055
+2018-01-11,9S44,1,other,northbound,0,CREWE,,560
+2018-01-11,9S44,1,other,northbound,1,WINSFORD,F,562
+2018-01-11,9S44,1,other,northbound,2,HARTFORD,,565
+2018-01-11,9S44,1,other,northbound,3,HARTFORD JN,S,564
+2018-01-11,9S44,1,other,northbound,4,ACTON BRIDGE,,566
+2018-01-11,9S44,1,other,northbound,5,WEAVER JN,L,567
+2018-01-11,9S44,1,other,northbound,6,ACTON GRANGE JN,H,570
+2018-01-11,9S44,1,other,northbound,7,WARRINGTON BQ,,571
+2018-01-11,9S44,1,other,northbound,8,WINWICK JN,M,576
+2018-01-11,9S47,1,other,northbound,0,CREWE,,618
+2018-01-11,9S47,1,other,northbound,1,WINSFORD,F,621
+2018-01-11,9S47,1,other,northbound,2,HARTFORD,,623
+2018-01-11,9S47,1,other,northbound,3,HARTFORD JN,S,622
+2018-01-11,9S47,1,other,northbound,4,ACTON BRIDGE,,625
+2018-01-11,9S47,1,other,northbound,5,WEAVER JN,L,626
+2018-01-11,9S47,1,other,northbound,6,ACTON GRANGE JN,H,629
+2018-01-11,9S47,1,other,northbound,7,WARRINGTON BQ,,629
+2018-01-11,9S47,1,other,northbound,8,WINWICK JN,M,635
+2018-01-11,9S54,1,other,northbound,0,CREWE,,675
+2018-01-11,9S54,1,other,northbound,1,WINSFORD,F,678
+2018-01-11,9S54,1,other,northbound,2,HARTFORD,,680
+2018-01-11,9S54,1,other,northbound,3,HARTFORD JN,S,679
+2018-01-11,9S54,1,other,northbound,4,ACTON BRIDGE,,681
+2018-01-11,9S54,1,other,northbound,5,WEAVER JN,L,682
+2018-01-11,9S54,1,other,northbound,6,ACTON GRANGE JN,H,685
+2018-01-11,9S54,1,other,northbound,7,WARRINGTON BQ,,686
+2018-01-11,9S54,1,other,northbound,8,WINWICK JN,M,692
+2018-01-11,9S55,1,other,northbound,0,CREWE,,733
+2018-01-11,9S55,1,other,northbound,1,WINSFORD,F,736
+2018-01-11,9S55,1,other,northbound,2,HARTFORD,,738
+2018-01-11,9S55,1,other,northbound,3,HARTFORD JN,S,737
+2018-01-11,9S55,1,other,northbound,4,ACTON BRIDGE,,740
+2018-01-11,9S55,1,other,northbound,5,WEAVER JN,L,741
+2018-01-11,9S55,1,other,northbound,6,ACTON GRANGE JN,H,743
+2018-01-11,9S55,1,other,northbound,7,WARRINGTON BQ,,744
+2018-01-11,9S55,1,other,northbound,8,WINWICK JN,M,751
+2018-01-11,9S60,1,other,northbound,0,CREWE,,792
+2018-01-11,9S60,1,other,northbound,1,WINSFORD,F,795
+2018-01-11,9S60,1,other,northbound,2,HARTFORD,,797
+2018-01-11,9S60,1,other,northbound,3,HARTFORD JN,S,796
+2018-01-11,9S60,1,other,northbound,4,ACTON BRIDGE,,798
+2018-01-11,9S60,1,other,northbound,5,WEAVER JN,L,799
+2018-01-11,9S60,1,other,northbound,6,ACTON GRANGE JN,H,802
+2018-01-11,9S60,1,other,northbound,7,WARRINGTON BQ,,803
+2018-01-11,9S60,1,other,northbound,8,WINWICK JN,M,809
+2018-01-11,9S65,1,other,northbound,0,CREWE,,852
+2018-01-11,9S65,1,other,northbound,1,WINSFORD,F,855
+2018-01-11,9S65,1,other,northbound,2,HARTFORD,,858
+2018-01-11,9S65,1,other,northbound,3,HARTFORD JN,S,856
+2018-01-11,9S65,1,other,northbound,4,ACTON BRIDGE,,859
+2018-01-11,9S65,1,other,northbound,5,WEAVER JN,L,861
+2018-01-11,9S65,1,other,northbound,6,ACTON GRANGE JN,H,864
+2018-01-11,9S65,1,other,northbound,7,WARRINGTON BQ,,865
+2018-01-11,9S65,1,other,northbound,8,WINWICK JN,,871
+2018-01-11,9S70,1,other,northbound,0,CREWE,,911
+2018-01-11,9S70,1,other,northbound,1,WINSFORD,F,914
+2018-01-11,9S70,1,other,northbound,2,HARTFORD,,916
+2018-01-11,9S70,1,other,northbound,3,HARTFORD JN,S,915
+2018-01-11,9S70,1,other,northbound,4,ACTON BRIDGE,,918
+2018-01-11,9S70,1,other,northbound,5,WEAVER JN,L,919
+2018-01-11,9S70,1,other,northbound,6,ACTON GRANGE JN,H,921
+2018-01-11,9S70,1,other,northbound,7,WARRINGTON BQ,,923
+2018-01-11,9S70,1,other,northbound,8,WINWICK JN,M,929
+2018-01-11,9S77,1,other,northbound,0,CREWE,,977
+2018-01-11,9S77,1,other,northbound,1,WINSFORD,F,980
+2018-01-11,9S77,1,other,northbound,2,HARTFORD,,982
+2018-01-11,9S77,1,other,northbound,3,HARTFORD JN,S,981
+2018-01-11,9S77,1,other,northbound,4,ACTON BRIDGE,,984
+2018-01-11,9S77,1,other,northbound,5,WEAVER JN,L,985
+2018-01-11,9S77,1,other,northbound,6,ACTON GRANGE JN,H,988
+2018-01-11,9S77,1,other,northbound,7,WARRINGTON BQ,,989
+2018-01-11,9S77,1,other,northbound,8,WINWICK JN,M,994
+2018-01-11,9S80,1,other,northbound,0,CREWE,,1037
+2018-01-11,9S80,1,other,northbound,1,WINSFORD,F,1040
+2018-01-11,9S80,1,other,northbound,2,HARTFORD,,1042
+2018-01-11,9S80,1,other,northbound,3,HARTFORD JN,S,1041
+2018-01-11,9S80,1,other,northbound,4,ACTON BRIDGE,,1043
+2018-01-11,9S80,1,other,northbound,5,WEAVER JN,L,1044
+2018-01-11,9S80,1,other,northbound,6,ACTON GRANGE JN,H,1047
+2018-01-11,9S80,1,other,northbound,7,WARRINGTON BQ,,1048
+2018-01-11,9S80,1,other,northbound,8,WINWICK JN,M,1054
+2018-01-11,9S85,1,other,northbound,0,CREWE,,1104
+2018-01-11,9S85,1,other,northbound,1,WINSFORD,F,1107
+2018-01-11,9S85,1,other,northbound,2,HARTFORD,,1109
+2018-01-11,9S85,1,other,northbound,3,HARTFORD JN,S,1108
+2018-01-11,9S85,1,other,northbound,4,ACTON BRIDGE,,1111
+2018-01-11,9S85,1,other,northbound,5,WEAVER JN,L,1112
+2018-01-11,9S85,1,other,northbound,6,ACTON GRANGE JN,H,1115
+2018-01-11,9S85,1,other,northbound,7,WARRINGTON BQ,,1116
+2018-01-11,9S85,1,other,northbound,8,WINWICK JN,M,1122
+2018-01-11,9S93,1,other,northbound,0,CREWE,,1155
+2018-01-11,9S93,1,other,northbound,1,WINSFORD,F,1158
+2018-01-11,9S93,1,other,northbound,2,HARTFORD,,1160
+2018-01-11,9S93,1,other,northbound,3,HARTFORD JN,S,1159
+2018-01-11,9S93,1,other,northbound,4,ACTON BRIDGE,,1161
+2018-01-11,9S93,1,other,northbound,5,WEAVER JN,L,1163
+2018-01-11,9S93,1,other,northbound,6,ACTON GRANGE JN,H,1165
+2018-01-11,9S93,1,other,northbound,7,WARRINGTON BQ,,1166
+2018-01-11,9S93,1,other,northbound,8,WINWICK JN,M,1171
+2018-01-11,9S97,1,other,northbound,0,CREWE,,1212
+2018-01-11,9S97,1,other,northbound,1,WINSFORD,F,1215
+2018-01-11,9S97,1,other,northbound,2,HARTFORD,,1217
+2018-01-11,9S97,1,other,northbound,3,HARTFORD JN,S,1216
+2018-01-11,9S97,1,other,northbound,4,ACTON BRIDGE,,1219
+2018-01-11,9S97,1,other,northbound,5,WEAVER JN,L,1220
+2018-01-11,9S97,1,other,northbound,6,ACTON GRANGE JN,H,1223
+2018-01-11,9S97,1,other,northbound,7,WARRINGTON BQ,,1224
+2018-01-11,9S97,1,other,northbound,8,WINWICK JN,M,1229

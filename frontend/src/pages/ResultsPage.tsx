@@ -4,14 +4,15 @@ import {
   ResponsiveContainer, Tooltip, XAxis, YAxis,
 } from "recharts";
 import {
-  ArrowUpNarrowWide, ArrowUpRight, Bell, Clock, Download, GaugeCircle,
-  Grid3x3, Route as RouteIcon, Sparkles, Table2, Timer, Zap,
+  CheckCircle2, Download, GaugeCircle, Grid3x3,
+  Route as RouteIcon, Sparkles, Table2, TrainFront, Zap,
 } from "lucide-react";
 import { getKpis, getTraffic } from "../api/client";
 import { DiversionResults } from "../components/results/DiversionResults";
 import { CapacityHeatmap } from "../components/results/CapacityHeatmap";
 import { SpaceTimeDiagram } from "../components/results/SpaceTimeDiagram";
 import { TrafficTable } from "../components/results/TrafficTable";
+import { TRACTION_CLASSES } from "../constants/tractionClasses";
 import { useAppStore } from "../stores/appStore";
 
 export function ResultsPage() {
@@ -73,58 +74,36 @@ export function ResultsPage() {
   const sb = run.sb_inserted ?? 0;
   const nbCandidates = kpis?.nb_candidates ?? 24;
   const sbCandidates = kpis?.sb_candidates ?? 24;
-  const nbPct = nbCandidates ? Math.round((nb / nbCandidates) * 100) : 0;
-  const sbPct = sbCandidates ? Math.round((sb / sbCandidates) * 100) : 0;
+  const insertedTotal = nb + sb;
+  const candidateTotal = nbCandidates + sbCandidates;
+  const placementPct = candidateTotal ? Math.round((insertedTotal / candidateTotal) * 100) : 0;
+  const trainClass = TRACTION_CLASSES.find((item) => item.id === run.traction);
+  const trainClassLabel = trainClass
+    ? `Class ${trainClass.digit} · ${trainClass.category} · ${trainClass.mphTypical} mph`
+    : run.traction.toUpperCase();
 
   return (
     <>
-      <div className="grid cols-4">
-        <div className="kpi">
-          <div className="kpi-label">
-            <ArrowUpNarrowWide size={12} /> NB inserted
-          </div>
-          <div className="kpi-value">{nb}</div>
-          <div className="kpi-hint">
-            {nbPct}% of {nbCandidates} candidates
-          </div>
-        </div>
-        <div className="kpi">
-          <div className="kpi-label">
-            <ArrowUpRight size={12} /> SB inserted
-          </div>
-          <div className="kpi-value">{sb}</div>
-          <div className="kpi-hint">
-            {sbPct}% of {sbCandidates} candidates
+      <section className="results-hero capacity-results-hero">
+        <div className="results-hero-copy">
+          <div className="results-eyebrow"><CheckCircle2 size={13} /> RUN #{run.id} COMPLETE · CAPACITY ASSESSMENT</div>
+          <h1><span>{insertedTotal}</span> additional freight paths identified</h1>
+          <div className="results-class-chip"><TrainFront size={14} /><span>TRAIN CLASS</span><strong>{trainClassLabel}</strong></div>
+          <p><RouteIcon size={15} /> {run.name} · {run.date_tag || "All available dates"}</p>
+          <div className="results-verdict positive">
+            <CheckCircle2 size={17} />
+            <div><small>CAPACITY VERDICT</small><strong>{insertedTotal > 0 ? "Additional train paths are feasible" : "No additional paths identified"}</strong></div>
           </div>
         </div>
-        <div className="kpi">
-          <div className="kpi-label">
-            <Clock size={12} /> Total dwell
-          </div>
-          <div className="kpi-value">
-            {run.total_dwell_min ?? 0}
-            <span style={{ fontSize: 14, color: "var(--grey-5)" }}> min</span>
-          </div>
-          <div className="kpi-hint">holding at intermediate loops</div>
+        <div className="results-score" style={{ "--score": `${Math.max(0, Math.min(100, placementPct)) * 3.6}deg` } as React.CSSProperties}>
+          <div><strong>{placementPct}%</strong><span>candidate<br />placement</span></div>
         </div>
-        <div className="kpi">
-          <div className="kpi-label">
-            <Timer size={12} /> Solve time
-          </div>
-          <div className="kpi-value">
-            {Math.round(run.wall_solve_time_s ?? 0)}
-            <span style={{ fontSize: 14, color: "var(--grey-5)" }}> s</span>
-          </div>
-          <div className="kpi-hint">
-            {run.blocks_hit_time_limit
-              ? <span style={{ color: "var(--warn)" }}>
-                  <Bell size={11} /> {run.blocks_hit_time_limit} block(s) hit
-                  time limit
-                </span>
-              : "all blocks Optimal"}
-          </div>
+        <div className="results-hero-facts">
+          <div><small>NORTHBOUND</small><strong>{nb} <em>paths</em></strong></div>
+          <div><small>SOUTHBOUND</small><strong>{sb} <em>paths</em></strong></div>
+          <div><small>TOTAL DWELL</small><strong>{run.total_dwell_min ?? 0} <em>min</em></strong></div>
         </div>
-      </div>
+      </section>
 
       <div className="card">
         <h2><RouteIcon size={14} /> Space-time diagram</h2>
