@@ -1,445 +1,208 @@
 import {
-  ArrowRight, BarChart3, Building2, Check, ChevronRight, Cpu, Database,
-  GaugeCircle, GitBranch, LineChart, MapPinned, PlayCircle, Route,
-  Settings2, TrainFront, TrendingUp, Upload as UploadIcon,
-  Users, Wrench, Landmark, Clock, FileCheck, MoveHorizontal,
-  Coins, Ruler, ClipboardCheck, Layers, CalendarDays, ScrollText,
+  Activity, ArrowRight, BarChart3, CheckCircle2, ChevronRight,
+  CircleDot, Clock3, Database, FileUp, Gauge, MapPinned,
+  Play, Route, Settings2, ShieldCheck, Signal, Sparkles, TrainFront,
+  TrendingUp, WifiOff, Zap,
 } from "lucide-react";
-import { useAppStore } from "../stores/appStore";
+import { Page, useAppStore } from "../stores/appStore";
+
+const FLOW: { id: Page; label: string; Icon: typeof FileUp }[] = [
+  { id: "upload", label: "Data", Icon: FileUp },
+  { id: "corridor", label: "Route", Icon: Route },
+  { id: "configure", label: "Model", Icon: Settings2 },
+  { id: "runs", label: "Optimise", Icon: Play },
+  { id: "results", label: "Evidence", Icon: BarChart3 },
+];
 
 export function HomePage() {
   const setPage = useAppStore((s) => s.setPage);
   const runs = useAppStore((s) => s.runs);
   const uploads = useAppStore((s) => s.uploads);
   const corridors = useAppStore((s) => s.corridors);
+  const online = useAppStore((s) => s.online);
+  const selectedUploadId = useAppStore((s) => s.selectedUploadId);
+  const selectedCorridorId = useAppStore((s) => s.selectedCorridorId);
 
-  const nRuns = runs.length;
-  const nUploads = uploads.length;
-  const nCorridors = corridors.length;
+  const completed = runs.filter((run) => run.status === "complete");
+  const active = runs.find((run) => run.status === "running" || run.status === "pending");
+  const latest = completed[0] ?? runs[0];
+  const inserted = (latest?.nb_inserted ?? 0) + (latest?.sb_inserted ?? 0);
+  // A completed backend run proves the full workflow has been completed.
+  // An additional active run must not make the overall workflow look unfinished.
+  const completedSteps = completed.length > 0
+    ? FLOW.length
+    : active
+      ? 3
+      : selectedCorridorId
+        ? 2
+        : selectedUploadId
+          ? 1
+          : 0;
 
   return (
-    <>
-      {/* Hero */}
-      <div style={{ position: "relative",
-                    background: "radial-gradient(circle at 90% 0%, "
-                                + "#3d5a80 0%, #1e3d5f 40%, #142942 100%)",
-                    borderRadius: 12, padding: "44px 48px",
-                    color: "#fff", overflow: "hidden",
-                    marginBottom: 20 }}>
-        {/* Decorative rail lines */}
-        <svg style={{ position: "absolute", right: 30, top: 30,
-                      opacity: 0.14, pointerEvents: "none" }}
-             width="360" height="220" viewBox="0 0 360 220">
-          <g stroke="#fff" fill="none" strokeWidth="1.2">
-            {[40, 90, 140, 190].map((y) => (
-              <line key={y} x1="0" y1={y} x2="360" y2={y} />
-            ))}
-            {[60, 120, 180, 240, 300].map((x) => (
-              <line key={x} x1={x} y1="30" x2={x} y2="200" />
-            ))}
-          </g>
-          <TrainFront size={90} x="220" y="60" color="#ffffff" opacity="0.5" />
-        </svg>
+    <div className="control-home">
+      <section className="control-hero">
+        <div className="hero-grid" aria-hidden="true" />
+        <div className="hero-rail hero-rail-a" aria-hidden="true" />
+        <div className="hero-rail hero-rail-b" aria-hidden="true" />
 
-        <div style={{ maxWidth: 720 }}>
-          <div style={{ display: "inline-flex", alignItems: "center",
-                        gap: 6, padding: "4px 10px",
-                        background: "rgba(255,255,255,0.12)",
-                        borderRadius: 20, fontSize: 11, fontWeight: 600,
-                        letterSpacing: 0.06,
-                        textTransform: "uppercase", marginBottom: 16 }}>
-            <TrainFront size={12} /> RailInsights &middot; Research platform
-          </div>
-          <h1 style={{ fontSize: 34, margin: 0, lineHeight: 1.15,
-                       fontWeight: 700 }}>
-            More freight on the network,
-            <br />with the data you already have.
-          </h1>
-          <p style={{ fontSize: 15, opacity: 0.85, marginTop: 12,
-                       maxWidth: 620, lineHeight: 1.55 }}>
-            Open, defensible corridor capacity analytics from raw Train
-            Describer telemetry.
+        <div className="hero-copy">
+          <div className="eyebrow"><Signal size={13} /> Network capacity intelligence</div>
+          <h1>See the railway<br /><span>before you change it.</span></h1>
+          <p>
+            Find the path. Prove the capacity. Give planners, operators and
+            investment teams one defensible view of what the network can carry.
           </p>
-          <div style={{ display: "flex", gap: 10, marginTop: 22 }}>
-            <button className="accent" onClick={() => setPage("upload")}>
-              <UploadIcon size={14} /> Start a study
+          <div className="hero-actions">
+            <button className="signal-button" onClick={() => setPage("upload")}>
+              Start capacity study <ArrowRight size={16} />
             </button>
-            <button className="secondary" onClick={() => setPage("corridor")}>
-              <Route size={14} /> Corridors
+            <button className="dark-button" onClick={() => setPage(latest ? "results" : "corridor")}>
+              {latest ? "Open latest analysis" : "Explore corridors"}
             </button>
           </div>
+          <div className="hero-assurances">
+            <span><ShieldCheck size={12} /> Auditable</span>
+            <span><Zap size={12} /> Constraint-aware</span>
+            <span><Activity size={12} /> Movement-led</span>
+          </div>
         </div>
-      </div>
 
-      {/* Big stats strip */}
-      <div className="grid cols-4"
-           style={{ marginBottom: 16 }}>
-        <StatCard icon={MapPinned} value="3,484" label="mapped rail locations"
-                  tint="#3d5a80" />
-        <StatCard icon={Route} value={nCorridors} label="corridors available"
-                  tint="#22a06b" />
-        <StatCard icon={UploadIcon} value={nUploads} label="TD files uploaded"
-                  tint="#dc7f00" />
-        <StatCard icon={PlayCircle} value={nRuns} label="MILP runs so far"
-                  tint="#b7402e" />
-      </div>
+        <div className="hero-instrument digital-twin" aria-label="Animated corridor digital twin">
+          <div className="instrument-topline">
+            <span><Activity size={13} /> CORRIDOR DIGITAL TWIN</span>
+            <span className={online ? "live-dot" : "live-dot offline"}>
+              {online ? "LIVE" : "OFFLINE"}
+            </span>
+          </div>
+          <div className="twin-route-title">
+            <div><small>ACTIVE CORRIDOR</small><strong>Crewe — Parkside</strong></div>
+            <span>24H VIEW</span>
+          </div>
+          <svg className="twin-canvas" viewBox="0 0 520 238" role="img" aria-label="Space-time diagram showing an available freight path">
+            <defs>
+              <linearGradient id="pathGlow" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stopColor="#ffb800" />
+                <stop offset="1" stopColor="#fff0a3" />
+              </linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur" /><feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+            </defs>
+            <g className="twin-grid">
+              {[42, 92, 142, 192].map((y) => <line key={`h${y}`} x1="54" y1={y} x2="500" y2={y} />)}
+              {[90, 170, 250, 330, 410, 490].map((x) => <line key={`v${x}`} x1={x} y1="18" x2={x} y2="212" />)}
+            </g>
+            <g className="existing-paths">
+              <path d="M62 196 C142 170 190 126 264 94 S402 44 492 28" />
+              <path d="M58 165 C138 145 182 108 250 80 S395 45 496 36" />
+              <path d="M60 206 C152 180 226 160 290 118 S410 78 498 65" />
+              <path d="M65 30 C160 56 206 82 274 116 S400 169 494 198" />
+              <path d="M62 61 C151 78 222 111 290 146 S408 184 495 210" />
+            </g>
+            <g className="twin-stations">
+              <circle cx="54" cy="42" r="4" /><circle cx="54" cy="92" r="4" /><circle cx="54" cy="142" r="4" /><circle cx="54" cy="192" r="4" />
+              <text x="2" y="46">PARKSIDE</text><text x="10" y="96">HARTFORD</text><text x="14" y="146">WINSFORD</text><text x="20" y="196">CREWE</text>
+            </g>
+            <path id="opportunityPath" className="opportunity-path path-underlay" d="M62 192 C145 172 216 140 282 104 S410 59 494 42" />
+            <path className="opportunity-path" d="M62 192 C145 172 216 140 282 104 S410 59 494 42" />
+            <circle className="moving-train" r="5" filter="url(#glow)">
+              <animateMotion dur="5.5s" repeatCount="indefinite" path="M62 192 C145 172 216 140 282 104 S410 59 494 42" />
+            </circle>
+            <g className="path-callout">
+              <rect x="292" y="117" width="147" height="40" rx="3" />
+              <circle cx="307" cy="137" r="4" />
+              <text x="319" y="134">FEASIBLE PATH</text><text className="callout-sub" x="319" y="147">CONFLICT-FREE</text>
+            </g>
+            <g className="twin-time"><text x="84" y="230">06:00</text><text x="244" y="230">12:00</text><text x="404" y="230">18:00</text></g>
+          </svg>
+          <div className="instrument-result">
+            <div className="result-number">+{latest ? inserted : "—"}</div>
+            <div><strong>paths unlocked</strong><span>{latest ? "in latest completed study" : "awaiting first study"}</span></div>
+            <button aria-label="Open evidence" onClick={() => setPage("results")}><ArrowRight size={15} /></button>
+          </div>
+        </div>
+      </section>
 
-      {/* Workflow flow-diagram */}
-      <div className="card">
-        <h2><ChevronRight size={14} /> Workflow</h2>
-        <div className="workflow-flow">
-          {WORKFLOW.map((w, i) => (
-            <div key={w.id} style={{ display: "contents" }}>
-              <button className="workflow-node"
-                      onClick={() => setPage(w.id as any)}>
-                <div className="workflow-node-icon">
-                  <w.Icon size={22} />
-                </div>
-                <div className="workflow-node-step">Step {i + 1}</div>
-                <div className="workflow-node-title">{w.title}</div>
+      <section className="status-ribbon">
+        <StatusItem Icon={online ? CheckCircle2 : WifiOff} value={online ? "Operational" : "Unavailable"} label="analysis engine" tone={online ? "green" : "red"} />
+        <StatusItem Icon={MapPinned} value={corridors.length || "—"} label="mapped corridors" />
+        <StatusItem Icon={Database} value={uploads.length} label="TD datasets ready" />
+        <StatusItem Icon={Gauge} value={completed.length} label="studies completed" />
+        <div className="ribbon-action">
+          <span>System readiness</span>
+          <strong>{online ? "Ready to model" : "Backend connection required"}</strong>
+        </div>
+      </section>
+
+      <section className="home-layout">
+        <div className="command-panel">
+          <div className="section-heading">
+            <div><span className="section-kicker">MISSION WORKFLOW</span><h2>From movement data to a board-ready answer</h2></div>
+            <span className="time-chip"><Clock3 size={13} /> ~2 min setup</span>
+          </div>
+
+          <div className="mission-flow">
+            {FLOW.map(({ id, label, Icon }, index) => {
+              const ready = index < completedSteps;
+              const isCurrent = completedSteps < FLOW.length && index === completedSteps;
+              return (
+                <button key={id} className={`mission-step${isCurrent ? " current" : ""}${ready ? " done" : ""}`} onClick={() => setPage(id)}>
+                  <span className="mission-index">{ready ? <CheckCircle2 size={16} /> : `0${index + 1}`}</span>
+                  <span className="mission-icon"><Icon size={21} /></span>
+                  <span><small>{isCurrent ? "NEXT ACTION" : ready ? "COMPLETE" : "STEP"}</small><strong>{label}</strong></span>
+                  <ChevronRight className="mission-chevron" size={16} />
+                </button>
+              );
+            })}
+          </div>
+
+          <div className={`decision-strip${completedSteps === FLOW.length ? " workflow-complete" : ""}`}>
+            <div className="decision-icon">{completedSteps === FLOW.length ? <CheckCircle2 size={21} /> : <Sparkles size={21} />}</div>
+            <div><small>{completedSteps === FLOW.length ? "EVIDENCE PACK READY" : "DECISION OUTPUT"}</small><strong>{completedSteps === FLOW.length ? "The full workflow is complete. Your capacity evidence is ready." : "Know where, when and how many services can run."}</strong></div>
+            <button className="text-action" onClick={() => setPage("results")}>View evidence <ArrowRight size={14} /></button>
+          </div>
+        </div>
+
+        <aside className="run-panel">
+          <div className="run-panel-head">
+            <div><span className="section-kicker">LATEST STUDY</span><h2>{latest ? `Run #${latest.id}` : "No studies yet"}</h2></div>
+            <span className={`run-state ${latest?.status ?? "pending"}`}><CircleDot size={11} /> {latest?.status ?? "not started"}</span>
+          </div>
+          {latest ? (
+            <>
+              <div className="run-name">{latest.name}</div>
+              <div className="run-metrics">
+                <div><small>NORTHBOUND</small><strong>{latest.nb_inserted ?? "—"}<em> paths</em></strong></div>
+                <div><small>SOUTHBOUND</small><strong>{latest.sb_inserted ?? "—"}<em> paths</em></strong></div>
+              </div>
+              <div className="run-detail"><span>Model</span><strong>{latest.model_type === "diversion" ? "Diversion" : "Capacity"}</strong></div>
+              <div className="run-detail"><span>Solve time</span><strong>{latest.wall_solve_time_s ? `${Math.round(latest.wall_solve_time_s)} sec` : "—"}</strong></div>
+              <button className="panel-button" onClick={() => setPage(latest.status === "complete" ? "results" : "runs")}>
+                {latest.status === "complete" ? "Inspect full analysis" : "Monitor study"} <ArrowRight size={15} />
               </button>
-              {i < WORKFLOW.length - 1 && (
-                <div className="workflow-arrow">
-                  <ChevronRight size={18} />
-                </div>
-              )}
+            </>
+          ) : (
+            <div className="empty-run">
+              <TrendingUp size={30} />
+              <p>Your first optimisation result will appear here.</p>
+              <button className="panel-button" onClick={() => setPage("upload")}>Begin study <ArrowRight size={15} /></button>
             </div>
-          ))}
-        </div>
-      </div>
+          )}
+        </aside>
+      </section>
 
-      {/* Who benefits (icon-forward) */}
-      <div className="card" style={{ background: "transparent",
-                                     border: 0, boxShadow: "none",
-                                     padding: "6px 0 4px 0",
-                                     marginBottom: 4 }}>
-        <h2 style={{ color: "var(--navy)", fontSize: 12,
-                     letterSpacing: 0.05 }}>
-          <Users size={13} /> Built for the whole freight decision chain
-        </h2>
-      </div>
-      <div className="grid cols-3">
-        <PersonaCard
-          icon={TrainFront} tint="#3d5a80"
-          role="Rail operators"
-          headline="Prove a slot fits before you sell it"
-          bullets={[
-            { Icon: Clock,      text: "Same-day path feasibility from live TD data" },
-            { Icon: FileCheck,  text: "Reproducible answers you can send a customer" },
-            { Icon: MoveHorizontal, text: "Automatic pathing-time placement at loops" },
-          ]}
-          quote="Which hour of the day can accept a new class 6?" />
-
-        <PersonaCard
-          icon={Wrench} tint="#22a06b"
-          role="Facility managers"
-          headline="Turn utilisation into a capital-case"
-          bullets={[
-            { Icon: Ruler,        text: "Loop, junction and berth-level occupancy" },
-            { Icon: GaugeCircle,  text: "Identify which pinch-point drives conflicts" },
-            { Icon: Coins,        text: "Quantify freight uplift from small interventions" },
-          ]}
-          quote="Would a passing loop at Weaver Jn unlock 4 tpd?" />
-
-        <PersonaCard
-          icon={Landmark} tint="#b7402e"
-          role="Policy makers"
-          headline="Corridor-scale capacity, defensible answers"
-          bullets={[
-            { Icon: Layers,          text: "Whole-corridor NB/SB capacity in one figure" },
-            { Icon: CalendarDays,    text: "Multi-day distributions, not single snapshots" },
-            { Icon: ScrollText,      text: "Aligned to UK Timetable Planning Rules" },
-          ]}
-          quote="What is the true 2018-to-2026 headroom trend?" />
-      </div>
-
-      {/* Models roadmap */}
-      <div className="card">
-        <h2><GitBranch size={14} /> Analytical models</h2>
-        <div className="grid cols-3" style={{ marginTop: 6 }}>
-          <ModelTile icon={GaugeCircle} status="live"
-                     title="Corridor Capacity" tint="#22a06b" />
-          <ModelTile icon={TrendingUp} status="planned"
-                     title="Freight Diversion" tint="#dc7f00" />
-          <ModelTile icon={LineChart} status="planned"
-                     title="Delay Attribution" tint="#94a3b8" />
-        </div>
-      </div>
-
-      {/* Data foundation as icon grid */}
-      <div className="card">
-        <h2><Database size={14} /> Data foundation</h2>
-        <div className="grid cols-4" style={{ marginTop: 6 }}>
-          <DataTile icon={Cpu} name="TD feed" hint="berth-step events" />
-          <DataTile icon={MapPinned} name="SMART" hint="berth locations" />
-          <DataTile icon={GaugeCircle} name="BPLAN" hint="SRT + allowances" />
-          <DataTile icon={Route} name="Corridors" hint="built-in + custom" />
-        </div>
-      </div>
-
-      {/* CTA */}
-      <div className="card"
-           style={{ display: "flex", alignItems: "center",
-                    justifyContent: "space-between", gap: 16 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div style={{
-            width: 40, height: 40, borderRadius: 8,
-            background: "linear-gradient(135deg, #b7402e, #e07856)",
-            display: "grid", placeItems: "center", color: "#fff",
-          }}>
-            <PlayCircle size={20} />
-          </div>
-          <div>
-            <div style={{ fontWeight: 700, color: "var(--navy)",
-                          fontSize: 15 }}>
-              Ready to run your first study?
-            </div>
-            <div style={{ fontSize: 12, color: "var(--grey-6)" }}>
-              Upload → Corridor → Configure → Launch. Typically 2 minutes.
-            </div>
-          </div>
-        </div>
-        <button className="accent" onClick={() => setPage("upload")}>
-          Begin <ArrowRight size={14} />
-        </button>
-      </div>
-
-      {/* Footer */}
-      <div style={{ textAlign: "center", padding: "16px 0 4px 0",
-                    fontSize: 12, color: "var(--grey-5)" }}>
-        <Building2 size={12} style={{ verticalAlign: "middle",
-                                      marginRight: 4 }} />
-        Developed at{" "}
-        <a href="https://www.ljmu.ac.uk" target="_blank" rel="noreferrer"
-           style={{ fontWeight: 600 }}>
-          Liverpool John Moores University
-        </a>
-      </div>
-    </>
-  );
-}
-
-// ---------- data ----------
-const WORKFLOW = [
-  { id: "upload",    Icon: UploadIcon, title: "Upload" },
-  { id: "corridor",  Icon: MapPinned,  title: "Corridor" },
-  { id: "configure", Icon: Settings2,  title: "Configure" },
-  { id: "runs",      Icon: PlayCircle, title: "Run" },
-  { id: "results",   Icon: BarChart3,  title: "Analyse" },
-];
-
-// ---------- sub-components ----------
-function StatCard({ icon: Icon, value, label, tint }:
-                   { icon: any; value: React.ReactNode;
-                     label: string; tint: string }) {
-  return (
-    <div style={{
-      background: "#fff", border: "1px solid var(--border)",
-      borderRadius: 10, padding: 14,
-      display: "flex", alignItems: "center", gap: 12,
-    }}>
-      <div style={{
-        width: 46, height: 46, borderRadius: 10,
-        background: `${tint}18`, color: tint,
-        display: "grid", placeItems: "center",
-      }}>
-        <Icon size={22} strokeWidth={2.2} />
-      </div>
-      <div>
-        <div style={{ fontSize: 22, fontWeight: 800,
-                      color: "var(--navy)", lineHeight: 1 }}>
-          {value}
-        </div>
-        <div style={{ fontSize: 11, color: "var(--grey-6)",
-                      textTransform: "uppercase",
-                      letterSpacing: 0.05, marginTop: 4 }}>
-          {label}
-        </div>
-      </div>
+      <footer className="home-proof">
+        <span><strong>RailInsights</strong> · operational research for UK rail capacity</span>
+        <span>Developed at Liverpool John Moores University</span>
+      </footer>
     </div>
   );
 }
 
-interface PersonaBullet { Icon: any; text: string }
-interface PersonaProps {
-  icon: any; tint: string; role: string;
-  headline: string; bullets: PersonaBullet[]; quote: string;
-}
-function PersonaCard({ icon: Icon, tint, role, headline,
-                       bullets, quote }: PersonaProps) {
+function StatusItem({ Icon, value, label, tone = "blue" }: { Icon: typeof Activity; value: React.ReactNode; label: string; tone?: string }) {
   return (
-    <div className="persona"
-         style={{
-           background: "#fff",
-           borderRadius: 12,
-           border: "1px solid var(--border)",
-           overflow: "hidden",
-           display: "flex", flexDirection: "column",
-           boxShadow: "var(--shadow-sm)",
-           transition: "transform 120ms, box-shadow 120ms",
-         }}
-         onMouseEnter={(e) => {
-           (e.currentTarget as HTMLElement).style.transform =
-             "translateY(-3px)";
-           (e.currentTarget as HTMLElement).style.boxShadow =
-             "var(--shadow-md)";
-         }}
-         onMouseLeave={(e) => {
-           (e.currentTarget as HTMLElement).style.transform = "";
-           (e.currentTarget as HTMLElement).style.boxShadow =
-             "var(--shadow-sm)";
-         }}>
-      {/* Coloured banner */}
-      <div style={{
-        background:
-          `linear-gradient(135deg, ${tint} 0%, ${shade(tint, -18)} 100%)`,
-        color: "#fff",
-        padding: "16px 18px",
-        display: "flex", alignItems: "center", gap: 12,
-        position: "relative", overflow: "hidden",
-      }}>
-        {/* Decorative dot pattern */}
-        <svg style={{ position: "absolute", right: -10, top: -10,
-                       opacity: 0.20 }} width="90" height="90">
-          {Array.from({ length: 5 }, (_, r) =>
-            Array.from({ length: 5 }, (_, c) => (
-              <circle key={`${r}-${c}`}
-                      cx={c * 18 + 8} cy={r * 18 + 8}
-                      r={2} fill="#fff" />
-            ))).flat()}
-        </svg>
-
-        <div style={{
-          width: 44, height: 44, borderRadius: 10,
-          background: "rgba(255,255,255,0.20)",
-          display: "grid", placeItems: "center", flexShrink: 0,
-        }}>
-          <Icon size={22} strokeWidth={2} />
-        </div>
-        <div style={{ position: "relative", zIndex: 1 }}>
-          <div style={{ fontSize: 10, letterSpacing: 0.08,
-                        textTransform: "uppercase",
-                        opacity: 0.85 }}>{role}</div>
-          <div style={{ fontSize: 15, fontWeight: 700,
-                        marginTop: 3, lineHeight: 1.25 }}>
-            {headline}
-          </div>
-        </div>
-      </div>
-
-      {/* Body */}
-      <div style={{ padding: "14px 18px",
-                    display: "flex", flexDirection: "column",
-                    gap: 10, flex: 1 }}>
-        <div style={{ display: "flex", flexDirection: "column",
-                      gap: 8 }}>
-          {bullets.map((b, i) => (
-            <div key={i}
-                 style={{ display: "flex", alignItems: "flex-start",
-                          gap: 10 }}>
-              <div style={{
-                width: 26, height: 26, borderRadius: 6,
-                background: `${tint}15`,
-                color: tint,
-                display: "grid", placeItems: "center", flexShrink: 0,
-              }}>
-                <b.Icon size={14} strokeWidth={2.2} />
-              </div>
-              <div style={{ fontSize: 12.5, color: "var(--grey-8)",
-                            lineHeight: 1.45,
-                            paddingTop: 5 }}>
-                {b.text}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div style={{
-          marginTop: "auto",
-          paddingTop: 10,
-          borderTop: "1px dashed var(--grey-2)",
-          fontSize: 12,
-          color: "var(--grey-6)",
-          fontStyle: "italic",
-          display: "flex", gap: 6, alignItems: "flex-start",
-        }}>
-          <span style={{ color: tint, fontWeight: 700,
-                         fontSize: 16, lineHeight: 1 }}>&ldquo;</span>
-          {quote}
-          <span style={{ color: tint, fontWeight: 700,
-                         fontSize: 16, lineHeight: 1 }}>&rdquo;</span>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/** Darken or lighten a hex color by percent (-100..100). */
-function shade(hex: string, pct: number): string {
-  const n = parseInt(hex.slice(1), 16);
-  let r = (n >> 16) & 0xff;
-  let g = (n >> 8) & 0xff;
-  let b = n & 0xff;
-  const f = 1 + pct / 100;
-  r = Math.max(0, Math.min(255, Math.round(r * f)));
-  g = Math.max(0, Math.min(255, Math.round(g * f)));
-  b = Math.max(0, Math.min(255, Math.round(b * f)));
-  return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, "0")}`;
-}
-
-function ModelTile({ icon: Icon, status, title, tint }:
-                    { icon: any; status: "live" | "planned";
-                      title: string; tint: string }) {
-  const alive = status === "live";
-  return (
-    <div style={{
-      background: "#fff", border: `1px solid ${alive
-        ? "var(--border)" : "var(--grey-2)"}`,
-      borderRadius: 10, padding: 14,
-      display: "flex", alignItems: "center", gap: 12,
-      opacity: alive ? 1 : 0.7,
-    }}>
-      <div style={{
-        width: 40, height: 40, borderRadius: 8,
-        background: alive ? `${tint}20` : "var(--grey-1)",
-        color: alive ? tint : "var(--grey-4)",
-        display: "grid", placeItems: "center",
-      }}>
-        <Icon size={20} />
-      </div>
-      <div style={{ flex: 1 }}>
-        <div style={{ fontWeight: 700, color: "var(--navy)",
-                      fontSize: 13 }}>{title}</div>
-        <span className={"badge " + (alive ? "ok" : "pending")}
-              style={{ fontSize: 10, marginTop: 4 }}>
-          {alive ? "Live" : "Planned"}
-        </span>
-      </div>
-    </div>
-  );
-}
-
-function DataTile({ icon: Icon, name, hint }:
-                   { icon: any; name: string; hint: string }) {
-  return (
-    <div style={{
-      background: "var(--grey-0)", border: "1px solid var(--border)",
-      borderRadius: 10, padding: 12,
-      display: "flex", alignItems: "center", gap: 10,
-    }}>
-      <div style={{
-        width: 34, height: 34, borderRadius: 8,
-        background: "#fff", color: "var(--steel)",
-        display: "grid", placeItems: "center",
-        border: "1px solid var(--border)",
-      }}>
-        <Icon size={17} />
-      </div>
-      <div>
-        <div style={{ fontWeight: 700, color: "var(--navy)",
-                      fontSize: 13 }}>{name}</div>
-        <div style={{ fontSize: 11, color: "var(--grey-6)" }}>{hint}</div>
-      </div>
+    <div className="status-item">
+      <span className={`status-icon ${tone}`}><Icon size={17} /></span>
+      <span><strong>{value}</strong><small>{label}</small></span>
     </div>
   );
 }

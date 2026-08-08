@@ -1,0 +1,294 @@
+{
+  "dates": [
+    "2026-03-16"
+  ],
+  "corridor": [
+    "CREWE",
+    "WINSFORD",
+    "HARTFORD",
+    "HARTFORD JN",
+    "ACTON BRIDGE",
+    "WEAVER JN",
+    "ACTON GRANGE JN",
+    "WARRINGTON BQ",
+    "WINWICK JN",
+    "EARLESTOWN",
+    "NEWTON-LE-WILLOWS",
+    "PARKSIDE JN"
+  ],
+  "per_junction_direction": {
+    "CREWE|northbound|": {
+      "n_trains": 115,
+      "headway_p5_min": 2,
+      "headway_p50_min": 7,
+      "headway_p95_min": 26,
+      "peak_hour_utc": 14,
+      "peak_tph": 9
+    },
+    "WINSFORD|northbound|S": {
+      "n_trains": 20,
+      "headway_p5_min": 4,
+      "headway_p50_min": 32,
+      "headway_p95_min": 136,
+      "peak_hour_utc": 14,
+      "peak_tph": 3
+    },
+    "HARTFORD|northbound|": {
+      "n_trains": 176,
+      "headway_p5_min": 1,
+      "headway_p50_min": 5,
+      "headway_p95_min": 18,
+      "peak_hour_utc": 11,
+      "peak_tph": 12
+    },
+    "HARTFORD JN|northbound|S": {
+      "n_trains": 116,
+      "headway_p5_min": 2,
+      "headway_p50_min": 8,
+      "headway_p95_min": 26,
+      "peak_hour_utc": 21,
+      "peak_tph": 9
+    },
+    "ACTON BRIDGE|northbound|": {
+      "n_trains": 183,
+      "headway_p5_min": 1,
+      "headway_p50_min": 4,
+      "headway_p95_min": 17,
+      "peak_hour_utc": 11,
+      "peak_tph": 15
+    },
+    "WEAVER JN|northbound|L": {
+      "n_trains": 118,
+      "headway_p5_min": 2,
+      "headway_p50_min": 7,
+      "headway_p95_min": 33,
+      "peak_hour_utc": 21,
+      "peak_tph": 9
+    },
+    "ACTON GRANGE JN|northbound|H": {
+      "n_trains": 87,
+      "headway_p5_min": 3,
+      "headway_p50_min": 12,
+      "headway_p95_min": 31,
+      "peak_hour_utc": 14,
+      "peak_tph": 6
+    },
+    "CREWE|southbound|G": {
+      "n_trains": 50,
+      "headway_p5_min": 7,
+      "headway_p50_min": 23,
+      "headway_p95_min": 63,
+      "peak_hour_utc": 10,
+      "peak_tph": 5
+    },
+    "WINSFORD|southbound|F": {
+      "n_trains": 49,
+      "headway_p5_min": 7,
+      "headway_p50_min": 22,
+      "headway_p95_min": 63,
+      "peak_hour_utc": 10,
+      "peak_tph": 4
+    },
+    "HARTFORD|southbound|": {
+      "n_trains": 50,
+      "headway_p5_min": 6,
+      "headway_p50_min": 22,
+      "headway_p95_min": 63,
+      "peak_hour_utc": 10,
+      "peak_tph": 4
+    },
+    "HARTFORD JN|southbound|": {
+      "n_trains": 55,
+      "headway_p5_min": 3,
+      "headway_p50_min": 21,
+      "headway_p95_min": 63,
+      "peak_hour_utc": 9,
+      "peak_tph": 4
+    },
+    "ACTON BRIDGE|southbound|": {
+      "n_trains": 55,
+      "headway_p5_min": 5,
+      "headway_p50_min": 20,
+      "headway_p95_min": 63,
+      "peak_hour_utc": 9,
+      "peak_tph": 4
+    },
+    "WEAVER JN|southbound|M": {
+      "n_trains": 55,
+      "headway_p5_min": 5,
+      "headway_p50_min": 20,
+      "headway_p95_min": 63,
+      "peak_hour_utc": 9,
+      "peak_tph": 4
+    },
+    "ACTON GRANGE JN|southbound|": {
+      "n_trains": 55,
+      "headway_p5_min": 4,
+      "headway_p50_min": 20,
+      "headway_p95_min": 63,
+      "peak_hour_utc": 9,
+      "peak_tph": 5
+    },
+    "WARRINGTON BQ|southbound|F": {
+      "n_trains": 50,
+      "headway_p5_min": 9,
+      "headway_p50_min": 21,
+      "headway_p95_min": 70,
+      "peak_hour_utc": 23,
+      "peak_tph": 4
+    },
+    "WINWICK JN|southbound|S": {
+      "n_trains": 51,
+      "headway_p5_min": 9,
+      "headway_p50_min": 21,
+      "headway_p95_min": 70,
+      "peak_hour_utc": 19,
+      "peak_tph": 4
+    },
+    "WARRINGTON BQ|northbound|": {
+      "n_trains": 85,
+      "headway_p5_min": 3,
+      "headway_p50_min": 13,
+      "headway_p95_min": 31,
+      "peak_hour_utc": 19,
+      "peak_tph": 6
+    },
+    "WINWICK JN|northbound|M": {
+      "n_trains": 81,
+      "headway_p5_min": 2,
+      "headway_p50_min": 13,
+      "headway_p95_min": 37,
+      "peak_hour_utc": 19,
+      "peak_tph": 6
+    },
+    "CREWE|northbound|G": {
+      "n_trains": 60,
+      "headway_p5_min": 3,
+      "headway_p50_min": 17,
+      "headway_p95_min": 37,
+      "peak_hour_utc": 7,
+      "peak_tph": 4
+    },
+    "WINSFORD|northbound|F": {
+      "n_trains": 155,
+      "headway_p5_min": 2,
+      "headway_p50_min": 5,
+      "headway_p95_min": 22,
+      "peak_hour_utc": 11,
+      "peak_tph": 11
+    },
+    "HARTFORD JN|northbound|": {
+      "n_trains": 65,
+      "headway_p5_min": 5,
+      "headway_p50_min": 13,
+      "headway_p95_min": 31,
+      "peak_hour_utc": 11,
+      "peak_tph": 7
+    },
+    "WEAVER JN|northbound|M": {
+      "n_trains": 64,
+      "headway_p5_min": 5,
+      "headway_p50_min": 14,
+      "headway_p95_min": 35,
+      "peak_hour_utc": 11,
+      "peak_tph": 7
+    },
+    "PARKSIDE JN|northbound|C": {
+      "n_trains": 100,
+      "headway_p5_min": 3,
+      "headway_p50_min": 8,
+      "headway_p95_min": 28,
+      "peak_hour_utc": 17,
+      "peak_tph": 7
+    },
+    "ACTON GRANGE JN|northbound|": {
+      "n_trains": 40,
+      "headway_p5_min": 4,
+      "headway_p50_min": 29,
+      "headway_p95_min": 66,
+      "peak_hour_utc": 6,
+      "peak_tph": 3
+    },
+    "WARRINGTON BQ|northbound|H": {
+      "n_trains": 34,
+      "headway_p5_min": 12,
+      "headway_p50_min": 31,
+      "headway_p95_min": 65,
+      "peak_hour_utc": 17,
+      "peak_tph": 3
+    },
+    "WINWICK JN|northbound|S": {
+      "n_trains": 35,
+      "headway_p5_min": 12,
+      "headway_p50_min": 29,
+      "headway_p95_min": 51,
+      "peak_hour_utc": 17,
+      "peak_tph": 3
+    },
+    "EARLESTOWN|northbound|": {
+      "n_trains": 191,
+      "headway_p5_min": 1,
+      "headway_p50_min": 4,
+      "headway_p95_min": 16,
+      "peak_hour_utc": 19,
+      "peak_tph": 16
+    },
+    "NEWTON-LE-WILLOWS|northbound|E": {
+      "n_trains": 94,
+      "headway_p5_min": 4,
+      "headway_p50_min": 9,
+      "headway_p95_min": 28,
+      "peak_hour_utc": 21,
+      "peak_tph": 7
+    },
+    "WARRINGTON BQ|northbound|F": {
+      "n_trains": 2,
+      "headway_p5_min": 31,
+      "headway_p50_min": 31,
+      "headway_p95_min": 31,
+      "peak_hour_utc": 15,
+      "peak_tph": 1
+    },
+    "NEWTON-LE-WILLOWS|northbound|": {
+      "n_trains": 96,
+      "headway_p5_min": 3,
+      "headway_p50_min": 11,
+      "headway_p95_min": 22,
+      "peak_hour_utc": 19,
+      "peak_tph": 8
+    },
+    "PARKSIDE JN|northbound|M": {
+      "n_trains": 96,
+      "headway_p5_min": 3,
+      "headway_p50_min": 10,
+      "headway_p95_min": 23,
+      "peak_hour_utc": 19,
+      "peak_tph": 8
+    },
+    "WINSFORD|northbound|": {
+      "n_trains": 1
+    },
+    "PARKSIDE JN|northbound|": {
+      "n_trains": 9,
+      "headway_p5_min": 18,
+      "headway_p50_min": 60,
+      "headway_p95_min": 177,
+      "peak_hour_utc": 16,
+      "peak_tph": 2
+    },
+    "WARRINGTON BQ|southbound|H": {
+      "n_trains": 1
+    },
+    "WARRINGTON BQ|northbound|4": {
+      "n_trains": 1
+    },
+    "EARLESTOWN|southbound|": {
+      "n_trains": 4,
+      "headway_p5_min": 96,
+      "headway_p50_min": 367,
+      "headway_p95_min": 367,
+      "peak_hour_utc": 2,
+      "peak_tph": 1
+    }
+  }
+}

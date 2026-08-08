@@ -1,10 +1,14 @@
 """Uploaded TD JSONL (or events CSV) file record."""
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 from sqlalchemy import Column, JSON
 from sqlmodel import Field, SQLModel
+
+
+def _now_utc() -> datetime:
+    return datetime.now(timezone.utc)
 
 
 class Upload(SQLModel, table=True):
@@ -17,4 +21,4 @@ class Upload(SQLModel, table=True):
     # Dates detected inside the file (populated by /uploads/{id}/scan)
     available_dates: list[str] = Field(default_factory=list,
                                         sa_column=Column(JSON))
-    uploaded_at: datetime = Field(default_factory=datetime.utcnow)
+    uploaded_at: datetime = Field(default_factory=_now_utc)

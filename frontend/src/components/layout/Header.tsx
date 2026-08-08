@@ -1,4 +1,4 @@
-import { AlertTriangle, Wifi, WifiOff } from "lucide-react";
+import { AlertTriangle, Bell, CircleHelp, Wifi, WifiOff } from "lucide-react";
 import { Page, useAppStore } from "../../stores/appStore";
 
 const TITLES: Record<Page, string> = {
@@ -18,15 +18,17 @@ export function Header() {
 
   return (
     <div className="app-header">
-      <div className="header-title">{TITLES[page]}</div>
+      <div className="header-heading">
+        <span className="header-context">RAILINSIGHTS / {page.toUpperCase()}</span>
+        <div className="header-title">{TITLES[page]}</div>
+      </div>
       <div className="header-status">
-        {online ? (
-          <Wifi size={16} strokeWidth={2.2}
-                style={{ color: "var(--success)" }} />
-        ) : (
-          <WifiOff size={16} strokeWidth={2.2}
-                   style={{ color: "var(--danger)" }} />
-        )}
+        <button className="header-icon" aria-label="Help"><CircleHelp size={16} /></button>
+        <button className="header-icon" aria-label="Notifications"><Bell size={16} /></button>
+        <div className={`connection-pill ${online ? "online" : "offline"}`}>
+          {online ? <Wifi size={14} /> : <WifiOff size={14} />}
+          {online ? "Engine online" : "Engine offline"}
+        </div>
         {repoMissing && (
           <AlertTriangle size={16} strokeWidth={2.2}
                          style={{ color: "var(--warn)", marginLeft: 6 }}

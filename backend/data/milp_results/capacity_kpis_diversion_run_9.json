@@ -1,0 +1,75 @@
+{
+  "method": "rolling-horizon (STEER-style)",
+  "date": "2026-03-17",
+  "block_hours": 4,
+  "headway_min": 3,
+  "chat_moss_headway_min": 4,
+  "chat_moss_junctions": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "dwell_max": 30,
+  "candidates_total": 15,
+  "nb_candidates": 10,
+  "sb_candidates": 5,
+  "nb_inserted": 0,
+  "sb_inserted": 0,
+  "total_inserted": 0,
+  "total_dwell_min": 18,
+  "wall_solve_time_s": 558.4,
+  "blocks_hit_time_limit": 2,
+  "per_block": [
+    {
+      "direction": "northbound",
+      "block": 0,
+      "inserted": 0,
+      "candidates": 7,
+      "status": "TimeLimit",
+      "hit_time_limit": true,
+      "solve_s": 199.2
+    },
+    {
+      "direction": "northbound",
+      "block": 3,
+      "inserted": 0,
+      "candidates": 2,
+      "status": "TimeLimit",
+      "hit_time_limit": true,
+      "solve_s": 183.5
+    },
+    {
+      "direction": "northbound",
+      "block": 4,
+      "inserted": 0,
+      "candidates": 1,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 3.7
+    },
+    {
+      "direction": "southbound",
+      "block": 0,
+      "inserted": 3,
+      "candidates": 3,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 112.5
+    },
+    {
+      "direction": "southbound",
+      "block": 5,
+      "inserted": 2,
+      "candidates": 2,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 59.5
+    }
+  ],
+  "steer_target": {
+    "nb": 20,
+    "sb": 20,
+    "source": "Steer 2021 p.24 Route 3 (Winsford Sth Jn - Parkside)"
+  }
+}

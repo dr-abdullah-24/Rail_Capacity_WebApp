@@ -16,7 +16,7 @@ import shutil
 import sys
 import tarfile
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from sqlmodel import Session
@@ -26,11 +26,13 @@ from app.core.db import engine
 from app.models.run import Run
 from app.models.upload import Upload
 from app.services.broker import broker
+from app.services.smart_berths import corridor_berths
 
 
 import csv as _csv
 
 PHASE_WEIGHTS = {"extract": 0.20, "baseline": 0.10, "milp": 0.70}
+DIVERSION_WEIGHTS = {"divertible": 0.15, "shifting": 0.20, "milp": 0.65}
 
 
 def _filter_candidates(src: Path, dst: Path,
@@ -198,8 +200,11 @@ class ProgressTracker:
         return e
 
 
-SCRIPTS = settings.milp_repo / "scripts"
-INP     = settings.milp_repo / "inputs"
+LOCAL_SCRIPTS = settings.local_scripts               # backend/scripts/
+INP           = settings.data_root / "milp"          # backend/data/milp/
+MILP_RESULTS  = settings.data_root / "milp_results"  # backend/data/milp_results/
+MILP_RESULTS.mkdir(parents=True, exist_ok=True)
+SCRIPTS       = LOCAL_SCRIPTS                        # alias; all scripts bundled
 
 PY = sys.executable
 
@@ -212,7 +217,7 @@ async def _stream_subprocess(run_id: int, prefix: str, cmd: list[str],
     stream. Returns the exit code."""
     await broker.publish(run_id, {
         "type": "log", "prefix": prefix,
-        "ts": datetime.utcnow().isoformat(),
+        "ts": datetime.now(timezone.utc).isoformat(),
         "line": f"$ {' '.join(cmd[-3:])}",
     })
     proc = await asyncio.create_subprocess_exec(
@@ -233,7 +238,7 @@ async def _stream_subprocess(run_id: int, prefix: str, cmd: list[str],
         if line:
             await broker.publish(run_id, {
                 "type": "log", "prefix": prefix,
-                "ts": datetime.utcnow().isoformat(),
+                "ts": datetime.now(timezone.utc).isoformat(),
                 "line": line,
             })
             if tracker is not None:
@@ -243,7 +248,7 @@ async def _stream_subprocess(run_id: int, prefix: str, cmd: list[str],
     code = await proc.wait()
     await broker.publish(run_id, {
         "type": "log", "prefix": prefix,
-        "ts": datetime.utcnow().isoformat(),
+        "ts": datetime.now(timezone.utc).isoformat(),
         "line": f"(exit {code})",
     })
     return code
@@ -265,7 +270,19 @@ def _load_upload(upload_id: int) -> Upload | None:
 
 
 async def run_pipeline(run_id: int) -> None:
-    """Execute the full extract -> baseline -> MILP chain for a Run."""
+    """Dispatch to the capacity or diversion pipeline based on run.model_type."""
+    with Session(engine) as s:
+        run = s.get(Run, run_id)
+        if run is None:
+            return
+    if (run.model_type or "capacity") == "diversion":
+        await run_diversion_pipeline(run_id)
+    else:
+        await run_capacity_pipeline(run_id)
+
+
+async def run_capacity_pipeline(run_id: int) -> None:
+    """Execute the extract -> baseline -> capacity MILP chain."""
     with Session(engine) as s:
         run = s.get(Run, run_id)
         if run is None:
@@ -278,7 +295,7 @@ async def run_pipeline(run_id: int) -> None:
     run_dir = settings.runs_dir / str(run_id)
     run_dir.mkdir(parents=True, exist_ok=True)
 
-    _update_run(run_id, status="running", started_at=datetime.utcnow(),
+    _update_run(run_id, status="running", started_at=datetime.now(timezone.utc),
                 result_dir=str(run_dir))
     await broker.publish(run_id, {"type": "status", "value": "running"})
 
@@ -307,7 +324,7 @@ async def run_pipeline(run_id: int) -> None:
                 "--jsonl", str(jsonl_path),
                 "--date",  date,
                 "--out",   str(events_csv),
-            ], cwd=settings.milp_repo, tracker=tracker)
+            ], cwd=settings.data_root.parent, tracker=tracker)
             if code != 0:
                 raise RuntimeError("extract failed")
 
@@ -317,7 +334,7 @@ async def run_pipeline(run_id: int) -> None:
                 "--jsonl", upload.stored_path,
                 "--date",  date,
                 "--out",   str(events_csv),
-            ], cwd=settings.milp_repo, tracker=tracker)
+            ], cwd=settings.data_root.parent, tracker=tracker)
             if code != 0:
                 raise RuntimeError("extract failed")
 
@@ -339,12 +356,12 @@ async def run_pipeline(run_id: int) -> None:
             "--dates",  date,
             "--tag",    date,
             "--events", str(events_csv),
-        ], cwd=settings.milp_repo, tracker=tracker)
+        ], cwd=settings.data_root.parent, tracker=tracker)
         if code != 0:
             raise RuntimeError("build_baseline failed")
 
-        default_baseline = INP / f"baseline_traffic_{date}.csv"
-        default_frjs     = INP / f"freight_lines_by_junction_{date}.json"
+        default_baseline = settings.data_root / "milp_scratch" / f"baseline_traffic_{date}.csv"
+        default_frjs     = settings.data_root / "milp_scratch" / f"freight_lines_by_junction_{date}.json"
         if default_baseline.exists():
             shutil.copyfile(default_baseline, baseline_csv)
         if default_frjs.exists():
@@ -385,13 +402,13 @@ async def run_pipeline(run_id: int) -> None:
             "--time-limit-per-block", str(run.time_limit_per_block),
             "--headway",  str(run.headway_min),
             "--dwell-max", str(run.dwell_max),
-        ], cwd=settings.milp_repo, tracker=tracker)
+        ], cwd=settings.data_root.parent, tracker=tracker)
         if code != 0:
             raise RuntimeError("MILP failed")
         await broker.publish(run_id, tracker.phase_done())
 
         # Collect outputs from the shared results dir
-        shared_results = settings.milp_repo / "results"
+        shared_results = MILP_RESULTS
         kpi_src = shared_results / f"capacity_kpis_webapp_run_{run_id}.json"
         sol_src = shared_results / f"capacity_solution_webapp_run_{run_id}.csv"
         if kpi_src.exists():
@@ -412,15 +429,324 @@ async def run_pipeline(run_id: int) -> None:
             }
 
         _update_run(run_id, status="complete",
-                    completed_at=datetime.utcnow(),
+                    completed_at=datetime.now(timezone.utc),
                     **kpi_fields)
         await broker.publish(run_id, {"type": "status", "value": "complete",
                                        "kpis": kpi_fields})
     except Exception as e:
         _update_run(run_id, status="failed",
-                    completed_at=datetime.utcnow(),
+                    completed_at=datetime.now(timezone.utc),
                     error=str(e))
         await broker.publish(run_id, {"type": "status", "value": "failed",
                                        "error": str(e)})
+    finally:
+        await broker.complete(run_id)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+#   Diversion pipeline (generic, Commit 1)
+# ══════════════════════════════════════════════════════════════════════════════
+#
+# Flow:
+#   1. Serialise source + target corridor definitions to the run dir.
+#   2. extract_two_corridors_generic.py  ->  source/target events + summaries
+#   3. identify_divertible_generic.py    ->  divertible_trains.csv
+#   4. Stage the outputs into inputs/ paths that the 2018 shifting-strategy
+#      + MILP scripts expect, then run them (unchanged).  Commit 2 will
+#      replace stages 4-5 with a fully-generic assignment MILP.
+#
+async def run_diversion_pipeline(run_id: int) -> None:
+    from app.api.corridors import _builtins as builtin_corridors
+    from sqlmodel import select
+    from app.models.corridor import UserCorridor
+    with Session(engine) as s:
+        run = s.get(Run, run_id)
+        if run is None: return
+        upload_ids: list[int] = []
+        multi = (getattr(run, "source_upload_ids", None) or "").strip()
+        print(f"[runner] run {run_id} source_upload_ids='{multi}' "
+              f"source_upload_id={run.source_upload_id}", flush=True)
+        if multi:
+            for tok in multi.replace(",", " ").split():
+                try: upload_ids.append(int(tok))
+                except ValueError: pass
+        if not upload_ids and run.source_upload_id is not None:
+            upload_ids = [run.source_upload_id]
+        uploads: list[Upload] = []
+        for uid in upload_ids:
+            u = s.get(Upload, uid)
+            if u is not None: uploads.append(u)
+            else: print(f"[runner] upload id {uid} not found in DB",
+                        flush=True)
+        print(f"[runner] resolved {len(uploads)} of {len(upload_ids)} "
+              f"upload rows: "
+              f"{[u.original_name for u in uploads]}", flush=True)
+
+    run_dir = settings.runs_dir / str(run_id)
+    run_dir.mkdir(parents=True, exist_ok=True)
+
+    _update_run(run_id, status="running", started_at=datetime.now(timezone.utc),
+                result_dir=str(run_dir))
+    await broker.publish(run_id, {"type": "status", "value": "running"})
+
+    async def emit(phase: str, pct: float, message: str = "") -> None:
+        await broker.publish(run_id, {
+            "type": "progress", "phase": phase,
+            "phase_pct": round(pct * 100, 1),
+            "percent": round(pct * 100, 1),
+            "done_blocks": 0, "total_blocks": 0, "message": message,
+        })
+
+    # ─── Load source + target corridor definitions ────────────────────────
+    def load_corridor(cid: str) -> dict:
+        b = builtin_corridors()
+        if cid in b: return b[cid]
+        with Session(engine) as sess:
+            row = sess.exec(select(UserCorridor)
+                             .where(UserCorridor.slug == cid)).first()
+            if row is None:
+                raise RuntimeError(f"corridor '{cid}' not found")
+            return {"id": row.slug, "name": row.name,
+                    "description": row.description,
+                    "km_length": row.stations[-1]["chainage_km"]
+                                    if row.stations else 0,
+                    "stations": row.stations}
+
+    class_digit = (run.class_filter or "4").strip() or "4"
+    endpoint_strictness = (run.endpoint_strictness or "relaxed").strip() \
+                            or "relaxed"
+    excluded_terminals = (run.excluded_terminals or "").strip()
+
+    try:
+        if not uploads:
+            raise RuntimeError("diversion needs at least one source upload "
+                               "(TD .jsonl / .tbz2 / events CSV)")
+        src_cid = (run.source_corridor_id or "").strip()
+        tgt_cid = (run.target_corridor_id or "").strip()
+        date_iso = (run.date_tag or "").strip()
+        if not src_cid or not tgt_cid:
+            raise RuntimeError("diversion needs both source_corridor_id "
+                               "and target_corridor_id")
+
+        source = load_corridor(src_cid)
+        target = load_corridor(tgt_cid)
+        (run_dir / "source_corridor.json").write_text(
+            json.dumps(source, indent=2), encoding="utf-8")
+        (run_dir / "target_corridor.json").write_text(
+            json.dumps(target, indent=2), encoding="utf-8")
+
+        names = ", ".join(u.original_name for u in uploads)
+        await emit("extract", 0.0,
+                    f"extracting from {len(uploads)} file(s): {names}")
+        for u in uploads:
+            await broker.publish(run_id, {
+                "type": "log", "prefix": "extract",
+                "line": f"  input file: {u.original_name}"
+                         f"  ({u.size_bytes/1024/1024:.1f} MB)",
+            })
+
+        # ── Stage 1 - Two-corridor extraction ─────────────────────────
+        # Write paths to a file to avoid Windows MAX_CMDLINE overflow
+        # when many large uploads are selected.
+        src_list_path = run_dir / "td_source_list.txt"
+        src_list_path.write_text(
+            "\n".join(u.stored_path for u in uploads), encoding="utf-8")
+        extract_cmd: list[str] = [
+            PY, str(LOCAL_SCRIPTS / "extract_two_corridors_generic.py"),
+            "--source-corridor", str(run_dir / "source_corridor.json"),
+            "--target-corridor", str(run_dir / "target_corridor.json"),
+            "--date",            date_iso,
+            "--out-dir",         str(run_dir),
+            "--td-source-list",  str(src_list_path),
+        ]
+        code = await _stream_subprocess(run_id, "extract", extract_cmd,
+                                         cwd=settings.data_root.parent)
+        if code != 0: raise RuntimeError("extraction failed")
+        await emit("extract", 1.0, "extraction complete")
+
+        # ── Stage 2 - Divertibility identification ────────────────────
+        await emit("divertible", 0.0, "identifying divertible trains")
+        code = await _stream_subprocess(run_id, "divertible", [
+            PY, str(LOCAL_SCRIPTS / "identify_divertible_generic.py"),
+            "--source-summary",  str(run_dir / "source_summary.csv"),
+            "--source-corridor", str(run_dir / "source_corridor.json"),
+            "--target-corridor", str(run_dir / "target_corridor.json"),
+            "--classes",         class_digit,
+            "--endpoint-strictness", endpoint_strictness,
+            "--exclude-terminal", excluded_terminals,
+            "--out",             str(run_dir / "divertible_trains.csv"),
+        ], cwd=settings.data_root.parent)
+        if code != 0: raise RuntimeError("divertibility identification failed")
+        await emit("divertible", 1.0, "divertibility complete")
+
+        # Count divertibles for KPI
+        divertible_n = 0
+        div_csv = run_dir / "divertible_trains.csv"
+        if div_csv.exists():
+            with div_csv.open(encoding="utf-8") as fh:
+                divertible_n = max(0, sum(1 for _ in fh) - 1)
+
+        if divertible_n == 0:
+            _update_run(run_id, status="complete",
+                        completed_at=datetime.now(timezone.utc),
+                        divertible_total=0, div_placed=0,
+                        div_rescheduled=0, div_conflict=0,
+                        div_placed_pct=0.0,
+                        div_solver_status="no_divertibles")
+            await broker.publish(run_id, {"type": "log",
+                "prefix": "diversion",
+                "line": "no divertible trains - stopping"})
+            await broker.publish(run_id, {"type": "status",
+                "value": "complete", "kpis": {"divertible_total": 0}})
+            return
+
+        # ── Stage 3 - Prepare MILP inputs from divertibles + target
+        await emit("prepare", 0.0, "preparing MILP inputs")
+        code = await _stream_subprocess(run_id, "prepare", [
+            PY, str(LOCAL_SCRIPTS / "prepare_diversion_inputs.py"),
+            "--divertible",     str(run_dir / "divertible_trains.csv"),
+            "--target-events",  str(run_dir / "target_events.csv"),
+            "--target-corridor", str(run_dir / "target_corridor.json"),
+            "--flex-min",       str(run.flex_min or 60),
+            "--smart-json",     str(settings.data_root / "SMART.json"),
+            "--out-dir",        str(run_dir),
+        ], cwd=settings.data_root.parent)
+        if code != 0: raise RuntimeError("prepare MILP inputs failed")
+        await emit("prepare", 1.0, "MILP inputs ready")
+
+        # ── Stage 4 - Shift-assignment MILP (paper formulation)
+        #     x_{t,s} ∈ {0,1}, C1 Σ_s x_{t,s} ≤ 1, C2 berth capacity per
+        #     (station, 15-min window), obj = Σ x_{t,s} − λ·Σ|s|·x_{t,s}
+        await emit("milp", 0.0, "solving assignment MILP")
+
+        # Build per-station berth file from SMART data for the target corridor
+        berths_json_path = run_dir / "berths_per_station.json"
+        try:
+            tgt_corridor_json = json.loads(
+                (run_dir / "target_corridor.json").read_text(encoding="utf-8"))
+            bps = corridor_berths(
+                tgt_corridor_json.get("stations", []),
+                fallback=int(getattr(run, "n_berths", 6) or 6),
+            )
+            berths_json_path.write_text(
+                json.dumps(bps, indent=2), encoding="utf-8")
+            await broker.publish(run_id, {
+                "type": "log", "prefix": "milp",
+                "line": f"SMART berths: "
+                        + ", ".join(
+                            f"seq{k}={v}"
+                            for k, v in sorted(bps.items())
+                        ),
+            })
+        except Exception as exc:
+            berths_json_path = None
+            await broker.publish(run_id, {
+                "type": "log", "prefix": "milp",
+                "line": f"[warn] could not build SMART berths: {exc} "
+                        f"— falling back to --n-berths",
+            })
+
+        assign_time_limit = str(max(60, int(run.time_limit_per_block or 300)))
+        milp_cmd = [
+            PY, str(LOCAL_SCRIPTS / "assignment_diversion_milp.py"),
+            "--divertible",      str(run_dir / "candidate_paths_diversion.csv"),
+            "--baseline",        str(run_dir / "baseline_traffic_diversion.csv"),
+            "--target-corridor", str(run_dir / "target_corridor.json"),
+            "--flex-min",        str(run.flex_min or 60),
+            "--shift-step",      "5",
+            "--n-berths",        str(getattr(run, "n_berths", 6) or 6),
+            "--time-limit",      assign_time_limit,
+            "--out",             str(run_dir / "solution.csv"),
+            "--kpis",            str(run_dir / "kpis.json"),
+            "--log",             str(run_dir / "assign_cbc.log"),
+        ]
+        if berths_json_path:
+            milp_cmd += ["--berths-json", str(berths_json_path)]
+        code = await _stream_subprocess(run_id, "milp", milp_cmd,
+                                         cwd=settings.data_root.parent,
+                                         tracker=None)
+        if code != 0: raise RuntimeError("assignment MILP failed")
+        await emit("milp", 1.0, "MILP complete")
+
+        # ── Read KPIs from kpis.json (authoritative — written directly by
+        #     the MILP subprocess).  Use these for the DB update so the
+        #     counts always match what the solver actually found.
+        kpi_path = run_dir / "kpis.json"
+        milp_kpis: dict = {}
+        if kpi_path.exists():
+            try:
+                milp_kpis = json.loads(
+                    kpi_path.read_text(encoding="utf-8"))
+            except Exception:
+                milp_kpis = {}
+
+        placed   = int(milp_kpis.get("n_placed",     0) or 0)
+        resched  = int(milp_kpis.get("n_rescheduled", 0) or 0)
+        slot     = int(milp_kpis.get("n_slot",        0) or 0)
+        conflict = int(milp_kpis.get("n_conflict",    0) or 0)
+        pct      = float(milp_kpis.get("placed_pct",  0.0) or 0.0)
+        mean_abs = float(milp_kpis.get("mean_abs_shift_min", 0.0) or 0.0)
+        wall     = milp_kpis.get("wall_solve_time_s")
+        solver_status = milp_kpis.get("solver_status", "Optimal")
+
+        print(f"[runner] kpis.json: placed={placed} slot={slot} "
+              f"resched={resched} conflict={conflict} pct={pct}",
+              flush=True)
+
+        # ── Build per-train outcome table from solution.csv (for the
+        #     UI detail table and diversion_outcome.csv download).
+        outcome_rows: list[dict] = []
+        sol_p = run_dir / "solution.csv"
+        if sol_p.exists():
+            with sol_p.open(newline="", encoding="utf-8") as fh:
+                for r in _csv.DictReader(fh):
+                    outc = (r.get("outcome") or "").upper()
+                    try:
+                        shift_val = int(r["shift_min"]) \
+                                    if r.get("shift_min") not in ("", None) \
+                                    else 0
+                    except ValueError:
+                        shift_val = 0
+                    outcome_rows.append({
+                        "path_id":       r.get("path_id", ""),
+                        "headcode":      r.get("headcode", ""),
+                        "original_hhmm": r.get("original_hhmm", ""),
+                        "assigned_hhmm": r.get("assigned_hhmm", ""),
+                        "shift_min":     shift_val if outc != "CONFLICT" else "",
+                        "outcome":       outc or "CONFLICT",
+                    })
+        print(f"[runner] solution.csv rows={len(outcome_rows)}", flush=True)
+
+        # Persist outcome CSV
+        with (run_dir / "diversion_outcome.csv").open(
+                "w", newline="", encoding="utf-8") as fh:
+            w = _csv.DictWriter(fh, fieldnames=["path_id", "headcode",
+                "original_hhmm", "assigned_hhmm", "shift_min", "outcome"])
+            w.writeheader(); w.writerows(outcome_rows)
+
+        _update_run(run_id, status="complete",
+                    completed_at=datetime.now(timezone.utc),
+                    divertible_total=divertible_n,
+                    div_placed=placed,
+                    div_rescheduled=resched,
+                    div_conflict=conflict,
+                    div_placed_pct=pct,
+                    div_mean_abs_shift_min=round(mean_abs, 2),
+                    wall_solve_time_s=wall,
+                    div_solver_status=solver_status)
+        await broker.publish(run_id, {"type": "status", "value": "complete",
+                                       "kpis": {"divertible_total": divertible_n,
+                                                 "div_placed": placed,
+                                                 "div_conflict": conflict}})
+    except Exception as e:
+        import traceback
+        tb = traceback.format_exc()
+        _update_run(run_id, status="failed",
+                    completed_at=datetime.now(timezone.utc),
+                    error=f"{type(e).__name__}: {e}")
+        await broker.publish(run_id, {"type": "log", "prefix": "error",
+                                       "line": tb.splitlines()[-1]})
+        await broker.publish(run_id, {"type": "status", "value": "failed",
+                                       "error": f"{type(e).__name__}: {e}"})
     finally:
         await broker.complete(run_id)

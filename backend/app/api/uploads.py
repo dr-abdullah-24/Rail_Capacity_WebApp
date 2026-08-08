@@ -28,14 +28,27 @@ async def upload_file(
                     "freight_lines_json"}:
         raise HTTPException(400, f"unknown kind '{kind}'")
 
-    filename = f"{uuid.uuid4().hex}_{Path(file.filename).name}"
+    # --- deduplicate original_name ---
+    raw_name = file.filename or "unnamed"
+    p = Path(raw_name)
+    stem, suffix = p.stem, p.suffix
+    existing_names = set(
+        session.exec(select(Upload.original_name)).all()
+    )
+    original_name = raw_name
+    counter = 2
+    while original_name in existing_names:
+        original_name = f"{stem} ({counter}){suffix}"
+        counter += 1
+
+    filename = f"{uuid.uuid4().hex}_{Path(original_name).name}"
     dest = settings.uploads_dir / filename
     async with aiofiles.open(dest, "wb") as fh:
         while chunk := await file.read(1024 * 1024):
             await fh.write(chunk)
 
     row = Upload(
-        original_name=file.filename or "unnamed",
+        original_name=original_name,
         stored_path=str(dest),
         kind=kind,
         date_tag=date_tag,

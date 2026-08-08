@@ -18,6 +18,10 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (p) => p.replace(/^\/api/, ""),
         ws: true,
+        // Disable proxy timeouts — large TD uploads (multi-GB) can take
+        // many minutes and the http-proxy defaults kill the socket.
+        timeout: 0,
+        proxyTimeout: 0,
         configure(proxy) {
           const quiet = (code: string) =>
             code === "ECONNREFUSED" ||

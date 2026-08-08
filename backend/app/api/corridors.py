@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import math
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -15,6 +15,7 @@ from sqlmodel import Session, select
 
 from app.core.db import get_session
 from app.models.corridor import UserCorridor
+from app.services.smart_berths import lookup_berths, berths_by_stanme, berths_by_stanox
 
 DATA_FILE = Path(__file__).resolve().parents[1] / "data" / "corridors.json"
 
@@ -51,14 +52,19 @@ def _haversine_km(a: dict, b: dict) -> float:
 
 
 def _annotate_chainage(stations: list[dict]) -> list[dict]:
-    """Assign seq, chainage_km via haversine along the ordered station list."""
+    """Assign seq, chainage_km, n_berths via haversine along station list."""
     total = 0.0
     out = []
     prev = None
     for i, s in enumerate(stations):
         if prev is not None:
             total += _haversine_km(prev, s)
-        out.append({**s, "seq": i, "chainage_km": round(total, 3)})
+        n_berths = lookup_berths(
+            str(s.get("stanox", "") or ""),
+            str(s.get("stanme", "") or ""),
+        )
+        out.append({**s, "seq": i, "chainage_km": round(total, 3),
+                    "n_berths": n_berths})
         prev = s
     return out
 
@@ -75,6 +81,13 @@ def _user_to_public(row: UserCorridor) -> dict:
             "updated_at":  row.updated_at.isoformat()}
 
 
+# ── SMART berth lookup ───────────────────────────────────────────────────────
+@router.get("/smart/berths")
+def get_smart_berths():
+    """Return the full SMART-derived berth count lookup (STANME and STANOX)."""
+    return {"by_stanme": berths_by_stanme(), "by_stanox": berths_by_stanox()}
+
+
 # ── List / Get ───────────────────────────────────────────────────────────────
 @router.get("/")
 def list_corridors(session: Session = Depends(get_session)):
@@ -85,16 +98,31 @@ def list_corridors(session: Session = Depends(get_session)):
     return result
 
 
+def _enrich_stations(stations: list[dict]) -> list[dict]:
+    """Add n_berths to each station dict from SMART lookup."""
+    return [
+        {**s, "n_berths": lookup_berths(
+            str(s.get("stanox", "") or ""),
+            str(s.get("stanme", "") or ""),
+        )}
+        for s in stations
+    ]
+
+
 @router.get("/{corridor_id}")
 def get_corridor(corridor_id: str,
                  session: Session = Depends(get_session)):
     b = _builtins()
     if corridor_id in b:
-        return {**b[corridor_id], "kind": "builtin"}
+        c = b[corridor_id]
+        return {**c, "kind": "builtin",
+                "stations": _enrich_stations(c.get("stations", []))}
     row = session.exec(select(UserCorridor)
                         .where(UserCorridor.slug == corridor_id)).first()
     if row is not None:
-        return _user_to_public(row)
+        pub = _user_to_public(row)
+        pub["stations"] = _enrich_stations(pub.get("stations", []))
+        return pub
     raise HTTPException(404, f"corridor {corridor_id} not found")
 
 
@@ -146,7 +174,7 @@ def update_corridor(corridor_id: str, payload: CorridorIn,
     row.name = payload.name.strip()
     row.description = payload.description.strip()
     row.stations = _annotate_chainage(payload.stations)
-    row.updated_at = datetime.utcnow()
+    row.updated_at = datetime.now(timezone.utc)
     session.add(row); session.commit(); session.refresh(row)
     return _user_to_public(row)
 

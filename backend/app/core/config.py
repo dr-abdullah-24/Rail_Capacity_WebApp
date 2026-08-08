@@ -12,13 +12,16 @@ class Settings(BaseSettings):
     runs_dir: Path = data_root / "runs"
     sqlite_url: str = f"sqlite:///{(data_root / 'app.db').as_posix()}"
 
-    # Existing MILP repo (mounted read-only in Docker; local path otherwise)
+    # Legacy — kept only so the /health endpoint can report if the old
+    # external MILP repo exists on disk. Nothing else uses it.
     milp_repo: Path = Path(
         r"C:\Users\LOQ\OneDrive - Liverpool John Moores University"
         r"\LIV_MAN_Capacity_MILP_2018"
     )
     # Rail Insights location dataset (berths-geo.json) - local copy
     berths_geo: Path = data_root / "berths-geo.json"
+    # Scripts bundled with the web app (self-contained pipeline code)
+    local_scripts: Path = Path(__file__).resolve().parents[2] / "scripts"
 
     # CORS
     cors_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]

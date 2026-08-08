@@ -2,10 +2,14 @@
 to live in the shipped JSON file and are read-only."""
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 from sqlalchemy import Column, JSON
 from sqlmodel import Field, SQLModel
+
+
+def _now_utc() -> datetime:
+    return datetime.now(timezone.utc)
 
 
 class UserCorridor(SQLModel, table=True):
@@ -17,5 +21,5 @@ class UserCorridor(SQLModel, table=True):
     #                chainage_km (0 for user corridors)}
     stations: list[dict] = Field(default_factory=list,
                                   sa_column=Column(JSON))
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=_now_utc)
+    updated_at: datetime = Field(default_factory=_now_utc)

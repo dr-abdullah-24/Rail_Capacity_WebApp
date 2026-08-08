@@ -1,0 +1,39 @@
+{
+  "method": "rolling-horizon (STEER-style)",
+  "date": "2026-03-17",
+  "block_hours": 4,
+  "headway_min": 3,
+  "chat_moss_headway_min": 4,
+  "chat_moss_junctions": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "dwell_max": 30,
+  "candidates_total": 1,
+  "nb_candidates": 1,
+  "sb_candidates": 0,
+  "nb_inserted": 0,
+  "sb_inserted": 0,
+  "total_inserted": 0,
+  "total_dwell_min": 0,
+  "wall_solve_time_s": 1.8,
+  "blocks_hit_time_limit": 0,
+  "per_block": [
+    {
+      "direction": "northbound",
+      "block": 3,
+      "inserted": 1,
+      "candidates": 1,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 1.8
+    }
+  ],
+  "steer_target": {
+    "nb": 20,
+    "sb": 20,
+    "source": "Steer 2021 p.24 Route 3 (Winsford Sth Jn - Parkside)"
+  }
+}

@@ -1,6 +1,6 @@
 import {
   Upload as UploadIcon, MapPinned, Settings2, PlayCircle, BarChart3,
-  TrainFront, Home,
+  TrainFront, Home, Radio,
 } from "lucide-react";
 import { Page, useAppStore } from "../../stores/appStore";
 
@@ -34,6 +34,7 @@ export function Sidebar() {
         <div className="sidebar-brand-mark"><TrainFront size={18} /></div>
         <div>
           <div className="sidebar-brand-name">RailInsights</div>
+          <div className="sidebar-brand-sub">CAPACITY CONTROL</div>
         </div>
       </div>
       <nav className="sidebar-nav">
@@ -59,6 +60,11 @@ export function Sidebar() {
           );
         })}
       </nav>
+
+      <div className="sidebar-network">
+        <Radio size={13} />
+        <div><strong>UK Rail Network</strong><span>Decision support system</span></div>
+      </div>
 
       <div className="sidebar-affiliation">
         <div className="sidebar-affiliation-label">

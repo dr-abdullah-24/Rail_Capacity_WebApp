@@ -1,0 +1,138 @@
+{
+  "method": "rolling-horizon (STEER-style)",
+  "date": "2026-03-17",
+  "block_hours": 4,
+  "headway_min": 3,
+  "chat_moss_headway_min": 4,
+  "chat_moss_junctions": [
+    8,
+    9,
+    10,
+    11
+  ],
+  "dwell_max": 30,
+  "candidates_total": 48,
+  "nb_candidates": 24,
+  "sb_candidates": 24,
+  "nb_inserted": 20,
+  "sb_inserted": 24,
+  "total_inserted": 44,
+  "total_dwell_min": 7,
+  "wall_solve_time_s": 552.6,
+  "blocks_hit_time_limit": 1,
+  "per_block": [
+    {
+      "direction": "northbound",
+      "block": 0,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 8.1
+    },
+    {
+      "direction": "northbound",
+      "block": 1,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 143.1
+    },
+    {
+      "direction": "northbound",
+      "block": 2,
+      "inserted": 0,
+      "candidates": 4,
+      "status": "TimeLimit",
+      "hit_time_limit": true,
+      "solve_s": 180.2
+    },
+    {
+      "direction": "northbound",
+      "block": 3,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 165.6
+    },
+    {
+      "direction": "northbound",
+      "block": 4,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 26.6
+    },
+    {
+      "direction": "northbound",
+      "block": 5,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 21.4
+    },
+    {
+      "direction": "southbound",
+      "block": 0,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 0.5
+    },
+    {
+      "direction": "southbound",
+      "block": 1,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 0.8
+    },
+    {
+      "direction": "southbound",
+      "block": 2,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 3.7
+    },
+    {
+      "direction": "southbound",
+      "block": 3,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 1.2
+    },
+    {
+      "direction": "southbound",
+      "block": 4,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 0.9
+    },
+    {
+      "direction": "southbound",
+      "block": 5,
+      "inserted": 4,
+      "candidates": 4,
+      "status": "Optimal",
+      "hit_time_limit": false,
+      "solve_s": 0.5
+    }
+  ],
+  "steer_target": {
+    "nb": 20,
+    "sb": 20,
+    "source": "Steer 2021 p.24 Route 3 (Winsford Sth Jn - Parkside)"
+  }
+}

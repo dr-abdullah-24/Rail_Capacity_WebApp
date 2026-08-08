@@ -31,6 +31,15 @@ interface AppState {
   uploads: Upload[];
   selectedUploadId: number | null;
   selectUpload: (id: number | null) => void;
+  // Multi-file selection (used mainly by the diversion pipeline).
+  // selectedUploadId stays in sync with the *last* toggled id.
+  selectedUploadIds: number[];
+  toggleUploadSelection: (id: number) => void;
+  setUploadSelection: (ids: number[]) => void;
+  clearUploadSelection: () => void;
+  // Optional seed so UploadPage can hand off with a model preselected
+  pendingModelType: "capacity" | "diversion" | null;
+  setPendingModelType: (t: "capacity" | "diversion" | null) => void;
 
   corridors: CorridorSummary[];
   activeCorridor: CorridorDetail | null;
@@ -65,7 +74,29 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   uploads: [],
   selectedUploadId: null,
-  selectUpload: (id) => set({ selectedUploadId: id }),
+  selectedUploadIds: [],
+  selectUpload: (id) => set({
+    selectedUploadId: id,
+    selectedUploadIds: id == null ? [] : [id],
+  }),
+  toggleUploadSelection: (id) => set((s) => {
+    const cur = new Set(s.selectedUploadIds);
+    if (cur.has(id)) cur.delete(id); else cur.add(id);
+    const ids = [...cur];
+    return {
+      selectedUploadIds: ids,
+      selectedUploadId: ids.includes(id) ? id
+                        : ids.length > 0 ? ids[ids.length - 1] : null,
+    };
+  }),
+  setUploadSelection: (ids) => set({
+    selectedUploadIds: [...new Set(ids)],
+    selectedUploadId: ids.length > 0 ? ids[ids.length - 1] : null,
+  }),
+  clearUploadSelection: () => set({
+    selectedUploadIds: [], selectedUploadId: null }),
+  pendingModelType: null,
+  setPendingModelType: (t) => set({ pendingModelType: t }),
 
   corridors: [],
   activeCorridor: null,

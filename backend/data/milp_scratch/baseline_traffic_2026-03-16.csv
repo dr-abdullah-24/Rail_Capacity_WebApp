@@ -1,0 +1,2500 @@
+date,headcode,journey_num,train_class,direction,junction_seq,junction_name,line,t_min
+2026-03-16,0F42,1,other,northbound,0,CREWE,,1268
+2026-03-16,0F42,1,other,northbound,1,WINSFORD,S,1275
+2026-03-16,0F42,1,other,northbound,2,HARTFORD,,1286
+2026-03-16,0F42,1,other,northbound,3,HARTFORD JN,S,1284
+2026-03-16,0F42,1,other,northbound,4,ACTON BRIDGE,,1289
+2026-03-16,0F42,1,other,northbound,5,WEAVER JN,L,1291
+2026-03-16,0F42,1,other,northbound,6,ACTON GRANGE JN,H,1300
+2026-03-16,0K05,1,other,southbound,0,CREWE,G,1046
+2026-03-16,0K05,1,other,southbound,1,WINSFORD,F,1038
+2026-03-16,0K05,1,other,southbound,2,HARTFORD,,1034
+2026-03-16,0K05,1,other,southbound,3,HARTFORD JN,,1034
+2026-03-16,0K05,1,other,southbound,4,ACTON BRIDGE,,1031
+2026-03-16,0K05,1,other,southbound,5,WEAVER JN,M,1028
+2026-03-16,0K05,1,other,southbound,6,ACTON GRANGE JN,,1019
+2026-03-16,0K05,1,other,southbound,7,WARRINGTON BQ,F,1014
+2026-03-16,0K05,1,other,southbound,8,WINWICK JN,S,1009
+2026-03-16,0K52,1,other,southbound,0,CREWE,G,549
+2026-03-16,0K52,1,other,southbound,1,WINSFORD,F,542
+2026-03-16,0K52,1,other,southbound,2,HARTFORD,,539
+2026-03-16,0K52,1,other,southbound,3,HARTFORD JN,,538
+2026-03-16,0K52,1,other,southbound,4,ACTON BRIDGE,,536
+2026-03-16,0K52,1,other,southbound,5,WEAVER JN,M,534
+2026-03-16,0K52,1,other,southbound,6,ACTON GRANGE JN,,529
+2026-03-16,0Z22,1,other,northbound,0,CREWE,,631
+2026-03-16,0Z22,1,other,northbound,1,WINSFORD,S,636
+2026-03-16,0Z22,1,other,northbound,2,HARTFORD,,640
+2026-03-16,0Z22,1,other,northbound,3,HARTFORD JN,S,639
+2026-03-16,0Z22,1,other,northbound,4,ACTON BRIDGE,,642
+2026-03-16,0Z22,1,other,northbound,5,WEAVER JN,L,644
+2026-03-16,0Z22,1,other,northbound,6,ACTON GRANGE JN,H,649
+2026-03-16,0Z22,1,other,northbound,7,WARRINGTON BQ,,650
+2026-03-16,0Z22,1,other,northbound,8,WINWICK JN,M,654
+2026-03-16,1A13,1,passenger,northbound,0,CREWE,G,523
+2026-03-16,1A13,1,passenger,northbound,1,WINSFORD,F,518
+2026-03-16,1A13,1,passenger,northbound,2,HARTFORD,,516
+2026-03-16,1A13,1,passenger,northbound,3,HARTFORD JN,,515
+2026-03-16,1A13,1,passenger,northbound,4,ACTON BRIDGE,,513
+2026-03-16,1A13,1,passenger,northbound,5,WEAVER JN,M,511
+2026-03-16,1A16,1,passenger,northbound,0,CREWE,G,556
+2026-03-16,1A16,1,passenger,northbound,1,WINSFORD,F,552
+2026-03-16,1A16,1,passenger,northbound,2,HARTFORD,,550
+2026-03-16,1A16,1,passenger,northbound,3,HARTFORD JN,,549
+2026-03-16,1A16,1,passenger,northbound,4,ACTON BRIDGE,,548
+2026-03-16,1A16,1,passenger,northbound,5,WEAVER JN,M,547
+2026-03-16,1A19,1,passenger,northbound,0,CREWE,G,581
+2026-03-16,1A19,1,passenger,northbound,1,WINSFORD,F,578
+2026-03-16,1A19,1,passenger,northbound,2,HARTFORD,,576
+2026-03-16,1A19,1,passenger,northbound,3,HARTFORD JN,,576
+2026-03-16,1A19,1,passenger,northbound,4,ACTON BRIDGE,,574
+2026-03-16,1A19,1,passenger,northbound,5,WEAVER JN,M,573
+2026-03-16,1A22,1,passenger,northbound,0,CREWE,G,618
+2026-03-16,1A22,1,passenger,northbound,1,WINSFORD,F,614
+2026-03-16,1A22,1,passenger,northbound,2,HARTFORD,,612
+2026-03-16,1A22,1,passenger,northbound,3,HARTFORD JN,,611
+2026-03-16,1A22,1,passenger,northbound,4,ACTON BRIDGE,,610
+2026-03-16,1A22,1,passenger,northbound,5,WEAVER JN,M,609
+2026-03-16,1A25,1,passenger,northbound,0,CREWE,G,647
+2026-03-16,1A25,1,passenger,northbound,1,WINSFORD,F,641
+2026-03-16,1A25,1,passenger,northbound,2,HARTFORD,,637
+2026-03-16,1A25,1,passenger,northbound,3,HARTFORD JN,,637
+2026-03-16,1A25,1,passenger,northbound,4,ACTON BRIDGE,,634
+2026-03-16,1A25,1,passenger,northbound,5,WEAVER JN,M,633
+2026-03-16,1A28,1,passenger,northbound,0,CREWE,G,680
+2026-03-16,1A28,1,passenger,northbound,1,WINSFORD,F,675
+2026-03-16,1A28,1,passenger,northbound,2,HARTFORD,,672
+2026-03-16,1A28,1,passenger,northbound,3,HARTFORD JN,,672
+2026-03-16,1A28,1,passenger,northbound,4,ACTON BRIDGE,,667
+2026-03-16,1A28,1,passenger,northbound,5,WEAVER JN,M,666
+2026-03-16,1A31,1,passenger,northbound,0,CREWE,G,701
+2026-03-16,1A31,1,passenger,northbound,1,WINSFORD,F,697
+2026-03-16,1A31,1,passenger,northbound,2,HARTFORD,,695
+2026-03-16,1A31,1,passenger,northbound,3,HARTFORD JN,,694
+2026-03-16,1A31,1,passenger,northbound,4,ACTON BRIDGE,,692
+2026-03-16,1A31,1,passenger,northbound,5,WEAVER JN,M,691
+2026-03-16,1A34,1,passenger,northbound,0,CREWE,G,737
+2026-03-16,1A34,1,passenger,northbound,1,WINSFORD,F,732
+2026-03-16,1A34,1,passenger,northbound,2,HARTFORD,,730
+2026-03-16,1A34,1,passenger,northbound,3,HARTFORD JN,,729
+2026-03-16,1A34,1,passenger,northbound,4,ACTON BRIDGE,,728
+2026-03-16,1A34,1,passenger,northbound,5,WEAVER JN,M,727
+2026-03-16,1A40,1,passenger,northbound,0,CREWE,G,805
+2026-03-16,1A40,1,passenger,northbound,1,WINSFORD,F,800
+2026-03-16,1A40,1,passenger,northbound,2,HARTFORD,,796
+2026-03-16,1A40,1,passenger,northbound,3,HARTFORD JN,,795
+2026-03-16,1A40,1,passenger,northbound,4,ACTON BRIDGE,,792
+2026-03-16,1A40,1,passenger,northbound,5,WEAVER JN,M,791
+2026-03-16,1A43,1,passenger,northbound,0,CREWE,G,822
+2026-03-16,1A43,1,passenger,northbound,1,WINSFORD,F,818
+2026-03-16,1A43,1,passenger,northbound,2,HARTFORD,,816
+2026-03-16,1A43,1,passenger,northbound,3,HARTFORD JN,,816
+2026-03-16,1A43,1,passenger,northbound,4,ACTON BRIDGE,,814
+2026-03-16,1A43,1,passenger,northbound,5,WEAVER JN,M,813
+2026-03-16,1A46,1,passenger,northbound,0,CREWE,G,856
+2026-03-16,1A46,1,passenger,northbound,1,WINSFORD,F,853
+2026-03-16,1A46,1,passenger,northbound,2,HARTFORD,,851
+2026-03-16,1A46,1,passenger,northbound,3,HARTFORD JN,,850
+2026-03-16,1A46,1,passenger,northbound,4,ACTON BRIDGE,,849
+2026-03-16,1A46,1,passenger,northbound,5,WEAVER JN,M,847
+2026-03-16,1A49,1,passenger,northbound,0,CREWE,G,884
+2026-03-16,1A49,1,passenger,northbound,1,WINSFORD,F,879
+2026-03-16,1A49,1,passenger,northbound,2,HARTFORD,,877
+2026-03-16,1A49,1,passenger,northbound,3,HARTFORD JN,,876
+2026-03-16,1A49,1,passenger,northbound,4,ACTON BRIDGE,,874
+2026-03-16,1A49,1,passenger,northbound,5,WEAVER JN,M,873
+2026-03-16,1A52,1,passenger,northbound,0,CREWE,G,916
+2026-03-16,1A52,1,passenger,northbound,1,WINSFORD,F,912
+2026-03-16,1A52,1,passenger,northbound,2,HARTFORD,,910
+2026-03-16,1A52,1,passenger,northbound,3,HARTFORD JN,,910
+2026-03-16,1A52,1,passenger,northbound,4,ACTON BRIDGE,,908
+2026-03-16,1A52,1,passenger,northbound,5,WEAVER JN,M,907
+2026-03-16,1A58,1,passenger,northbound,0,CREWE,G,981
+2026-03-16,1A58,1,passenger,northbound,1,WINSFORD,F,975
+2026-03-16,1A58,1,passenger,northbound,2,HARTFORD,,971
+2026-03-16,1A58,1,passenger,northbound,3,HARTFORD JN,,970
+2026-03-16,1A58,1,passenger,northbound,4,ACTON BRIDGE,,969
+2026-03-16,1A58,1,passenger,northbound,5,WEAVER JN,M,967
+2026-03-16,1A61,1,passenger,northbound,0,CREWE,G,1003
+2026-03-16,1A61,1,passenger,northbound,1,WINSFORD,F,1000
+2026-03-16,1A61,1,passenger,northbound,2,HARTFORD,,998
+2026-03-16,1A61,1,passenger,northbound,3,HARTFORD JN,,997
+2026-03-16,1A61,1,passenger,northbound,4,ACTON BRIDGE,,995
+2026-03-16,1A61,1,passenger,northbound,5,WEAVER JN,M,992
+2026-03-16,1A64,1,passenger,northbound,0,CREWE,G,1039
+2026-03-16,1A64,1,passenger,northbound,1,WINSFORD,F,1033
+2026-03-16,1A64,1,passenger,northbound,2,HARTFORD,,1030
+2026-03-16,1A64,1,passenger,northbound,3,HARTFORD JN,,1029
+2026-03-16,1A64,1,passenger,northbound,4,ACTON BRIDGE,,1028
+2026-03-16,1A64,1,passenger,northbound,5,WEAVER JN,M,1027
+2026-03-16,1A70,1,passenger,northbound,0,CREWE,G,1097
+2026-03-16,1A70,1,passenger,northbound,1,WINSFORD,F,1093
+2026-03-16,1A70,1,passenger,northbound,2,HARTFORD,,1090
+2026-03-16,1A70,1,passenger,northbound,3,HARTFORD JN,,1090
+2026-03-16,1A70,1,passenger,northbound,4,ACTON BRIDGE,,1088
+2026-03-16,1A70,1,passenger,northbound,5,WEAVER JN,M,1087
+2026-03-16,1A73,1,passenger,northbound,0,CREWE,G,1120
+2026-03-16,1A73,1,passenger,northbound,1,WINSFORD,F,1117
+2026-03-16,1A73,1,passenger,northbound,2,HARTFORD,,1115
+2026-03-16,1A73,1,passenger,northbound,3,HARTFORD JN,,1114
+2026-03-16,1A73,1,passenger,northbound,4,ACTON BRIDGE,,1113
+2026-03-16,1A73,1,passenger,northbound,5,WEAVER JN,M,1112
+2026-03-16,1A75,1,passenger,northbound,0,CREWE,G,1159
+2026-03-16,1A75,1,passenger,northbound,1,WINSFORD,F,1156
+2026-03-16,1A75,1,passenger,northbound,2,HARTFORD,,1153
+2026-03-16,1A75,1,passenger,northbound,3,HARTFORD JN,,1153
+2026-03-16,1A75,1,passenger,northbound,4,ACTON BRIDGE,,1151
+2026-03-16,1A75,1,passenger,northbound,5,WEAVER JN,M,1150
+2026-03-16,1A79,1,passenger,northbound,0,CREWE,G,1217
+2026-03-16,1A79,1,passenger,northbound,1,WINSFORD,F,1212
+2026-03-16,1A79,1,passenger,northbound,2,HARTFORD,,1210
+2026-03-16,1A79,1,passenger,northbound,3,HARTFORD JN,,1209
+2026-03-16,1A79,1,passenger,northbound,4,ACTON BRIDGE,,1207
+2026-03-16,1A79,1,passenger,northbound,5,WEAVER JN,M,1206
+2026-03-16,1A82,1,passenger,northbound,0,CREWE,G,1289
+2026-03-16,1A82,1,passenger,northbound,1,WINSFORD,F,1283
+2026-03-16,1A82,1,passenger,northbound,2,HARTFORD,,1281
+2026-03-16,1A82,1,passenger,northbound,3,HARTFORD JN,,1281
+2026-03-16,1A82,1,passenger,northbound,4,ACTON BRIDGE,,1279
+2026-03-16,1A82,1,passenger,northbound,5,WEAVER JN,M,1278
+2026-03-16,1C79,1,passenger,northbound,11,PARKSIDE JN,C,731
+2026-03-16,1C92,1,passenger,northbound,11,PARKSIDE JN,C,1303
+2026-03-16,1D30,1,passenger,northbound,6,ACTON GRANGE JN,,383
+2026-03-16,1D30,1,passenger,northbound,7,WARRINGTON BQ,H,374
+2026-03-16,1D30,1,passenger,northbound,8,WINWICK JN,S,369
+2026-03-16,1D30,1,passenger,northbound,9,EARLESTOWN,,368
+2026-03-16,1D30,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,360
+2026-03-16,1D30,1,passenger,northbound,11,PARKSIDE JN,C,359
+2026-03-16,1D30,2,passenger,northbound,6,ACTON GRANGE JN,,978
+2026-03-16,1D30,2,passenger,northbound,7,WARRINGTON BQ,F,974
+2026-03-16,1D30,2,passenger,northbound,8,WINWICK JN,S,971
+2026-03-16,1D30,2,passenger,northbound,9,EARLESTOWN,,970
+2026-03-16,1D30,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,962
+2026-03-16,1D30,2,passenger,northbound,11,PARKSIDE JN,C,961
+2026-03-16,1D31,1,passenger,northbound,6,ACTON GRANGE JN,,441
+2026-03-16,1D31,1,passenger,northbound,7,WARRINGTON BQ,H,435
+2026-03-16,1D31,1,passenger,northbound,8,WINWICK JN,S,430
+2026-03-16,1D31,1,passenger,northbound,9,EARLESTOWN,,429
+2026-03-16,1D31,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,422
+2026-03-16,1D31,1,passenger,northbound,11,PARKSIDE JN,C,421
+2026-03-16,1D31,2,passenger,northbound,6,ACTON GRANGE JN,,1061
+2026-03-16,1D31,2,passenger,northbound,7,WARRINGTON BQ,H,1055
+2026-03-16,1D31,2,passenger,northbound,8,WINWICK JN,S,1050
+2026-03-16,1D31,2,passenger,northbound,9,EARLESTOWN,,1049
+2026-03-16,1D31,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1042
+2026-03-16,1D31,2,passenger,northbound,11,PARKSIDE JN,C,1040
+2026-03-16,1D32,1,passenger,northbound,6,ACTON GRANGE JN,,502
+2026-03-16,1D32,1,passenger,northbound,7,WARRINGTON BQ,H,497
+2026-03-16,1D32,1,passenger,northbound,8,WINWICK JN,S,493
+2026-03-16,1D32,1,passenger,northbound,9,EARLESTOWN,,492
+2026-03-16,1D32,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,485
+2026-03-16,1D32,1,passenger,northbound,11,PARKSIDE JN,C,484
+2026-03-16,1D32,2,passenger,northbound,6,ACTON GRANGE JN,,1100
+2026-03-16,1D32,2,passenger,northbound,7,WARRINGTON BQ,H,1096
+2026-03-16,1D32,2,passenger,northbound,8,WINWICK JN,S,1092
+2026-03-16,1D32,2,passenger,northbound,9,EARLESTOWN,,1091
+2026-03-16,1D32,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1084
+2026-03-16,1D32,2,passenger,northbound,11,PARKSIDE JN,C,1083
+2026-03-16,1D33,2,passenger,northbound,6,ACTON GRANGE JN,,560
+2026-03-16,1D33,2,passenger,northbound,7,WARRINGTON BQ,H,555
+2026-03-16,1D33,2,passenger,northbound,8,WINWICK JN,S,551
+2026-03-16,1D33,2,passenger,northbound,9,EARLESTOWN,,550
+2026-03-16,1D33,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,542
+2026-03-16,1D33,2,passenger,northbound,11,PARKSIDE JN,C,541
+2026-03-16,1D33,3,passenger,northbound,6,ACTON GRANGE JN,,1165
+2026-03-16,1D33,3,passenger,northbound,7,WARRINGTON BQ,H,1161
+2026-03-16,1D33,3,passenger,northbound,8,WINWICK JN,S,1156
+2026-03-16,1D33,3,passenger,northbound,9,EARLESTOWN,,1155
+2026-03-16,1D33,3,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1148
+2026-03-16,1D33,3,passenger,northbound,11,PARKSIDE JN,C,1147
+2026-03-16,1D34,1,passenger,northbound,6,ACTON GRANGE JN,,620
+2026-03-16,1D34,1,passenger,northbound,7,WARRINGTON BQ,H,616
+2026-03-16,1D34,1,passenger,northbound,8,WINWICK JN,S,611
+2026-03-16,1D34,1,passenger,northbound,9,EARLESTOWN,,611
+2026-03-16,1D34,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,605
+2026-03-16,1D34,1,passenger,northbound,11,PARKSIDE JN,C,604
+2026-03-16,1D35,1,passenger,northbound,6,ACTON GRANGE JN,,681
+2026-03-16,1D35,1,passenger,northbound,7,WARRINGTON BQ,H,676
+2026-03-16,1D35,1,passenger,northbound,8,WINWICK JN,S,672
+2026-03-16,1D35,1,passenger,northbound,9,EARLESTOWN,,671
+2026-03-16,1D35,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,665
+2026-03-16,1D35,1,passenger,northbound,11,PARKSIDE JN,C,664
+2026-03-16,1D35,2,passenger,northbound,6,ACTON GRANGE JN,,1279
+2026-03-16,1D35,2,passenger,northbound,7,WARRINGTON BQ,H,1275
+2026-03-16,1D35,2,passenger,northbound,8,WINWICK JN,S,1271
+2026-03-16,1D35,2,passenger,northbound,9,EARLESTOWN,,1270
+2026-03-16,1D35,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1263
+2026-03-16,1D35,2,passenger,northbound,11,PARKSIDE JN,C,1262
+2026-03-16,1D36,1,passenger,northbound,6,ACTON GRANGE JN,,754
+2026-03-16,1D36,1,passenger,northbound,7,WARRINGTON BQ,H,747
+2026-03-16,1D36,1,passenger,northbound,8,WINWICK JN,S,743
+2026-03-16,1D36,1,passenger,northbound,9,EARLESTOWN,,742
+2026-03-16,1D36,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,736
+2026-03-16,1D36,1,passenger,northbound,11,PARKSIDE JN,C,734
+2026-03-16,1D36,2,passenger,northbound,6,ACTON GRANGE JN,,1339
+2026-03-16,1D36,2,passenger,northbound,7,WARRINGTON BQ,H,1335
+2026-03-16,1D36,2,passenger,northbound,8,WINWICK JN,S,1331
+2026-03-16,1D36,2,passenger,northbound,9,EARLESTOWN,,1330
+2026-03-16,1D36,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1323
+2026-03-16,1D36,2,passenger,northbound,11,PARKSIDE JN,C,1322
+2026-03-16,1D37,1,passenger,northbound,6,ACTON GRANGE JN,,804
+2026-03-16,1D37,1,passenger,northbound,7,WARRINGTON BQ,H,799
+2026-03-16,1D37,1,passenger,northbound,8,WINWICK JN,S,795
+2026-03-16,1D37,1,passenger,northbound,9,EARLESTOWN,,794
+2026-03-16,1D37,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,787
+2026-03-16,1D37,1,passenger,northbound,11,PARKSIDE JN,C,786
+2026-03-16,1D38,1,passenger,northbound,6,ACTON GRANGE JN,,859
+2026-03-16,1D38,1,passenger,northbound,7,WARRINGTON BQ,H,855
+2026-03-16,1D38,1,passenger,northbound,8,WINWICK JN,S,851
+2026-03-16,1D38,1,passenger,northbound,9,EARLESTOWN,,850
+2026-03-16,1D38,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,842
+2026-03-16,1D38,1,passenger,northbound,11,PARKSIDE JN,C,841
+2026-03-16,1D39,1,passenger,northbound,6,ACTON GRANGE JN,,922
+2026-03-16,1D39,1,passenger,northbound,7,WARRINGTON BQ,H,916
+2026-03-16,1D39,1,passenger,northbound,8,WINWICK JN,S,911
+2026-03-16,1D39,1,passenger,northbound,9,EARLESTOWN,,910
+2026-03-16,1D39,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,903
+2026-03-16,1D39,1,passenger,northbound,11,PARKSIDE JN,C,901
+2026-03-16,1D44,1,passenger,northbound,6,ACTON GRANGE JN,,0
+2026-03-16,1D44,1,passenger,northbound,7,WARRINGTON BQ,,0
+2026-03-16,1D44,2,passenger,northbound,6,ACTON GRANGE JN,,1220
+2026-03-16,1D44,2,passenger,northbound,7,WARRINGTON BQ,H,1215
+2026-03-16,1D44,2,passenger,northbound,8,WINWICK JN,S,1211
+2026-03-16,1D44,2,passenger,northbound,9,EARLESTOWN,,1210
+2026-03-16,1D44,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1201
+2026-03-16,1D44,2,passenger,northbound,11,PARKSIDE JN,C,1200
+2026-03-16,1D47,1,passenger,northbound,6,ACTON GRANGE JN,,1405
+2026-03-16,1D47,1,passenger,northbound,7,WARRINGTON BQ,H,1404
+2026-03-16,1D69,1,passenger,northbound,6,ACTON GRANGE JN,,408
+2026-03-16,1D69,1,passenger,northbound,7,WARRINGTON BQ,H,404
+2026-03-16,1D69,1,passenger,northbound,8,WINWICK JN,S,400
+2026-03-16,1D69,1,passenger,northbound,9,EARLESTOWN,,399
+2026-03-16,1D69,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,394
+2026-03-16,1D69,1,passenger,northbound,11,PARKSIDE JN,C,391
+2026-03-16,1D70,1,passenger,northbound,6,ACTON GRANGE JN,,463
+2026-03-16,1D70,1,passenger,northbound,7,WARRINGTON BQ,H,458
+2026-03-16,1D70,1,passenger,northbound,8,WINWICK JN,S,454
+2026-03-16,1D70,1,passenger,northbound,9,EARLESTOWN,,453
+2026-03-16,1D70,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,446
+2026-03-16,1D70,1,passenger,northbound,11,PARKSIDE JN,C,445
+2026-03-16,1D70,2,passenger,northbound,6,ACTON GRANGE JN,,1064
+2026-03-16,1D70,2,passenger,northbound,7,WARRINGTON BQ,H,1060
+2026-03-16,1D70,2,passenger,northbound,8,WINWICK JN,S,1055
+2026-03-16,1D70,2,passenger,northbound,9,EARLESTOWN,,1054
+2026-03-16,1D70,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1048
+2026-03-16,1D70,2,passenger,northbound,11,PARKSIDE JN,C,1043
+2026-03-16,1D71,1,passenger,northbound,6,ACTON GRANGE JN,,522
+2026-03-16,1D71,1,passenger,northbound,7,WARRINGTON BQ,H,517
+2026-03-16,1D71,1,passenger,northbound,8,WINWICK JN,S,513
+2026-03-16,1D71,1,passenger,northbound,9,EARLESTOWN,,512
+2026-03-16,1D71,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,503
+2026-03-16,1D71,1,passenger,northbound,11,PARKSIDE JN,C,501
+2026-03-16,1D71,2,passenger,northbound,6,ACTON GRANGE JN,,1126
+2026-03-16,1D71,2,passenger,northbound,7,WARRINGTON BQ,H,1121
+2026-03-16,1D71,2,passenger,northbound,8,WINWICK JN,S,1117
+2026-03-16,1D71,2,passenger,northbound,9,EARLESTOWN,,1116
+2026-03-16,1D71,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1110
+2026-03-16,1D71,2,passenger,northbound,11,PARKSIDE JN,C,1107
+2026-03-16,1D72,1,passenger,northbound,6,ACTON GRANGE JN,,590
+2026-03-16,1D72,1,passenger,northbound,7,WARRINGTON BQ,H,586
+2026-03-16,1D72,1,passenger,northbound,8,WINWICK JN,S,582
+2026-03-16,1D72,1,passenger,northbound,9,EARLESTOWN,,581
+2026-03-16,1D72,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,576
+2026-03-16,1D72,1,passenger,northbound,11,PARKSIDE JN,C,575
+2026-03-16,1D72,2,passenger,northbound,6,ACTON GRANGE JN,,1183
+2026-03-16,1D72,2,passenger,northbound,7,WARRINGTON BQ,H,1179
+2026-03-16,1D72,2,passenger,northbound,8,WINWICK JN,S,1173
+2026-03-16,1D72,2,passenger,northbound,9,EARLESTOWN,,1172
+2026-03-16,1D72,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1165
+2026-03-16,1D72,2,passenger,northbound,11,PARKSIDE JN,C,1164
+2026-03-16,1D73,1,passenger,northbound,6,ACTON GRANGE JN,,649
+2026-03-16,1D73,1,passenger,northbound,7,WARRINGTON BQ,H,644
+2026-03-16,1D73,1,passenger,northbound,8,WINWICK JN,S,637
+2026-03-16,1D73,1,passenger,northbound,9,EARLESTOWN,,636
+2026-03-16,1D73,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,630
+2026-03-16,1D73,1,passenger,northbound,11,PARKSIDE JN,C,627
+2026-03-16,1D74,1,passenger,northbound,6,ACTON GRANGE JN,,701
+2026-03-16,1D74,1,passenger,northbound,7,WARRINGTON BQ,H,697
+2026-03-16,1D74,1,passenger,northbound,8,WINWICK JN,S,692
+2026-03-16,1D74,1,passenger,northbound,9,EARLESTOWN,,691
+2026-03-16,1D74,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,685
+2026-03-16,1D74,1,passenger,northbound,11,PARKSIDE JN,C,684
+2026-03-16,1D74,2,passenger,northbound,6,ACTON GRANGE JN,,1302
+2026-03-16,1D74,2,passenger,northbound,7,WARRINGTON BQ,H,1297
+2026-03-16,1D74,2,passenger,northbound,8,WINWICK JN,S,1293
+2026-03-16,1D74,2,passenger,northbound,9,EARLESTOWN,,1292
+2026-03-16,1D74,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1286
+2026-03-16,1D74,2,passenger,northbound,11,PARKSIDE JN,C,1285
+2026-03-16,1D75,1,passenger,northbound,6,ACTON GRANGE JN,,763
+2026-03-16,1D75,1,passenger,northbound,7,WARRINGTON BQ,H,759
+2026-03-16,1D75,1,passenger,northbound,8,WINWICK JN,S,755
+2026-03-16,1D75,1,passenger,northbound,9,EARLESTOWN,,754
+2026-03-16,1D75,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,748
+2026-03-16,1D75,1,passenger,northbound,11,PARKSIDE JN,C,745
+2026-03-16,1D76,1,passenger,northbound,6,ACTON GRANGE JN,,823
+2026-03-16,1D76,1,passenger,northbound,7,WARRINGTON BQ,H,819
+2026-03-16,1D76,1,passenger,northbound,8,WINWICK JN,S,815
+2026-03-16,1D76,1,passenger,northbound,9,EARLESTOWN,,814
+2026-03-16,1D76,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,808
+2026-03-16,1D76,1,passenger,northbound,11,PARKSIDE JN,C,807
+2026-03-16,1D77,1,passenger,northbound,6,ACTON GRANGE JN,,882
+2026-03-16,1D77,1,passenger,northbound,7,WARRINGTON BQ,H,878
+2026-03-16,1D77,1,passenger,northbound,8,WINWICK JN,S,873
+2026-03-16,1D77,1,passenger,northbound,9,EARLESTOWN,,872
+2026-03-16,1D77,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,867
+2026-03-16,1D77,1,passenger,northbound,11,PARKSIDE JN,C,866
+2026-03-16,1D77,2,passenger,northbound,6,ACTON GRANGE JN,,1243
+2026-03-16,1D77,2,passenger,northbound,7,WARRINGTON BQ,H,1239
+2026-03-16,1D77,2,passenger,northbound,8,WINWICK JN,S,1234
+2026-03-16,1D77,2,passenger,northbound,9,EARLESTOWN,,1233
+2026-03-16,1D77,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1227
+2026-03-16,1D77,2,passenger,northbound,11,PARKSIDE JN,C,1225
+2026-03-16,1D78,1,passenger,northbound,6,ACTON GRANGE JN,,944
+2026-03-16,1D78,1,passenger,northbound,7,WARRINGTON BQ,F,943
+2026-03-16,1D78,1,passenger,northbound,8,WINWICK JN,S,936
+2026-03-16,1D78,1,passenger,northbound,9,EARLESTOWN,,935
+2026-03-16,1D78,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,929
+2026-03-16,1D78,1,passenger,northbound,11,PARKSIDE JN,C,927
+2026-03-16,1D79,1,passenger,northbound,6,ACTON GRANGE JN,,1000
+2026-03-16,1D79,1,passenger,northbound,7,WARRINGTON BQ,H,996
+2026-03-16,1D79,1,passenger,northbound,8,WINWICK JN,S,991
+2026-03-16,1D79,1,passenger,northbound,9,EARLESTOWN,,991
+2026-03-16,1D79,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,984
+2026-03-16,1D79,1,passenger,northbound,11,PARKSIDE JN,C,983
+2026-03-16,1E50,1,passenger,northbound,6,ACTON GRANGE JN,H,401
+2026-03-16,1E50,1,passenger,northbound,7,WARRINGTON BQ,,403
+2026-03-16,1E50,1,passenger,northbound,8,WINWICK JN,M,412
+2026-03-16,1E50,1,passenger,northbound,9,EARLESTOWN,,414
+2026-03-16,1E50,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,417
+2026-03-16,1E50,1,passenger,northbound,11,PARKSIDE JN,M,418
+2026-03-16,1E51,1,passenger,northbound,9,EARLESTOWN,,1214
+2026-03-16,1E51,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1215
+2026-03-16,1E51,1,passenger,northbound,11,PARKSIDE JN,M,1216
+2026-03-16,1E52,1,passenger,northbound,6,ACTON GRANGE JN,H,462
+2026-03-16,1E52,1,passenger,northbound,7,WARRINGTON BQ,,464
+2026-03-16,1E52,1,passenger,northbound,8,WINWICK JN,M,472
+2026-03-16,1E52,1,passenger,northbound,9,EARLESTOWN,,474
+2026-03-16,1E52,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,477
+2026-03-16,1E52,1,passenger,northbound,11,PARKSIDE JN,M,478
+2026-03-16,1E54,1,passenger,northbound,6,ACTON GRANGE JN,H,522
+2026-03-16,1E54,1,passenger,northbound,7,WARRINGTON BQ,,524
+2026-03-16,1E54,1,passenger,northbound,8,WINWICK JN,M,533
+2026-03-16,1E54,1,passenger,northbound,9,EARLESTOWN,,535
+2026-03-16,1E54,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,542
+2026-03-16,1E54,1,passenger,northbound,11,PARKSIDE JN,M,543
+2026-03-16,1E55,1,passenger,northbound,9,EARLESTOWN,,1325
+2026-03-16,1E55,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1326
+2026-03-16,1E55,1,passenger,northbound,11,PARKSIDE JN,M,1327
+2026-03-16,1E56,1,passenger,northbound,6,ACTON GRANGE JN,H,582
+2026-03-16,1E56,1,passenger,northbound,7,WARRINGTON BQ,,585
+2026-03-16,1E56,1,passenger,northbound,8,WINWICK JN,M,592
+2026-03-16,1E56,1,passenger,northbound,9,EARLESTOWN,,594
+2026-03-16,1E56,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,598
+2026-03-16,1E56,1,passenger,northbound,11,PARKSIDE JN,M,599
+2026-03-16,1E58,1,passenger,northbound,6,ACTON GRANGE JN,H,643
+2026-03-16,1E58,1,passenger,northbound,7,WARRINGTON BQ,,645
+2026-03-16,1E58,1,passenger,northbound,8,WINWICK JN,M,652
+2026-03-16,1E58,1,passenger,northbound,9,EARLESTOWN,,654
+2026-03-16,1E58,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,657
+2026-03-16,1E58,1,passenger,northbound,11,PARKSIDE JN,M,658
+2026-03-16,1E60,1,passenger,northbound,6,ACTON GRANGE JN,H,702
+2026-03-16,1E60,1,passenger,northbound,7,WARRINGTON BQ,,705
+2026-03-16,1E60,1,passenger,northbound,8,WINWICK JN,M,713
+2026-03-16,1E60,1,passenger,northbound,9,EARLESTOWN,,715
+2026-03-16,1E60,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,719
+2026-03-16,1E60,1,passenger,northbound,11,PARKSIDE JN,M,720
+2026-03-16,1E62,1,passenger,northbound,6,ACTON GRANGE JN,H,763
+2026-03-16,1E62,1,passenger,northbound,7,WARRINGTON BQ,,765
+2026-03-16,1E62,1,passenger,northbound,8,WINWICK JN,M,774
+2026-03-16,1E62,1,passenger,northbound,9,EARLESTOWN,,775
+2026-03-16,1E62,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,778
+2026-03-16,1E62,1,passenger,northbound,11,PARKSIDE JN,M,779
+2026-03-16,1E64,1,passenger,northbound,6,ACTON GRANGE JN,H,821
+2026-03-16,1E64,1,passenger,northbound,7,WARRINGTON BQ,,823
+2026-03-16,1E64,1,passenger,northbound,8,WINWICK JN,M,833
+2026-03-16,1E64,1,passenger,northbound,9,EARLESTOWN,,835
+2026-03-16,1E64,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,838
+2026-03-16,1E64,1,passenger,northbound,11,PARKSIDE JN,M,839
+2026-03-16,1E66,1,passenger,northbound,6,ACTON GRANGE JN,H,883
+2026-03-16,1E66,1,passenger,northbound,7,WARRINGTON BQ,,886
+2026-03-16,1E66,1,passenger,northbound,8,WINWICK JN,M,894
+2026-03-16,1E66,1,passenger,northbound,9,EARLESTOWN,,896
+2026-03-16,1E66,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,899
+2026-03-16,1E66,1,passenger,northbound,11,PARKSIDE JN,M,900
+2026-03-16,1E68,1,passenger,northbound,6,ACTON GRANGE JN,H,942
+2026-03-16,1E68,1,passenger,northbound,7,WARRINGTON BQ,,945
+2026-03-16,1E68,1,passenger,northbound,8,WINWICK JN,M,953
+2026-03-16,1E68,1,passenger,northbound,9,EARLESTOWN,,955
+2026-03-16,1E68,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,958
+2026-03-16,1E68,1,passenger,northbound,11,PARKSIDE JN,M,959
+2026-03-16,1E70,1,passenger,northbound,6,ACTON GRANGE JN,H,1003
+2026-03-16,1E70,1,passenger,northbound,7,WARRINGTON BQ,,1005
+2026-03-16,1E70,1,passenger,northbound,8,WINWICK JN,M,1013
+2026-03-16,1E70,1,passenger,northbound,9,EARLESTOWN,,1015
+2026-03-16,1E70,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1019
+2026-03-16,1E70,1,passenger,northbound,11,PARKSIDE JN,M,1020
+2026-03-16,1E72,1,passenger,northbound,6,ACTON GRANGE JN,H,1063
+2026-03-16,1E72,1,passenger,northbound,7,WARRINGTON BQ,,1065
+2026-03-16,1E72,1,passenger,northbound,8,WINWICK JN,M,1074
+2026-03-16,1E72,1,passenger,northbound,9,EARLESTOWN,,1076
+2026-03-16,1E72,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1079
+2026-03-16,1E72,1,passenger,northbound,11,PARKSIDE JN,M,1080
+2026-03-16,1E74,1,passenger,northbound,6,ACTON GRANGE JN,H,1123
+2026-03-16,1E74,1,passenger,northbound,7,WARRINGTON BQ,,1125
+2026-03-16,1E74,1,passenger,northbound,8,WINWICK JN,M,1131
+2026-03-16,1E74,1,passenger,northbound,9,EARLESTOWN,,1134
+2026-03-16,1E74,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1137
+2026-03-16,1E74,1,passenger,northbound,11,PARKSIDE JN,M,1138
+2026-03-16,1E76,1,passenger,northbound,6,ACTON GRANGE JN,H,1182
+2026-03-16,1E76,1,passenger,northbound,7,WARRINGTON BQ,,1185
+2026-03-16,1E76,1,passenger,northbound,8,WINWICK JN,M,1192
+2026-03-16,1E76,1,passenger,northbound,9,EARLESTOWN,,1194
+2026-03-16,1E76,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1198
+2026-03-16,1E76,1,passenger,northbound,11,PARKSIDE JN,M,1199
+2026-03-16,1E78,1,passenger,northbound,6,ACTON GRANGE JN,H,1245
+2026-03-16,1E78,1,passenger,northbound,7,WARRINGTON BQ,,1247
+2026-03-16,1E78,1,passenger,northbound,8,WINWICK JN,M,1254
+2026-03-16,1E78,1,passenger,northbound,9,EARLESTOWN,,1256
+2026-03-16,1E78,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1259
+2026-03-16,1E78,1,passenger,northbound,11,PARKSIDE JN,M,1260
+2026-03-16,1E82,1,passenger,northbound,6,ACTON GRANGE JN,H,1362
+2026-03-16,1E82,1,passenger,northbound,7,WARRINGTON BQ,,1364
+2026-03-16,1E82,1,passenger,northbound,8,WINWICK JN,M,1372
+2026-03-16,1E82,1,passenger,northbound,9,EARLESTOWN,,1373
+2026-03-16,1E82,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1377
+2026-03-16,1E82,1,passenger,northbound,11,PARKSIDE JN,M,1378
+2026-03-16,1F06,1,passenger,northbound,9,EARLESTOWN,,629
+2026-03-16,1F06,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,626
+2026-03-16,1F11,1,passenger,northbound,0,CREWE,,510
+2026-03-16,1F11,1,passenger,northbound,1,WINSFORD,F,513
+2026-03-16,1F11,1,passenger,northbound,2,HARTFORD,,515
+2026-03-16,1F11,1,passenger,northbound,3,HARTFORD JN,S,514
+2026-03-16,1F11,1,passenger,northbound,4,ACTON BRIDGE,,516
+2026-03-16,1F11,1,passenger,northbound,5,WEAVER JN,L,517
+2026-03-16,1F12,1,passenger,northbound,0,CREWE,,569
+2026-03-16,1F12,1,passenger,northbound,1,WINSFORD,F,572
+2026-03-16,1F12,1,passenger,northbound,2,HARTFORD,,575
+2026-03-16,1F12,1,passenger,northbound,3,HARTFORD JN,S,573
+2026-03-16,1F12,1,passenger,northbound,4,ACTON BRIDGE,,580
+2026-03-16,1F12,1,passenger,northbound,5,WEAVER JN,L,582
+2026-03-16,1F13,1,passenger,northbound,0,CREWE,,587
+2026-03-16,1F13,1,passenger,northbound,1,WINSFORD,F,590
+2026-03-16,1F13,1,passenger,northbound,2,HARTFORD,,592
+2026-03-16,1F13,1,passenger,northbound,3,HARTFORD JN,S,591
+2026-03-16,1F13,1,passenger,northbound,4,ACTON BRIDGE,,594
+2026-03-16,1F13,1,passenger,northbound,5,WEAVER JN,L,595
+2026-03-16,1F14,1,passenger,northbound,0,CREWE,,654
+2026-03-16,1F14,1,passenger,northbound,1,WINSFORD,F,657
+2026-03-16,1F14,1,passenger,northbound,2,HARTFORD,,659
+2026-03-16,1F14,1,passenger,northbound,3,HARTFORD JN,S,658
+2026-03-16,1F14,1,passenger,northbound,4,ACTON BRIDGE,,660
+2026-03-16,1F14,1,passenger,northbound,5,WEAVER JN,L,662
+2026-03-16,1F16,1,passenger,northbound,0,CREWE,,692
+2026-03-16,1F16,1,passenger,northbound,1,WINSFORD,F,695
+2026-03-16,1F16,1,passenger,northbound,2,HARTFORD,,697
+2026-03-16,1F16,1,passenger,northbound,3,HARTFORD JN,S,696
+2026-03-16,1F16,1,passenger,northbound,4,ACTON BRIDGE,,699
+2026-03-16,1F16,1,passenger,northbound,5,WEAVER JN,L,700
+2026-03-16,1F17,1,passenger,northbound,0,CREWE,,713
+2026-03-16,1F17,1,passenger,northbound,1,WINSFORD,F,715
+2026-03-16,1F17,1,passenger,northbound,2,HARTFORD,,718
+2026-03-16,1F17,1,passenger,northbound,3,HARTFORD JN,S,717
+2026-03-16,1F17,1,passenger,northbound,4,ACTON BRIDGE,,722
+2026-03-16,1F17,1,passenger,northbound,5,WEAVER JN,L,724
+2026-03-16,1F18,1,passenger,northbound,0,CREWE,,748
+2026-03-16,1F18,1,passenger,northbound,1,WINSFORD,F,751
+2026-03-16,1F18,1,passenger,northbound,2,HARTFORD,,753
+2026-03-16,1F18,1,passenger,northbound,3,HARTFORD JN,S,752
+2026-03-16,1F18,1,passenger,northbound,4,ACTON BRIDGE,,755
+2026-03-16,1F18,1,passenger,northbound,5,WEAVER JN,L,756
+2026-03-16,1F19,1,passenger,northbound,0,CREWE,,770
+2026-03-16,1F19,1,passenger,northbound,1,WINSFORD,F,772
+2026-03-16,1F19,1,passenger,northbound,2,HARTFORD,,775
+2026-03-16,1F19,1,passenger,northbound,3,HARTFORD JN,S,774
+2026-03-16,1F19,1,passenger,northbound,4,ACTON BRIDGE,,776
+2026-03-16,1F19,1,passenger,northbound,5,WEAVER JN,L,777
+2026-03-16,1F20,1,passenger,northbound,0,CREWE,,811
+2026-03-16,1F20,1,passenger,northbound,1,WINSFORD,F,814
+2026-03-16,1F20,1,passenger,northbound,2,HARTFORD,,817
+2026-03-16,1F20,1,passenger,northbound,3,HARTFORD JN,S,815
+2026-03-16,1F20,1,passenger,northbound,4,ACTON BRIDGE,,821
+2026-03-16,1F20,1,passenger,northbound,5,WEAVER JN,L,823
+2026-03-16,1F22,1,passenger,northbound,0,CREWE,,868
+2026-03-16,1F22,1,passenger,northbound,1,WINSFORD,F,871
+2026-03-16,1F22,1,passenger,northbound,2,HARTFORD,,875
+2026-03-16,1F22,1,passenger,northbound,3,HARTFORD JN,S,873
+2026-03-16,1F22,1,passenger,northbound,4,ACTON BRIDGE,,878
+2026-03-16,1F22,1,passenger,northbound,5,WEAVER JN,L,880
+2026-03-16,1F23,1,passenger,northbound,0,CREWE,,894
+2026-03-16,1F23,1,passenger,northbound,1,WINSFORD,F,897
+2026-03-16,1F23,1,passenger,northbound,2,HARTFORD,,899
+2026-03-16,1F23,1,passenger,northbound,3,HARTFORD JN,S,898
+2026-03-16,1F23,1,passenger,northbound,4,ACTON BRIDGE,,900
+2026-03-16,1F23,1,passenger,northbound,5,WEAVER JN,L,902
+2026-03-16,1F24,1,passenger,northbound,0,CREWE,,928
+2026-03-16,1F24,1,passenger,northbound,1,WINSFORD,F,931
+2026-03-16,1F24,1,passenger,northbound,2,HARTFORD,,933
+2026-03-16,1F24,1,passenger,northbound,3,HARTFORD JN,S,932
+2026-03-16,1F24,1,passenger,northbound,4,ACTON BRIDGE,,934
+2026-03-16,1F24,1,passenger,northbound,5,WEAVER JN,L,936
+2026-03-16,1F26,1,passenger,northbound,0,CREWE,,990
+2026-03-16,1F26,1,passenger,northbound,1,WINSFORD,F,993
+2026-03-16,1F26,1,passenger,northbound,2,HARTFORD,,995
+2026-03-16,1F26,1,passenger,northbound,3,HARTFORD JN,S,994
+2026-03-16,1F26,1,passenger,northbound,4,ACTON BRIDGE,,997
+2026-03-16,1F26,1,passenger,northbound,5,WEAVER JN,L,998
+2026-03-16,1F27,1,passenger,northbound,0,CREWE,,1013
+2026-03-16,1F27,1,passenger,northbound,1,WINSFORD,F,1016
+2026-03-16,1F27,1,passenger,northbound,2,HARTFORD,,1018
+2026-03-16,1F27,1,passenger,northbound,3,HARTFORD JN,S,1017
+2026-03-16,1F27,1,passenger,northbound,4,ACTON BRIDGE,,1020
+2026-03-16,1F27,1,passenger,northbound,5,WEAVER JN,L,1021
+2026-03-16,1F28,1,passenger,northbound,0,CREWE,,1048
+2026-03-16,1F28,1,passenger,northbound,1,WINSFORD,F,1051
+2026-03-16,1F28,1,passenger,northbound,2,HARTFORD,,1053
+2026-03-16,1F28,1,passenger,northbound,3,HARTFORD JN,S,1052
+2026-03-16,1F28,1,passenger,northbound,4,ACTON BRIDGE,,1055
+2026-03-16,1F28,1,passenger,northbound,5,WEAVER JN,L,1056
+2026-03-16,1F29,1,passenger,northbound,0,CREWE,,1083
+2026-03-16,1F29,1,passenger,northbound,1,WINSFORD,F,1086
+2026-03-16,1F29,1,passenger,northbound,2,HARTFORD,,1088
+2026-03-16,1F29,1,passenger,northbound,3,HARTFORD JN,S,1087
+2026-03-16,1F29,1,passenger,northbound,4,ACTON BRIDGE,,1089
+2026-03-16,1F29,1,passenger,northbound,5,WEAVER JN,L,1090
+2026-03-16,1F30,1,passenger,northbound,0,CREWE,,1109
+2026-03-16,1F30,1,passenger,northbound,1,WINSFORD,F,1111
+2026-03-16,1F30,1,passenger,northbound,2,HARTFORD,,1114
+2026-03-16,1F30,1,passenger,northbound,3,HARTFORD JN,S,1113
+2026-03-16,1F30,1,passenger,northbound,4,ACTON BRIDGE,,1119
+2026-03-16,1F30,1,passenger,northbound,5,WEAVER JN,L,1122
+2026-03-16,1F31,1,passenger,northbound,0,CREWE,,1146
+2026-03-16,1F31,1,passenger,northbound,1,WINSFORD,F,1148
+2026-03-16,1F31,1,passenger,northbound,2,HARTFORD,,1151
+2026-03-16,1F31,1,passenger,northbound,3,HARTFORD JN,S,1150
+2026-03-16,1F31,1,passenger,northbound,4,ACTON BRIDGE,,1152
+2026-03-16,1F31,1,passenger,northbound,5,WEAVER JN,L,1153
+2026-03-16,1F32,1,passenger,northbound,0,CREWE,,1187
+2026-03-16,1F32,1,passenger,northbound,1,WINSFORD,F,1190
+2026-03-16,1F32,1,passenger,northbound,2,HARTFORD,,1192
+2026-03-16,1F32,1,passenger,northbound,3,HARTFORD JN,S,1191
+2026-03-16,1F32,1,passenger,northbound,4,ACTON BRIDGE,,1194
+2026-03-16,1F32,1,passenger,northbound,5,WEAVER JN,L,1195
+2026-03-16,1F33,1,passenger,northbound,0,CREWE,,1197
+2026-03-16,1F33,1,passenger,northbound,1,WINSFORD,F,1199
+2026-03-16,1F33,1,passenger,northbound,2,HARTFORD,,1203
+2026-03-16,1F33,1,passenger,northbound,3,HARTFORD JN,S,1201
+2026-03-16,1F33,1,passenger,northbound,4,ACTON BRIDGE,,1209
+2026-03-16,1F33,1,passenger,northbound,5,WEAVER JN,L,1210
+2026-03-16,1F34,1,passenger,northbound,0,CREWE,,1230
+2026-03-16,1F34,1,passenger,northbound,1,WINSFORD,F,1233
+2026-03-16,1F34,1,passenger,northbound,2,HARTFORD,,1235
+2026-03-16,1F34,1,passenger,northbound,3,HARTFORD JN,S,1234
+2026-03-16,1F34,1,passenger,northbound,4,ACTON BRIDGE,,1240
+2026-03-16,1F34,1,passenger,northbound,5,WEAVER JN,L,1241
+2026-03-16,1F35,1,passenger,northbound,0,CREWE,,1274
+2026-03-16,1F35,1,passenger,northbound,1,WINSFORD,F,1277
+2026-03-16,1F35,1,passenger,northbound,2,HARTFORD,,1279
+2026-03-16,1F35,1,passenger,northbound,3,HARTFORD JN,S,1278
+2026-03-16,1F35,1,passenger,northbound,4,ACTON BRIDGE,,1280
+2026-03-16,1F35,1,passenger,northbound,5,WEAVER JN,L,1281
+2026-03-16,1F36,1,passenger,northbound,0,CREWE,,1297
+2026-03-16,1F36,1,passenger,northbound,1,WINSFORD,F,1300
+2026-03-16,1F36,1,passenger,northbound,2,HARTFORD,,1303
+2026-03-16,1F36,1,passenger,northbound,3,HARTFORD JN,S,1302
+2026-03-16,1F36,1,passenger,northbound,4,ACTON BRIDGE,,1304
+2026-03-16,1F36,1,passenger,northbound,5,WEAVER JN,L,1306
+2026-03-16,1F37,1,passenger,northbound,0,CREWE,,1317
+2026-03-16,1F37,1,passenger,northbound,1,WINSFORD,F,1320
+2026-03-16,1F37,1,passenger,northbound,2,HARTFORD,,1322
+2026-03-16,1F37,1,passenger,northbound,3,HARTFORD JN,S,1321
+2026-03-16,1F37,1,passenger,northbound,4,ACTON BRIDGE,,1323
+2026-03-16,1F37,1,passenger,northbound,5,WEAVER JN,L,1324
+2026-03-16,1F38,1,passenger,northbound,0,CREWE,,1352
+2026-03-16,1F38,1,passenger,northbound,1,WINSFORD,F,1354
+2026-03-16,1F38,1,passenger,northbound,2,HARTFORD,,1356
+2026-03-16,1F38,1,passenger,northbound,3,HARTFORD JN,S,1355
+2026-03-16,1F38,1,passenger,northbound,4,ACTON BRIDGE,,1358
+2026-03-16,1F38,1,passenger,northbound,5,WEAVER JN,L,1359
+2026-03-16,1F39,1,passenger,northbound,1,WINSFORD,,0
+2026-03-16,1F39,1,passenger,northbound,2,HARTFORD,,1
+2026-03-16,1F39,1,passenger,northbound,3,HARTFORD JN,S,0
+2026-03-16,1F39,1,passenger,northbound,4,ACTON BRIDGE,,2
+2026-03-16,1F39,1,passenger,northbound,5,WEAVER JN,L,3
+2026-03-16,1F40,1,passenger,northbound,0,CREWE,,335
+2026-03-16,1F40,1,passenger,northbound,1,WINSFORD,F,338
+2026-03-16,1F40,1,passenger,northbound,2,HARTFORD,,346
+2026-03-16,1F40,1,passenger,northbound,3,HARTFORD JN,S,345
+2026-03-16,1F40,1,passenger,northbound,4,ACTON BRIDGE,,350
+2026-03-16,1F40,1,passenger,northbound,5,WEAVER JN,L,355
+2026-03-16,1F41,1,passenger,northbound,0,CREWE,,373
+2026-03-16,1F41,1,passenger,northbound,1,WINSFORD,F,376
+2026-03-16,1F41,1,passenger,northbound,2,HARTFORD,,378
+2026-03-16,1F41,1,passenger,northbound,3,HARTFORD JN,S,377
+2026-03-16,1F41,1,passenger,northbound,4,ACTON BRIDGE,,380
+2026-03-16,1F41,1,passenger,northbound,5,WEAVER JN,L,381
+2026-03-16,1F42,1,passenger,northbound,0,CREWE,,394
+2026-03-16,1F42,1,passenger,northbound,1,WINSFORD,F,397
+2026-03-16,1F42,1,passenger,northbound,2,HARTFORD,,403
+2026-03-16,1F42,1,passenger,northbound,3,HARTFORD JN,S,402
+2026-03-16,1F42,1,passenger,northbound,4,ACTON BRIDGE,,407
+2026-03-16,1F42,1,passenger,northbound,5,WEAVER JN,L,411
+2026-03-16,1F43,1,passenger,northbound,0,CREWE,,426
+2026-03-16,1F43,1,passenger,northbound,1,WINSFORD,F,429
+2026-03-16,1F43,1,passenger,northbound,2,HARTFORD,,432
+2026-03-16,1F43,1,passenger,northbound,3,HARTFORD JN,S,431
+2026-03-16,1F43,1,passenger,northbound,4,ACTON BRIDGE,,433
+2026-03-16,1F43,1,passenger,northbound,5,WEAVER JN,L,435
+2026-03-16,1F45,1,passenger,northbound,0,CREWE,,512
+2026-03-16,1F45,1,passenger,northbound,1,WINSFORD,F,515
+2026-03-16,1F45,1,passenger,northbound,2,HARTFORD,,518
+2026-03-16,1F45,1,passenger,northbound,3,HARTFORD JN,S,517
+2026-03-16,1F45,1,passenger,northbound,4,ACTON BRIDGE,,522
+2026-03-16,1F45,1,passenger,northbound,5,WEAVER JN,L,523
+2026-03-16,1F46,1,passenger,northbound,0,CREWE,,560
+2026-03-16,1F46,1,passenger,northbound,1,WINSFORD,F,564
+2026-03-16,1F46,1,passenger,northbound,2,HARTFORD,,569
+2026-03-16,1F46,1,passenger,northbound,3,HARTFORD JN,S,568
+2026-03-16,1F46,1,passenger,northbound,4,ACTON BRIDGE,,573
+2026-03-16,1F46,1,passenger,northbound,5,WEAVER JN,L,577
+2026-03-16,1F47,1,passenger,northbound,0,CREWE,,572
+2026-03-16,1F47,1,passenger,northbound,1,WINSFORD,F,575
+2026-03-16,1F47,1,passenger,northbound,2,HARTFORD,,578
+2026-03-16,1F47,1,passenger,northbound,3,HARTFORD JN,S,576
+2026-03-16,1F47,1,passenger,northbound,4,ACTON BRIDGE,,582
+2026-03-16,1F47,1,passenger,northbound,5,WEAVER JN,L,584
+2026-03-16,1F48,1,passenger,northbound,0,CREWE,,603
+2026-03-16,1F48,1,passenger,northbound,1,WINSFORD,F,606
+2026-03-16,1F48,1,passenger,northbound,2,HARTFORD,,612
+2026-03-16,1F48,1,passenger,northbound,3,HARTFORD JN,S,610
+2026-03-16,1F48,1,passenger,northbound,4,ACTON BRIDGE,,616
+2026-03-16,1F48,1,passenger,northbound,5,WEAVER JN,L,619
+2026-03-16,1F49,1,passenger,northbound,0,CREWE,,619
+2026-03-16,1F49,1,passenger,northbound,1,WINSFORD,F,622
+2026-03-16,1F49,1,passenger,northbound,2,HARTFORD,,625
+2026-03-16,1F49,1,passenger,northbound,3,HARTFORD JN,S,624
+2026-03-16,1F49,1,passenger,northbound,4,ACTON BRIDGE,,626
+2026-03-16,1F49,1,passenger,northbound,5,WEAVER JN,L,627
+2026-03-16,1F50,1,passenger,northbound,0,CREWE,,661
+2026-03-16,1F50,1,passenger,northbound,1,WINSFORD,F,664
+2026-03-16,1F50,1,passenger,northbound,2,HARTFORD,,669
+2026-03-16,1F50,1,passenger,northbound,3,HARTFORD JN,S,668
+2026-03-16,1F50,1,passenger,northbound,4,ACTON BRIDGE,,673
+2026-03-16,1F50,1,passenger,northbound,5,WEAVER JN,L,676
+2026-03-16,1F51,1,passenger,northbound,0,CREWE,,688
+2026-03-16,1F51,1,passenger,northbound,1,WINSFORD,F,692
+2026-03-16,1F51,1,passenger,northbound,2,HARTFORD,,694
+2026-03-16,1F51,1,passenger,northbound,3,HARTFORD JN,S,693
+2026-03-16,1F51,1,passenger,northbound,4,ACTON BRIDGE,,696
+2026-03-16,1F51,1,passenger,northbound,5,WEAVER JN,L,697
+2026-03-16,1F52,1,passenger,northbound,0,CREWE,,706
+2026-03-16,1F52,1,passenger,northbound,1,WINSFORD,F,709
+2026-03-16,1F52,1,passenger,northbound,2,HARTFORD,,714
+2026-03-16,1F52,1,passenger,northbound,3,HARTFORD JN,S,713
+2026-03-16,1F52,1,passenger,northbound,4,ACTON BRIDGE,,718
+2026-03-16,1F52,1,passenger,northbound,5,WEAVER JN,L,722
+2026-03-16,1F53,1,passenger,northbound,0,CREWE,,756
+2026-03-16,1F53,1,passenger,northbound,1,WINSFORD,F,759
+2026-03-16,1F53,1,passenger,northbound,2,HARTFORD,,761
+2026-03-16,1F53,1,passenger,northbound,3,HARTFORD JN,S,760
+2026-03-16,1F53,1,passenger,northbound,4,ACTON BRIDGE,,763
+2026-03-16,1F53,1,passenger,northbound,5,WEAVER JN,L,764
+2026-03-16,1F54,1,passenger,northbound,0,CREWE,,800
+2026-03-16,1F54,1,passenger,northbound,1,WINSFORD,F,803
+2026-03-16,1F54,1,passenger,northbound,2,HARTFORD,,809
+2026-03-16,1F54,1,passenger,northbound,3,HARTFORD JN,S,808
+2026-03-16,1F54,1,passenger,northbound,4,ACTON BRIDGE,,814
+2026-03-16,1F54,1,passenger,northbound,5,WEAVER JN,L,818
+2026-03-16,1F55,1,passenger,northbound,0,CREWE,,818
+2026-03-16,1F55,1,passenger,northbound,1,WINSFORD,F,821
+2026-03-16,1F55,1,passenger,northbound,2,HARTFORD,,823
+2026-03-16,1F55,1,passenger,northbound,3,HARTFORD JN,S,822
+2026-03-16,1F55,1,passenger,northbound,4,ACTON BRIDGE,,825
+2026-03-16,1F55,1,passenger,northbound,5,WEAVER JN,L,826
+2026-03-16,1F56,1,passenger,northbound,0,CREWE,,837
+2026-03-16,1F56,1,passenger,northbound,1,WINSFORD,F,840
+2026-03-16,1F56,1,passenger,northbound,2,HARTFORD,,846
+2026-03-16,1F56,1,passenger,northbound,3,HARTFORD JN,S,844
+2026-03-16,1F56,1,passenger,northbound,4,ACTON BRIDGE,,850
+2026-03-16,1F56,1,passenger,northbound,5,WEAVER JN,L,853
+2026-03-16,1F57,1,passenger,northbound,0,CREWE,,861
+2026-03-16,1F57,1,passenger,northbound,1,WINSFORD,F,865
+2026-03-16,1F57,1,passenger,northbound,2,HARTFORD,,867
+2026-03-16,1F57,1,passenger,northbound,3,HARTFORD JN,S,866
+2026-03-16,1F57,1,passenger,northbound,4,ACTON BRIDGE,,869
+2026-03-16,1F57,1,passenger,northbound,5,WEAVER JN,L,870
+2026-03-16,1F58,1,passenger,northbound,0,CREWE,,894
+2026-03-16,1F58,1,passenger,northbound,1,WINSFORD,S,899
+2026-03-16,1F58,1,passenger,northbound,2,HARTFORD,,906
+2026-03-16,1F58,1,passenger,northbound,3,HARTFORD JN,S,905
+2026-03-16,1F58,1,passenger,northbound,4,ACTON BRIDGE,,910
+2026-03-16,1F58,1,passenger,northbound,5,WEAVER JN,L,914
+2026-03-16,1F59,1,passenger,northbound,0,CREWE,,922
+2026-03-16,1F59,1,passenger,northbound,1,WINSFORD,F,925
+2026-03-16,1F59,1,passenger,northbound,2,HARTFORD,,928
+2026-03-16,1F59,1,passenger,northbound,3,HARTFORD JN,S,926
+2026-03-16,1F59,1,passenger,northbound,4,ACTON BRIDGE,,929
+2026-03-16,1F59,1,passenger,northbound,5,WEAVER JN,L,931
+2026-03-16,1F60,1,passenger,northbound,0,CREWE,,947
+2026-03-16,1F60,1,passenger,northbound,1,WINSFORD,F,950
+2026-03-16,1F60,1,passenger,northbound,2,HARTFORD,,955
+2026-03-16,1F60,1,passenger,northbound,3,HARTFORD JN,S,954
+2026-03-16,1F60,1,passenger,northbound,4,ACTON BRIDGE,,960
+2026-03-16,1F60,1,passenger,northbound,5,WEAVER JN,L,964
+2026-03-16,1F61,1,passenger,northbound,0,CREWE,,982
+2026-03-16,1F61,1,passenger,northbound,1,WINSFORD,F,986
+2026-03-16,1F61,1,passenger,northbound,2,HARTFORD,,988
+2026-03-16,1F61,1,passenger,northbound,3,HARTFORD JN,S,987
+2026-03-16,1F61,1,passenger,northbound,4,ACTON BRIDGE,,990
+2026-03-16,1F61,1,passenger,northbound,5,WEAVER JN,L,991
+2026-03-16,1F62,1,passenger,northbound,0,CREWE,,1016
+2026-03-16,1F62,1,passenger,northbound,1,WINSFORD,F,1019
+2026-03-16,1F62,1,passenger,northbound,2,HARTFORD,,1026
+2026-03-16,1F62,1,passenger,northbound,3,HARTFORD JN,S,1025
+2026-03-16,1F62,1,passenger,northbound,4,ACTON BRIDGE,,1030
+2026-03-16,1F62,1,passenger,northbound,5,WEAVER JN,L,1033
+2026-03-16,1F63,1,passenger,northbound,0,CREWE,,1038
+2026-03-16,1F63,1,passenger,northbound,1,WINSFORD,F,1041
+2026-03-16,1F63,1,passenger,northbound,2,HARTFORD,,1043
+2026-03-16,1F63,1,passenger,northbound,3,HARTFORD JN,S,1042
+2026-03-16,1F63,1,passenger,northbound,4,ACTON BRIDGE,,1045
+2026-03-16,1F63,1,passenger,northbound,5,WEAVER JN,L,1046
+2026-03-16,1F64,1,passenger,northbound,0,CREWE,,1086
+2026-03-16,1F64,1,passenger,northbound,1,WINSFORD,F,1089
+2026-03-16,1F64,1,passenger,northbound,2,HARTFORD,,1092
+2026-03-16,1F64,1,passenger,northbound,3,HARTFORD JN,S,1091
+2026-03-16,1F64,1,passenger,northbound,4,ACTON BRIDGE,,1093
+2026-03-16,1F64,1,passenger,northbound,5,WEAVER JN,L,1094
+2026-03-16,1F65,1,passenger,northbound,0,CREWE,,1103
+2026-03-16,1F65,1,passenger,northbound,1,WINSFORD,F,1106
+2026-03-16,1F65,1,passenger,northbound,2,HARTFORD,,1111
+2026-03-16,1F65,1,passenger,northbound,3,HARTFORD JN,S,1110
+2026-03-16,1F65,1,passenger,northbound,4,ACTON BRIDGE,,1115
+2026-03-16,1F65,1,passenger,northbound,5,WEAVER JN,L,1119
+2026-03-16,1F68,1,passenger,northbound,0,CREWE,,1191
+2026-03-16,1F68,1,passenger,northbound,1,WINSFORD,F,1194
+2026-03-16,1F68,1,passenger,northbound,2,HARTFORD,,1199
+2026-03-16,1F68,1,passenger,northbound,3,HARTFORD JN,S,1198
+2026-03-16,1F68,1,passenger,northbound,4,ACTON BRIDGE,,1203
+2026-03-16,1F68,1,passenger,northbound,5,WEAVER JN,L,1207
+2026-03-16,1F70,1,passenger,northbound,0,CREWE,,1259
+2026-03-16,1F70,1,passenger,northbound,1,WINSFORD,F,1262
+2026-03-16,1F70,1,passenger,northbound,2,HARTFORD,,1268
+2026-03-16,1F70,1,passenger,northbound,3,HARTFORD JN,S,1266
+2026-03-16,1F70,1,passenger,northbound,4,ACTON BRIDGE,,1272
+2026-03-16,1F70,1,passenger,northbound,5,WEAVER JN,L,1276
+2026-03-16,1F72,1,passenger,northbound,0,CREWE,,1302
+2026-03-16,1F72,1,passenger,northbound,1,WINSFORD,F,1305
+2026-03-16,1F72,1,passenger,northbound,2,HARTFORD,,1310
+2026-03-16,1F72,1,passenger,northbound,3,HARTFORD JN,S,1309
+2026-03-16,1F72,1,passenger,northbound,4,ACTON BRIDGE,,1314
+2026-03-16,1F72,1,passenger,northbound,5,WEAVER JN,L,1318
+2026-03-16,1F74,1,passenger,northbound,0,CREWE,,1364
+2026-03-16,1F74,1,passenger,northbound,1,WINSFORD,F,1367
+2026-03-16,1F74,1,passenger,northbound,2,HARTFORD,,1372
+2026-03-16,1F74,1,passenger,northbound,3,HARTFORD JN,S,1371
+2026-03-16,1F74,1,passenger,northbound,4,ACTON BRIDGE,,1376
+2026-03-16,1F74,1,passenger,northbound,5,WEAVER JN,L,1380
+2026-03-16,1G40,1,passenger,northbound,0,CREWE,G,405
+2026-03-16,1G40,1,passenger,northbound,1,WINSFORD,F,401
+2026-03-16,1G40,1,passenger,northbound,2,HARTFORD,,396
+2026-03-16,1G40,1,passenger,northbound,3,HARTFORD JN,,395
+2026-03-16,1G40,1,passenger,northbound,4,ACTON BRIDGE,,393
+2026-03-16,1G40,1,passenger,northbound,5,WEAVER JN,M,392
+2026-03-16,1G41,1,passenger,northbound,0,CREWE,G,435
+2026-03-16,1G41,1,passenger,northbound,1,WINSFORD,F,427
+2026-03-16,1G41,1,passenger,northbound,2,HARTFORD,,422
+2026-03-16,1G41,1,passenger,northbound,3,HARTFORD JN,,421
+2026-03-16,1G41,1,passenger,northbound,4,ACTON BRIDGE,,417
+2026-03-16,1G41,1,passenger,northbound,5,WEAVER JN,M,415
+2026-03-16,1G42,1,passenger,northbound,0,CREWE,G,464
+2026-03-16,1G42,1,passenger,northbound,1,WINSFORD,F,460
+2026-03-16,1G42,1,passenger,northbound,2,HARTFORD,,458
+2026-03-16,1G42,1,passenger,northbound,3,HARTFORD JN,,458
+2026-03-16,1G42,1,passenger,northbound,4,ACTON BRIDGE,,456
+2026-03-16,1G42,1,passenger,northbound,5,WEAVER JN,M,455
+2026-03-16,1G43,1,passenger,northbound,0,CREWE,G,494
+2026-03-16,1G43,1,passenger,northbound,1,WINSFORD,F,487
+2026-03-16,1G43,1,passenger,northbound,2,HARTFORD,,482
+2026-03-16,1G43,1,passenger,northbound,3,HARTFORD JN,,481
+2026-03-16,1G43,1,passenger,northbound,4,ACTON BRIDGE,,477
+2026-03-16,1G43,1,passenger,northbound,5,WEAVER JN,M,476
+2026-03-16,1G44,1,passenger,northbound,0,CREWE,G,528
+2026-03-16,1G44,1,passenger,northbound,1,WINSFORD,F,524
+2026-03-16,1G44,1,passenger,northbound,2,HARTFORD,,522
+2026-03-16,1G44,1,passenger,northbound,3,HARTFORD JN,,521
+2026-03-16,1G44,1,passenger,northbound,4,ACTON BRIDGE,,519
+2026-03-16,1G44,1,passenger,northbound,5,WEAVER JN,M,516
+2026-03-16,1G46,1,passenger,northbound,0,CREWE,G,592
+2026-03-16,1G46,1,passenger,northbound,1,WINSFORD,F,588
+2026-03-16,1G46,1,passenger,northbound,2,HARTFORD,,586
+2026-03-16,1G46,1,passenger,northbound,3,HARTFORD JN,,585
+2026-03-16,1G46,1,passenger,northbound,4,ACTON BRIDGE,,584
+2026-03-16,1G46,1,passenger,northbound,5,WEAVER JN,M,582
+2026-03-16,1G47,1,passenger,northbound,0,CREWE,G,641
+2026-03-16,1G47,1,passenger,northbound,1,WINSFORD,F,635
+2026-03-16,1G47,1,passenger,northbound,2,HARTFORD,,630
+2026-03-16,1G47,1,passenger,northbound,3,HARTFORD JN,,629
+2026-03-16,1G47,1,passenger,northbound,4,ACTON BRIDGE,,624
+2026-03-16,1G47,1,passenger,northbound,5,WEAVER JN,M,623
+2026-03-16,1G48,1,passenger,northbound,0,CREWE,G,654
+2026-03-16,1G48,1,passenger,northbound,1,WINSFORD,F,650
+2026-03-16,1G48,1,passenger,northbound,2,HARTFORD,,648
+2026-03-16,1G48,1,passenger,northbound,3,HARTFORD JN,,648
+2026-03-16,1G48,1,passenger,northbound,4,ACTON BRIDGE,,646
+2026-03-16,1G48,1,passenger,northbound,5,WEAVER JN,M,645
+2026-03-16,1G49,1,passenger,northbound,0,CREWE,G,677
+2026-03-16,1G49,1,passenger,northbound,1,WINSFORD,F,671
+2026-03-16,1G49,1,passenger,northbound,2,HARTFORD,,666
+2026-03-16,1G49,1,passenger,northbound,3,HARTFORD JN,,665
+2026-03-16,1G49,1,passenger,northbound,4,ACTON BRIDGE,,661
+2026-03-16,1G49,1,passenger,northbound,5,WEAVER JN,M,660
+2026-03-16,1G50,1,passenger,northbound,0,CREWE,G,706
+2026-03-16,1G50,1,passenger,northbound,1,WINSFORD,F,702
+2026-03-16,1G50,1,passenger,northbound,2,HARTFORD,,700
+2026-03-16,1G50,1,passenger,northbound,3,HARTFORD JN,,699
+2026-03-16,1G50,1,passenger,northbound,4,ACTON BRIDGE,,698
+2026-03-16,1G50,1,passenger,northbound,5,WEAVER JN,M,696
+2026-03-16,1G51,1,passenger,northbound,0,CREWE,G,733
+2026-03-16,1G51,1,passenger,northbound,1,WINSFORD,F,727
+2026-03-16,1G51,1,passenger,northbound,2,HARTFORD,,722
+2026-03-16,1G51,1,passenger,northbound,3,HARTFORD JN,,722
+2026-03-16,1G51,1,passenger,northbound,4,ACTON BRIDGE,,718
+2026-03-16,1G51,1,passenger,northbound,5,WEAVER JN,M,716
+2026-03-16,1G52,1,passenger,northbound,0,CREWE,G,766
+2026-03-16,1G52,1,passenger,northbound,1,WINSFORD,F,763
+2026-03-16,1G52,1,passenger,northbound,2,HARTFORD,,761
+2026-03-16,1G52,1,passenger,northbound,3,HARTFORD JN,,760
+2026-03-16,1G52,1,passenger,northbound,4,ACTON BRIDGE,,758
+2026-03-16,1G52,1,passenger,northbound,5,WEAVER JN,M,757
+2026-03-16,1G53,1,passenger,northbound,0,CREWE,G,803
+2026-03-16,1G53,1,passenger,northbound,1,WINSFORD,F,796
+2026-03-16,1G53,1,passenger,northbound,2,HARTFORD,,792
+2026-03-16,1G53,1,passenger,northbound,3,HARTFORD JN,,791
+2026-03-16,1G53,1,passenger,northbound,4,ACTON BRIDGE,,787
+2026-03-16,1G53,1,passenger,northbound,5,WEAVER JN,M,786
+2026-03-16,1G54,1,passenger,northbound,0,CREWE,G,830
+2026-03-16,1G54,1,passenger,northbound,1,WINSFORD,F,826
+2026-03-16,1G54,1,passenger,northbound,2,HARTFORD,,824
+2026-03-16,1G54,1,passenger,northbound,3,HARTFORD JN,,824
+2026-03-16,1G54,1,passenger,northbound,4,ACTON BRIDGE,,822
+2026-03-16,1G54,1,passenger,northbound,5,WEAVER JN,M,821
+2026-03-16,1G55,1,passenger,northbound,0,CREWE,G,869
+2026-03-16,1G55,1,passenger,northbound,1,WINSFORD,F,865
+2026-03-16,1G55,1,passenger,northbound,2,HARTFORD,,863
+2026-03-16,1G55,1,passenger,northbound,3,HARTFORD JN,,863
+2026-03-16,1G55,1,passenger,northbound,4,ACTON BRIDGE,,861
+2026-03-16,1G55,1,passenger,northbound,5,WEAVER JN,M,860
+2026-03-16,1G56,1,passenger,northbound,0,CREWE,G,891
+2026-03-16,1G56,1,passenger,northbound,1,WINSFORD,F,887
+2026-03-16,1G56,1,passenger,northbound,2,HARTFORD,,885
+2026-03-16,1G56,1,passenger,northbound,3,HARTFORD JN,,885
+2026-03-16,1G56,1,passenger,northbound,4,ACTON BRIDGE,,883
+2026-03-16,1G56,1,passenger,northbound,5,WEAVER JN,M,882
+2026-03-16,1G57,1,passenger,northbound,0,CREWE,G,928
+2026-03-16,1G57,1,passenger,northbound,1,WINSFORD,F,922
+2026-03-16,1G57,1,passenger,northbound,2,HARTFORD,,917
+2026-03-16,1G57,1,passenger,northbound,3,HARTFORD JN,,916
+2026-03-16,1G57,1,passenger,northbound,4,ACTON BRIDGE,,911
+2026-03-16,1G57,1,passenger,northbound,5,WEAVER JN,M,910
+2026-03-16,1G58,1,passenger,northbound,0,CREWE,G,950
+2026-03-16,1G58,1,passenger,northbound,1,WINSFORD,F,946
+2026-03-16,1G58,1,passenger,northbound,2,HARTFORD,,944
+2026-03-16,1G58,1,passenger,northbound,3,HARTFORD JN,,944
+2026-03-16,1G58,1,passenger,northbound,4,ACTON BRIDGE,,941
+2026-03-16,1G58,1,passenger,northbound,5,WEAVER JN,M,936
+2026-03-16,1G59,1,passenger,northbound,0,CREWE,G,974
+2026-03-16,1G59,1,passenger,northbound,1,WINSFORD,F,967
+2026-03-16,1G59,1,passenger,northbound,2,HARTFORD,,963
+2026-03-16,1G59,1,passenger,northbound,3,HARTFORD JN,,962
+2026-03-16,1G59,1,passenger,northbound,4,ACTON BRIDGE,,958
+2026-03-16,1G59,1,passenger,northbound,5,WEAVER JN,M,956
+2026-03-16,1G60,1,passenger,northbound,0,CREWE,G,1008
+2026-03-16,1G60,1,passenger,northbound,1,WINSFORD,F,1005
+2026-03-16,1G60,1,passenger,northbound,2,HARTFORD,,1002
+2026-03-16,1G60,1,passenger,northbound,3,HARTFORD JN,,1002
+2026-03-16,1G60,1,passenger,northbound,4,ACTON BRIDGE,,1000
+2026-03-16,1G60,1,passenger,northbound,5,WEAVER JN,M,999
+2026-03-16,1G61,1,passenger,northbound,0,CREWE,G,1035
+2026-03-16,1G61,1,passenger,northbound,1,WINSFORD,F,1028
+2026-03-16,1G61,1,passenger,northbound,2,HARTFORD,,1024
+2026-03-16,1G61,1,passenger,northbound,3,HARTFORD JN,,1023
+2026-03-16,1G61,1,passenger,northbound,4,ACTON BRIDGE,,1018
+2026-03-16,1G61,1,passenger,northbound,5,WEAVER JN,M,1017
+2026-03-16,1G62,1,passenger,northbound,0,CREWE,G,1068
+2026-03-16,1G62,1,passenger,northbound,1,WINSFORD,F,1065
+2026-03-16,1G62,1,passenger,northbound,2,HARTFORD,,1060
+2026-03-16,1G62,1,passenger,northbound,3,HARTFORD JN,,1060
+2026-03-16,1G62,1,passenger,northbound,4,ACTON BRIDGE,,1058
+2026-03-16,1G62,1,passenger,northbound,5,WEAVER JN,M,1057
+2026-03-16,1G63,1,passenger,northbound,0,CREWE,G,1108
+2026-03-16,1G63,1,passenger,northbound,1,WINSFORD,F,1102
+2026-03-16,1G63,1,passenger,northbound,2,HARTFORD,,1098
+2026-03-16,1G63,1,passenger,northbound,3,HARTFORD JN,,1097
+2026-03-16,1G63,1,passenger,northbound,4,ACTON BRIDGE,,1093
+2026-03-16,1G63,1,passenger,northbound,5,WEAVER JN,M,1092
+2026-03-16,1G64,1,passenger,northbound,0,CREWE,G,1128
+2026-03-16,1G64,1,passenger,northbound,1,WINSFORD,F,1124
+2026-03-16,1G64,1,passenger,northbound,2,HARTFORD,,1122
+2026-03-16,1G64,1,passenger,northbound,3,HARTFORD JN,,1121
+2026-03-16,1G64,1,passenger,northbound,4,ACTON BRIDGE,,1120
+2026-03-16,1G64,1,passenger,northbound,5,WEAVER JN,M,1118
+2026-03-16,1G65,1,passenger,northbound,0,CREWE,G,1155
+2026-03-16,1G65,1,passenger,northbound,1,WINSFORD,F,1149
+2026-03-16,1G65,1,passenger,northbound,2,HARTFORD,,1144
+2026-03-16,1G65,1,passenger,northbound,3,HARTFORD JN,,1144
+2026-03-16,1G65,1,passenger,northbound,4,ACTON BRIDGE,,1139
+2026-03-16,1G65,1,passenger,northbound,5,WEAVER JN,M,1138
+2026-03-16,1G67,1,passenger,northbound,0,CREWE,G,1212
+2026-03-16,1G67,1,passenger,northbound,1,WINSFORD,F,1206
+2026-03-16,1G67,1,passenger,northbound,2,HARTFORD,,1201
+2026-03-16,1G67,1,passenger,northbound,3,HARTFORD JN,,1200
+2026-03-16,1G67,1,passenger,northbound,4,ACTON BRIDGE,,1196
+2026-03-16,1G67,1,passenger,northbound,5,WEAVER JN,M,1195
+2026-03-16,1G69,1,passenger,northbound,0,CREWE,G,1280
+2026-03-16,1G69,1,passenger,northbound,1,WINSFORD,F,1273
+2026-03-16,1G69,1,passenger,northbound,2,HARTFORD,,1269
+2026-03-16,1G69,1,passenger,northbound,3,HARTFORD JN,,1268
+2026-03-16,1G69,1,passenger,northbound,4,ACTON BRIDGE,,1264
+2026-03-16,1G69,1,passenger,northbound,5,WEAVER JN,M,1263
+2026-03-16,1G71,1,passenger,northbound,0,CREWE,G,1354
+2026-03-16,1G71,1,passenger,northbound,1,WINSFORD,F,1347
+2026-03-16,1G71,1,passenger,northbound,2,HARTFORD,,1342
+2026-03-16,1G71,1,passenger,northbound,3,HARTFORD JN,,1341
+2026-03-16,1G71,1,passenger,northbound,4,ACTON BRIDGE,,1337
+2026-03-16,1G71,1,passenger,northbound,5,WEAVER JN,M,1335
+2026-03-16,1H54,1,passenger,northbound,9,EARLESTOWN,,12
+2026-03-16,1H54,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,13
+2026-03-16,1H54,1,passenger,northbound,11,PARKSIDE JN,M,14
+2026-03-16,1H78,1,passenger,northbound,6,ACTON GRANGE JN,H,322
+2026-03-16,1H78,1,passenger,northbound,7,WARRINGTON BQ,,324
+2026-03-16,1H78,1,passenger,northbound,8,WINWICK JN,M,327
+2026-03-16,1H78,1,passenger,northbound,9,EARLESTOWN,,329
+2026-03-16,1H78,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,332
+2026-03-16,1H78,1,passenger,northbound,11,PARKSIDE JN,M,333
+2026-03-16,1H79,1,passenger,northbound,6,ACTON GRANGE JN,H,373
+2026-03-16,1H79,1,passenger,northbound,7,WARRINGTON BQ,,375
+2026-03-16,1H79,1,passenger,northbound,8,WINWICK JN,M,383
+2026-03-16,1H79,1,passenger,northbound,9,EARLESTOWN,,385
+2026-03-16,1H79,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,388
+2026-03-16,1H79,1,passenger,northbound,11,PARKSIDE JN,M,389
+2026-03-16,1H80,1,passenger,northbound,6,ACTON GRANGE JN,H,433
+2026-03-16,1H80,1,passenger,northbound,7,WARRINGTON BQ,,435
+2026-03-16,1H80,1,passenger,northbound,8,WINWICK JN,M,443
+2026-03-16,1H80,1,passenger,northbound,9,EARLESTOWN,,445
+2026-03-16,1H80,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,448
+2026-03-16,1H80,1,passenger,northbound,11,PARKSIDE JN,M,449
+2026-03-16,1H82,1,passenger,northbound,6,ACTON GRANGE JN,H,493
+2026-03-16,1H82,1,passenger,northbound,7,WARRINGTON BQ,,495
+2026-03-16,1H82,1,passenger,northbound,8,WINWICK JN,M,504
+2026-03-16,1H82,1,passenger,northbound,9,EARLESTOWN,,505
+2026-03-16,1H82,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,509
+2026-03-16,1H82,1,passenger,northbound,11,PARKSIDE JN,M,510
+2026-03-16,1H83,1,passenger,northbound,6,ACTON GRANGE JN,H,553
+2026-03-16,1H83,1,passenger,northbound,7,WARRINGTON BQ,,555
+2026-03-16,1H83,1,passenger,northbound,8,WINWICK JN,M,563
+2026-03-16,1H83,1,passenger,northbound,9,EARLESTOWN,,565
+2026-03-16,1H83,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,571
+2026-03-16,1H83,1,passenger,northbound,11,PARKSIDE JN,M,572
+2026-03-16,1H84,1,passenger,northbound,6,ACTON GRANGE JN,H,613
+2026-03-16,1H84,1,passenger,northbound,7,WARRINGTON BQ,,615
+2026-03-16,1H84,1,passenger,northbound,8,WINWICK JN,M,623
+2026-03-16,1H84,1,passenger,northbound,9,EARLESTOWN,,625
+2026-03-16,1H84,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,632
+2026-03-16,1H84,1,passenger,northbound,11,PARKSIDE JN,M,633
+2026-03-16,1H85,1,passenger,northbound,6,ACTON GRANGE JN,H,673
+2026-03-16,1H85,1,passenger,northbound,7,WARRINGTON BQ,,676
+2026-03-16,1H85,1,passenger,northbound,8,WINWICK JN,M,683
+2026-03-16,1H85,1,passenger,northbound,9,EARLESTOWN,,685
+2026-03-16,1H85,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,688
+2026-03-16,1H85,1,passenger,northbound,11,PARKSIDE JN,M,689
+2026-03-16,1H86,1,passenger,northbound,6,ACTON GRANGE JN,H,734
+2026-03-16,1H86,1,passenger,northbound,7,WARRINGTON BQ,,736
+2026-03-16,1H86,1,passenger,northbound,8,WINWICK JN,M,743
+2026-03-16,1H86,1,passenger,northbound,9,EARLESTOWN,,745
+2026-03-16,1H86,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,751
+2026-03-16,1H86,1,passenger,northbound,11,PARKSIDE JN,M,752
+2026-03-16,1H87,1,passenger,northbound,6,ACTON GRANGE JN,H,794
+2026-03-16,1H87,1,passenger,northbound,7,WARRINGTON BQ,,796
+2026-03-16,1H87,1,passenger,northbound,8,WINWICK JN,M,803
+2026-03-16,1H87,1,passenger,northbound,9,EARLESTOWN,,805
+2026-03-16,1H87,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,808
+2026-03-16,1H87,1,passenger,northbound,11,PARKSIDE JN,M,809
+2026-03-16,1H88,1,passenger,northbound,6,ACTON GRANGE JN,H,853
+2026-03-16,1H88,1,passenger,northbound,7,WARRINGTON BQ,,855
+2026-03-16,1H88,1,passenger,northbound,8,WINWICK JN,M,863
+2026-03-16,1H88,1,passenger,northbound,9,EARLESTOWN,,865
+2026-03-16,1H88,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,868
+2026-03-16,1H88,1,passenger,northbound,11,PARKSIDE JN,M,869
+2026-03-16,1H89,1,passenger,northbound,6,ACTON GRANGE JN,H,920
+2026-03-16,1H89,1,passenger,northbound,7,WARRINGTON BQ,,923
+2026-03-16,1H89,1,passenger,northbound,8,WINWICK JN,M,930
+2026-03-16,1H89,1,passenger,northbound,9,EARLESTOWN,,932
+2026-03-16,1H89,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,939
+2026-03-16,1H89,1,passenger,northbound,11,PARKSIDE JN,M,942
+2026-03-16,1H90,1,passenger,northbound,6,ACTON GRANGE JN,H,973
+2026-03-16,1H90,1,passenger,northbound,7,WARRINGTON BQ,,975
+2026-03-16,1H90,1,passenger,northbound,8,WINWICK JN,M,982
+2026-03-16,1H90,1,passenger,northbound,9,EARLESTOWN,,984
+2026-03-16,1H90,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,988
+2026-03-16,1H90,1,passenger,northbound,11,PARKSIDE JN,M,989
+2026-03-16,1H91,1,passenger,northbound,6,ACTON GRANGE JN,H,1033
+2026-03-16,1H91,1,passenger,northbound,7,WARRINGTON BQ,,1035
+2026-03-16,1H91,1,passenger,northbound,8,WINWICK JN,M,1044
+2026-03-16,1H91,1,passenger,northbound,9,EARLESTOWN,,1045
+2026-03-16,1H91,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1049
+2026-03-16,1H91,1,passenger,northbound,11,PARKSIDE JN,M,1050
+2026-03-16,1H92,1,passenger,northbound,6,ACTON GRANGE JN,H,1092
+2026-03-16,1H92,1,passenger,northbound,7,WARRINGTON BQ,,1094
+2026-03-16,1H92,1,passenger,northbound,8,WINWICK JN,M,1103
+2026-03-16,1H92,1,passenger,northbound,9,EARLESTOWN,,1104
+2026-03-16,1H92,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1107
+2026-03-16,1H92,1,passenger,northbound,11,PARKSIDE JN,M,1108
+2026-03-16,1H94,1,passenger,northbound,6,ACTON GRANGE JN,H,1154
+2026-03-16,1H94,1,passenger,northbound,7,WARRINGTON BQ,,1156
+2026-03-16,1H94,1,passenger,northbound,8,WINWICK JN,M,1163
+2026-03-16,1H94,1,passenger,northbound,9,EARLESTOWN,,1165
+2026-03-16,1H94,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1168
+2026-03-16,1H94,1,passenger,northbound,11,PARKSIDE JN,M,1169
+2026-03-16,1H95,1,passenger,northbound,6,ACTON GRANGE JN,H,1212
+2026-03-16,1H95,1,passenger,northbound,7,WARRINGTON BQ,,1215
+2026-03-16,1H95,1,passenger,northbound,8,WINWICK JN,M,1223
+2026-03-16,1H95,1,passenger,northbound,9,EARLESTOWN,,1224
+2026-03-16,1H95,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1229
+2026-03-16,1H95,1,passenger,northbound,11,PARKSIDE JN,M,1230
+2026-03-16,1H96,1,passenger,northbound,6,ACTON GRANGE JN,H,1273
+2026-03-16,1H96,1,passenger,northbound,7,WARRINGTON BQ,,1276
+2026-03-16,1H97,1,passenger,northbound,6,ACTON GRANGE JN,H,1334
+2026-03-16,1H97,1,passenger,northbound,7,WARRINGTON BQ,,1336
+2026-03-16,1K02,1,passenger,northbound,9,EARLESTOWN,,394
+2026-03-16,1K02,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,389
+2026-03-16,1K02,1,passenger,northbound,11,PARKSIDE JN,C,388
+2026-03-16,1K04,1,passenger,northbound,9,EARLESTOWN,,432
+2026-03-16,1K04,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,428
+2026-03-16,1K04,1,passenger,northbound,11,PARKSIDE JN,C,426
+2026-03-16,1K06,1,passenger,northbound,9,EARLESTOWN,,493
+2026-03-16,1K06,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,491
+2026-03-16,1K06,1,passenger,northbound,11,PARKSIDE JN,C,487
+2026-03-16,1K07,1,passenger,northbound,9,EARLESTOWN,,371
+2026-03-16,1K07,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,373
+2026-03-16,1K07,1,passenger,northbound,11,PARKSIDE JN,M,373
+2026-03-16,1K08,1,passenger,northbound,9,EARLESTOWN,,568
+2026-03-16,1K08,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,565
+2026-03-16,1K08,1,passenger,northbound,11,PARKSIDE JN,C,559
+2026-03-16,1K09,1,passenger,northbound,9,EARLESTOWN,,435
+2026-03-16,1K09,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,436
+2026-03-16,1K09,1,passenger,northbound,11,PARKSIDE JN,M,436
+2026-03-16,1K10,1,passenger,northbound,9,EARLESTOWN,,612
+2026-03-16,1K10,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,609
+2026-03-16,1K10,1,passenger,northbound,11,PARKSIDE JN,C,606
+2026-03-16,1K11,1,passenger,northbound,9,EARLESTOWN,,488
+2026-03-16,1K11,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,489
+2026-03-16,1K11,1,passenger,northbound,11,PARKSIDE JN,M,490
+2026-03-16,1K12,1,passenger,northbound,9,EARLESTOWN,,672
+2026-03-16,1K12,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,670
+2026-03-16,1K12,1,passenger,northbound,11,PARKSIDE JN,C,668
+2026-03-16,1K13,1,passenger,northbound,9,EARLESTOWN,,548
+2026-03-16,1K13,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,549
+2026-03-16,1K13,1,passenger,northbound,11,PARKSIDE JN,M,549
+2026-03-16,1K14,1,passenger,southbound,0,CREWE,G,399
+2026-03-16,1K14,1,passenger,southbound,1,WINSFORD,F,395
+2026-03-16,1K14,1,passenger,southbound,2,HARTFORD,,393
+2026-03-16,1K14,1,passenger,southbound,3,HARTFORD JN,,392
+2026-03-16,1K14,1,passenger,southbound,4,ACTON BRIDGE,,391
+2026-03-16,1K14,1,passenger,southbound,5,WEAVER JN,M,389
+2026-03-16,1K14,1,passenger,southbound,6,ACTON GRANGE JN,,385
+2026-03-16,1K14,1,passenger,southbound,7,WARRINGTON BQ,F,380
+2026-03-16,1K14,1,passenger,southbound,8,WINWICK JN,S,377
+2026-03-16,1K14,2,passenger,northbound,9,EARLESTOWN,,730
+2026-03-16,1K14,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,729
+2026-03-16,1K14,2,passenger,northbound,11,PARKSIDE JN,C,728
+2026-03-16,1K15,1,passenger,northbound,9,EARLESTOWN,,610
+2026-03-16,1K15,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,612
+2026-03-16,1K15,1,passenger,northbound,11,PARKSIDE JN,M,612
+2026-03-16,1K16,1,passenger,northbound,9,EARLESTOWN,,795
+2026-03-16,1K16,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,793
+2026-03-16,1K16,1,passenger,northbound,11,PARKSIDE JN,C,790
+2026-03-16,1K17,1,passenger,northbound,9,EARLESTOWN,,673
+2026-03-16,1K17,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,674
+2026-03-16,1K17,1,passenger,northbound,11,PARKSIDE JN,M,674
+2026-03-16,1K18,1,passenger,northbound,9,EARLESTOWN,,851
+2026-03-16,1K18,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,849
+2026-03-16,1K18,1,passenger,northbound,11,PARKSIDE JN,C,847
+2026-03-16,1K19,1,passenger,northbound,9,EARLESTOWN,,729
+2026-03-16,1K19,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,730
+2026-03-16,1K19,1,passenger,northbound,11,PARKSIDE JN,M,730
+2026-03-16,1K20,1,passenger,northbound,9,EARLESTOWN,,937
+2026-03-16,1K20,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,935
+2026-03-16,1K20,1,passenger,northbound,11,PARKSIDE JN,C,931
+2026-03-16,1K21,1,passenger,northbound,9,EARLESTOWN,,789
+2026-03-16,1K21,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,790
+2026-03-16,1K21,1,passenger,northbound,11,PARKSIDE JN,M,790
+2026-03-16,1K22,1,passenger,northbound,9,EARLESTOWN,,978
+2026-03-16,1K22,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,976
+2026-03-16,1K22,1,passenger,northbound,11,PARKSIDE JN,C,975
+2026-03-16,1K23,1,passenger,northbound,9,EARLESTOWN,,849
+2026-03-16,1K23,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,851
+2026-03-16,1K23,1,passenger,northbound,11,PARKSIDE JN,M,851
+2026-03-16,1K24,1,passenger,northbound,9,EARLESTOWN,,1029
+2026-03-16,1K24,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1028
+2026-03-16,1K24,1,passenger,northbound,11,PARKSIDE JN,C,1026
+2026-03-16,1K25,1,passenger,northbound,9,EARLESTOWN,,909
+2026-03-16,1K25,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,910
+2026-03-16,1K25,1,passenger,northbound,11,PARKSIDE JN,M,910
+2026-03-16,1K26,1,passenger,northbound,9,EARLESTOWN,,1092
+2026-03-16,1K26,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1090
+2026-03-16,1K26,1,passenger,northbound,11,PARKSIDE JN,C,1088
+2026-03-16,1K27,1,passenger,northbound,9,EARLESTOWN,,976
+2026-03-16,1K27,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,977
+2026-03-16,1K27,1,passenger,northbound,11,PARKSIDE JN,M,978
+2026-03-16,1K28,1,passenger,northbound,9,EARLESTOWN,,1156
+2026-03-16,1K28,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1155
+2026-03-16,1K28,1,passenger,northbound,11,PARKSIDE JN,C,1152
+2026-03-16,1K29,1,passenger,northbound,9,EARLESTOWN,,1028
+2026-03-16,1K29,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1029
+2026-03-16,1K29,1,passenger,northbound,11,PARKSIDE JN,M,1030
+2026-03-16,1K30,1,passenger,northbound,9,EARLESTOWN,,1227
+2026-03-16,1K30,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1223
+2026-03-16,1K30,1,passenger,northbound,11,PARKSIDE JN,C,1221
+2026-03-16,1K31,1,passenger,northbound,9,EARLESTOWN,,1089
+2026-03-16,1K31,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1090
+2026-03-16,1K31,1,passenger,northbound,11,PARKSIDE JN,M,1090
+2026-03-16,1K32,1,passenger,northbound,9,EARLESTOWN,,1272
+2026-03-16,1K32,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1270
+2026-03-16,1K32,1,passenger,northbound,11,PARKSIDE JN,C,1270
+2026-03-16,1K33,2,passenger,northbound,9,EARLESTOWN,,1149
+2026-03-16,1K33,2,passenger,northbound,10,NEWTON-LE-WILLOWS,,1151
+2026-03-16,1K33,2,passenger,northbound,11,PARKSIDE JN,M,1152
+2026-03-16,1K68,1,passenger,northbound,0,CREWE,G,1249
+2026-03-16,1K68,1,passenger,northbound,1,WINSFORD,F,1245
+2026-03-16,1K68,1,passenger,northbound,2,HARTFORD,,1243
+2026-03-16,1K68,1,passenger,northbound,3,HARTFORD JN,,1243
+2026-03-16,1K68,1,passenger,northbound,4,ACTON BRIDGE,,1241
+2026-03-16,1K68,1,passenger,northbound,5,WEAVER JN,M,1240
+2026-03-16,1M06,1,passenger,southbound,0,CREWE,G,524
+2026-03-16,1M06,1,passenger,southbound,1,WINSFORD,F,521
+2026-03-16,1M06,1,passenger,southbound,2,HARTFORD,,519
+2026-03-16,1M06,1,passenger,southbound,3,HARTFORD JN,,518
+2026-03-16,1M06,1,passenger,southbound,4,ACTON BRIDGE,,517
+2026-03-16,1M06,1,passenger,southbound,5,WEAVER JN,M,514
+2026-03-16,1M06,1,passenger,southbound,6,ACTON GRANGE JN,,511
+2026-03-16,1M06,1,passenger,southbound,7,WARRINGTON BQ,F,506
+2026-03-16,1M06,1,passenger,southbound,8,WINWICK JN,S,503
+2026-03-16,1M07,1,passenger,southbound,0,CREWE,G,577
+2026-03-16,1M07,1,passenger,southbound,1,WINSFORD,F,574
+2026-03-16,1M07,1,passenger,southbound,2,HARTFORD,,572
+2026-03-16,1M07,1,passenger,southbound,3,HARTFORD JN,,572
+2026-03-16,1M07,1,passenger,southbound,4,ACTON BRIDGE,,570
+2026-03-16,1M07,1,passenger,southbound,5,WEAVER JN,M,569
+2026-03-16,1M07,1,passenger,southbound,6,ACTON GRANGE JN,,566
+2026-03-16,1M07,1,passenger,southbound,7,WARRINGTON BQ,F,562
+2026-03-16,1M07,1,passenger,southbound,8,WINWICK JN,S,559
+2026-03-16,1M08,1,passenger,southbound,0,CREWE,G,644
+2026-03-16,1M08,1,passenger,southbound,1,WINSFORD,F,638
+2026-03-16,1M08,1,passenger,southbound,2,HARTFORD,,634
+2026-03-16,1M08,1,passenger,southbound,3,HARTFORD JN,,633
+2026-03-16,1M08,1,passenger,southbound,4,ACTON BRIDGE,,632
+2026-03-16,1M08,1,passenger,southbound,5,WEAVER JN,M,631
+2026-03-16,1M08,1,passenger,southbound,6,ACTON GRANGE JN,,628
+2026-03-16,1M08,1,passenger,southbound,7,WARRINGTON BQ,F,623
+2026-03-16,1M08,1,passenger,southbound,8,WINWICK JN,S,620
+2026-03-16,1M09,1,passenger,southbound,0,CREWE,G,697
+2026-03-16,1M09,1,passenger,southbound,1,WINSFORD,F,694
+2026-03-16,1M09,1,passenger,southbound,2,HARTFORD,,692
+2026-03-16,1M09,1,passenger,southbound,3,HARTFORD JN,,692
+2026-03-16,1M09,1,passenger,southbound,4,ACTON BRIDGE,,690
+2026-03-16,1M09,1,passenger,southbound,5,WEAVER JN,M,689
+2026-03-16,1M09,1,passenger,southbound,6,ACTON GRANGE JN,,686
+2026-03-16,1M09,1,passenger,southbound,7,WARRINGTON BQ,F,682
+2026-03-16,1M09,1,passenger,southbound,8,WINWICK JN,S,678
+2026-03-16,1M10,1,passenger,southbound,0,CREWE,G,758
+2026-03-16,1M10,1,passenger,southbound,1,WINSFORD,F,755
+2026-03-16,1M10,1,passenger,southbound,2,HARTFORD,,753
+2026-03-16,1M10,1,passenger,southbound,3,HARTFORD JN,,752
+2026-03-16,1M10,1,passenger,southbound,4,ACTON BRIDGE,,751
+2026-03-16,1M10,1,passenger,southbound,5,WEAVER JN,M,750
+2026-03-16,1M10,1,passenger,southbound,6,ACTON GRANGE JN,,747
+2026-03-16,1M10,1,passenger,southbound,7,WARRINGTON BQ,F,742
+2026-03-16,1M10,1,passenger,southbound,8,WINWICK JN,S,739
+2026-03-16,1M11,1,passenger,southbound,0,CREWE,G,244
+2026-03-16,1M11,1,passenger,southbound,1,WINSFORD,F,238
+2026-03-16,1M11,1,passenger,southbound,2,HARTFORD,,221
+2026-03-16,1M11,1,passenger,southbound,3,HARTFORD JN,,220
+2026-03-16,1M11,1,passenger,southbound,4,ACTON BRIDGE,,218
+2026-03-16,1M11,1,passenger,southbound,5,WEAVER JN,M,216
+2026-03-16,1M11,1,passenger,southbound,6,ACTON GRANGE JN,,213
+2026-03-16,1M11,1,passenger,southbound,7,WARRINGTON BQ,F,212
+2026-03-16,1M11,1,passenger,southbound,8,WINWICK JN,S,208
+2026-03-16,1M11,2,passenger,southbound,0,CREWE,G,826
+2026-03-16,1M11,2,passenger,southbound,1,WINSFORD,F,823
+2026-03-16,1M11,2,passenger,southbound,2,HARTFORD,,821
+2026-03-16,1M11,2,passenger,southbound,3,HARTFORD JN,,821
+2026-03-16,1M11,2,passenger,southbound,4,ACTON BRIDGE,,819
+2026-03-16,1M11,2,passenger,southbound,5,WEAVER JN,M,818
+2026-03-16,1M11,2,passenger,southbound,6,ACTON GRANGE JN,,815
+2026-03-16,1M11,2,passenger,southbound,7,WARRINGTON BQ,F,809
+2026-03-16,1M11,2,passenger,southbound,8,WINWICK JN,S,806
+2026-03-16,1M12,1,passenger,southbound,0,CREWE,G,910
+2026-03-16,1M12,1,passenger,southbound,1,WINSFORD,F,906
+2026-03-16,1M12,1,passenger,southbound,2,HARTFORD,,904
+2026-03-16,1M12,1,passenger,southbound,3,HARTFORD JN,,904
+2026-03-16,1M12,1,passenger,southbound,4,ACTON BRIDGE,,902
+2026-03-16,1M12,1,passenger,southbound,5,WEAVER JN,M,901
+2026-03-16,1M12,1,passenger,southbound,6,ACTON GRANGE JN,,898
+2026-03-16,1M12,1,passenger,southbound,7,WARRINGTON BQ,F,893
+2026-03-16,1M12,1,passenger,southbound,8,WINWICK JN,S,890
+2026-03-16,1M13,1,passenger,southbound,0,CREWE,G,947
+2026-03-16,1M13,1,passenger,southbound,1,WINSFORD,F,943
+2026-03-16,1M13,1,passenger,southbound,2,HARTFORD,,941
+2026-03-16,1M13,1,passenger,southbound,3,HARTFORD JN,,941
+2026-03-16,1M13,1,passenger,southbound,4,ACTON BRIDGE,,939
+2026-03-16,1M13,1,passenger,southbound,5,WEAVER JN,M,938
+2026-03-16,1M13,1,passenger,southbound,6,ACTON GRANGE JN,,935
+2026-03-16,1M13,1,passenger,southbound,7,WARRINGTON BQ,F,930
+2026-03-16,1M13,1,passenger,southbound,8,WINWICK JN,S,927
+2026-03-16,1M14,1,passenger,southbound,0,CREWE,G,1000
+2026-03-16,1M14,1,passenger,southbound,1,WINSFORD,F,997
+2026-03-16,1M14,1,passenger,southbound,2,HARTFORD,,995
+2026-03-16,1M14,1,passenger,southbound,3,HARTFORD JN,,994
+2026-03-16,1M14,1,passenger,southbound,4,ACTON BRIDGE,,993
+2026-03-16,1M14,1,passenger,southbound,5,WEAVER JN,M,992
+2026-03-16,1M14,1,passenger,southbound,6,ACTON GRANGE JN,,988
+2026-03-16,1M14,1,passenger,southbound,7,WARRINGTON BQ,F,984
+2026-03-16,1M14,1,passenger,southbound,8,WINWICK JN,S,981
+2026-03-16,1M15,1,passenger,southbound,0,CREWE,G,1056
+2026-03-16,1M15,1,passenger,southbound,1,WINSFORD,F,1053
+2026-03-16,1M15,1,passenger,southbound,2,HARTFORD,,1051
+2026-03-16,1M15,1,passenger,southbound,3,HARTFORD JN,,1051
+2026-03-16,1M15,1,passenger,southbound,4,ACTON BRIDGE,,1049
+2026-03-16,1M15,1,passenger,southbound,5,WEAVER JN,M,1048
+2026-03-16,1M15,1,passenger,southbound,6,ACTON GRANGE JN,,1045
+2026-03-16,1M15,1,passenger,southbound,7,WARRINGTON BQ,F,1041
+2026-03-16,1M15,1,passenger,southbound,8,WINWICK JN,S,1037
+2026-03-16,1M16,1,passenger,southbound,0,CREWE,G,302
+2026-03-16,1M16,1,passenger,southbound,1,WINSFORD,F,296
+2026-03-16,1M16,1,passenger,southbound,2,HARTFORD,,293
+2026-03-16,1M16,1,passenger,southbound,3,HARTFORD JN,,292
+2026-03-16,1M16,1,passenger,southbound,4,ACTON BRIDGE,,290
+2026-03-16,1M16,1,passenger,southbound,5,WEAVER JN,M,289
+2026-03-16,1M16,1,passenger,southbound,6,ACTON GRANGE JN,,285
+2026-03-16,1M16,1,passenger,southbound,7,WARRINGTON BQ,F,284
+2026-03-16,1M16,1,passenger,southbound,8,WINWICK JN,S,281
+2026-03-16,1M16,2,passenger,southbound,0,CREWE,G,1169
+2026-03-16,1M16,2,passenger,southbound,1,WINSFORD,F,1165
+2026-03-16,1M16,2,passenger,southbound,2,HARTFORD,,1164
+2026-03-16,1M16,2,passenger,southbound,3,HARTFORD JN,,1163
+2026-03-16,1M16,2,passenger,southbound,4,ACTON BRIDGE,,1162
+2026-03-16,1M16,2,passenger,southbound,5,WEAVER JN,M,1161
+2026-03-16,1M16,2,passenger,southbound,6,ACTON GRANGE JN,,1157
+2026-03-16,1M16,2,passenger,southbound,7,WARRINGTON BQ,F,1153
+2026-03-16,1M16,2,passenger,southbound,8,WINWICK JN,S,1150
+2026-03-16,1M17,1,passenger,southbound,0,CREWE,G,1192
+2026-03-16,1M17,1,passenger,southbound,1,WINSFORD,F,1189
+2026-03-16,1M17,1,passenger,southbound,2,HARTFORD,,1187
+2026-03-16,1M17,1,passenger,southbound,3,HARTFORD JN,,1187
+2026-03-16,1M17,1,passenger,southbound,4,ACTON BRIDGE,,1185
+2026-03-16,1M17,1,passenger,southbound,5,WEAVER JN,M,1184
+2026-03-16,1M17,1,passenger,southbound,6,ACTON GRANGE JN,,1181
+2026-03-16,1M17,1,passenger,southbound,7,WARRINGTON BQ,F,1176
+2026-03-16,1M17,1,passenger,southbound,8,WINWICK JN,S,1173
+2026-03-16,1M18,1,passenger,southbound,0,CREWE,G,1240
+2026-03-16,1M18,1,passenger,southbound,1,WINSFORD,F,1236
+2026-03-16,1M18,1,passenger,southbound,2,HARTFORD,,1234
+2026-03-16,1M18,1,passenger,southbound,3,HARTFORD JN,,1233
+2026-03-16,1M18,1,passenger,southbound,4,ACTON BRIDGE,,1232
+2026-03-16,1M18,1,passenger,southbound,5,WEAVER JN,M,1231
+2026-03-16,1M18,1,passenger,southbound,6,ACTON GRANGE JN,,1228
+2026-03-16,1M18,1,passenger,southbound,7,WARRINGTON BQ,F,1223
+2026-03-16,1M18,1,passenger,southbound,8,WINWICK JN,S,1220
+2026-03-16,1M19,1,passenger,southbound,0,CREWE,G,1303
+2026-03-16,1M19,1,passenger,southbound,1,WINSFORD,F,1299
+2026-03-16,1M19,1,passenger,southbound,2,HARTFORD,,1297
+2026-03-16,1M19,1,passenger,southbound,3,HARTFORD JN,,1296
+2026-03-16,1M19,1,passenger,southbound,4,ACTON BRIDGE,,1295
+2026-03-16,1M19,1,passenger,southbound,5,WEAVER JN,M,1294
+2026-03-16,1M19,1,passenger,southbound,6,ACTON GRANGE JN,,1291
+2026-03-16,1M19,1,passenger,southbound,7,WARRINGTON BQ,F,1284
+2026-03-16,1M19,1,passenger,southbound,8,WINWICK JN,S,1280
+2026-03-16,1M20,1,passenger,southbound,0,CREWE,G,1397
+2026-03-16,1M20,1,passenger,southbound,1,WINSFORD,F,1393
+2026-03-16,1M20,1,passenger,southbound,2,HARTFORD,,1391
+2026-03-16,1M20,1,passenger,southbound,3,HARTFORD JN,,1391
+2026-03-16,1M20,1,passenger,southbound,4,ACTON BRIDGE,,1389
+2026-03-16,1M20,1,passenger,southbound,5,WEAVER JN,M,1388
+2026-03-16,1M20,1,passenger,southbound,6,ACTON GRANGE JN,,1385
+2026-03-16,1M20,1,passenger,southbound,7,WARRINGTON BQ,F,1381
+2026-03-16,1M20,1,passenger,southbound,8,WINWICK JN,S,1378
+2026-03-16,1M63,1,passenger,northbound,11,PARKSIDE JN,,1207
+2026-03-16,1M65,1,passenger,northbound,11,PARKSIDE JN,,1384
+2026-03-16,1M69,1,passenger,northbound,11,PARKSIDE JN,,428
+2026-03-16,1P07,1,passenger,northbound,0,CREWE,,1346
+2026-03-16,1P07,1,passenger,northbound,1,WINSFORD,F,1349
+2026-03-16,1P07,1,passenger,northbound,2,HARTFORD,,1351
+2026-03-16,1P07,1,passenger,northbound,3,HARTFORD JN,S,1350
+2026-03-16,1P07,1,passenger,northbound,4,ACTON BRIDGE,,1352
+2026-03-16,1P07,1,passenger,northbound,5,WEAVER JN,L,1354
+2026-03-16,1P07,1,passenger,northbound,6,ACTON GRANGE JN,H,1357
+2026-03-16,1P07,1,passenger,northbound,7,WARRINGTON BQ,,1358
+2026-03-16,1P07,1,passenger,northbound,8,WINWICK JN,M,1363
+2026-03-16,1P09,1,passenger,northbound,0,CREWE,,1409
+2026-03-16,1P09,1,passenger,northbound,1,WINSFORD,F,1412
+2026-03-16,1P09,1,passenger,northbound,2,HARTFORD,,1414
+2026-03-16,1P09,1,passenger,northbound,3,HARTFORD JN,S,1413
+2026-03-16,1P09,1,passenger,northbound,4,ACTON BRIDGE,,1416
+2026-03-16,1P09,1,passenger,northbound,5,WEAVER JN,L,1417
+2026-03-16,1P09,1,passenger,northbound,6,ACTON GRANGE JN,H,1419
+2026-03-16,1P09,1,passenger,northbound,7,WARRINGTON BQ,,1420
+2026-03-16,1P09,1,passenger,northbound,8,WINWICK JN,M,1426
+2026-03-16,1P94,1,passenger,northbound,0,CREWE,,1180
+2026-03-16,1P94,1,passenger,northbound,1,WINSFORD,F,1183
+2026-03-16,1P94,1,passenger,northbound,2,HARTFORD,,1185
+2026-03-16,1P94,1,passenger,northbound,3,HARTFORD JN,S,1184
+2026-03-16,1P94,1,passenger,northbound,4,ACTON BRIDGE,,1187
+2026-03-16,1P94,1,passenger,northbound,5,WEAVER JN,L,1188
+2026-03-16,1P94,1,passenger,northbound,6,ACTON GRANGE JN,H,1191
+2026-03-16,1P94,1,passenger,northbound,7,WARRINGTON BQ,,1192
+2026-03-16,1P94,1,passenger,northbound,8,WINWICK JN,M,1197
+2026-03-16,1R06,1,passenger,northbound,0,CREWE,G,356
+2026-03-16,1R06,1,passenger,northbound,1,WINSFORD,F,352
+2026-03-16,1R06,1,passenger,northbound,2,HARTFORD,,350
+2026-03-16,1R06,1,passenger,northbound,3,HARTFORD JN,,349
+2026-03-16,1R06,1,passenger,northbound,4,ACTON BRIDGE,,348
+2026-03-16,1R06,1,passenger,northbound,5,WEAVER JN,M,347
+2026-03-16,1R08,1,passenger,southbound,0,CREWE,G,370
+2026-03-16,1R08,1,passenger,southbound,1,WINSFORD,F,367
+2026-03-16,1R08,1,passenger,southbound,2,HARTFORD,,365
+2026-03-16,1R08,1,passenger,southbound,3,HARTFORD JN,,365
+2026-03-16,1R08,1,passenger,southbound,4,ACTON BRIDGE,,363
+2026-03-16,1R08,1,passenger,southbound,5,WEAVER JN,M,362
+2026-03-16,1R08,1,passenger,southbound,6,ACTON GRANGE JN,,359
+2026-03-16,1R08,1,passenger,southbound,7,WARRINGTON BQ,F,354
+2026-03-16,1R08,1,passenger,southbound,8,WINWICK JN,S,351
+2026-03-16,1R12,1,passenger,northbound,0,CREWE,G,396
+2026-03-16,1R12,1,passenger,northbound,1,WINSFORD,F,392
+2026-03-16,1R12,1,passenger,northbound,2,HARTFORD,,390
+2026-03-16,1R12,1,passenger,northbound,3,HARTFORD JN,,390
+2026-03-16,1R12,1,passenger,northbound,4,ACTON BRIDGE,,388
+2026-03-16,1R12,1,passenger,northbound,5,WEAVER JN,M,387
+2026-03-16,1R18,1,passenger,northbound,0,CREWE,G,438
+2026-03-16,1R18,1,passenger,northbound,1,WINSFORD,F,432
+2026-03-16,1R18,1,passenger,northbound,2,HARTFORD,,430
+2026-03-16,1R18,1,passenger,northbound,3,HARTFORD JN,,429
+2026-03-16,1R18,1,passenger,northbound,4,ACTON BRIDGE,,427
+2026-03-16,1R18,1,passenger,northbound,5,WEAVER JN,M,426
+2026-03-16,1R22,1,passenger,southbound,0,CREWE,G,456
+2026-03-16,1R22,1,passenger,southbound,1,WINSFORD,F,452
+2026-03-16,1R22,1,passenger,southbound,2,HARTFORD,,451
+2026-03-16,1R22,1,passenger,southbound,3,HARTFORD JN,,450
+2026-03-16,1R22,1,passenger,southbound,4,ACTON BRIDGE,,449
+2026-03-16,1R22,1,passenger,southbound,5,WEAVER JN,M,448
+2026-03-16,1R22,1,passenger,southbound,6,ACTON GRANGE JN,,445
+2026-03-16,1R22,1,passenger,southbound,7,WARRINGTON BQ,F,440
+2026-03-16,1R22,1,passenger,southbound,8,WINWICK JN,S,437
+2026-03-16,1R24,1,passenger,northbound,0,CREWE,G,459
+2026-03-16,1R24,1,passenger,northbound,1,WINSFORD,F,455
+2026-03-16,1R24,1,passenger,northbound,2,HARTFORD,,454
+2026-03-16,1R24,1,passenger,northbound,3,HARTFORD JN,,453
+2026-03-16,1R24,1,passenger,northbound,4,ACTON BRIDGE,,451
+2026-03-16,1R24,1,passenger,northbound,5,WEAVER JN,M,449
+2026-03-16,1R98,1,passenger,northbound,6,ACTON GRANGE JN,H,1424
+2026-03-16,1R98,1,passenger,northbound,7,WARRINGTON BQ,,1426
+2026-03-16,1S25,1,passenger,northbound,0,CREWE,,6
+2026-03-16,1S25,1,passenger,northbound,1,WINSFORD,F,9
+2026-03-16,1S25,1,passenger,northbound,2,HARTFORD,,12
+2026-03-16,1S25,1,passenger,northbound,3,HARTFORD JN,S,11
+2026-03-16,1S25,1,passenger,northbound,4,ACTON BRIDGE,,14
+2026-03-16,1S25,1,passenger,northbound,5,WEAVER JN,L,16
+2026-03-16,1S25,1,passenger,northbound,6,ACTON GRANGE JN,H,20
+2026-03-16,1S25,1,passenger,northbound,7,WARRINGTON BQ,,21
+2026-03-16,1S25,1,passenger,northbound,8,WINWICK JN,M,24
+2026-03-16,1S26,1,passenger,northbound,0,CREWE,,145
+2026-03-16,1S26,1,passenger,northbound,1,WINSFORD,F,148
+2026-03-16,1S26,1,passenger,northbound,2,HARTFORD,,151
+2026-03-16,1S26,1,passenger,northbound,3,HARTFORD JN,S,150
+2026-03-16,1S26,1,passenger,northbound,4,ACTON BRIDGE,,153
+2026-03-16,1S26,1,passenger,northbound,5,WEAVER JN,L,155
+2026-03-16,1S26,1,passenger,northbound,6,ACTON GRANGE JN,H,167
+2026-03-16,1S26,1,passenger,northbound,7,WARRINGTON BQ,,169
+2026-03-16,1S26,1,passenger,northbound,8,WINWICK JN,M,172
+2026-03-16,1S30,1,passenger,northbound,11,PARKSIDE JN,C,310
+2026-03-16,1S34,1,passenger,northbound,0,CREWE,,361
+2026-03-16,1S34,1,passenger,northbound,1,WINSFORD,F,364
+2026-03-16,1S34,1,passenger,northbound,2,HARTFORD,,366
+2026-03-16,1S34,1,passenger,northbound,3,HARTFORD JN,S,365
+2026-03-16,1S34,1,passenger,northbound,4,ACTON BRIDGE,,367
+2026-03-16,1S34,1,passenger,northbound,5,WEAVER JN,L,368
+2026-03-16,1S34,1,passenger,northbound,6,ACTON GRANGE JN,H,371
+2026-03-16,1S34,1,passenger,northbound,7,WARRINGTON BQ,,372
+2026-03-16,1S34,1,passenger,northbound,8,WINWICK JN,M,381
+2026-03-16,1S36,1,passenger,northbound,0,CREWE,,434
+2026-03-16,1S36,1,passenger,northbound,1,WINSFORD,F,437
+2026-03-16,1S36,1,passenger,northbound,2,HARTFORD,,439
+2026-03-16,1S36,1,passenger,northbound,3,HARTFORD JN,S,438
+2026-03-16,1S36,1,passenger,northbound,4,ACTON BRIDGE,,440
+2026-03-16,1S36,1,passenger,northbound,5,WEAVER JN,L,441
+2026-03-16,1S36,1,passenger,northbound,6,ACTON GRANGE JN,H,444
+2026-03-16,1S36,1,passenger,northbound,7,WARRINGTON BQ,,445
+2026-03-16,1S36,1,passenger,northbound,8,WINWICK JN,M,451
+2026-03-16,1S37,1,passenger,northbound,0,CREWE,,449
+2026-03-16,1S37,1,passenger,northbound,1,WINSFORD,F,452
+2026-03-16,1S37,1,passenger,northbound,2,HARTFORD,,454
+2026-03-16,1S37,1,passenger,northbound,3,HARTFORD JN,S,453
+2026-03-16,1S37,1,passenger,northbound,4,ACTON BRIDGE,,456
+2026-03-16,1S37,1,passenger,northbound,5,WEAVER JN,L,457
+2026-03-16,1S37,1,passenger,northbound,6,ACTON GRANGE JN,H,459
+2026-03-16,1S37,1,passenger,northbound,7,WARRINGTON BQ,,460
+2026-03-16,1S37,1,passenger,northbound,8,WINWICK JN,M,468
+2026-03-16,1S39,1,passenger,northbound,0,CREWE,,519
+2026-03-16,1S39,1,passenger,northbound,1,WINSFORD,F,522
+2026-03-16,1S39,1,passenger,northbound,2,HARTFORD,,524
+2026-03-16,1S39,1,passenger,northbound,3,HARTFORD JN,S,523
+2026-03-16,1S39,1,passenger,northbound,4,ACTON BRIDGE,,525
+2026-03-16,1S39,1,passenger,northbound,5,WEAVER JN,L,527
+2026-03-16,1S39,1,passenger,northbound,6,ACTON GRANGE JN,H,530
+2026-03-16,1S39,1,passenger,northbound,7,WARRINGTON BQ,,531
+2026-03-16,1S39,1,passenger,northbound,8,WINWICK JN,M,536
+2026-03-16,1S42,1,passenger,northbound,0,CREWE,,539
+2026-03-16,1S42,1,passenger,northbound,1,WINSFORD,F,541
+2026-03-16,1S42,1,passenger,northbound,2,HARTFORD,,543
+2026-03-16,1S42,1,passenger,northbound,3,HARTFORD JN,S,542
+2026-03-16,1S42,1,passenger,northbound,4,ACTON BRIDGE,,545
+2026-03-16,1S42,1,passenger,northbound,5,WEAVER JN,L,546
+2026-03-16,1S42,1,passenger,northbound,6,ACTON GRANGE JN,H,549
+2026-03-16,1S42,1,passenger,northbound,7,WARRINGTON BQ,,549
+2026-03-16,1S42,1,passenger,northbound,8,WINWICK JN,M,557
+2026-03-16,1S45,1,passenger,northbound,0,CREWE,,598
+2026-03-16,1S45,1,passenger,northbound,1,WINSFORD,F,601
+2026-03-16,1S45,1,passenger,northbound,2,HARTFORD,,603
+2026-03-16,1S45,1,passenger,northbound,3,HARTFORD JN,S,602
+2026-03-16,1S45,1,passenger,northbound,4,ACTON BRIDGE,,604
+2026-03-16,1S45,1,passenger,northbound,5,WEAVER JN,L,606
+2026-03-16,1S45,1,passenger,northbound,6,ACTON GRANGE JN,H,608
+2026-03-16,1S45,1,passenger,northbound,7,WARRINGTON BQ,,609
+2026-03-16,1S45,1,passenger,northbound,8,WINWICK JN,M,617
+2026-03-16,1S48,1,passenger,northbound,0,CREWE,,656
+2026-03-16,1S48,1,passenger,northbound,1,WINSFORD,F,659
+2026-03-16,1S48,1,passenger,northbound,2,HARTFORD,,661
+2026-03-16,1S48,1,passenger,northbound,3,HARTFORD JN,S,660
+2026-03-16,1S48,1,passenger,northbound,4,ACTON BRIDGE,,662
+2026-03-16,1S48,1,passenger,northbound,5,WEAVER JN,L,664
+2026-03-16,1S48,1,passenger,northbound,6,ACTON GRANGE JN,H,668
+2026-03-16,1S48,1,passenger,northbound,7,WARRINGTON BQ,,669
+2026-03-16,1S48,1,passenger,northbound,8,WINWICK JN,M,677
+2026-03-16,1S52,1,passenger,northbound,0,CREWE,,720
+2026-03-16,1S52,1,passenger,northbound,1,WINSFORD,F,723
+2026-03-16,1S52,1,passenger,northbound,2,HARTFORD,,725
+2026-03-16,1S52,1,passenger,northbound,3,HARTFORD JN,S,724
+2026-03-16,1S52,1,passenger,northbound,4,ACTON BRIDGE,,726
+2026-03-16,1S52,1,passenger,northbound,5,WEAVER JN,L,727
+2026-03-16,1S52,1,passenger,northbound,6,ACTON GRANGE JN,H,730
+2026-03-16,1S52,1,passenger,northbound,7,WARRINGTON BQ,,731
+2026-03-16,1S52,1,passenger,northbound,8,WINWICK JN,M,737
+2026-03-16,1S58,1,passenger,northbound,0,CREWE,,778
+2026-03-16,1S58,1,passenger,northbound,1,WINSFORD,F,781
+2026-03-16,1S58,1,passenger,northbound,2,HARTFORD,,783
+2026-03-16,1S58,1,passenger,northbound,3,HARTFORD JN,S,782
+2026-03-16,1S58,1,passenger,northbound,4,ACTON BRIDGE,,784
+2026-03-16,1S58,1,passenger,northbound,5,WEAVER JN,L,785
+2026-03-16,1S58,1,passenger,northbound,6,ACTON GRANGE JN,H,788
+2026-03-16,1S58,1,passenger,northbound,7,WARRINGTON BQ,,789
+2026-03-16,1S58,1,passenger,northbound,8,WINWICK JN,M,797
+2026-03-16,1S63,1,passenger,northbound,0,CREWE,,841
+2026-03-16,1S63,1,passenger,northbound,1,WINSFORD,F,845
+2026-03-16,1S63,1,passenger,northbound,2,HARTFORD,,849
+2026-03-16,1S63,1,passenger,northbound,3,HARTFORD JN,S,847
+2026-03-16,1S63,1,passenger,northbound,4,ACTON BRIDGE,,853
+2026-03-16,1S63,1,passenger,northbound,5,WEAVER JN,L,855
+2026-03-16,1S63,1,passenger,northbound,6,ACTON GRANGE JN,H,858
+2026-03-16,1S63,1,passenger,northbound,7,WARRINGTON BQ,,859
+2026-03-16,1S63,1,passenger,northbound,8,WINWICK JN,M,865
+2026-03-16,1S69,1,passenger,northbound,0,CREWE,,897
+2026-03-16,1S69,1,passenger,northbound,1,WINSFORD,F,900
+2026-03-16,1S69,1,passenger,northbound,2,HARTFORD,,902
+2026-03-16,1S69,1,passenger,northbound,3,HARTFORD JN,S,901
+2026-03-16,1S69,1,passenger,northbound,4,ACTON BRIDGE,,903
+2026-03-16,1S69,1,passenger,northbound,5,WEAVER JN,L,905
+2026-03-16,1S69,1,passenger,northbound,6,ACTON GRANGE JN,H,907
+2026-03-16,1S69,1,passenger,northbound,7,WARRINGTON BQ,,908
+2026-03-16,1S69,1,passenger,northbound,8,WINWICK JN,M,917
+2026-03-16,1S72,1,passenger,northbound,0,CREWE,,960
+2026-03-16,1S72,1,passenger,northbound,1,WINSFORD,F,963
+2026-03-16,1S72,1,passenger,northbound,2,HARTFORD,,965
+2026-03-16,1S72,1,passenger,northbound,3,HARTFORD JN,S,964
+2026-03-16,1S72,1,passenger,northbound,4,ACTON BRIDGE,,966
+2026-03-16,1S72,1,passenger,northbound,5,WEAVER JN,L,968
+2026-03-16,1S72,1,passenger,northbound,6,ACTON GRANGE JN,H,970
+2026-03-16,1S72,1,passenger,northbound,7,WARRINGTON BQ,,971
+2026-03-16,1S72,1,passenger,northbound,8,WINWICK JN,M,978
+2026-03-16,1S78,1,passenger,northbound,0,CREWE,,1020
+2026-03-16,1S78,1,passenger,northbound,1,WINSFORD,F,1024
+2026-03-16,1S78,1,passenger,northbound,2,HARTFORD,,1029
+2026-03-16,1S78,1,passenger,northbound,3,HARTFORD JN,S,1027
+2026-03-16,1S78,1,passenger,northbound,4,ACTON BRIDGE,,1033
+2026-03-16,1S78,1,passenger,northbound,5,WEAVER JN,L,1035
+2026-03-16,1S78,1,passenger,northbound,6,ACTON GRANGE JN,H,1038
+2026-03-16,1S78,1,passenger,northbound,7,WARRINGTON BQ,,1039
+2026-03-16,1S78,1,passenger,northbound,8,WINWICK JN,M,1046
+2026-03-16,1S82,1,passenger,northbound,0,CREWE,,1089
+2026-03-16,1S82,1,passenger,northbound,1,WINSFORD,F,1092
+2026-03-16,1S82,1,passenger,northbound,2,HARTFORD,,1094
+2026-03-16,1S82,1,passenger,northbound,3,HARTFORD JN,S,1093
+2026-03-16,1S82,1,passenger,northbound,4,ACTON BRIDGE,,1096
+2026-03-16,1S82,1,passenger,northbound,5,WEAVER JN,L,1097
+2026-03-16,1S82,1,passenger,northbound,6,ACTON GRANGE JN,H,1100
+2026-03-16,1S82,1,passenger,northbound,7,WARRINGTON BQ,,1101
+2026-03-16,1S82,1,passenger,northbound,8,WINWICK JN,M,1106
+2026-03-16,1S90,1,passenger,northbound,0,CREWE,,1165
+2026-03-16,1S90,1,passenger,northbound,1,WINSFORD,F,1168
+2026-03-16,1S90,1,passenger,northbound,2,HARTFORD,,1170
+2026-03-16,1S90,1,passenger,northbound,3,HARTFORD JN,S,1169
+2026-03-16,1S90,1,passenger,northbound,4,ACTON BRIDGE,,1171
+2026-03-16,1S90,1,passenger,northbound,5,WEAVER JN,L,1172
+2026-03-16,1S90,1,passenger,northbound,6,ACTON GRANGE JN,H,1176
+2026-03-16,1S90,1,passenger,northbound,7,WARRINGTON BQ,,1177
+2026-03-16,1S90,1,passenger,northbound,8,WINWICK JN,M,1183
+2026-03-16,1S95,1,passenger,northbound,0,CREWE,,1204
+2026-03-16,1S95,1,passenger,northbound,1,WINSFORD,F,1207
+2026-03-16,1S95,1,passenger,northbound,2,HARTFORD,,1209
+2026-03-16,1S95,1,passenger,northbound,3,HARTFORD JN,S,1208
+2026-03-16,1S95,1,passenger,northbound,4,ACTON BRIDGE,,1212
+2026-03-16,1S95,1,passenger,northbound,5,WEAVER JN,L,1213
+2026-03-16,1S95,1,passenger,northbound,6,ACTON GRANGE JN,H,1216
+2026-03-16,1S95,1,passenger,northbound,7,WARRINGTON BQ,,1218
+2026-03-16,1S95,1,passenger,northbound,8,WINWICK JN,M,1225
+2026-03-16,1S98,1,passenger,northbound,0,CREWE,,1277
+2026-03-16,1S98,1,passenger,northbound,1,WINSFORD,F,1280
+2026-03-16,1S98,1,passenger,northbound,2,HARTFORD,,1282
+2026-03-16,1S98,1,passenger,northbound,3,HARTFORD JN,S,1281
+2026-03-16,1S98,1,passenger,northbound,4,ACTON BRIDGE,,1284
+2026-03-16,1S98,1,passenger,northbound,5,WEAVER JN,L,1285
+2026-03-16,1S98,1,passenger,northbound,6,ACTON GRANGE JN,H,1287
+2026-03-16,1S98,1,passenger,northbound,7,WARRINGTON BQ,,1289
+2026-03-16,1S98,1,passenger,northbound,8,WINWICK JN,M,1295
+2026-03-16,1T67,1,passenger,northbound,0,CREWE,,1169
+2026-03-16,1T67,1,passenger,northbound,1,WINSFORD,F,1173
+2026-03-16,1T67,1,passenger,northbound,2,HARTFORD,,1178
+2026-03-16,1T67,1,passenger,northbound,3,HARTFORD JN,S,1177
+2026-03-16,1T67,1,passenger,northbound,4,ACTON BRIDGE,,1182
+2026-03-16,1T67,1,passenger,northbound,5,WEAVER JN,L,1186
+2026-03-16,1U01,1,passenger,northbound,11,PARKSIDE JN,,987
+2026-03-16,2A10,1,passenger,northbound,9,EARLESTOWN,,389
+2026-03-16,2A10,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,393
+2026-03-16,2A10,1,passenger,northbound,11,PARKSIDE JN,M,393
+2026-03-16,2A11,1,passenger,northbound,9,EARLESTOWN,,451
+2026-03-16,2A11,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,454
+2026-03-16,2A11,1,passenger,northbound,11,PARKSIDE JN,M,455
+2026-03-16,2A12,1,passenger,northbound,9,EARLESTOWN,,511
+2026-03-16,2A12,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,514
+2026-03-16,2A12,1,passenger,northbound,11,PARKSIDE JN,M,515
+2026-03-16,2A13,1,passenger,northbound,9,EARLESTOWN,,569
+2026-03-16,2A13,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,574
+2026-03-16,2A13,1,passenger,northbound,11,PARKSIDE JN,M,575
+2026-03-16,2A14,1,passenger,northbound,9,EARLESTOWN,,635
+2026-03-16,2A14,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,638
+2026-03-16,2A14,1,passenger,northbound,11,PARKSIDE JN,M,639
+2026-03-16,2A15,1,passenger,northbound,9,EARLESTOWN,,690
+2026-03-16,2A15,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,693
+2026-03-16,2A15,1,passenger,northbound,11,PARKSIDE JN,M,694
+2026-03-16,2A16,1,passenger,northbound,9,EARLESTOWN,,749
+2026-03-16,2A16,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,753
+2026-03-16,2A16,1,passenger,northbound,11,PARKSIDE JN,M,756
+2026-03-16,2A17,1,passenger,northbound,9,EARLESTOWN,,810
+2026-03-16,2A17,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,814
+2026-03-16,2A17,1,passenger,northbound,11,PARKSIDE JN,M,814
+2026-03-16,2A18,1,passenger,northbound,9,EARLESTOWN,,874
+2026-03-16,2A18,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,877
+2026-03-16,2A18,1,passenger,northbound,11,PARKSIDE JN,M,878
+2026-03-16,2A19,1,passenger,northbound,9,EARLESTOWN,,928
+2026-03-16,2A19,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,932
+2026-03-16,2A19,1,passenger,northbound,11,PARKSIDE JN,M,933
+2026-03-16,2A20,1,passenger,northbound,9,EARLESTOWN,,996
+2026-03-16,2A20,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,999
+2026-03-16,2A20,1,passenger,northbound,11,PARKSIDE JN,M,1000
+2026-03-16,2A21,1,passenger,northbound,9,EARLESTOWN,,1048
+2026-03-16,2A21,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1052
+2026-03-16,2A21,1,passenger,northbound,11,PARKSIDE JN,M,1053
+2026-03-16,2A22,1,passenger,northbound,9,EARLESTOWN,,1108
+2026-03-16,2A22,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1111
+2026-03-16,2A22,1,passenger,northbound,11,PARKSIDE JN,M,1112
+2026-03-16,2A23,1,passenger,northbound,9,EARLESTOWN,,1168
+2026-03-16,2A23,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1172
+2026-03-16,2A23,1,passenger,northbound,11,PARKSIDE JN,M,1172
+2026-03-16,2A24,1,passenger,northbound,9,EARLESTOWN,,1232
+2026-03-16,2A24,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1235
+2026-03-16,2A24,1,passenger,northbound,11,PARKSIDE JN,M,1236
+2026-03-16,2A25,1,passenger,northbound,9,EARLESTOWN,,1296
+2026-03-16,2A25,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1299
+2026-03-16,2A25,1,passenger,northbound,11,PARKSIDE JN,M,1300
+2026-03-16,2A26,1,passenger,northbound,9,EARLESTOWN,,1353
+2026-03-16,2A26,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1356
+2026-03-16,2A26,1,passenger,northbound,11,PARKSIDE JN,M,1357
+2026-03-16,2A27,1,passenger,northbound,9,EARLESTOWN,,1410
+2026-03-16,2A27,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1413
+2026-03-16,2A27,1,passenger,northbound,11,PARKSIDE JN,M,1413
+2026-03-16,2F01,1,passenger,northbound,9,EARLESTOWN,,588
+2026-03-16,2F01,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,584
+2026-03-16,2F11,1,passenger,northbound,9,EARLESTOWN,,350
+2026-03-16,2F11,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,344
+2026-03-16,2F11,1,passenger,northbound,11,PARKSIDE JN,C,343
+2026-03-16,2F11,2,passenger,northbound,9,EARLESTOWN,,806
+2026-03-16,2F11,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,800
+2026-03-16,2F11,2,passenger,northbound,11,PARKSIDE JN,C,799
+2026-03-16,2F13,1,passenger,northbound,9,EARLESTOWN,,382
+2026-03-16,2F13,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,377
+2026-03-16,2F13,1,passenger,northbound,11,PARKSIDE JN,C,376
+2026-03-16,2F13,2,passenger,northbound,9,EARLESTOWN,,1286
+2026-03-16,2F13,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1281
+2026-03-16,2F13,2,passenger,northbound,11,PARKSIDE JN,C,1280
+2026-03-16,2F15,1,passenger,northbound,9,EARLESTOWN,,866
+2026-03-16,2F15,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,861
+2026-03-16,2F15,1,passenger,northbound,11,PARKSIDE JN,C,860
+2026-03-16,2F15,2,passenger,northbound,9,EARLESTOWN,,1344
+2026-03-16,2F15,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1338
+2026-03-16,2F15,2,passenger,northbound,11,PARKSIDE JN,C,1337
+2026-03-16,2F17,1,passenger,northbound,9,EARLESTOWN,,444
+2026-03-16,2F17,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,438
+2026-03-16,2F17,1,passenger,northbound,11,PARKSIDE JN,C,437
+2026-03-16,2F17,2,passenger,northbound,6,ACTON GRANGE JN,H,1167
+2026-03-16,2F17,2,passenger,northbound,7,WARRINGTON BQ,,1169
+2026-03-16,2F17,2,passenger,northbound,8,WINWICK JN,M,1182
+2026-03-16,2F17,2,passenger,northbound,9,EARLESTOWN,,1183
+2026-03-16,2F19,1,passenger,northbound,9,EARLESTOWN,,931
+2026-03-16,2F19,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,925
+2026-03-16,2F19,1,passenger,northbound,11,PARKSIDE JN,C,924
+2026-03-16,2F21,1,passenger,northbound,9,EARLESTOWN,,505
+2026-03-16,2F21,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,499
+2026-03-16,2F21,1,passenger,northbound,11,PARKSIDE JN,C,498
+2026-03-16,2F23,1,passenger,northbound,9,EARLESTOWN,,540
+2026-03-16,2F23,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,534
+2026-03-16,2F23,1,passenger,northbound,11,PARKSIDE JN,C,531
+2026-03-16,2F23,2,passenger,northbound,9,EARLESTOWN,,1009
+2026-03-16,2F23,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1003
+2026-03-16,2F23,2,passenger,northbound,11,PARKSIDE JN,C,1002
+2026-03-16,2F25,1,passenger,northbound,9,EARLESTOWN,,564
+2026-03-16,2F25,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,557
+2026-03-16,2F25,1,passenger,northbound,11,PARKSIDE JN,C,556
+2026-03-16,2F27,1,passenger,northbound,9,EARLESTOWN,,1043
+2026-03-16,2F27,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1038
+2026-03-16,2F27,1,passenger,northbound,11,PARKSIDE JN,C,1037
+2026-03-16,2F29,1,passenger,northbound,9,EARLESTOWN,,625
+2026-03-16,2F29,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,621
+2026-03-16,2F29,1,passenger,northbound,11,PARKSIDE JN,C,620
+2026-03-16,2F29,2,passenger,northbound,9,EARLESTOWN,,1078
+2026-03-16,2F29,2,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1072
+2026-03-16,2F29,2,passenger,northbound,11,PARKSIDE JN,C,1071
+2026-03-16,2F31,1,passenger,northbound,9,EARLESTOWN,,1112
+2026-03-16,2F31,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1105
+2026-03-16,2F31,1,passenger,northbound,11,PARKSIDE JN,C,1103
+2026-03-16,2F33,1,passenger,northbound,9,EARLESTOWN,,683
+2026-03-16,2F33,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,678
+2026-03-16,2F33,1,passenger,northbound,11,PARKSIDE JN,C,676
+2026-03-16,2F35,1,passenger,northbound,9,EARLESTOWN,,1165
+2026-03-16,2F35,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1159
+2026-03-16,2F35,1,passenger,northbound,11,PARKSIDE JN,C,1158
+2026-03-16,2F37,1,passenger,northbound,9,EARLESTOWN,,750
+2026-03-16,2F37,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,744
+2026-03-16,2F37,1,passenger,northbound,11,PARKSIDE JN,C,742
+2026-03-16,2F39,1,passenger,northbound,9,EARLESTOWN,,1224
+2026-03-16,2F39,1,passenger,northbound,10,NEWTON-LE-WILLOWS,E,1218
+2026-03-16,2F39,1,passenger,northbound,11,PARKSIDE JN,C,1217
+2026-03-16,2G91,1,passenger,northbound,11,PARKSIDE JN,C,448
+2026-03-16,2G93,1,passenger,northbound,11,PARKSIDE JN,C,567
+2026-03-16,2G94,1,passenger,northbound,11,PARKSIDE JN,C,989
+2026-03-16,2G95,1,passenger,northbound,11,PARKSIDE JN,C,1051
+2026-03-16,2G96,1,passenger,northbound,11,PARKSIDE JN,C,1111
+2026-03-16,2J91,1,passenger,northbound,9,EARLESTOWN,,478
+2026-03-16,2J91,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,482
+2026-03-16,2J91,1,passenger,northbound,11,PARKSIDE JN,M,482
+2026-03-16,2J92,1,passenger,northbound,9,EARLESTOWN,,1020
+2026-03-16,2J92,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1023
+2026-03-16,2J92,1,passenger,northbound,11,PARKSIDE JN,M,1024
+2026-03-16,2K97,2,passenger,northbound,0,CREWE,G,1393
+2026-03-16,2K97,2,passenger,northbound,1,WINSFORD,F,1386
+2026-03-16,2K97,2,passenger,northbound,2,HARTFORD,,1381
+2026-03-16,2K97,2,passenger,northbound,3,HARTFORD JN,,1381
+2026-03-16,2K97,2,passenger,northbound,4,ACTON BRIDGE,,1377
+2026-03-16,2K97,2,passenger,northbound,5,WEAVER JN,M,1375
+2026-03-16,2K99,2,passenger,northbound,4,ACTON BRIDGE,,1436
+2026-03-16,2K99,2,passenger,northbound,5,WEAVER JN,M,1435
+2026-03-16,2V01,1,passenger,northbound,11,PARKSIDE JN,,410
+2026-03-16,2V03,1,passenger,northbound,11,PARKSIDE JN,,526
+2026-03-16,2V04,1,passenger,northbound,11,PARKSIDE JN,,956
+2026-03-16,2V05,1,passenger,northbound,11,PARKSIDE JN,,1007
+2026-03-16,2V06,1,passenger,northbound,11,PARKSIDE JN,,1067
+2026-03-16,2W90,1,passenger,northbound,9,EARLESTOWN,,963
+2026-03-16,2W90,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,967
+2026-03-16,2W90,1,passenger,northbound,11,PARKSIDE JN,M,968
+2026-03-16,2W91,1,passenger,northbound,9,EARLESTOWN,,1142
+2026-03-16,2W91,1,passenger,northbound,10,NEWTON-LE-WILLOWS,,1147
+2026-03-16,2W91,1,passenger,northbound,11,PARKSIDE JN,M,1147
+2026-03-16,3D32,1,freight,northbound,6,ACTON GRANGE JN,,312
+2026-03-16,3D32,1,freight,northbound,7,WARRINGTON BQ,H,309
+2026-03-16,3D32,1,freight,northbound,8,WINWICK JN,S,304
+2026-03-16,3D32,1,freight,northbound,9,EARLESTOWN,,303
+2026-03-16,3D32,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,300
+2026-03-16,3D32,1,freight,northbound,11,PARKSIDE JN,C,299
+2026-03-16,3F01,1,freight,southbound,0,CREWE,G,846
+2026-03-16,3F01,1,freight,southbound,1,WINSFORD,F,840
+2026-03-16,3F01,1,freight,southbound,2,HARTFORD,,836
+2026-03-16,3F01,1,freight,southbound,3,HARTFORD JN,,834
+2026-03-16,3F01,1,freight,southbound,4,ACTON BRIDGE,,827
+2026-03-16,3F01,1,freight,southbound,5,WEAVER JN,M,824
+2026-03-16,3F01,1,freight,southbound,6,ACTON GRANGE JN,,818
+2026-03-16,3F01,1,freight,southbound,7,WARRINGTON BQ,H,786
+2026-03-16,3F01,1,freight,southbound,8,WINWICK JN,S,780
+2026-03-16,4F60,1,freight,northbound,0,CREWE,,626
+2026-03-16,4F60,1,freight,northbound,1,WINSFORD,S,632
+2026-03-16,4F60,1,freight,northbound,2,HARTFORD,,635
+2026-03-16,4F60,1,freight,northbound,3,HARTFORD JN,S,634
+2026-03-16,4F60,1,freight,northbound,4,ACTON BRIDGE,,638
+2026-03-16,4F60,1,freight,northbound,5,WEAVER JN,L,640
+2026-03-16,4F81,1,freight,northbound,0,CREWE,,324
+2026-03-16,4F81,1,freight,northbound,1,WINSFORD,S,329
+2026-03-16,4F81,1,freight,northbound,2,HARTFORD,,333
+2026-03-16,4F81,1,freight,northbound,3,HARTFORD JN,S,332
+2026-03-16,4F81,1,freight,northbound,4,ACTON BRIDGE,,336
+2026-03-16,4F81,1,freight,northbound,5,WEAVER JN,L,337
+2026-03-16,4H72,1,freight,southbound,0,CREWE,G,277
+2026-03-16,4H72,1,freight,southbound,1,WINSFORD,F,271
+2026-03-16,4H72,1,freight,southbound,2,HARTFORD,,256
+2026-03-16,4H72,1,freight,southbound,3,HARTFORD JN,,256
+2026-03-16,4H72,1,freight,southbound,4,ACTON BRIDGE,,249
+2026-03-16,4H72,1,freight,southbound,5,WEAVER JN,M,247
+2026-03-16,4H72,1,freight,southbound,6,ACTON GRANGE JN,,242
+2026-03-16,4K54,1,freight,northbound,0,CREWE,G,724
+2026-03-16,4K54,1,freight,northbound,1,WINSFORD,F,717
+2026-03-16,4K54,1,freight,northbound,2,HARTFORD,,714
+2026-03-16,4K54,1,freight,northbound,3,HARTFORD JN,,712
+2026-03-16,4K54,1,freight,northbound,4,ACTON BRIDGE,,702
+2026-03-16,4K54,1,freight,northbound,5,WEAVER JN,M,700
+2026-03-16,4L17,1,freight,northbound,0,CREWE,G,1238
+2026-03-16,4L17,1,freight,northbound,1,WINSFORD,F,1230
+2026-03-16,4L17,1,freight,northbound,2,HARTFORD,,1227
+2026-03-16,4L17,1,freight,northbound,3,HARTFORD JN,,1226
+2026-03-16,4L17,1,freight,northbound,4,ACTON BRIDGE,,1223
+2026-03-16,4L17,1,freight,northbound,5,WEAVER JN,M,1222
+2026-03-16,4M03,1,freight,southbound,0,CREWE,G,220
+2026-03-16,4M03,1,freight,southbound,2,HARTFORD,,195
+2026-03-16,4M03,1,freight,southbound,3,HARTFORD JN,,194
+2026-03-16,4M03,1,freight,southbound,4,ACTON BRIDGE,,191
+2026-03-16,4M03,1,freight,southbound,5,WEAVER JN,M,189
+2026-03-16,4M03,1,freight,southbound,6,ACTON GRANGE JN,,183
+2026-03-16,4M03,1,freight,southbound,7,WARRINGTON BQ,F,182
+2026-03-16,4M03,1,freight,southbound,8,WINWICK JN,S,177
+2026-03-16,4M11,1,freight,southbound,0,CREWE,G,1376
+2026-03-16,4M11,1,freight,southbound,1,WINSFORD,F,1370
+2026-03-16,4M11,1,freight,southbound,2,HARTFORD,,1367
+2026-03-16,4M11,1,freight,southbound,3,HARTFORD JN,,1366
+2026-03-16,4M11,1,freight,southbound,4,ACTON BRIDGE,,1364
+2026-03-16,4M11,1,freight,southbound,5,WEAVER JN,M,1362
+2026-03-16,4M11,1,freight,southbound,6,ACTON GRANGE JN,,1358
+2026-03-16,4M11,1,freight,southbound,7,WARRINGTON BQ,F,1357
+2026-03-16,4M11,1,freight,southbound,8,WINWICK JN,S,1353
+2026-03-16,4M27,2,freight,southbound,0,CREWE,G,651
+2026-03-16,4M27,2,freight,southbound,1,WINSFORD,F,645
+2026-03-16,4M27,2,freight,southbound,2,HARTFORD,,642
+2026-03-16,4M27,2,freight,southbound,3,HARTFORD JN,,642
+2026-03-16,4M27,2,freight,southbound,4,ACTON BRIDGE,,639
+2026-03-16,4M27,2,freight,southbound,5,WEAVER JN,M,637
+2026-03-16,4M27,2,freight,southbound,6,ACTON GRANGE JN,,633
+2026-03-16,4M27,2,freight,southbound,7,WARRINGTON BQ,F,632
+2026-03-16,4M27,2,freight,southbound,8,WINWICK JN,S,629
+2026-03-16,4M48,1,freight,southbound,0,CREWE,G,1415
+2026-03-16,4M48,1,freight,southbound,1,WINSFORD,F,1407
+2026-03-16,4M48,1,freight,southbound,2,HARTFORD,,1403
+2026-03-16,4M48,1,freight,southbound,3,HARTFORD JN,,1403
+2026-03-16,4M48,1,freight,southbound,4,ACTON BRIDGE,,1400
+2026-03-16,4M48,1,freight,southbound,5,WEAVER JN,M,1398
+2026-03-16,4M48,1,freight,southbound,6,ACTON GRANGE JN,,1394
+2026-03-16,4M48,1,freight,southbound,7,WARRINGTON BQ,F,1393
+2026-03-16,4M48,1,freight,southbound,8,WINWICK JN,S,1389
+2026-03-16,4M52,1,freight,northbound,0,CREWE,,1031
+2026-03-16,4M52,1,freight,northbound,1,WINSFORD,S,1037
+2026-03-16,4M52,1,freight,northbound,2,HARTFORD,,1047
+2026-03-16,4M52,1,freight,northbound,3,HARTFORD JN,S,1045
+2026-03-16,4M52,1,freight,northbound,4,ACTON BRIDGE,,1050
+2026-03-16,4M52,1,freight,northbound,5,WEAVER JN,L,1052
+2026-03-16,4M56,1,freight,northbound,0,CREWE,,1124
+2026-03-16,4M56,1,freight,northbound,1,WINSFORD,S,1130
+2026-03-16,4M56,1,freight,northbound,2,HARTFORD,,1134
+2026-03-16,4M56,1,freight,northbound,3,HARTFORD JN,S,1132
+2026-03-16,4M56,1,freight,northbound,4,ACTON BRIDGE,,1136
+2026-03-16,4M56,1,freight,northbound,5,WEAVER JN,L,1138
+2026-03-16,4M77,1,freight,northbound,9,EARLESTOWN,,238
+2026-03-16,4M77,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,236
+2026-03-16,4M77,1,freight,northbound,11,PARKSIDE JN,C,235
+2026-03-16,4M86,1,freight,southbound,0,CREWE,G,1435
+2026-03-16,4M86,1,freight,southbound,1,WINSFORD,F,1428
+2026-03-16,4M86,1,freight,southbound,2,HARTFORD,,1424
+2026-03-16,4M86,1,freight,southbound,3,HARTFORD JN,,1423
+2026-03-16,4M86,1,freight,southbound,4,ACTON BRIDGE,,1421
+2026-03-16,4M86,1,freight,southbound,5,WEAVER JN,M,1418
+2026-03-16,4M86,1,freight,southbound,6,ACTON GRANGE JN,,1411
+2026-03-16,4M86,1,freight,southbound,7,WARRINGTON BQ,F,1410
+2026-03-16,4M86,1,freight,southbound,8,WINWICK JN,S,1400
+2026-03-16,4M98,1,freight,northbound,0,CREWE,,1413
+2026-03-16,4M98,1,freight,northbound,1,WINSFORD,S,1420
+2026-03-16,4M98,1,freight,northbound,2,HARTFORD,,1425
+2026-03-16,4M98,1,freight,northbound,3,HARTFORD JN,S,1423
+2026-03-16,4M98,1,freight,northbound,4,ACTON BRIDGE,,1427
+2026-03-16,4M98,1,freight,northbound,5,WEAVER JN,L,1429
+2026-03-16,4S43,1,freight,northbound,0,CREWE,,498
+2026-03-16,4S43,1,freight,northbound,1,WINSFORD,S,503
+2026-03-16,4S43,1,freight,northbound,2,HARTFORD,,507
+2026-03-16,4S43,1,freight,northbound,3,HARTFORD JN,S,506
+2026-03-16,4S43,1,freight,northbound,4,ACTON BRIDGE,,510
+2026-03-16,4S43,1,freight,northbound,5,WEAVER JN,L,511
+2026-03-16,4S43,1,freight,northbound,6,ACTON GRANGE JN,H,516
+2026-03-16,4S43,1,freight,northbound,7,WARRINGTON BQ,,517
+2026-03-16,4S43,1,freight,northbound,8,WINWICK JN,M,520
+2026-03-16,4S44,1,freight,northbound,0,CREWE,,852
+2026-03-16,4S44,1,freight,northbound,1,WINSFORD,S,860
+2026-03-16,4S44,1,freight,northbound,2,HARTFORD,,872
+2026-03-16,4S44,1,freight,northbound,3,HARTFORD JN,S,870
+2026-03-16,4S44,1,freight,northbound,4,ACTON BRIDGE,,875
+2026-03-16,4S44,1,freight,northbound,5,WEAVER JN,L,877
+2026-03-16,4S44,1,freight,northbound,6,ACTON GRANGE JN,H,882
+2026-03-16,4S44,1,freight,northbound,7,WARRINGTON BQ,,883
+2026-03-16,4S44,1,freight,northbound,8,WINWICK JN,M,886
+2026-03-16,4S45,1,freight,northbound,0,CREWE,,1241
+2026-03-16,4S45,1,freight,northbound,1,WINSFORD,S,1246
+2026-03-16,4S45,1,freight,northbound,2,HARTFORD,,1250
+2026-03-16,4S45,1,freight,northbound,3,HARTFORD JN,S,1248
+2026-03-16,4S45,1,freight,northbound,4,ACTON BRIDGE,,1252
+2026-03-16,4S45,1,freight,northbound,5,WEAVER JN,L,1254
+2026-03-16,4S45,1,freight,northbound,6,ACTON GRANGE JN,H,1258
+2026-03-16,4S45,1,freight,northbound,7,WARRINGTON BQ,,1260
+2026-03-16,4S45,1,freight,northbound,8,WINWICK JN,M,1262
+2026-03-16,4S47,1,freight,northbound,0,CREWE,,1272
+2026-03-16,4S47,1,freight,northbound,1,WINSFORD,S,1284
+2026-03-16,4S47,1,freight,northbound,2,HARTFORD,,1290
+2026-03-16,4S47,1,freight,northbound,3,HARTFORD JN,S,1288
+2026-03-16,4S47,1,freight,northbound,4,ACTON BRIDGE,,1294
+2026-03-16,4S47,1,freight,northbound,5,WEAVER JN,L,1296
+2026-03-16,4S47,1,freight,northbound,6,ACTON GRANGE JN,H,1305
+2026-03-16,4S47,1,freight,northbound,7,WARRINGTON BQ,,1307
+2026-03-16,4S47,1,freight,northbound,8,WINWICK JN,M,1310
+2026-03-16,4S50,1,freight,northbound,0,CREWE,,379
+2026-03-16,4S50,1,freight,northbound,1,WINSFORD,F,385
+2026-03-16,4S50,1,freight,northbound,2,HARTFORD,,389
+2026-03-16,4S50,1,freight,northbound,3,HARTFORD JN,S,387
+2026-03-16,4S50,1,freight,northbound,4,ACTON BRIDGE,,391
+2026-03-16,4S50,1,freight,northbound,5,WEAVER JN,L,393
+2026-03-16,4S50,1,freight,northbound,6,ACTON GRANGE JN,H,397
+2026-03-16,4S50,1,freight,northbound,7,WARRINGTON BQ,,399
+2026-03-16,4S50,1,freight,northbound,8,WINWICK JN,M,402
+2026-03-16,4S59,2,freight,northbound,0,CREWE,,1321
+2026-03-16,4S59,2,freight,northbound,1,WINSFORD,F,1326
+2026-03-16,4S59,2,freight,northbound,2,HARTFORD,,1329
+2026-03-16,4S59,2,freight,northbound,3,HARTFORD JN,S,1328
+2026-03-16,4S59,2,freight,northbound,4,ACTON BRIDGE,,1331
+2026-03-16,4S59,2,freight,northbound,5,WEAVER JN,L,1333
+2026-03-16,4S59,2,freight,northbound,6,ACTON GRANGE JN,H,1338
+2026-03-16,4S59,2,freight,northbound,7,WARRINGTON BQ,,1340
+2026-03-16,4S59,2,freight,northbound,8,WINWICK JN,M,1347
+2026-03-16,5A93,1,freight,northbound,9,EARLESTOWN,,4
+2026-03-16,5A93,1,freight,northbound,10,NEWTON-LE-WILLOWS,,6
+2026-03-16,5A93,1,freight,northbound,11,PARKSIDE JN,M,6
+2026-03-16,5C31,1,freight,northbound,11,PARKSIDE JN,C,253
+2026-03-16,5E16,1,freight,northbound,9,EARLESTOWN,,999
+2026-03-16,5E16,1,freight,northbound,10,NEWTON-LE-WILLOWS,,1002
+2026-03-16,5E16,1,freight,northbound,11,PARKSIDE JN,M,1004
+2026-03-16,5F03,1,freight,northbound,0,CREWE,,307
+2026-03-16,5F03,1,freight,northbound,1,WINSFORD,F,311
+2026-03-16,5F03,1,freight,northbound,2,HARTFORD,,314
+2026-03-16,5F03,1,freight,northbound,3,HARTFORD JN,S,313
+2026-03-16,5F03,1,freight,northbound,4,ACTON BRIDGE,,316
+2026-03-16,5F03,1,freight,northbound,5,WEAVER JN,L,318
+2026-03-16,5F05,1,freight,southbound,0,CREWE,G,55
+2026-03-16,5F05,1,freight,southbound,1,WINSFORD,F,51
+2026-03-16,5F05,1,freight,southbound,2,HARTFORD,,47
+2026-03-16,5F05,1,freight,southbound,3,HARTFORD JN,,47
+2026-03-16,5F05,1,freight,southbound,4,ACTON BRIDGE,,45
+2026-03-16,5F05,1,freight,southbound,5,WEAVER JN,M,44
+2026-03-16,5F05,1,freight,southbound,6,ACTON GRANGE JN,,41
+2026-03-16,5F05,1,freight,southbound,7,WARRINGTON BQ,F,40
+2026-03-16,5F05,1,freight,southbound,8,WINWICK JN,S,37
+2026-03-16,5F16,1,freight,northbound,0,CREWE,,416
+2026-03-16,5F16,1,freight,northbound,1,WINSFORD,S,421
+2026-03-16,5F16,1,freight,northbound,2,HARTFORD,,441
+2026-03-16,5F16,1,freight,northbound,3,HARTFORD JN,S,440
+2026-03-16,5F16,1,freight,northbound,4,ACTON BRIDGE,,443
+2026-03-16,5F16,1,freight,northbound,5,WEAVER JN,L,444
+2026-03-16,5G29,1,freight,northbound,0,CREWE,G,1178
+2026-03-16,5G29,1,freight,northbound,1,WINSFORD,F,1171
+2026-03-16,5G29,1,freight,northbound,2,HARTFORD,,1168
+2026-03-16,5G29,1,freight,northbound,3,HARTFORD JN,,1167
+2026-03-16,5G29,1,freight,northbound,4,ACTON BRIDGE,,1164
+2026-03-16,5G29,1,freight,northbound,5,WEAVER JN,M,1161
+2026-03-16,5H96,1,freight,northbound,6,ACTON GRANGE JN,,1288
+2026-03-16,5H96,1,freight,northbound,7,WARRINGTON BQ,4,1286
+2026-03-16,5J01,1,freight,northbound,9,EARLESTOWN,,337
+2026-03-16,5J01,1,freight,northbound,10,NEWTON-LE-WILLOWS,,340
+2026-03-16,5J01,1,freight,northbound,11,PARKSIDE JN,M,341
+2026-03-16,5J02,1,freight,northbound,9,EARLESTOWN,,346
+2026-03-16,5J02,1,freight,northbound,10,NEWTON-LE-WILLOWS,,361
+2026-03-16,5J02,1,freight,northbound,11,PARKSIDE JN,M,362
+2026-03-16,5J57,1,freight,northbound,9,EARLESTOWN,,1296
+2026-03-16,5J57,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,1295
+2026-03-16,5J57,1,freight,northbound,11,PARKSIDE JN,C,1294
+2026-03-16,5J96,1,freight,northbound,10,NEWTON-LE-WILLOWS,,1417
+2026-03-16,5J96,1,freight,northbound,11,PARKSIDE JN,M,1417
+2026-03-16,5K60,1,freight,northbound,0,CREWE,G,346
+2026-03-16,5K60,1,freight,northbound,1,WINSFORD,F,343
+2026-03-16,5K60,1,freight,northbound,2,HARTFORD,,341
+2026-03-16,5K60,1,freight,northbound,3,HARTFORD JN,,341
+2026-03-16,5K60,1,freight,northbound,4,ACTON BRIDGE,,339
+2026-03-16,5K60,1,freight,northbound,5,WEAVER JN,M,338
+2026-03-16,5K94,1,freight,southbound,0,CREWE,G,1357
+2026-03-16,5K94,1,freight,southbound,1,WINSFORD,F,1351
+2026-03-16,5K94,1,freight,southbound,2,HARTFORD,,1346
+2026-03-16,5K94,1,freight,southbound,3,HARTFORD JN,,1345
+2026-03-16,5K94,1,freight,southbound,4,ACTON BRIDGE,,1343
+2026-03-16,5K94,1,freight,southbound,5,WEAVER JN,M,1341
+2026-03-16,5K94,1,freight,southbound,6,ACTON GRANGE JN,,1338
+2026-03-16,5K94,1,freight,southbound,7,WARRINGTON BQ,F,1337
+2026-03-16,5K94,1,freight,southbound,8,WINWICK JN,S,1334
+2026-03-16,5L54,1,freight,northbound,9,EARLESTOWN,,1328
+2026-03-16,5L54,1,freight,northbound,10,NEWTON-LE-WILLOWS,,1330
+2026-03-16,5L54,1,freight,northbound,11,PARKSIDE JN,M,1331
+2026-03-16,5M06,1,freight,northbound,9,EARLESTOWN,,356
+2026-03-16,5M06,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,355
+2026-03-16,5M06,1,freight,northbound,11,PARKSIDE JN,C,353
+2026-03-16,5N14,1,freight,northbound,0,CREWE,,235
+2026-03-16,5N14,1,freight,northbound,1,WINSFORD,F,237
+2026-03-16,5N14,1,freight,northbound,2,HARTFORD,,240
+2026-03-16,5N14,1,freight,northbound,3,HARTFORD JN,S,239
+2026-03-16,5N14,1,freight,northbound,4,ACTON BRIDGE,,241
+2026-03-16,5N14,1,freight,northbound,5,WEAVER JN,L,243
+2026-03-16,5N14,1,freight,northbound,6,ACTON GRANGE JN,H,252
+2026-03-16,5N14,1,freight,northbound,7,WARRINGTON BQ,,253
+2026-03-16,5N14,1,freight,northbound,8,WINWICK JN,M,256
+2026-03-16,5Q09,1,freight,northbound,0,CREWE,,1005
+2026-03-16,5Q09,1,freight,northbound,1,WINSFORD,S,1010
+2026-03-16,5Q09,1,freight,northbound,2,HARTFORD,,1014
+2026-03-16,5Q09,1,freight,northbound,3,HARTFORD JN,S,1012
+2026-03-16,5Q09,1,freight,northbound,4,ACTON BRIDGE,,1016
+2026-03-16,5Q09,1,freight,northbound,5,WEAVER JN,L,1018
+2026-03-16,5Q09,1,freight,northbound,6,ACTON GRANGE JN,H,1023
+2026-03-16,5Q09,1,freight,northbound,7,WARRINGTON BQ,,1024
+2026-03-16,5Q09,1,freight,northbound,8,WINWICK JN,M,1027
+2026-03-16,5R98,1,freight,northbound,6,ACTON GRANGE JN,,1436
+2026-03-16,5R98,1,freight,northbound,7,WARRINGTON BQ,,1436
+2026-03-16,5V33,1,freight,northbound,0,CREWE,,328
+2026-03-16,5V33,1,freight,northbound,1,WINSFORD,F,333
+2026-03-16,5V33,1,freight,northbound,2,HARTFORD,,337
+2026-03-16,5V33,1,freight,northbound,3,HARTFORD JN,S,335
+2026-03-16,5V33,1,freight,northbound,4,ACTON BRIDGE,,339
+2026-03-16,5V33,1,freight,northbound,5,WEAVER JN,L,341
+2026-03-16,5V33,1,freight,northbound,6,ACTON GRANGE JN,H,345
+2026-03-16,5V33,1,freight,northbound,7,WARRINGTON BQ,,346
+2026-03-16,5V33,1,freight,northbound,8,WINWICK JN,M,350
+2026-03-16,5V33,1,freight,northbound,9,EARLESTOWN,,354
+2026-03-16,5V33,1,freight,northbound,10,NEWTON-LE-WILLOWS,,359
+2026-03-16,5V33,1,freight,northbound,11,PARKSIDE JN,M,360
+2026-03-16,5W85,1,freight,northbound,9,EARLESTOWN,,1171
+2026-03-16,5W85,1,freight,northbound,10,NEWTON-LE-WILLOWS,,1175
+2026-03-16,5W85,1,freight,northbound,11,PARKSIDE JN,M,1177
+2026-03-16,5Y33,1,freight,northbound,0,CREWE,,1207
+2026-03-16,5Y33,1,freight,northbound,1,WINSFORD,F,1211
+2026-03-16,5Y33,1,freight,northbound,2,HARTFORD,,1214
+2026-03-16,5Y33,1,freight,northbound,3,HARTFORD JN,S,1212
+2026-03-16,5Y33,1,freight,northbound,4,ACTON BRIDGE,,1218
+2026-03-16,5Y33,1,freight,northbound,5,WEAVER JN,L,1221
+2026-03-16,5Y63,1,freight,northbound,9,EARLESTOWN,,1275
+2026-03-16,5Y63,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,1272
+2026-03-16,5Z85,1,freight,northbound,9,EARLESTOWN,,1196
+2026-03-16,5Z85,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,1192
+2026-03-16,5Z85,1,freight,northbound,11,PARKSIDE JN,C,1190
+2026-03-16,6E09,1,freight,southbound,3,HARTFORD JN,,561
+2026-03-16,6E09,1,freight,southbound,4,ACTON BRIDGE,,556
+2026-03-16,6E09,1,freight,southbound,5,WEAVER JN,M,553
+2026-03-16,6E09,1,freight,southbound,6,ACTON GRANGE JN,,546
+2026-03-16,6E09,1,freight,southbound,7,WARRINGTON BQ,F,538
+2026-03-16,6E09,1,freight,southbound,8,WINWICK JN,S,533
+2026-03-16,6E09,1,freight,southbound,9,EARLESTOWN,,527
+2026-03-16,6E16,1,freight,southbound,3,HARTFORD JN,,1217
+2026-03-16,6E16,1,freight,southbound,4,ACTON BRIDGE,,1213
+2026-03-16,6E16,1,freight,southbound,5,WEAVER JN,M,1209
+2026-03-16,6E16,1,freight,southbound,6,ACTON GRANGE JN,,1202
+2026-03-16,6E16,1,freight,southbound,7,WARRINGTON BQ,F,1201
+2026-03-16,6E16,1,freight,southbound,8,WINWICK JN,S,1197
+2026-03-16,6E26,1,freight,southbound,3,HARTFORD JN,,737
+2026-03-16,6E26,1,freight,southbound,4,ACTON BRIDGE,,732
+2026-03-16,6E26,1,freight,southbound,5,WEAVER JN,M,727
+2026-03-16,6E26,1,freight,southbound,6,ACTON GRANGE JN,,720
+2026-03-16,6E26,1,freight,southbound,7,WARRINGTON BQ,F,718
+2026-03-16,6E26,1,freight,southbound,8,WINWICK JN,S,714
+2026-03-16,6E34,1,freight,southbound,3,HARTFORD JN,,1420
+2026-03-16,6E34,1,freight,southbound,4,ACTON BRIDGE,,1415
+2026-03-16,6E34,1,freight,southbound,5,WEAVER JN,M,1413
+2026-03-16,6E34,1,freight,southbound,6,ACTON GRANGE JN,,1407
+2026-03-16,6E34,1,freight,southbound,7,WARRINGTON BQ,F,1406
+2026-03-16,6E34,1,freight,southbound,8,WINWICK JN,S,1401
+2026-03-16,6E34,1,freight,southbound,9,EARLESTOWN,,1395
+2026-03-16,6F33,1,freight,northbound,3,HARTFORD JN,,668
+2026-03-16,6F33,1,freight,northbound,4,ACTON BRIDGE,,670
+2026-03-16,6F33,1,freight,northbound,5,WEAVER JN,L,680
+2026-03-16,6F35,1,freight,northbound,3,HARTFORD JN,,1172
+2026-03-16,6F35,1,freight,northbound,4,ACTON BRIDGE,,1175
+2026-03-16,6F35,2,freight,northbound,4,ACTON BRIDGE,,1215
+2026-03-16,6F35,2,freight,northbound,5,WEAVER JN,L,1219
+2026-03-16,6F45,1,freight,northbound,9,EARLESTOWN,,1371
+2026-03-16,6F45,1,freight,northbound,10,NEWTON-LE-WILLOWS,E,1367
+2026-03-16,6F52,1,freight,northbound,0,CREWE,,856
+2026-03-16,6F52,1,freight,northbound,1,WINSFORD,S,869
+2026-03-16,6F52,1,freight,northbound,2,HARTFORD,,879
+2026-03-16,6F52,1,freight,northbound,3,HARTFORD JN,S,876
+2026-03-16,6F52,1,freight,northbound,4,ACTON BRIDGE,,881
+2026-03-16,6F52,1,freight,northbound,5,WEAVER JN,L,884
+2026-03-16,6F52,1,freight,northbound,6,ACTON GRANGE JN,H,895
+2026-03-16,6F73,2,freight,northbound,0,CREWE,,1208
+2026-03-16,6F73,2,freight,northbound,1,WINSFORD,S,1214
+2026-03-16,6F73,2,freight,northbound,2,HARTFORD,,1219
+2026-03-16,6F73,2,freight,northbound,3,HARTFORD JN,S,1217
+2026-03-16,6F73,2,freight,northbound,4,ACTON BRIDGE,,1224
+2026-03-16,6F73,2,freight,northbound,5,WEAVER JN,L,1226
+2026-03-16,6F73,2,freight,northbound,6,ACTON GRANGE JN,H,1232
+2026-03-16,6F73,2,freight,northbound,7,WARRINGTON BQ,,1235
+2026-03-16,6F73,2,freight,northbound,8,WINWICK JN,M,1244
+2026-03-16,6F73,2,freight,northbound,9,EARLESTOWN,,1246
+2026-03-16,6F90,1,freight,northbound,0,CREWE,,312
+2026-03-16,6F90,1,freight,northbound,1,WINSFORD,S,318
+2026-03-16,6F90,1,freight,northbound,2,HARTFORD,,323
+2026-03-16,6F90,1,freight,northbound,3,HARTFORD JN,S,321
+2026-03-16,6F90,1,freight,northbound,4,ACTON BRIDGE,,326
+2026-03-16,6F90,1,freight,northbound,5,WEAVER JN,L,328
+2026-03-16,6F90,1,freight,northbound,6,ACTON GRANGE JN,H,335
+2026-03-16,6F90,2,freight,northbound,6,ACTON GRANGE JN,,412
+2026-03-16,6F91,1,freight,northbound,6,ACTON GRANGE JN,H,773
+2026-03-16,6F91,2,freight,southbound,0,CREWE,G,868
+2026-03-16,6F91,2,freight,southbound,1,WINSFORD,F,862
+2026-03-16,6F91,2,freight,southbound,2,HARTFORD,,858
+2026-03-16,6F91,2,freight,southbound,3,HARTFORD JN,,857
+2026-03-16,6F91,2,freight,southbound,4,ACTON BRIDGE,,854
+2026-03-16,6F91,2,freight,southbound,5,WEAVER JN,M,852
+2026-03-16,6F91,2,freight,southbound,6,ACTON GRANGE JN,,842
+2026-03-16,6G73,1,freight,southbound,0,CREWE,G,203
+2026-03-16,6G73,1,freight,southbound,1,WINSFORD,F,197
+2026-03-16,6G73,1,freight,southbound,2,HARTFORD,,190
+2026-03-16,6G73,1,freight,southbound,3,HARTFORD JN,,189
+2026-03-16,6G73,1,freight,southbound,4,ACTON BRIDGE,,186
+2026-03-16,6G73,1,freight,southbound,5,WEAVER JN,M,184
+2026-03-16,6G73,1,freight,southbound,6,ACTON GRANGE JN,,179
+2026-03-16,6G73,1,freight,southbound,7,WARRINGTON BQ,F,177
+2026-03-16,6G73,1,freight,southbound,8,WINWICK JN,S,168
+2026-03-16,6G73,1,freight,southbound,9,EARLESTOWN,,160
+2026-03-16,6G74,1,freight,southbound,0,CREWE,G,1342
+2026-03-16,6G74,1,freight,southbound,1,WINSFORD,F,1334
+2026-03-16,6G74,1,freight,southbound,2,HARTFORD,,1329
+2026-03-16,6G74,1,freight,southbound,3,HARTFORD JN,,1329
+2026-03-16,6G74,1,freight,southbound,4,ACTON BRIDGE,,1325
+2026-03-16,6G74,1,freight,southbound,5,WEAVER JN,M,1323
+2026-03-16,6G74,1,freight,southbound,6,ACTON GRANGE JN,,1318
+2026-03-16,6G74,1,freight,southbound,7,WARRINGTON BQ,F,1316
+2026-03-16,6G74,1,freight,southbound,8,WINWICK JN,S,1309
+2026-03-16,6G74,1,freight,southbound,9,EARLESTOWN,,1299
+2026-03-16,6H02,1,freight,southbound,3,HARTFORD JN,,592
+2026-03-16,6H02,1,freight,southbound,4,ACTON BRIDGE,,588
+2026-03-16,6H02,1,freight,southbound,5,WEAVER JN,M,585
+2026-03-16,6H02,1,freight,southbound,6,ACTON GRANGE JN,,574
+2026-03-16,6H35,1,freight,northbound,3,HARTFORD JN,,844
+2026-03-16,6H35,1,freight,northbound,4,ACTON BRIDGE,,840
+2026-03-16,6H35,1,freight,northbound,5,WEAVER JN,M,838
+2026-03-16,6H39,1,freight,northbound,3,HARTFORD JN,,1305
+2026-03-16,6H39,1,freight,northbound,4,ACTON BRIDGE,,1301
+2026-03-16,6H39,1,freight,northbound,5,WEAVER JN,M,1299
+2026-03-16,6J37,1,freight,northbound,6,ACTON GRANGE JN,,1080
+2026-03-16,6J37,1,freight,northbound,7,WARRINGTON BQ,H,1073
+2026-03-16,6J37,1,freight,northbound,8,WINWICK JN,S,1068
+2026-03-16,6L38,1,freight,southbound,0,CREWE,G,50
+2026-03-16,6L38,1,freight,southbound,1,WINSFORD,F,41
+2026-03-16,6L38,1,freight,southbound,2,HARTFORD,,33
+2026-03-16,6L38,1,freight,southbound,3,HARTFORD JN,,32
+2026-03-16,6L38,1,freight,southbound,4,ACTON BRIDGE,,28
+2026-03-16,6L38,1,freight,southbound,5,WEAVER JN,M,25
+2026-03-16,6L38,1,freight,southbound,6,ACTON GRANGE JN,,19
+2026-03-16,6L38,1,freight,southbound,7,WARRINGTON BQ,F,17
+2026-03-16,6L38,1,freight,southbound,8,WINWICK JN,S,12
+2026-03-16,6L48,1,freight,northbound,0,CREWE,G,1026
+2026-03-16,6L48,1,freight,northbound,1,WINSFORD,F,1019
+2026-03-16,6L48,1,freight,northbound,2,HARTFORD,,1015
+2026-03-16,6L48,1,freight,northbound,3,HARTFORD JN,,1014
+2026-03-16,6L48,1,freight,northbound,4,ACTON BRIDGE,,1011
+2026-03-16,6L48,1,freight,northbound,5,WEAVER JN,M,1005
+2026-03-16,6M09,2,freight,northbound,9,EARLESTOWN,,1141
+2026-03-16,6M09,2,freight,northbound,10,NEWTON-LE-WILLOWS,E,1139
+2026-03-16,6M09,2,freight,northbound,11,PARKSIDE JN,C,1138
+2026-03-16,6M26,1,freight,northbound,11,PARKSIDE JN,C,324
+2026-03-16,6V84,1,freight,southbound,0,CREWE,G,629
+2026-03-16,6V84,1,freight,southbound,1,WINSFORD,F,622
+2026-03-16,6V84,1,freight,southbound,2,HARTFORD,,617
+2026-03-16,6V84,1,freight,southbound,3,HARTFORD JN,,617
+2026-03-16,6V84,1,freight,southbound,4,ACTON BRIDGE,,613
+2026-03-16,6V84,1,freight,southbound,5,WEAVER JN,M,607
+2026-03-16,6V84,1,freight,southbound,6,ACTON GRANGE JN,,598
+2026-03-16,6V84,1,freight,southbound,7,WARRINGTON BQ,F,597
+2026-03-16,6V84,1,freight,southbound,8,WINWICK JN,S,593
+2026-03-16,6X41,1,freight,northbound,0,CREWE,,513
+2026-03-16,6X41,1,freight,northbound,1,WINSFORD,S,519
+2026-03-16,6X41,1,freight,northbound,2,HARTFORD,,529
+2026-03-16,6X41,1,freight,northbound,3,HARTFORD JN,S,527
+2026-03-16,6X41,1,freight,northbound,4,ACTON BRIDGE,,532
+2026-03-16,6X41,1,freight,northbound,5,WEAVER JN,L,534
+2026-03-16,6X77,1,freight,northbound,0,CREWE,,1253
+2026-03-16,6X77,1,freight,northbound,1,WINSFORD,S,1258
+2026-03-16,6X77,1,freight,northbound,2,HARTFORD,,1263
+2026-03-16,6X77,1,freight,northbound,3,HARTFORD JN,S,1261
+2026-03-16,6X77,1,freight,northbound,4,ACTON BRIDGE,,1268
+2026-03-16,6X77,1,freight,northbound,5,WEAVER JN,L,1288
+2026-03-16,6X77,1,freight,northbound,6,ACTON GRANGE JN,H,1294
+2026-03-16,6X77,1,freight,northbound,7,WARRINGTON BQ,,1296
+2026-03-16,6X77,1,freight,northbound,8,WINWICK JN,M,1307
+2026-03-16,6Y15,1,freight,northbound,0,CREWE,,1062
+2026-03-16,6Y15,1,freight,northbound,1,WINSFORD,S,1069
+2026-03-16,6Y15,1,freight,northbound,2,HARTFORD,,1076
+2026-03-16,6Y15,1,freight,northbound,3,HARTFORD JN,S,1073
+2026-03-16,6Y15,1,freight,northbound,4,ACTON BRIDGE,,1084
+2026-03-16,6Y15,1,freight,northbound,5,WEAVER JN,L,1103
+2026-03-16,6Y15,1,freight,northbound,6,ACTON GRANGE JN,H,1109
+2026-03-16,6Y15,1,freight,northbound,7,WARRINGTON BQ,,1112
+2026-03-16,6Y15,1,freight,northbound,8,WINWICK JN,M,1122
+2026-03-16,6Y15,2,freight,northbound,8,WINWICK JN,M,1154
+2026-03-16,6Y15,2,freight,northbound,9,EARLESTOWN,,1157
+2026-03-16,6Y15,2,freight,northbound,10,NEWTON-LE-WILLOWS,,1160
+2026-03-16,6Y15,2,freight,northbound,11,PARKSIDE JN,M,1161
+2026-03-16,6Z34,1,freight,northbound,3,HARTFORD JN,,687
+2026-03-16,6Z34,1,freight,northbound,4,ACTON BRIDGE,,682
+2026-03-16,6Z34,1,freight,northbound,5,WEAVER JN,M,680
+2026-03-16,9A31,1,other,southbound,0,CREWE,G,478
+2026-03-16,9A31,1,other,southbound,1,WINSFORD,F,474
+2026-03-16,9A31,1,other,southbound,2,HARTFORD,,472
+2026-03-16,9A31,1,other,southbound,3,HARTFORD JN,,471
+2026-03-16,9A31,1,other,southbound,4,ACTON BRIDGE,,470
+2026-03-16,9A31,1,other,southbound,5,WEAVER JN,M,469
+2026-03-16,9A31,1,other,southbound,6,ACTON GRANGE JN,,466
+2026-03-16,9A31,1,other,southbound,7,WARRINGTON BQ,F,461
+2026-03-16,9A31,1,other,southbound,8,WINWICK JN,S,458
+2026-03-16,9E05,1,other,northbound,9,EARLESTOWN,,334
+2026-03-16,9E05,1,other,northbound,10,NEWTON-LE-WILLOWS,,336
+2026-03-16,9E05,1,other,northbound,11,PARKSIDE JN,M,336
+2026-03-16,9E06,1,other,northbound,9,EARLESTOWN,,396
+2026-03-16,9E06,1,other,northbound,10,NEWTON-LE-WILLOWS,,397
+2026-03-16,9E06,1,other,northbound,11,PARKSIDE JN,M,398
+2026-03-16,9E07,1,other,northbound,9,EARLESTOWN,,460
+2026-03-16,9E07,1,other,northbound,10,NEWTON-LE-WILLOWS,,461
+2026-03-16,9E07,1,other,northbound,11,PARKSIDE JN,M,461
+2026-03-16,9E08,1,other,northbound,9,EARLESTOWN,,516
+2026-03-16,9E08,1,other,northbound,10,NEWTON-LE-WILLOWS,,518
+2026-03-16,9E08,1,other,northbound,11,PARKSIDE JN,M,519
+2026-03-16,9E09,1,other,northbound,9,EARLESTOWN,,576
+2026-03-16,9E09,1,other,northbound,10,NEWTON-LE-WILLOWS,,577
+2026-03-16,9E09,1,other,northbound,11,PARKSIDE JN,M,578
+2026-03-16,9E10,1,other,northbound,9,EARLESTOWN,,638
+2026-03-16,9E10,1,other,northbound,10,NEWTON-LE-WILLOWS,,641
+2026-03-16,9E10,1,other,northbound,11,PARKSIDE JN,M,642
+2026-03-16,9E11,1,other,northbound,9,EARLESTOWN,,696
+2026-03-16,9E11,1,other,northbound,10,NEWTON-LE-WILLOWS,,697
+2026-03-16,9E11,1,other,northbound,11,PARKSIDE JN,M,698
+2026-03-16,9E12,1,other,northbound,9,EARLESTOWN,,756
+2026-03-16,9E12,1,other,northbound,10,NEWTON-LE-WILLOWS,,758
+2026-03-16,9E12,1,other,northbound,11,PARKSIDE JN,M,759
+2026-03-16,9E13,1,other,northbound,9,EARLESTOWN,,815
+2026-03-16,9E13,1,other,northbound,10,NEWTON-LE-WILLOWS,,817
+2026-03-16,9E13,1,other,northbound,11,PARKSIDE JN,M,818
+2026-03-16,9E14,1,other,northbound,9,EARLESTOWN,,877
+2026-03-16,9E14,1,other,northbound,10,NEWTON-LE-WILLOWS,,880
+2026-03-16,9E14,1,other,northbound,11,PARKSIDE JN,M,882
+2026-03-16,9E15,1,other,northbound,9,EARLESTOWN,,936
+2026-03-16,9E15,1,other,northbound,10,NEWTON-LE-WILLOWS,,938
+2026-03-16,9E15,1,other,northbound,11,PARKSIDE JN,M,938
+2026-03-16,9E17,1,other,northbound,9,EARLESTOWN,,1060
+2026-03-16,9E17,1,other,northbound,10,NEWTON-LE-WILLOWS,,1061
+2026-03-16,9E17,1,other,northbound,11,PARKSIDE JN,M,1062
+2026-03-16,9E18,1,other,northbound,9,EARLESTOWN,,1117
+2026-03-16,9E18,1,other,northbound,10,NEWTON-LE-WILLOWS,,1118
+2026-03-16,9E18,1,other,northbound,11,PARKSIDE JN,M,1118
+2026-03-16,9E19,1,other,northbound,9,EARLESTOWN,,1176
+2026-03-16,9E19,1,other,northbound,10,NEWTON-LE-WILLOWS,,1178
+2026-03-16,9E19,1,other,northbound,11,PARKSIDE JN,M,1179
+2026-03-16,9E20,1,other,northbound,9,EARLESTOWN,,1236
+2026-03-16,9E20,1,other,northbound,10,NEWTON-LE-WILLOWS,,1239
+2026-03-16,9E20,1,other,northbound,11,PARKSIDE JN,M,1239
+2026-03-16,9E21,1,other,northbound,9,EARLESTOWN,,1280
+2026-03-16,9E21,1,other,northbound,10,NEWTON-LE-WILLOWS,,1281
+2026-03-16,9E21,1,other,northbound,11,PARKSIDE JN,M,1282
+2026-03-16,9F02,1,other,northbound,0,CREWE,,550
+2026-03-16,9F02,1,other,northbound,1,WINSFORD,F,553
+2026-03-16,9F02,1,other,northbound,2,HARTFORD,,555
+2026-03-16,9F02,1,other,northbound,3,HARTFORD JN,S,554
+2026-03-16,9F02,1,other,northbound,4,ACTON BRIDGE,,557
+2026-03-16,9F02,1,other,northbound,5,WEAVER JN,L,558
+2026-03-16,9M05,1,other,northbound,9,EARLESTOWN,,462
+2026-03-16,9M05,1,other,northbound,10,NEWTON-LE-WILLOWS,E,457
+2026-03-16,9M05,1,other,northbound,11,PARKSIDE JN,C,456
+2026-03-16,9M06,1,other,northbound,9,EARLESTOWN,,535
+2026-03-16,9M06,1,other,northbound,10,NEWTON-LE-WILLOWS,E,530
+2026-03-16,9M06,1,other,northbound,11,PARKSIDE JN,C,529
+2026-03-16,9M07,1,other,northbound,9,EARLESTOWN,,585
+2026-03-16,9M07,1,other,northbound,10,NEWTON-LE-WILLOWS,E,580
+2026-03-16,9M07,1,other,northbound,11,PARKSIDE JN,C,579
+2026-03-16,9M08,1,other,northbound,9,EARLESTOWN,,642
+2026-03-16,9M08,1,other,northbound,10,NEWTON-LE-WILLOWS,E,636
+2026-03-16,9M08,1,other,northbound,11,PARKSIDE JN,C,635
+2026-03-16,9M09,1,other,northbound,9,EARLESTOWN,,706
+2026-03-16,9M09,1,other,northbound,10,NEWTON-LE-WILLOWS,E,703
+2026-03-16,9M09,1,other,northbound,11,PARKSIDE JN,C,702
+2026-03-16,9M10,1,other,northbound,9,EARLESTOWN,,762
+2026-03-16,9M10,1,other,northbound,10,NEWTON-LE-WILLOWS,E,758
+2026-03-16,9M10,1,other,northbound,11,PARKSIDE JN,C,756
+2026-03-16,9M11,1,other,northbound,9,EARLESTOWN,,822
+2026-03-16,9M11,1,other,northbound,10,NEWTON-LE-WILLOWS,E,817
+2026-03-16,9M11,1,other,northbound,11,PARKSIDE JN,C,816
+2026-03-16,9M12,1,other,northbound,9,EARLESTOWN,,882
+2026-03-16,9M12,1,other,northbound,10,NEWTON-LE-WILLOWS,E,877
+2026-03-16,9M12,1,other,northbound,11,PARKSIDE JN,C,876
+2026-03-16,9M13,1,other,northbound,9,EARLESTOWN,,955
+2026-03-16,9M13,1,other,northbound,10,NEWTON-LE-WILLOWS,E,950
+2026-03-16,9M13,1,other,northbound,11,PARKSIDE JN,C,949
+2026-03-16,9M14,1,other,northbound,9,EARLESTOWN,,1002
+2026-03-16,9M14,1,other,northbound,10,NEWTON-LE-WILLOWS,E,997
+2026-03-16,9M14,1,other,northbound,11,PARKSIDE JN,C,996
+2026-03-16,9M15,1,other,northbound,9,EARLESTOWN,,1068
+2026-03-16,9M15,1,other,northbound,10,NEWTON-LE-WILLOWS,E,1065
+2026-03-16,9M15,1,other,northbound,11,PARKSIDE JN,C,1063
+2026-03-16,9M16,1,other,northbound,9,EARLESTOWN,,1131
+2026-03-16,9M16,1,other,northbound,10,NEWTON-LE-WILLOWS,E,1127
+2026-03-16,9M16,1,other,northbound,11,PARKSIDE JN,C,1126
+2026-03-16,9M17,1,other,northbound,9,EARLESTOWN,,1192
+2026-03-16,9M17,1,other,northbound,10,NEWTON-LE-WILLOWS,E,1188
+2026-03-16,9M17,1,other,northbound,11,PARKSIDE JN,C,1187
+2026-03-16,9M18,1,other,northbound,9,EARLESTOWN,,1242
+2026-03-16,9M18,1,other,northbound,10,NEWTON-LE-WILLOWS,E,1237
+2026-03-16,9M18,1,other,northbound,11,PARKSIDE JN,C,1236
+2026-03-16,9M19,1,other,northbound,9,EARLESTOWN,,1303
+2026-03-16,9M19,1,other,northbound,10,NEWTON-LE-WILLOWS,E,1300
+2026-03-16,9M19,1,other,northbound,11,PARKSIDE JN,C,1298
+2026-03-16,9M48,1,other,southbound,0,CREWE,G,538
+2026-03-16,9M48,1,other,southbound,1,WINSFORD,F,535
+2026-03-16,9M48,1,other,southbound,2,HARTFORD,,533
+2026-03-16,9M48,1,other,southbound,3,HARTFORD JN,,533
+2026-03-16,9M48,1,other,southbound,4,ACTON BRIDGE,,531
+2026-03-16,9M48,1,other,southbound,5,WEAVER JN,M,530
+2026-03-16,9M48,1,other,southbound,6,ACTON GRANGE JN,,527
+2026-03-16,9M48,1,other,southbound,7,WARRINGTON BQ,F,522
+2026-03-16,9M48,1,other,southbound,8,WINWICK JN,S,519
+2026-03-16,9M50,1,other,southbound,0,CREWE,G,600
+2026-03-16,9M50,1,other,southbound,1,WINSFORD,F,596
+2026-03-16,9M50,1,other,southbound,2,HARTFORD,,594
+2026-03-16,9M50,1,other,southbound,3,HARTFORD JN,,594
+2026-03-16,9M50,1,other,southbound,4,ACTON BRIDGE,,592
+2026-03-16,9M50,1,other,southbound,5,WEAVER JN,M,589
+2026-03-16,9M50,1,other,southbound,6,ACTON GRANGE JN,,585
+2026-03-16,9M50,1,other,southbound,7,WARRINGTON BQ,F,580
+2026-03-16,9M50,1,other,southbound,8,WINWICK JN,S,577
+2026-03-16,9M51,1,other,southbound,0,CREWE,G,658
+2026-03-16,9M51,1,other,southbound,1,WINSFORD,F,654
+2026-03-16,9M51,1,other,southbound,2,HARTFORD,,652
+2026-03-16,9M51,1,other,southbound,3,HARTFORD JN,,651
+2026-03-16,9M51,1,other,southbound,4,ACTON BRIDGE,,650
+2026-03-16,9M51,1,other,southbound,5,WEAVER JN,M,649
+2026-03-16,9M51,1,other,southbound,6,ACTON GRANGE JN,,646
+2026-03-16,9M51,1,other,southbound,7,WARRINGTON BQ,F,641
+2026-03-16,9M51,1,other,southbound,8,WINWICK JN,S,638
+2026-03-16,9M52,1,other,southbound,0,CREWE,G,716
+2026-03-16,9M52,1,other,southbound,1,WINSFORD,F,713
+2026-03-16,9M52,1,other,southbound,2,HARTFORD,,711
+2026-03-16,9M52,1,other,southbound,3,HARTFORD JN,,711
+2026-03-16,9M52,1,other,southbound,4,ACTON BRIDGE,,709
+2026-03-16,9M52,1,other,southbound,5,WEAVER JN,M,708
+2026-03-16,9M52,1,other,southbound,6,ACTON GRANGE JN,,705
+2026-03-16,9M52,1,other,southbound,7,WARRINGTON BQ,F,701
+2026-03-16,9M52,1,other,southbound,8,WINWICK JN,S,698
+2026-03-16,9M53,1,other,southbound,0,CREWE,G,778
+2026-03-16,9M53,1,other,southbound,1,WINSFORD,F,775
+2026-03-16,9M53,1,other,southbound,2,HARTFORD,,773
+2026-03-16,9M53,1,other,southbound,3,HARTFORD JN,,772
+2026-03-16,9M53,1,other,southbound,4,ACTON BRIDGE,,771
+2026-03-16,9M53,1,other,southbound,5,WEAVER JN,M,770
+2026-03-16,9M53,1,other,southbound,6,ACTON GRANGE JN,,767
+2026-03-16,9M53,1,other,southbound,7,WARRINGTON BQ,F,762
+2026-03-16,9M53,1,other,southbound,8,WINWICK JN,S,759
+2026-03-16,9M54,1,other,southbound,0,CREWE,G,839
+2026-03-16,9M54,1,other,southbound,1,WINSFORD,F,835
+2026-03-16,9M54,1,other,southbound,2,HARTFORD,,833
+2026-03-16,9M54,1,other,southbound,3,HARTFORD JN,,833
+2026-03-16,9M54,1,other,southbound,4,ACTON BRIDGE,,832
+2026-03-16,9M54,1,other,southbound,5,WEAVER JN,M,830
+2026-03-16,9M54,1,other,southbound,6,ACTON GRANGE JN,,827
+2026-03-16,9M54,1,other,southbound,7,WARRINGTON BQ,F,823
+2026-03-16,9M54,1,other,southbound,8,WINWICK JN,S,820
+2026-03-16,9M55,1,other,southbound,0,CREWE,G,933
+2026-03-16,9M55,1,other,southbound,1,WINSFORD,F,930
+2026-03-16,9M55,1,other,southbound,2,HARTFORD,,928
+2026-03-16,9M55,1,other,southbound,3,HARTFORD JN,,927
+2026-03-16,9M55,1,other,southbound,4,ACTON BRIDGE,,926
+2026-03-16,9M55,1,other,southbound,5,WEAVER JN,M,925
+2026-03-16,9M55,1,other,southbound,6,ACTON GRANGE JN,,921
+2026-03-16,9M55,1,other,southbound,7,WARRINGTON BQ,F,917
+2026-03-16,9M55,1,other,southbound,8,WINWICK JN,S,914
+2026-03-16,9M56,1,other,southbound,0,CREWE,G,977
+2026-03-16,9M56,1,other,southbound,1,WINSFORD,F,971
+2026-03-16,9M56,1,other,southbound,2,HARTFORD,,966
+2026-03-16,9M56,1,other,southbound,3,HARTFORD JN,,965
+2026-03-16,9M56,1,other,southbound,4,ACTON BRIDGE,,963
+2026-03-16,9M56,1,other,southbound,5,WEAVER JN,M,962
+2026-03-16,9M56,1,other,southbound,6,ACTON GRANGE JN,,959
+2026-03-16,9M56,1,other,southbound,7,WARRINGTON BQ,F,955
+2026-03-16,9M56,1,other,southbound,8,WINWICK JN,S,952
+2026-03-16,9M59,1,other,southbound,0,CREWE,G,1144
+2026-03-16,9M59,1,other,southbound,1,WINSFORD,F,1141
+2026-03-16,9M59,1,other,southbound,2,HARTFORD,,1139
+2026-03-16,9M59,1,other,southbound,3,HARTFORD JN,,1139
+2026-03-16,9M59,1,other,southbound,4,ACTON BRIDGE,,1137
+2026-03-16,9M59,1,other,southbound,5,WEAVER JN,M,1136
+2026-03-16,9M59,1,other,southbound,6,ACTON GRANGE JN,,1133
+2026-03-16,9M59,1,other,southbound,7,WARRINGTON BQ,F,1129
+2026-03-16,9M59,1,other,southbound,8,WINWICK JN,S,1126
+2026-03-16,9M60,1,other,southbound,0,CREWE,G,1200
+2026-03-16,9M60,1,other,southbound,1,WINSFORD,F,1197
+2026-03-16,9M60,1,other,southbound,2,HARTFORD,,1195
+2026-03-16,9M60,1,other,southbound,3,HARTFORD JN,,1194
+2026-03-16,9M60,1,other,southbound,4,ACTON BRIDGE,,1193
+2026-03-16,9M60,1,other,southbound,5,WEAVER JN,M,1192
+2026-03-16,9M60,1,other,southbound,6,ACTON GRANGE JN,,1189
+2026-03-16,9M60,1,other,southbound,7,WARRINGTON BQ,F,1185
+2026-03-16,9M60,1,other,southbound,8,WINWICK JN,S,1181
+2026-03-16,9M62,1,other,southbound,0,CREWE,G,1318
+2026-03-16,9M62,1,other,southbound,1,WINSFORD,F,1314
+2026-03-16,9M62,1,other,southbound,2,HARTFORD,,1312
+2026-03-16,9M62,1,other,southbound,3,HARTFORD JN,,1312
+2026-03-16,9M62,1,other,southbound,4,ACTON BRIDGE,,1310
+2026-03-16,9M62,1,other,southbound,5,WEAVER JN,M,1309
+2026-03-16,9M62,1,other,southbound,6,ACTON GRANGE JN,,1306
+2026-03-16,9M62,1,other,southbound,7,WARRINGTON BQ,F,1301
+2026-03-16,9M62,1,other,southbound,8,WINWICK JN,S,1298
+2026-03-16,9M84,1,other,southbound,0,CREWE,G,1014
+2026-03-16,9M84,1,other,southbound,1,WINSFORD,F,1011
+2026-03-16,9M84,1,other,southbound,2,HARTFORD,,1009
+2026-03-16,9M84,1,other,southbound,3,HARTFORD JN,,1009
+2026-03-16,9M84,1,other,southbound,4,ACTON BRIDGE,,1007
+2026-03-16,9M84,1,other,southbound,5,WEAVER JN,M,1006
+2026-03-16,9M84,1,other,southbound,6,ACTON GRANGE JN,,1003
+2026-03-16,9M84,1,other,southbound,7,WARRINGTON BQ,F,999
+2026-03-16,9M84,1,other,southbound,8,WINWICK JN,S,996
+2026-03-16,9M86,1,other,southbound,0,CREWE,G,1078
+2026-03-16,9M86,1,other,southbound,1,WINSFORD,F,1074
+2026-03-16,9M86,1,other,southbound,2,HARTFORD,,1072
+2026-03-16,9M86,1,other,southbound,3,HARTFORD JN,,1072
+2026-03-16,9M86,1,other,southbound,4,ACTON BRIDGE,,1070
+2026-03-16,9M86,1,other,southbound,5,WEAVER JN,M,1069
+2026-03-16,9M86,1,other,southbound,6,ACTON GRANGE JN,,1066
+2026-03-16,9M86,1,other,southbound,7,WARRINGTON BQ,F,1061
+2026-03-16,9M86,1,other,southbound,8,WINWICK JN,S,1058
+2026-03-16,9S44,1,other,northbound,0,CREWE,,566
+2026-03-16,9S44,1,other,northbound,1,WINSFORD,F,569
+2026-03-16,9S44,1,other,northbound,2,HARTFORD,,572
+2026-03-16,9S44,1,other,northbound,3,HARTFORD JN,S,570
+2026-03-16,9S44,1,other,northbound,4,ACTON BRIDGE,,577
+2026-03-16,9S44,1,other,northbound,5,WEAVER JN,L,579
+2026-03-16,9S44,1,other,northbound,6,ACTON GRANGE JN,H,582
+2026-03-16,9S44,1,other,northbound,7,WARRINGTON BQ,,583
+2026-03-16,9S44,1,other,northbound,8,WINWICK JN,M,589
+2026-03-16,9S47,1,other,northbound,0,CREWE,,617
+2026-03-16,9S47,1,other,northbound,1,WINSFORD,F,620
+2026-03-16,9S47,1,other,northbound,2,HARTFORD,,622
+2026-03-16,9S47,1,other,northbound,3,HARTFORD JN,S,621
+2026-03-16,9S47,1,other,northbound,4,ACTON BRIDGE,,623
+2026-03-16,9S47,1,other,northbound,5,WEAVER JN,L,624
+2026-03-16,9S47,1,other,northbound,6,ACTON GRANGE JN,H,627
+2026-03-16,9S47,1,other,northbound,7,WARRINGTON BQ,,628
+2026-03-16,9S47,1,other,northbound,8,WINWICK JN,M,634
+2026-03-16,9S54,1,other,northbound,0,CREWE,,686
+2026-03-16,9S54,1,other,northbound,1,WINSFORD,F,688
+2026-03-16,9S54,1,other,northbound,2,HARTFORD,,691
+2026-03-16,9S54,1,other,northbound,3,HARTFORD JN,S,690
+2026-03-16,9S54,1,other,northbound,4,ACTON BRIDGE,,692
+2026-03-16,9S54,1,other,northbound,5,WEAVER JN,L,693
+2026-03-16,9S54,1,other,northbound,6,ACTON GRANGE JN,H,696
+2026-03-16,9S54,1,other,northbound,7,WARRINGTON BQ,,697
+2026-03-16,9S54,1,other,northbound,8,WINWICK JN,M,703
+2026-03-16,9S55,1,other,northbound,0,CREWE,,743
+2026-03-16,9S55,1,other,northbound,1,WINSFORD,F,746
+2026-03-16,9S55,1,other,northbound,2,HARTFORD,,748
+2026-03-16,9S55,1,other,northbound,3,HARTFORD JN,S,747
+2026-03-16,9S55,1,other,northbound,4,ACTON BRIDGE,,750
+2026-03-16,9S55,1,other,northbound,5,WEAVER JN,L,751
+2026-03-16,9S55,1,other,northbound,6,ACTON GRANGE JN,H,754
+2026-03-16,9S55,1,other,northbound,7,WARRINGTON BQ,,755
+2026-03-16,9S55,1,other,northbound,8,WINWICK JN,M,761
+2026-03-16,9S60,1,other,northbound,0,CREWE,,805
+2026-03-16,9S60,1,other,northbound,1,WINSFORD,F,808
+2026-03-16,9S60,1,other,northbound,2,HARTFORD,,813
+2026-03-16,9S60,1,other,northbound,3,HARTFORD JN,S,810
+2026-03-16,9S60,1,other,northbound,4,ACTON BRIDGE,,818
+2026-03-16,9S60,1,other,northbound,5,WEAVER JN,L,820
+2026-03-16,9S60,1,other,northbound,6,ACTON GRANGE JN,H,823
+2026-03-16,9S60,1,other,northbound,7,WARRINGTON BQ,,824
+2026-03-16,9S60,1,other,northbound,8,WINWICK JN,M,830
+2026-03-16,9S65,1,other,northbound,0,CREWE,,858
+2026-03-16,9S65,1,other,northbound,1,WINSFORD,F,861
+2026-03-16,9S65,1,other,northbound,2,HARTFORD,,863
+2026-03-16,9S65,1,other,northbound,3,HARTFORD JN,S,862
+2026-03-16,9S65,1,other,northbound,4,ACTON BRIDGE,,865
+2026-03-16,9S65,1,other,northbound,5,WEAVER JN,L,866
+2026-03-16,9S65,1,other,northbound,6,ACTON GRANGE JN,H,869
+2026-03-16,9S65,1,other,northbound,7,WARRINGTON BQ,,870
+2026-03-16,9S65,1,other,northbound,8,WINWICK JN,M,876
+2026-03-16,9S70,1,other,northbound,0,CREWE,,913
+2026-03-16,9S70,1,other,northbound,1,WINSFORD,F,916
+2026-03-16,9S70,1,other,northbound,2,HARTFORD,,919
+2026-03-16,9S70,1,other,northbound,3,HARTFORD JN,S,918
+2026-03-16,9S70,1,other,northbound,4,ACTON BRIDGE,,920
+2026-03-16,9S70,1,other,northbound,5,WEAVER JN,L,921
+2026-03-16,9S70,1,other,northbound,6,ACTON GRANGE JN,H,924
+2026-03-16,9S70,1,other,northbound,7,WARRINGTON BQ,,925
+2026-03-16,9S70,1,other,northbound,8,WINWICK JN,M,932
+2026-03-16,9S77,1,other,northbound,0,CREWE,,980
+2026-03-16,9S77,1,other,northbound,1,WINSFORD,F,983
+2026-03-16,9S77,1,other,northbound,2,HARTFORD,,985
+2026-03-16,9S77,1,other,northbound,3,HARTFORD JN,S,984
+2026-03-16,9S77,1,other,northbound,4,ACTON BRIDGE,,986
+2026-03-16,9S77,1,other,northbound,5,WEAVER JN,L,988
+2026-03-16,9S77,1,other,northbound,6,ACTON GRANGE JN,H,990
+2026-03-16,9S77,1,other,northbound,7,WARRINGTON BQ,,991
+2026-03-16,9S77,1,other,northbound,8,WINWICK JN,M,998
+2026-03-16,9S80,1,other,northbound,0,CREWE,,1034
+2026-03-16,9S80,1,other,northbound,1,WINSFORD,F,1037
+2026-03-16,9S80,1,other,northbound,2,HARTFORD,,1039
+2026-03-16,9S80,1,other,northbound,3,HARTFORD JN,S,1038
+2026-03-16,9S80,1,other,northbound,4,ACTON BRIDGE,,1040
+2026-03-16,9S80,1,other,northbound,5,WEAVER JN,L,1041
+2026-03-16,9S80,1,other,northbound,6,ACTON GRANGE JN,H,1044
+2026-03-16,9S80,1,other,northbound,7,WARRINGTON BQ,,1045
+2026-03-16,9S80,1,other,northbound,8,WINWICK JN,M,1052
+2026-03-16,9S85,1,other,northbound,0,CREWE,,1119
+2026-03-16,9S85,1,other,northbound,1,WINSFORD,F,1122
+2026-03-16,9S85,1,other,northbound,2,HARTFORD,,1125
+2026-03-16,9S85,1,other,northbound,3,HARTFORD JN,S,1124
+2026-03-16,9S85,1,other,northbound,4,ACTON BRIDGE,,1126
+2026-03-16,9S85,1,other,northbound,5,WEAVER JN,L,1127
+2026-03-16,9S85,1,other,northbound,6,ACTON GRANGE JN,H,1130
+2026-03-16,9S85,1,other,northbound,7,WARRINGTON BQ,,1131
+2026-03-16,9S85,1,other,northbound,8,WINWICK JN,M,1137
+2026-03-16,9S93,1,other,northbound,0,CREWE,,1184
+2026-03-16,9S93,1,other,northbound,1,WINSFORD,F,1187
+2026-03-16,9S93,1,other,northbound,2,HARTFORD,,1189
+2026-03-16,9S93,1,other,northbound,3,HARTFORD JN,S,1188
+2026-03-16,9S93,1,other,northbound,4,ACTON BRIDGE,,1190
+2026-03-16,9S93,1,other,northbound,5,WEAVER JN,L,1191
+2026-03-16,9S93,1,other,northbound,6,ACTON GRANGE JN,H,1196
+2026-03-16,9S93,1,other,northbound,7,WARRINGTON BQ,,1198
+2026-03-16,9S93,1,other,northbound,8,WINWICK JN,M,1204
+2026-03-16,9S97,1,other,northbound,0,CREWE,,1263
+2026-03-16,9S97,1,other,northbound,1,WINSFORD,F,1268
+2026-03-16,9S97,1,other,northbound,2,HARTFORD,,1272
+2026-03-16,9S97,1,other,northbound,3,HARTFORD JN,S,1270
+2026-03-16,9S97,1,other,northbound,4,ACTON BRIDGE,,1278
+2026-03-16,9S97,1,other,northbound,5,WEAVER JN,L,1279
+2026-03-16,9S97,1,other,northbound,6,ACTON GRANGE JN,H,1282
+2026-03-16,9S97,1,other,northbound,7,WARRINGTON BQ,,1283
+2026-03-16,9S97,1,other,northbound,8,WINWICK JN,M,1289

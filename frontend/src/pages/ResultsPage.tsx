@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import {
-  Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer,
-  Tooltip, XAxis, YAxis,
+  Bar, BarChart, CartesianGrid, Cell,
+  ResponsiveContainer, Tooltip, XAxis, YAxis,
 } from "recharts";
 import {
   ArrowUpNarrowWide, ArrowUpRight, Bell, Clock, Download, GaugeCircle,
   Grid3x3, Route as RouteIcon, Sparkles, Table2, Timer, Zap,
 } from "lucide-react";
 import { getKpis, getTraffic } from "../api/client";
+import { DiversionResults } from "../components/results/DiversionResults";
 import { CapacityHeatmap } from "../components/results/CapacityHeatmap";
 import { SpaceTimeDiagram } from "../components/results/SpaceTimeDiagram";
 import { TrafficTable } from "../components/results/TrafficTable";
@@ -51,6 +52,12 @@ export function ResultsPage() {
       </div>
     );
   }
+
+  // ── Diversion result view ────────────────────────────────────────
+  if (run.model_type === "diversion") {
+    return <DiversionResults run={run} />;
+  }
+
   if (run.status !== "complete") {
     return (
       <div className="card">

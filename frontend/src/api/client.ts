@@ -33,7 +33,18 @@ export interface Run {
   operating_hours_enabled: boolean;
   operating_start_hour: number;
   operating_end_hour: number;
+  model_type: "capacity" | "diversion";
   baseline_upload_id: number | null;
+  source_upload_id: number | null;
+  source_upload_ids: string;
+  target_upload_id: number | null;
+  source_corridor_id: string | null;
+  target_corridor_id: string | null;
+  class_filter: string | null;
+  flex_min: number;
+  n_berths: number;
+  endpoint_strictness: string;
+  excluded_terminals: string;
   nb_inserted: number | null;
   sb_inserted: number | null;
   total_dwell_min: number | null;
@@ -41,6 +52,15 @@ export interface Run {
   wall_solve_time_s: number | null;
   result_dir: string | null;
   error: string | null;
+  // Diversion KPIs
+  divertible_total: number | null;
+  div_placed: number | null;
+  div_rescheduled: number | null;
+  div_conflict: number | null;
+  div_placed_pct: number | null;
+  div_mean_abs_shift_min: number | null;
+  div_objective_value: number | null;
+  div_solver_status: string | null;
   created_at: string;
   started_at: string | null;
   completed_at: string | null;
@@ -76,6 +96,7 @@ export interface Station {
   lat: number;
   lon: number;
   chainage_km: number;
+  n_berths: number;
 }
 
 export interface CorridorDetail extends CorridorSummary {
@@ -111,13 +132,25 @@ export async function listUploads() {
   return (await api.get<Upload[]>("/uploads/")).data;
 }
 
-export async function uploadFile(f: File, kind: string, date_tag: string) {
+export async function uploadFile(
+  f: File, kind: string, date_tag: string,
+  onProgress?: (pct: number, loaded: number, total: number) => void
+) {
   const fd = new FormData();
   fd.append("file", f);
   fd.append("kind", kind);
   if (date_tag) fd.append("date_tag", date_tag);
   const { data } = await api.post<Upload>("/uploads/", fd, {
     headers: { "Content-Type": "multipart/form-data" },
+    timeout: 0,
+    maxContentLength: Infinity,
+    maxBodyLength: Infinity,
+    onUploadProgress: (e) => {
+      if (!onProgress) return;
+      const total = e.total ?? f.size;
+      const loaded = e.loaded ?? 0;
+      onProgress(total > 0 ? loaded / total : 0, loaded, total);
+    },
   });
   return data;
 }
@@ -179,6 +212,49 @@ export interface RunTraffic {
 }
 export async function getTraffic(id: number) {
   return (await api.get<RunTraffic>(`/runs/${id}/traffic`)).data;
+}
+
+export interface DiversionOutcomeRow {
+  path_id: string;
+  headcode: string;
+  original_hhmm: string;
+  assigned_hhmm: string;
+  shift_min: number;
+  outcome: "SLOT" | "RESCHEDULED" | "CONFLICT";
+  dep_min: number | null;
+  original_dep_min: number;
+  direction: string;
+  first_station: string;
+  last_station: string;
+  nearby_baseline: { t_min: number; headcode: string; journey_num: string; train_class: string; junction_name: string }[];
+}
+export interface DiversionOutcome {
+  run_id: number;
+  flex_min: number;
+  divertible_total: number | null;
+  div_placed: number | null;
+  div_rescheduled: number | null;
+  div_conflict: number | null;
+  div_placed_pct: number | null;
+  div_mean_abs_shift_min: number | null;
+  source_corridor_id: string | null;
+  target_corridor_id: string | null;
+  class_filter: string | null;
+  target_first_station: string;
+  target_last_station: string;
+  outcomes: DiversionOutcomeRow[];
+}
+export async function getDiversionOutcome(id: number) {
+  return (await api.get<DiversionOutcome>(`/runs/${id}/diversion`)).data;
+}
+
+export interface SmartBerths {
+  by_stanme: Record<string, number>;
+  by_stanox: Record<string, number>;
+}
+
+export async function getSmartBerths() {
+  return (await api.get<SmartBerths>("/corridors/smart/berths")).data;
 }
 
 export async function listCorridors() {

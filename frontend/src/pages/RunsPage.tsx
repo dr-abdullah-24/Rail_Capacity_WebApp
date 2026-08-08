@@ -43,8 +43,8 @@ export function RunsPage() {
               <th>Run</th>
               <th>Date</th>
               <th>Class</th>
-              <th>NB</th>
-              <th>SB</th>
+              <th>NB · placed</th>
+              <th>SB · conflict</th>
               <th>Dwell</th>
               <th>Timeouts</th>
               <th>Solve time (s)</th>
@@ -66,24 +66,43 @@ export function RunsPage() {
                   onClick={() => selectRun(r.id)}>
                 <td><StatusIcon status={r.status} /></td>
                 <td>
-                  <div style={{ fontWeight: 600 }}>#{r.id} · {r.name}</div>
+                  <div style={{ fontWeight: 600,
+                                display: "flex", gap: 6, alignItems: "center" }}>
+                    <span className={"badge " +
+                      (r.model_type === "diversion" ? "warn" : "info")}
+                          style={{ fontSize: 10 }}>
+                      {r.model_type === "diversion" ? "diversion" : "capacity"}
+                    </span>
+                    #{r.id} · {r.name}
+                  </div>
                   <div style={{ fontSize: 11, color: "var(--grey-5)" }}>
-                    hw {r.headway_min} · dwell {r.dwell_max} · blk {r.block_hours}h
+                    {r.model_type === "diversion"
+                      ? <>flex ±{r.flex_min ?? 60} min · {r.n_berths ?? 6} berths/stn (SMART fallback) · cls {r.class_filter ?? "?"}</>
+                      : <>hw {r.headway_min} · dwell {r.dwell_max} · blk {r.block_hours}h</>}
                   </div>
                 </td>
-                <td>{r.date_tag ?? ""}</td>
+                <td>{r.date_tag ?? "—"}</td>
                 <td>
-                  <span className={"badge " +
-                    (["c4","c5","c6","c7","c8"].includes(r.traction)
-                      ? "freight"
-                      : ["c1","c2","c9"].includes(r.traction)
-                        ? "passenger"
-                        : "other")}>
-                    {r.traction.toUpperCase()}
-                  </span>
+                  {r.model_type === "diversion"
+                    ? <span className="badge freight"
+                            style={{ fontSize: 11 }}>
+                        cls {r.class_filter ?? "4"} · {r.endpoint_strictness ?? "relaxed"}
+                      </span>
+                    : <span className={"badge " +
+                        (["c4","c5","c6","c7","c8"].includes(r.traction)
+                          ? "freight"
+                          : ["c1","c2","c9"].includes(r.traction)
+                            ? "passenger"
+                            : "other")}>
+                        {r.traction.toUpperCase()}
+                      </span>}
                 </td>
-                <td>{r.nb_inserted ?? "—"}</td>
-                <td>{r.sb_inserted ?? "—"}</td>
+                <td>{r.model_type === "diversion"
+                       ? (r.div_placed ?? "—")
+                       : (r.nb_inserted ?? "—")}</td>
+                <td>{r.model_type === "diversion"
+                       ? (r.div_conflict ?? "—")
+                       : (r.sb_inserted ?? "—")}</td>
                 <td>{r.total_dwell_min ?? "—"}</td>
                 <td>
                   {r.blocks_hit_time_limit != null
