@@ -282,21 +282,41 @@ export function TprPage() {
 
   const hasStructured = structured && Object.keys(structured).length > 0;
 
+  // Summary counts across all visible routes/years
+  const totalEa = useMemo(() => {
+    if (!structured) return 0;
+    return Object.values(structured).reduce((s, r) =>
+      s + Object.values(r.years).reduce((s2, y) =>
+        s2 + y.ea.Down.length + y.ea.Up.length, 0), 0);
+  }, [structured]);
+
+  const totalSrt = useMemo(() => {
+    if (!structured) return 0;
+    return Object.values(structured).reduce((s, r) =>
+      s + Object.values(r.years).reduce((s2, y) =>
+        s2 + y.srt_adjustments.length, 0), 0);
+  }, [structured]);
+
+  const totalLoops = useMemo(() => {
+    if (!structured) return 0;
+    return Object.values(structured).reduce((s, r) =>
+      s + Object.values(r.years).reduce((s2, y) =>
+        s2 + y.loops.length, 0), 0);
+  }, [structured]);
+
   return (
-    <div className="page-content" style={{ maxWidth: 960 }}>
+    <div className="page-content" style={{ maxWidth: "none", padding: "1.25rem 1.5rem" }}>
+
+      {/* ── Page header ── */}
       <div className="page-header" style={{ marginBottom: "1.25rem" }}>
-        <h1 style={{ margin: 0, fontSize: "1.2rem", fontWeight: 600 }}>
-          TPR Library
-        </h1>
+        <h1 style={{ margin: 0, fontSize: "1.2rem", fontWeight: 600 }}>TPR Library</h1>
         <p style={{ margin: "0.3rem 0 0", color: "var(--muted)", fontSize: "0.83rem" }}>
           Network Rail Train Planning Rules: Engineering Allowances, SRT Adjustments and Loop Availability
           extracted per route and timetable year.
         </p>
       </div>
 
-      {loading && (
-        <div style={{ color: "var(--muted)", fontSize: "0.85rem" }}>Loading…</div>
-      )}
+      {loading && <div style={{ color: "var(--muted)", fontSize: "0.85rem" }}>Loading…</div>}
       {error && (
         <div style={{ color: "var(--error, #c0392b)", fontSize: "0.85rem", display: "flex", gap: "0.4rem" }}>
           <AlertCircle size={14} style={{ flexShrink: 0, marginTop: 2 }} />
@@ -305,184 +325,224 @@ export function TprPage() {
       )}
 
       {!loading && !error && (
-        <>
-          {/* Filters */}
-          {hasStructured && (
-            <div style={{ display: "flex", gap: "0.75rem", marginBottom: "1.25rem", flexWrap: "wrap" }}>
-              <label style={{ display: "flex", alignItems: "center", gap: "0.4rem", fontSize: "0.82rem" }}>
-                <span style={{ color: "var(--muted)" }}>Route</span>
-                <select
-                  value={filterRoute}
-                  onChange={(e) => setFilterRoute(e.target.value)}
-                  style={selectStyle}
-                >
-                  <option value="all">All routes</option>
-                  {routeIds.map((r) => (
-                    <option key={r} value={r}>{r} - {structured![r].name}</option>
-                  ))}
-                </select>
-              </label>
+        <div style={{ display: "grid", gridTemplateColumns: "220px 1fr", gap: "1.5rem", alignItems: "start" }}>
 
-              <label style={{ display: "flex", alignItems: "center", gap: "0.4rem", fontSize: "0.82rem" }}>
-                <span style={{ color: "var(--muted)" }}>Year</span>
-                <select
-                  value={filterYear}
-                  onChange={(e) => setFilterYear(e.target.value)}
-                  style={selectStyle}
-                >
-                  <option value="all">All years</option>
-                  {allYears.map((y) => <option key={y} value={y}>{y}</option>)}
-                </select>
-              </label>
-            </div>
-          )}
+          {/* ── LEFT SIDEBAR ── */}
+          <aside style={{ position: "sticky", top: "1rem" }}>
 
-          {/* Structured data panels */}
-          {hasStructured ? (
-            routeIds
-              .filter((rid) => filterRoute === "all" || rid === filterRoute)
-              .map((rid) => {
-                const route = structured![rid];
-                return (
-                  <section key={rid} style={{ marginBottom: "2rem" }}>
-                    <h2 style={{
-                      fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.07em",
-                      textTransform: "uppercase", color: "var(--muted)",
-                      borderBottom: "1px solid var(--border)", paddingBottom: "0.35rem",
-                      marginBottom: "0.85rem",
-                    }}>
-                      {rid}: {route.name}
-                    </h2>
-                    <p style={{ fontSize: "0.8rem", color: "var(--muted)", marginTop: "-0.5rem", marginBottom: "0.85rem" }}>
-                      {route.description}
-                    </p>
-
-                    {Object.entries(route.years)
-                      .filter(([yr]) => filterYear === "all" || yr === filterYear)
-                      .sort(([a], [b]) => Number(b) - Number(a))
-                      .map(([yr, yd]) => {
-                        // Find matching PDFs: route code may differ by year (LNW vs NWC)
-                        const routeCodes = yr <= "2025" ? ["LNW"] : ["NWC"];
-                        const pdfs = routeCodes.flatMap(
-                          (rc) => (pdfByRouteYear[rc]?.[yr] ?? [])
-                        ).sort((a, b) => b.version.localeCompare(a.version));
-
-                        return (
-                          <RouteYearPanel
-                            key={yr}
-                            routeId={rid}
-                            routeName={route.name}
-                            yearKey={yr}
-                            yearData={yd}
-                            pdfs={pdfs}
-                          />
-                        );
-                      })}
-                  </section>
-                );
-              })
-          ) : (
-            /* Fallback: no structured data yet, just show PDFs */
-            <div style={{
-              padding: "1rem", background: "var(--surface)",
-              border: "1px solid var(--border)", borderRadius: 6,
-              fontSize: "0.82rem", color: "var(--muted)", marginBottom: "1.5rem",
-            }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
-                <AlertCircle size={14} />
-                <strong style={{ color: "var(--fg)" }}>Structured data not yet available</strong>
+            {/* Filters */}
+            {hasStructured && (
+              <div style={{
+                background: "var(--surface)", border: "1px solid var(--border)",
+                borderRadius: 6, padding: "0.85rem", marginBottom: "0.85rem",
+              }}>
+                <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.07em",
+                  textTransform: "uppercase", color: "var(--muted)", marginBottom: "0.65rem" }}>
+                  Filters
+                </div>
+                <label style={{ display: "flex", flexDirection: "column", gap: "0.2rem",
+                  fontSize: "0.78rem", marginBottom: "0.55rem" }}>
+                  <span style={{ color: "var(--muted)" }}>Route</span>
+                  <select value={filterRoute} onChange={(e) => setFilterRoute(e.target.value)} style={selectStyle}>
+                    <option value="all">All routes</option>
+                    {routeIds.map((r) => (
+                      <option key={r} value={r}>{r} — {structured![r].name}</option>
+                    ))}
+                  </select>
+                </label>
+                <label style={{ display: "flex", flexDirection: "column", gap: "0.2rem", fontSize: "0.78rem" }}>
+                  <span style={{ color: "var(--muted)" }}>Timetable year</span>
+                  <select value={filterYear} onChange={(e) => setFilterYear(e.target.value)} style={selectStyle}>
+                    <option value="all">All years</option>
+                    {allYears.map((y) => <option key={y} value={y}>{y}</option>)}
+                  </select>
+                </label>
               </div>
-              TPR data is being extracted from the PDF documents. Once complete, this page will show
-              Engineering Allowances, SRT Adjustments and Loop data per segment.
-              The source PDFs are still accessible below.
-            </div>
-          )}
+            )}
 
-          {/* Collapsible PDF archive */}
-          <div style={{ marginTop: "1.5rem" }}>
-            <button
-              onClick={() => setExpandPdfs((v) => !v)}
-              style={{
-                display: "flex", alignItems: "center", gap: "0.4rem",
-                background: "none", border: "none", cursor: "pointer",
-                fontSize: "0.8rem", color: "var(--muted)", padding: 0,
-              }}
-            >
-              {expandPdfs ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
-              Source PDF archive ({docs.length} documents)
-            </button>
-
-            {expandPdfs && (
-              <div style={{ marginTop: "0.85rem" }}>
-                {[...new Set(docs.map((d) => d.year))].sort((a, b) => b - a).map((year) => (
-                  <div key={year} style={{ marginBottom: "1rem" }}>
-                    <div style={{
-                      fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.06em",
-                      textTransform: "uppercase", color: "var(--muted)",
-                      marginBottom: "0.4rem",
-                    }}>
-                      {year}
-                    </div>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}>
-                      {docs
-                        .filter((d) => d.year === year)
-                        .sort((a, b) =>
-                          ROUTE_ORDER.indexOf(a.route) - ROUTE_ORDER.indexOf(b.route) ||
-                          b.version.localeCompare(a.version)
-                        )
-                        .map((doc) => (
-                          <a
-                            key={doc.filename}
-                            href={tprDocumentUrl(doc.folder, doc.filename)}
-                            target="_blank" rel="noopener noreferrer"
-                            title={`${doc.filename} (${fmtBytes(doc.size_bytes)})`}
-                            style={{
-                              display: "inline-flex", alignItems: "center", gap: "0.3rem",
-                              padding: "0.25rem 0.6rem",
-                              border: "1px solid var(--border)", borderRadius: 4,
-                              background: "var(--surface)", color: "var(--fg)",
-                              fontSize: "0.75rem", textDecoration: "none",
-                            }}
-                          >
-                            <FileText size={11} />
-                            {doc.route} {doc.version}
-                            <span style={{ color: "var(--muted)", fontSize: "0.68rem" }}>
-                              {fmtBytes(doc.size_bytes)}
-                            </span>
-                            <ExternalLink size={10} style={{ color: "var(--muted)" }} />
-                          </a>
-                        ))}
-                    </div>
+            {/* Summary stats */}
+            {hasStructured && (
+              <div style={{
+                background: "var(--surface)", border: "1px solid var(--border)",
+                borderRadius: 6, padding: "0.85rem", marginBottom: "0.85rem",
+              }}>
+                <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.07em",
+                  textTransform: "uppercase", color: "var(--muted)", marginBottom: "0.65rem" }}>
+                  Coverage
+                </div>
+                {[
+                  { label: "Routes", value: routeIds.length },
+                  { label: "Timetable years", value: allYears.length },
+                  { label: "EA entries", value: totalEa },
+                  { label: "SRT adjustments", value: totalSrt },
+                  { label: "Loop records", value: totalLoops },
+                  { label: "Source PDFs", value: docs.length },
+                ].map(({ label, value }) => (
+                  <div key={label} style={{
+                    display: "flex", justifyContent: "space-between",
+                    fontSize: "0.78rem", padding: "0.2rem 0",
+                    borderBottom: "1px solid var(--border)",
+                  }}>
+                    <span style={{ color: "var(--muted)" }}>{label}</span>
+                    <strong>{value}</strong>
                   </div>
                 ))}
               </div>
             )}
-          </div>
 
-          {/* EA source footnote */}
-          {hasStructured && (
+            {/* PDF archive */}
             <div style={{
-              marginTop: "1.5rem", padding: "0.75rem 0.9rem",
               background: "var(--surface)", border: "1px solid var(--border)",
-              borderRadius: 6, fontSize: "0.76rem", color: "var(--muted)", lineHeight: 1.6,
-              display: "flex", gap: "0.5rem", alignItems: "flex-start",
+              borderRadius: 6, overflow: "hidden",
             }}>
-              <CheckCircle2 size={14} style={{ color: "#0369a1", flexShrink: 0, marginTop: 1 }} />
-              <span>
-                EA values in the SRT preview use TPR-sourced figures for listed approach
-                locations. All other segments fall back to a conservative formula (5% of SRT,
-                min 1 min). Source: TPR 2021 V4 LNW, TPR 2026 V3 NWC, TPR 2027 V1 NWC.
-              </span>
+              <button
+                onClick={() => setExpandPdfs((v) => !v)}
+                style={{
+                  width: "100%", display: "flex", alignItems: "center", gap: "0.4rem",
+                  background: "none", border: "none", cursor: "pointer",
+                  fontSize: "0.78rem", color: "var(--muted)", padding: "0.65rem 0.85rem",
+                  borderBottom: expandPdfs ? "1px solid var(--border)" : "none",
+                }}
+              >
+                {expandPdfs ? <ChevronDown size={13} /> : <ChevronRight size={13} />}
+                <span style={{ fontWeight: 600 }}>Source PDFs</span>
+                <span style={{
+                  marginLeft: "auto", fontSize: "0.68rem",
+                  background: "#e2e8f0", color: "#475569",
+                  borderRadius: 99, padding: "0 0.35rem", lineHeight: "1.6",
+                }}>
+                  {docs.length}
+                </span>
+              </button>
+              {expandPdfs && (
+                <div style={{ padding: "0.65rem 0.85rem" }}>
+                  {[...new Set(docs.map((d) => d.year))].sort((a, b) => b - a).map((year) => (
+                    <div key={year} style={{ marginBottom: "0.75rem" }}>
+                      <div style={{
+                        fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.06em",
+                        textTransform: "uppercase", color: "var(--muted)", marginBottom: "0.3rem",
+                      }}>
+                        {year}
+                      </div>
+                      <div style={{ display: "flex", flexDirection: "column", gap: "0.25rem" }}>
+                        {docs
+                          .filter((d) => d.year === year)
+                          .sort((a, b) =>
+                            ROUTE_ORDER.indexOf(a.route) - ROUTE_ORDER.indexOf(b.route) ||
+                            b.version.localeCompare(a.version)
+                          )
+                          .map((doc) => (
+                            <a
+                              key={doc.filename}
+                              href={tprDocumentUrl(doc.folder, doc.filename)}
+                              target="_blank" rel="noopener noreferrer"
+                              title={`${doc.filename} (${fmtBytes(doc.size_bytes)})`}
+                              style={{
+                                display: "flex", alignItems: "center", gap: "0.3rem",
+                                padding: "0.2rem 0.4rem",
+                                border: "1px solid var(--border)", borderRadius: 4,
+                                background: "var(--surface-alt, #f7f8fa)",
+                                color: "#0369a1", fontSize: "0.73rem", textDecoration: "none",
+                              }}
+                            >
+                              <FileText size={11} style={{ flexShrink: 0 }} />
+                              <span style={{ flex: 1 }}>{doc.route} {doc.version}</span>
+                              <span style={{ color: "var(--muted)", fontSize: "0.65rem" }}>
+                                {fmtBytes(doc.size_bytes)}
+                              </span>
+                              <ExternalLink size={9} style={{ color: "var(--muted)", flexShrink: 0 }} />
+                            </a>
+                          ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
-          )}
-        </>
+
+            {/* Footnote */}
+            {hasStructured && (
+              <div style={{
+                marginTop: "0.85rem", padding: "0.65rem 0.75rem",
+                background: "var(--surface)", border: "1px solid var(--border)",
+                borderRadius: 6, fontSize: "0.72rem", color: "var(--muted)", lineHeight: 1.6,
+                display: "flex", gap: "0.4rem", alignItems: "flex-start",
+              }}>
+                <CheckCircle2 size={12} style={{ color: "#0369a1", flexShrink: 0, marginTop: 2 }} />
+                <span>
+                  EA values in SRT preview use TPR-sourced figures. Other segments use 5% of SRT (min 1 min).
+                  Sources: TPR 2021 V4 LNW, 2026 V3 NWC, 2027 V1 NWC.
+                </span>
+              </div>
+            )}
+          </aside>
+
+          {/* ── RIGHT MAIN CONTENT ── */}
+          <main style={{ minWidth: 0 }}>
+            {hasStructured ? (
+              routeIds
+                .filter((rid) => filterRoute === "all" || rid === filterRoute)
+                .map((rid) => {
+                  const route = structured![rid];
+                  return (
+                    <section key={rid} style={{ marginBottom: "2rem" }}>
+                      <h2 style={{
+                        fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.07em",
+                        textTransform: "uppercase", color: "var(--muted)",
+                        borderBottom: "1px solid var(--border)", paddingBottom: "0.35rem",
+                        marginBottom: "0.5rem",
+                      }}>
+                        {rid}: {route.name}
+                      </h2>
+                      <p style={{ fontSize: "0.8rem", color: "var(--muted)", marginTop: 0, marginBottom: "0.85rem" }}>
+                        {route.description}
+                      </p>
+                      {Object.entries(route.years)
+                        .filter(([yr]) => filterYear === "all" || yr === filterYear)
+                        .sort(([a], [b]) => Number(b) - Number(a))
+                        .map(([yr, yd]) => {
+                          const routeCodes = yr <= "2025" ? ["LNW"] : ["NWC"];
+                          const pdfs = routeCodes
+                            .flatMap((rc) => pdfByRouteYear[rc]?.[yr] ?? [])
+                            .sort((a, b) => b.version.localeCompare(a.version));
+                          return (
+                            <RouteYearPanel
+                              key={yr}
+                              routeId={rid}
+                              routeName={route.name}
+                              yearKey={yr}
+                              yearData={yd}
+                              pdfs={pdfs}
+                            />
+                          );
+                        })}
+                    </section>
+                  );
+                })
+            ) : (
+              <div style={{
+                padding: "1rem", background: "var(--surface)",
+                border: "1px solid var(--border)", borderRadius: 6,
+                fontSize: "0.82rem", color: "var(--muted)",
+              }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
+                  <AlertCircle size={14} />
+                  <strong style={{ color: "var(--fg)" }}>Structured data not yet available</strong>
+                </div>
+                TPR data is being extracted from the PDF documents. Once complete, this page will show
+                Engineering Allowances, SRT Adjustments and Loop data per segment.
+              </div>
+            )}
+          </main>
+
+        </div>
       )}
     </div>
   );
 }
 
 const selectStyle: React.CSSProperties = {
-  padding: "0.3rem 0.6rem", borderRadius: 4,
+  padding: "0.3rem 0.5rem", borderRadius: 4,
   border: "1px solid var(--border)", background: "var(--surface)",
-  fontSize: "0.82rem", cursor: "pointer",
+  fontSize: "0.78rem", cursor: "pointer", width: "100%",
 };
