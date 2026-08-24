@@ -90,7 +90,15 @@ def main() -> None:
     ap.add_argument('--time-limit-per-block', type=int, default=120)
     ap.add_argument('--headway',   type=int, default=HEADWAY_MIN)
     ap.add_argument('--dwell-max', type=int, default=DWELL_MAX)
+    ap.add_argument('--generic-corridor', action='store_true',
+                    help='disable Chat Moss headway override (generic corridor)')
     args = ap.parse_args()
+
+    # Patch Chat Moss rule out for generic corridors so the MILP uses a
+    # uniform headway everywhere on the corridor.
+    if args.generic_corridor:
+        import capacity_gap_milp as _cmilp
+        _cmilp.CHAT_MOSS_JUNCS = set()
 
     baseline = load_baseline(Path(args.baseline))
     paths    = load_paths(Path(args.paths))
@@ -100,8 +108,10 @@ def main() -> None:
     date     = baseline[0]['date'] if baseline else 'unknown'
 
     print(f'[hourly] baseline touches={len(baseline)}  candidates={len(paths)}')
+    tl = args.time_limit_per_block
+    tl_label = 'unlimited (optimal)' if tl == 0 else f'{tl}s'
     print(f'[hourly] block_hours={args.block_hours}  '
-          f'time_limit_per_block={args.time_limit_per_block}s')
+          f'time_limit_per_block={tl_label}')
 
     groups = group_by_dir_block(paths, args.block_hours)
     total_solution: list[dict] = []
@@ -169,8 +179,6 @@ def main() -> None:
         'date':            date,
         'block_hours':     args.block_hours,
         'headway_min':     args.headway,
-        'chat_moss_headway_min': 4,
-        'chat_moss_junctions':   sorted(CHAT_MOSS_JUNCS),
         'dwell_max':       args.dwell_max,
         'candidates_total': len(paths),
         'nb_candidates':   sum(1 for p in paths
@@ -184,16 +192,22 @@ def main() -> None:
         'wall_solve_time_s': round(total_time, 1),
         'blocks_hit_time_limit': n_timeouts,
         'per_block':       per_block_kpis,
-        'steer_target':    {'nb': 20, 'sb': 20,
-                            'source': 'Steer 2021 p.24 Route 3 (Winsford Sth Jn - Parkside)'},
     }
+    if not args.generic_corridor:
+        kpis['chat_moss_headway_min'] = 4
+        kpis['chat_moss_junctions']   = sorted(CHAT_MOSS_JUNCS)
+        kpis['steer_target'] = {
+            'nb': 20, 'sb': 20,
+            'source': 'Steer 2021 p.24 Route 3 (Winsford Sth Jn - Parkside)',
+        }
     with open(kpi_json, 'w', encoding='utf-8') as fh:
         json.dump(kpis, fh, indent=2)
 
     print(f'\n[hourly] FINAL  NB={nb_ins}/{kpis["nb_candidates"]}  '
           f'SB={sb_ins}/{kpis["sb_candidates"]}  '
           f'dwell_total={total_dwell}m  wall={total_time:.0f}s')
-    print(f'[hourly] STEER benchmark: NB=20  SB=20')
+    if not args.generic_corridor:
+        print(f'[hourly] STEER benchmark: NB=20  SB=20')
     print(f'[hourly] wrote {sol_csv.name}, {kpi_json.name}')
 
 

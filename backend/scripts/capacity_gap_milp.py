@@ -336,13 +336,16 @@ def build_and_solve(baseline: list[dict],
 
     # Capture solver stdout via a per-problem log file so we can detect the
     # 'Stopped on time limit' text that PuLP silently maps to Optimal.
+    # time_limit == 0 means run to proven optimality (no wall-clock cap,
+    # no ratio-gap early exit).
     solver_log = OUT / f'_cbc_last.log'
     t0 = time.time()
-    solver = PULP_CBC_CMD(msg=1, timeLimit=time_limit,
-                          logPath=str(solver_log),
-                          options=['ratioGap 0.05',
-                                   'heuristicsOnOff on',
-                                   'feasibilityPump on'])
+    options = ['heuristicsOnOff on', 'feasibilityPump on']
+    solver_kwargs: dict = dict(msg=1, logPath=str(solver_log), options=options)
+    if time_limit > 0:
+        solver_kwargs['timeLimit'] = time_limit
+        options.insert(0, 'ratioGap 0.05')
+    solver = PULP_CBC_CMD(**solver_kwargs)
     status = prob.solve(solver)
     solve_s = round(time.time() - t0, 1)
 

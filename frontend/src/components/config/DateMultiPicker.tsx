@@ -16,7 +16,7 @@ export function DateMultiPicker({ available, selected, onChange }: Props) {
   if (available.length === 0) {
     return (
       <div style={{ fontSize: 13, color: "var(--grey-5)" }}>
-        No dates known for this upload yet — scan the file on the Upload page.
+        No dates known for this upload yet - scan the file on the Upload page.
       </div>
     );
   }

@@ -35,6 +35,34 @@ PHASE_WEIGHTS = {"extract": 0.20, "baseline": 0.10, "milp": 0.70}
 DIVERSION_WEIGHTS = {"divertible": 0.15, "shifting": 0.20, "milp": 0.65}
 
 
+def _write_srt_from_json(srt_json: str, out_path: Path) -> None:
+    """Write a user-supplied SRT JSON string to the srt_profile.csv format
+    expected by capacity_gap_milp.py."""
+    segments = json.loads(srt_json)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with out_path.open("w", newline="", encoding="utf-8") as fh:
+        w = _csv.DictWriter(fh, fieldnames=[
+            "from_seq", "to_seq", "from_name", "to_name",
+            "srt_min_northbound", "srt_min_southbound",
+            "eng_alw_nb_min", "eng_alw_sb_min",
+            "loop_available", "notes",
+        ])
+        w.writeheader()
+        for seg in segments:
+            w.writerow({
+                "from_seq":            seg["from_seq"],
+                "to_seq":              seg["to_seq"],
+                "from_name":           seg["from_name"],
+                "to_name":             seg["to_name"],
+                "srt_min_northbound":  seg["srt_nb"],
+                "srt_min_southbound":  seg["srt_sb"],
+                "eng_alw_nb_min":      seg.get("eng_nb", 0),
+                "eng_alw_sb_min":      seg.get("eng_sb", 0),
+                "loop_available":      seg["loop_available"],
+                "notes":               seg.get("notes", "user_defined"),
+            })
+
+
 def _filter_candidates(src: Path, dst: Path,
                        start_hour: int, end_hour: int) -> tuple[int, int]:
     """Copy rows from src candidate CSV to dst, keeping only those whose
@@ -281,6 +309,198 @@ async def run_pipeline(run_id: int) -> None:
         await run_capacity_pipeline(run_id)
 
 
+def _load_corridor_def(cid: str) -> dict:
+    """Load a corridor definition dict from built-ins or user DB."""
+    from app.api.corridors import _builtins as builtin_corridors
+    from sqlmodel import select
+    from app.models.corridor import UserCorridor
+    builtins = builtin_corridors()
+    if cid in builtins:
+        return builtins[cid]
+    with Session(engine) as sess:
+        row = sess.exec(select(UserCorridor)
+                         .where(UserCorridor.slug == cid)).first()
+        if row is None:
+            raise RuntimeError(f"corridor '{cid}' not found")
+        return {
+            "id":          row.slug,
+            "name":        row.name,
+            "description": row.description,
+            "km_length":   row.stations[-1]["chainage_km"] if row.stations else 0,
+            "stations":    row.stations,
+        }
+
+
+async def _run_generic_capacity(
+        run_id: int, run: Run, run_dir: Path,
+        date: str, upload: Upload | None) -> None:
+    """Generic corridor capacity pipeline.
+
+    Replaces the Route-3-specific extract → baseline → MILP flow with a
+    corridor-agnostic one:
+      1. Extract events (extract_two_corridors_generic.py)
+      2. Build baseline (build_corridor_baseline.py)
+      3. Derive SRT     (derive_srt.py)
+      4. Generate candidate paths (generate_capacity_candidates.py)
+      5. Solve MILP     (run_steer_hourly.py --generic-corridor)
+    """
+    _update_run(run_id, status="running", started_at=datetime.now(timezone.utc),
+                result_dir=str(run_dir))
+    await broker.publish(run_id, {"type": "status", "value": "running"})
+
+    tracker = ProgressTracker(run_id)
+    tracker.total_blocks = (24 // max(1, run.block_hours)) * 2
+    await broker.publish(run_id, tracker.start_phase("extract"))
+
+    try:
+        if upload is None:
+            raise RuntimeError(
+                "baseline_upload_id required (td_tbz2, td_jsonl, or events_csv)")
+
+        # ── Serialise the selected corridor
+        corridor_def = _load_corridor_def(run.source_corridor_id)
+        corridor_json_path = run_dir / "corridor.json"
+        corridor_json_path.write_text(
+            json.dumps(corridor_def, indent=2), encoding="utf-8")
+        await broker.publish(run_id, {
+            "type": "log", "prefix": "extract",
+            "line": f"corridor: {corridor_def.get('name', run.source_corridor_id)}"
+                    f"  ({len(corridor_def.get('stations', []))} stations)",
+        })
+
+        # ── Step 1 - Extract events for the corridor
+        events_csv = run_dir / f"events_{date}.csv"
+
+        if upload.kind == "events_csv":
+            # Pre-extracted — no need to run the extractor
+            shutil.copyfile(upload.stored_path, run_dir / "source_events.csv")
+            await broker.publish(run_id, {
+                "type": "log", "prefix": "extract",
+                "line": "using pre-extracted events CSV"})
+        else:
+            # Pass the same corridor as both source and target; we only use
+            # source_events.csv from the output.
+            src_list = run_dir / "td_source_list.txt"
+            src_list.write_text(upload.stored_path, encoding="utf-8")
+            code = await _stream_subprocess(run_id, "extract", [
+                PY, str(SCRIPTS / "extract_two_corridors_generic.py"),
+                "--source-corridor", str(corridor_json_path),
+                "--target-corridor", str(corridor_json_path),
+                "--date",            date,
+                "--out-dir",         str(run_dir),
+                "--td-source-list",  str(src_list),
+            ], cwd=settings.data_root.parent, tracker=tracker)
+            if code != 0:
+                raise RuntimeError("event extraction failed")
+        await broker.publish(run_id, tracker.phase_done())
+
+        # ── Step 2 - Build baseline from extracted events
+        await broker.publish(run_id, tracker.start_phase("baseline"))
+        baseline_csv        = run_dir / f"baseline_{date}.csv"
+        freight_lines_json  = run_dir / f"freight_lines_by_junction_{date}.json"
+        source_events       = run_dir / "source_events.csv"
+        code = await _stream_subprocess(run_id, "baseline", [
+            PY, str(SCRIPTS / "build_corridor_baseline.py"),
+            "--events",            str(source_events),
+            "--corridor",          str(corridor_json_path),
+            "--date",              date,
+            "--out-baseline",      str(baseline_csv),
+            "--out-freight-lines", str(freight_lines_json),
+        ], cwd=settings.data_root.parent, tracker=tracker)
+        if code != 0:
+            raise RuntimeError("build_corridor_baseline failed")
+
+        # ── Step 3 - SRT profile: use user-supplied values or derive from baseline
+        srt_csv = run_dir / "srt_profile.csv"
+        if run.srt_json:
+            _write_srt_from_json(run.srt_json, srt_csv)
+            segs = len(json.loads(run.srt_json))
+            await broker.publish(run_id, {
+                "type": "log", "prefix": "baseline",
+                "line": f"user-defined SRT profile: {segs} segments — derive_srt skipped",
+            })
+        else:
+            code = await _stream_subprocess(run_id, "baseline", [
+                PY, str(SCRIPTS / "derive_srt.py"),
+                "--baseline", str(baseline_csv),
+                "--corridor", str(corridor_json_path),
+                "--out",      str(srt_csv),
+            ], cwd=settings.data_root.parent, tracker=tracker)
+            if code != 0:
+                raise RuntimeError("derive_srt failed")
+
+        # ── Step 4 - Generate candidate paths
+        candidates_csv = run_dir / "candidate_paths.csv"
+        op_start = run.operating_start_hour if run.operating_hours_enabled else 0
+        op_end   = run.operating_end_hour   if run.operating_hours_enabled else 24
+        code = await _stream_subprocess(run_id, "baseline", [
+            PY, str(SCRIPTS / "generate_capacity_candidates.py"),
+            "--corridor",       str(corridor_json_path),
+            "--headway",        str(run.headway_min),
+            "--op-start",       str(op_start),
+            "--op-end",         str(op_end),
+            "--traction",       run.traction,
+            "--slots-per-hour", "3",
+            "--out",            str(candidates_csv),
+        ], cwd=settings.data_root.parent, tracker=tracker)
+        if code != 0:
+            raise RuntimeError("generate_capacity_candidates failed")
+        await broker.publish(run_id, tracker.phase_done())
+
+        # ── Step 5 - Solve MILP
+        await broker.publish(run_id, tracker.start_phase("milp"))
+        code = await _stream_subprocess(run_id, "milp", [
+            PY, str(SCRIPTS / "run_steer_hourly.py"),
+            "--baseline",              str(baseline_csv),
+            "--paths",                 str(candidates_csv),
+            "--srt",                   str(srt_csv),
+            "--freight-lines",         str(freight_lines_json),
+            "--tag",                   f"webapp_run_{run_id}",
+            "--block-hours",           str(run.block_hours),
+            "--time-limit-per-block",  str(run.time_limit_per_block),
+            "--headway",               str(run.headway_min),
+            "--dwell-max",             str(run.dwell_max),
+            "--generic-corridor",
+        ], cwd=settings.data_root.parent, tracker=tracker)
+        if code != 0:
+            raise RuntimeError("MILP failed")
+        await broker.publish(run_id, tracker.phase_done())
+
+        # ── Collect outputs from the shared milp_results dir
+        shared_results = MILP_RESULTS
+        kpi_src = shared_results / f"capacity_kpis_webapp_run_{run_id}.json"
+        sol_src = shared_results / f"capacity_solution_webapp_run_{run_id}.csv"
+        if kpi_src.exists():
+            shutil.copyfile(kpi_src, run_dir / "kpis.json")
+        if sol_src.exists():
+            shutil.copyfile(sol_src, run_dir / "solution.csv")
+
+        kpi_fields: dict = {}
+        if (run_dir / "kpis.json").exists():
+            k = json.loads((run_dir / "kpis.json").read_text(encoding="utf-8"))
+            kpi_fields = {
+                "nb_inserted":           k.get("nb_inserted"),
+                "sb_inserted":           k.get("sb_inserted"),
+                "total_dwell_min":       k.get("total_dwell_min"),
+                "blocks_hit_time_limit": k.get("blocks_hit_time_limit"),
+                "wall_solve_time_s":     k.get("wall_solve_time_s"),
+            }
+
+        _update_run(run_id, status="complete",
+                    completed_at=datetime.now(timezone.utc),
+                    **kpi_fields)
+        await broker.publish(run_id, {"type": "status", "value": "complete",
+                                       "kpis": kpi_fields})
+    except Exception as e:
+        _update_run(run_id, status="failed",
+                    completed_at=datetime.now(timezone.utc),
+                    error=str(e))
+        await broker.publish(run_id, {"type": "status", "value": "failed",
+                                       "error": str(e)})
+    finally:
+        await broker.complete(run_id)
+
+
 async def run_capacity_pipeline(run_id: int) -> None:
     """Execute the extract -> baseline -> capacity MILP chain."""
     with Session(engine) as s:
@@ -294,6 +514,11 @@ async def run_capacity_pipeline(run_id: int) -> None:
     date = run.date_tag or "unknown"
     run_dir = settings.runs_dir / str(run_id)
     run_dir.mkdir(parents=True, exist_ok=True)
+
+    # If a corridor is selected, use the generic pipeline instead of Route 3
+    if (run.source_corridor_id or "").strip():
+        await _run_generic_capacity(run_id, run, run_dir, date, upload)
+        return
 
     _update_run(run_id, status="running", started_at=datetime.now(timezone.utc),
                 result_dir=str(run_dir))

@@ -95,13 +95,6 @@ export function CorridorPage() {
                                   gap: 6, fontWeight: 700, fontSize: 13 }}>
                       {isUser ? <User2 size={13} /> : <MapPin size={13} />}
                       {c.name}
-                      {isUser && (
-                        <span className="badge info"
-                              style={{ marginLeft: "auto",
-                                       fontSize: 10, padding: "1px 6px" }}>
-                          custom
-                        </span>
-                      )}
                     </div>
                     <div style={{ fontSize: 11, opacity: 0.75 }}>
                       {c.n_stations} stations · {c.km_length.toFixed(1)} km

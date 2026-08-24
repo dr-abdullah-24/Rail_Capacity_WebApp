@@ -21,7 +21,7 @@ export function DateSinglePicker({ available, value, onChange }: Props) {
                     padding: "10px 12px",
                     border: "1px dashed var(--border)",
                     borderRadius: 8, background: "var(--paper)" }}>
-        No dates known for the selected uploads yet — scan them on the
+        No dates known for the selected uploads yet - scan them on the
         Upload page to enable date filtering.
       </div>
     );

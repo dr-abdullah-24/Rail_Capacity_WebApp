@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import {
   Activity, ArrowRight, BarChart3, CheckCircle2, ChevronRight,
   CircleDot, Clock3, Database, FileUp, Gauge, MapPinned,
@@ -57,11 +57,11 @@ export function HomePage() {
         <div className="hero-rail hero-rail-b" aria-hidden="true" />
 
         <div className="hero-copy">
-          <div className="eyebrow"><Signal size={13} /> Network capacity intelligence</div>
-          <h1>See the railway<br /><span>before you change it.</span></h1>
+          <div className="eyebrow"><Signal size={13} /> Railway decision intelligence</div>
+          <h1>See the network.<br /><span>Test every move.</span></h1>
           <p>
-            Find the path. Prove the capacity. Give planners, operators and
-            investment teams one defensible view of what the network can carry.
+            Expose conflicts, test capacity, compare diversions and build
+            defensible evidence before operational decisions are made.
           </p>
           <div className="hero-actions">
             <button className="signal-button" onClick={() => setPage("upload")}>
@@ -94,7 +94,7 @@ export function HomePage() {
             </button>
           </div>
           <div className="twin-route-title">
-            <div><small>{twinMode === "capacity" ? "CAPACITY ASSESSMENT" : "DIVERSION ASSESSMENT"}</small><strong>{twinMode === "capacity" ? "Crewe to Parkside" : "Styal Line to Crewe–Parkside"}</strong></div>
+            <div><small>{twinMode === "capacity" ? "CAPACITY ASSESSMENT" : "DIVERSION ASSESSMENT"}</small><strong>{twinMode === "capacity" ? "Crewe to Parkside" : "Styal Line to Creweâ€“Parkside"}</strong></div>
             <span>{twinMode === "capacity" ? "CONFLICT MAP" : "ROUTE OPTIONS"}</span>
           </div>
           {twinMode === "capacity" ? (
@@ -128,8 +128,8 @@ export function HomePage() {
               <path d="M278 88 L286 96 M286 88 L278 96" />
             </g>
             <g className="conflict-callout">
-              <rect x="306" y="70" width="133" height="35" rx="3" />
-              <text x="318" y="85">CONFLICT DETECTED</text><text className="callout-sub" x="318" y="97">PATH REJECTED</text>
+              <rect x="306" y="30" width="133" height="35" rx="3" />
+              <text x="318" y="45">CONFLICT DETECTED</text><text className="callout-sub" x="318" y="57">PATH REJECTED</text>
             </g>
             <path className="opportunity-path path-underlay" d="M62 192 C143 179 214 157 282 121 S407 65 494 42" />
             <path className="opportunity-path" d="M62 192 C143 179 214 157 282 121 S407 65 494 42" />
@@ -252,7 +252,7 @@ export function HomePage() {
       </section>
 
       <footer className="home-proof">
-        <span><strong>Rail Insights</strong> · operational research for UK rail capacity</span>
+        <span><strong>Rail Insights</strong> Â· operational research for UK rail capacity</span>
         <span>Developed at Liverpool John Moores University</span>
       </footer>
     </div>
@@ -278,3 +278,6 @@ function StatusItem({ Icon, value, label, tone = "blue" }: { Icon: typeof Activi
     </div>
   );
 }
+
+
+

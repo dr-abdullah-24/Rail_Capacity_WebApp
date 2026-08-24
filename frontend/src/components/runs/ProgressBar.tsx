@@ -94,7 +94,7 @@ export function ProgressBar() {
           <span className="badge info" style={{ padding: "2px 8px" }}>
             {p.current_block.direction}
           </span>
-          {" "}block {p.current_block.index} —{" "}
+          {" "}block {p.current_block.index} -{" "}
           {String(p.current_block.hour_start).padStart(2, "0")}
           :00 to {String(p.current_block.hour_end).padStart(2, "0")}:59
         </div>

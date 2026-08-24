@@ -42,3 +42,14 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# ─── Large data files (too big for GitHub) ──────────
+backend/data/TPR 2021/
+backend/data/TPR 2026/
+backend/data/TPR 2027/
+backend/data/wtt_data.json
+backend/data/milp_results/
+backend/data/milp_scratch/
+
+# ─── Claude Code local memory ───────────────────────
+.claude/

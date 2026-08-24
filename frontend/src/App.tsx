@@ -6,6 +6,7 @@ import { CorridorPage } from "./pages/CorridorPage";
 import { HomePage } from "./pages/HomePage";
 import { ResultsPage } from "./pages/ResultsPage";
 import { RunsPage } from "./pages/RunsPage";
+import { TprPage } from "./pages/TprPage";
 import { UploadPage } from "./pages/UploadPage";
 import { useAppStore } from "./stores/appStore";
 
@@ -30,6 +31,7 @@ export function App() {
         {page === "configure" && <ConfigPage />}
         {page === "runs"      && <RunsPage />}
         {page === "results"   && <ResultsPage />}
+        {page === "tpr"       && <TprPage />}
       </div>
     </div>
   );

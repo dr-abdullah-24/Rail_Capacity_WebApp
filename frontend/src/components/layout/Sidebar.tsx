@@ -1,6 +1,6 @@
 import {
   Upload as UploadIcon, MapPinned, Settings2, PlayCircle, BarChart3,
-  Home,
+  Home, BookOpen,
 } from "lucide-react";
 import { Page, useAppStore } from "../../stores/appStore";
 
@@ -18,6 +18,7 @@ const ITEMS: Item[] = [
   { id: "configure", label: "Configure run",   Icon: Settings2,  showStep: true },
   { id: "runs",      label: "Runs",            Icon: PlayCircle, showStep: true },
   { id: "results",   label: "Results",         Icon: BarChart3,  showStep: true },
+  { id: "tpr",       label: "TPR Library",     Icon: BookOpen,   showStep: false },
 ];
 
 export function Sidebar() {

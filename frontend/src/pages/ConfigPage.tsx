@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import {
   AlertCircle, AlertTriangle, CalendarRange, CheckCircle2, Clock,
   Cog, Database, FileWarning, GaugeCircle, MapPinned, MoonStar,
-  PlayCircle, PlusCircle, Route as RouteIcon, Sunrise, TrainFront,
-  TrendingUp, GitBranch, Gauge, HardDrive, Maximize2, Target,
+  PlayCircle, RefreshCw, Route as RouteIcon, Sunrise,
+  Table2, TrainFront, TrendingUp, GitBranch, Gauge, HardDrive,
+  Maximize2, Target,
 } from "lucide-react";
-import { CorridorDetail, createRun, getCorridor } from "../api/client";
+import { CorridorDetail, SrtSegment, createRun, getCorridor, previewSrt } from "../api/client";
 import { RouteDiagram } from "../components/corridor/RouteDiagram";
 import { DateMultiPicker } from "../components/config/DateMultiPicker";
 import { DateSinglePicker } from "../components/config/DateSinglePicker";
@@ -69,6 +70,40 @@ export function ConfigPage() {
     }).catch(() => setTgtDetail(null));
   }, [tgtCorridor]);
 
+  // Extracted so the Retry button can call the same logic
+  function loadSrt(corridorId: string, tractionId: string) {
+    setSrtLoading(true);
+    setSrtError(null);
+    previewSrt(corridorId, tractionId)
+      .then((segs) => {
+        setSrtRows(segs);
+        setSrtBaseline(segs.map((s) => ({ ...s })));
+        setSrtModified(false);
+        setSrtError(null);
+      })
+      .catch((e: any) => {
+        setSrtRows(null);
+        setSrtBaseline(null);
+        const msg = e?.response?.data?.detail
+          ?? e?.response?.statusText
+          ?? e?.message
+          ?? "unknown error";
+        setSrtError(`Failed to load SRT estimates (${e?.response?.status ?? "network"}: ${msg}). Restart the backend server if it was recently updated.`);
+      })
+      .finally(() => setSrtLoading(false));
+  }
+
+  // Auto-load SRT estimates when corridor or traction changes
+  useEffect(() => {
+    if (!activeCorridor) {
+      setSrtRows(null); setSrtBaseline(null);
+      setSrtModified(false); setSrtError(null);
+      return;
+    }
+    loadSrt(activeCorridor.id, traction);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeCorridor?.id, traction]);
+
   // Consume the one-shot pendingModelType coming from the Upload page.
   useEffect(() => {
     if (pendingModelType) {
@@ -99,10 +134,21 @@ export function ConfigPage() {
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
 
+  // SRT editor state
+  const [srtRows, setSrtRows] = useState<SrtSegment[] | null>(null);
+  const [srtBaseline, setSrtBaseline] = useState<SrtSegment[] | null>(null);
+  const [srtLoading, setSrtLoading] = useState(false);
+  const [srtModified, setSrtModified] = useState(false);
+  const [srtError, setSrtError] = useState<string | null>(null);
+
   const missingUpload  = !upload;
   const missingDate    = dates.length === 0;
   const cls = TRACTION_CLASSES.find((c) => c.id === traction);
-  const missingSrt = !cls?.hasSrtProfile;
+  // Generic corridor pipelines derive SRT from the observed baseline - no
+  // bundled SRT profile is needed.  Only block launch when Route-3 mode is
+  // active (no corridor selected) and the chosen traction class has no
+  // pre-calibrated profile.
+  const missingSrt = !activeCorridor && !cls?.hasSrtProfile;
 
   async function launch() {
     setBusy(true); setErr(null);
@@ -167,6 +213,10 @@ export function ConfigPage() {
           operating_start_hour: opStart,
           operating_end_hour:   opEnd,
           baseline_upload_id: upload.id,
+          source_corridor_id: activeCorridor?.id ?? null,
+          srt_json: (activeCorridor && srtRows)
+            ? JSON.stringify(srtRows)
+            : null,
         } as any);
         last = r.id;
       }
@@ -228,12 +278,34 @@ export function ConfigPage() {
             <AlertTriangle size={16} />
             <div>
               <b>No corridor selected.</b>{" "}
+              Running without a corridor uses the calibrated Crewe–Parkside
+              (Route 3) model with bundled SRT profiles.{" "}
               <button className="ghost" onClick={() => setPage("corridor")}>
-                Open Corridor
-              </button>
+                Select a corridor
+              </button>{" "}
+              to run a generic analysis on any route.
             </div>
           </div>
         </div>
+      )}
+      {modelType === "capacity" && activeCorridor && (
+        <SrtEditor
+          corridorName={activeCorridor.name}
+          rows={srtRows}
+          baseline={srtBaseline}
+          loading={srtLoading}
+          modified={srtModified}
+          error={srtError}
+          onChange={(updated) => {
+            setSrtRows(updated);
+            setSrtModified(true);
+          }}
+          onReset={() => {
+            setSrtRows(srtBaseline ? srtBaseline.map((s) => ({ ...s })) : null);
+            setSrtModified(false);
+          }}
+          onRetry={() => loadSrt(activeCorridor.id, traction)}
+        />
       )}
 
       {modelType === "diversion" && (() => {
@@ -316,7 +388,7 @@ export function ConfigPage() {
                              border: "1px dashed var(--border)",
                              background: "var(--paper)",
                              fontSize: 12.5, color: "var(--grey-6)" }}>
-                No uploads yet — head to the Upload page to add TD files.
+                No uploads yet - head to the Upload page to add TD files.
               </div>
             ) : (
               <div style={{ display: "grid",
@@ -453,7 +525,7 @@ export function ConfigPage() {
                                color: "var(--grey-6)" }}>
                   {divDate
                     ? <>Only journeys on <b>{divDate}</b> will be extracted.</>
-                    : <>All highlighted dates will be extracted — click a date to filter to one.</>}
+                    : <>All highlighted dates will be extracted - click a date to filter to one.</>}
                 </div>
               </div>
             </div>
@@ -668,7 +740,7 @@ export function ConfigPage() {
                                      overflow: "hidden",
                                      textOverflow: "ellipsis",
                                      whiteSpace: "nowrap" }}>
-                        {c.name.replace(/^Class \d+ — /, "")}
+                        {c.name.replace(/^Class \d+: /, "")}
                       </div>
                       <div style={{ fontSize: 10.5,
                                      color: "var(--grey-5)",
@@ -698,7 +770,7 @@ export function ConfigPage() {
               {classFilters.size === 0 ? (
                 <span style={{ color: "var(--brand)",
                                 fontStyle: "italic" }}>
-                  none — pick at least one class to enable launch
+                  none - pick at least one class to enable launch
                 </span>
               ) : [...classFilters].sort().map((d) => (
                 <span key={d} className="badge"
@@ -725,7 +797,7 @@ export function ConfigPage() {
                 badge="Widest"
                 color="#64748b"
                 title="Any"
-                subtitle="No endpoint requirement — every qualifying journey on the corridor counts"
+                subtitle="No endpoint requirement - every qualifying journey on the corridor counts"
                 helper="Widest net. Use to match the original study, where all class-N journeys observed on the corridor were considered divertible." />
               <EndpointOption
                 selected={endpointStrictness === "relaxed"}
@@ -744,7 +816,7 @@ export function ConfigPage() {
                 color="#dc2626"
                 title="Strict"
                 subtitle="Both endpoints must sit at corridor termini"
-                helper="Classical through-train filter — safest but drops more journeys when TD coverage is partial." />
+                helper="Classical through-train filter - safest but drops more journeys when TD coverage is partial." />
               <EndpointOption
                 selected={endpointStrictness === "nearby"}
                 onClick={() => setEndpointStrictness("nearby")}
@@ -765,7 +837,7 @@ export function ConfigPage() {
             </div>
             <input value={excludedTerminals}
                    onChange={(e) => setExcludedTerminals(e.target.value)}
-                   placeholder="e.g. TRAFFRPRK, TFRDPRK  (comma-separated stanmes / tiplocs — blank = none)" />
+                   placeholder="e.g. TRAFFRPRK, TFRDPRK  (comma-separated stanmes / tiplocs - blank = none)" />
             <div style={{ fontSize: 11, color: "var(--grey-5)",
                            marginTop: 4 }}>
               Journeys that start or end at any of these stations are
@@ -780,7 +852,7 @@ export function ConfigPage() {
         <div className="card">
           <h2><Cog size={14} /> Diversion MILP parameters</h2>
           <div className="card-sub">
-            Decision variable <code style={{ fontSize: 11 }}>X<sub>t,s</sub> ∈ {"{"} 0, 1 {"}"}</code> — does
+            Decision variable <code style={{ fontSize: 11 }}>X<sub>t,s</sub> ∈ {"{"} 0, 1 {"}"}</code> - does
             train <i>t</i> occupy slot <i>s</i>? The table below lists every
             set and parameter in the formulation. Rows with an input field are
             tunable; fixed rows show the internal value.
@@ -815,7 +887,7 @@ export function ConfigPage() {
 
             <MilpRow
               sym={<>n<sub>k</sub></>}
-              desc="Slow-line berth cap at checkpoint k — SMART per-station counts are used where available; this is the fallback for stations absent from SMART"
+              desc="Slow-line berth cap at checkpoint k - SMART per-station counts are used where available; this is the fallback for stations absent from SMART"
               fixed={false}>
               <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <input type="number" min={1} max={30} step={1}
@@ -827,7 +899,7 @@ export function ConfigPage() {
               </div>
               <div style={{ fontSize: 10.5, color: "var(--grey-5)",
                              marginTop: 4 }}>
-                SMART primary where available — fallback applied to stations
+                SMART primary where available - fallback applied to stations
                 without SMART data
               </div>
             </MilpRow>
@@ -847,7 +919,7 @@ export function ConfigPage() {
 
             <MilpRow
               sym={<>f<sub>u,s</sub></>}
-              desc="Pre-computed feasibility indicator — 1 if slot s at checkpoint k is uncongested by existing baseline traffic (C3 pre-filter)"
+              desc="Pre-computed feasibility indicator - 1 if slot s at checkpoint k is uncongested by existing baseline traffic (C3 pre-filter)"
               fixed={true} value="computed at runtime" />
 
             {/* Constraints footer */}
@@ -890,12 +962,14 @@ export function ConfigPage() {
               </label>
               <label>
                 <div style={lblStyle}>Solver time-limit / block (s)</div>
-                <input type="number" min={30} max={1800} step={30}
+                <input type="number" min={0} max={7200} step={30}
                        value={timeLimit}
                        onChange={(e) => setTimeLimit(+e.target.value)} />
-                <div style={{ fontSize: 11, color: "var(--grey-5)",
+                <div style={{ fontSize: 11, color: timeLimit === 0 ? "var(--success)" : "var(--grey-5)",
                               marginTop: 2 }}>
-                  CBC solver budget per rolling-horizon block
+                  {timeLimit === 0
+                    ? "Run to proven optimality - no time cap (may take hours)"
+                    : "CBC solver budget per rolling-horizon block"}
                 </div>
               </label>
               <label>
@@ -920,7 +994,7 @@ export function ConfigPage() {
           <div className="card-sub">
             Class 4 (intermodal, 75 mph) and Class 6 (heavy freight, 60 mph)
             have integrated Sectional Running Time profiles today. Other
-            classes are listed for documentation — add an SRT profile to
+            classes are listed for documentation - add an SRT profile to
             enable them.
           </div>
           <TractionSelect value={traction} onChange={setTraction} />
@@ -974,9 +1048,15 @@ export function ConfigPage() {
               </label>
               <label>
                 <div style={lblStyle}>Solver time-limit / block (s)</div>
-                <input type="number" min={30} max={1800} step={30}
+                <input type="number" min={0} max={7200} step={30}
                        value={timeLimit}
                        onChange={(e) => setTimeLimit(+e.target.value)} />
+                <div style={{ fontSize: 11, color: timeLimit === 0 ? "var(--success)" : "var(--grey-5)",
+                              marginTop: 2 }}>
+                  {timeLimit === 0
+                    ? "Run to proven optimality - no time cap (may take hours)"
+                    : "CBC solver budget per rolling-horizon block"}
+                </div>
               </label>
             </div>
           </div>
@@ -1038,7 +1118,8 @@ export function ConfigPage() {
               <>
                 <ReadyStep ok={!missingUpload} Icon={AlertCircle} label="Upload" />
                 <ReadyStep ok={!missingDate}   Icon={CalendarRange} label="Date" />
-                <ReadyStep ok={!missingSrt}    Icon={FileWarning}   label="SRT" />
+                <ReadyStep ok={!missingSrt}    Icon={FileWarning}
+                           label={activeCorridor ? "SRT (derived)" : "SRT"} />
                 {!missingUpload && !missingDate && !missingSrt && (
                   <span className="badge ok"
                         style={{ padding: "4px 10px", fontSize: 12 }}>
@@ -1331,7 +1412,7 @@ function CorridorPicker({ role, value, onChange, otherId,
 
       <select value={value} onChange={(e) => onChange(e.target.value)}
               style={{ borderColor: value ? accent : undefined }}>
-        <option value="">— select corridor —</option>
+        <option value="">- select corridor -</option>
         {corridors.map((c) => (
           <option key={c.id} value={c.id}
                   disabled={c.id === otherId}>
@@ -1428,5 +1509,239 @@ function ReadyStep({ ok, Icon, label }: ReadyStepProps) {
       {ok ? <CheckCircle2 size={12} /> : <Icon size={12} />}
       {label}
     </span>
+  );
+}
+
+// ── SRT editor ───────────────────────────────────────────────────────────────
+
+interface SrtEditorProps {
+  corridorName: string;
+  rows: SrtSegment[] | null;
+  baseline: SrtSegment[] | null;
+  loading: boolean;
+  modified: boolean;
+  error: string | null;
+  onChange: (rows: SrtSegment[]) => void;
+  onReset: () => void;
+  onRetry: () => void;
+}
+
+function SrtEditor({ corridorName, rows, baseline, loading, modified, error,
+                     onChange, onReset, onRetry }: SrtEditorProps) {
+
+  function updateRow(idx: number, field: keyof SrtSegment, raw: string) {
+    if (!rows) return;
+    const updated = rows.map((r, i) => {
+      if (i !== idx) return r;
+      if (field === "loop_available")
+        return { ...r, loop_available: raw === "true" ? 1 : 0 };
+      const n = parseInt(raw, 10);
+      return { ...r, [field]: isNaN(n) ? r[field] : Math.max(1, n) };
+    });
+    onChange(updated);
+  }
+
+  return (
+    <div className="card">
+      <div style={{ display: "flex", alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: 12, flexWrap: "wrap", marginBottom: 4 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <Table2 size={14} style={{ color: "var(--steel)" }} />
+          <h2 style={{ margin: 0 }}>SRT profile · {corridorName}</h2>
+          {modified && (
+            <span style={{ fontSize: 10, fontWeight: 700,
+                            letterSpacing: 0.4, textTransform: "uppercase",
+                            padding: "2px 7px", borderRadius: 4,
+                            background: "rgba(215,38,56,0.10)",
+                            color: "var(--brand)" }}>
+              Modified
+            </span>
+          )}
+          {!modified && rows && (
+            <span style={{ fontSize: 10, fontWeight: 700,
+                            letterSpacing: 0.4, textTransform: "uppercase",
+                            padding: "2px 7px", borderRadius: 4,
+                            background: "rgba(61,90,128,0.10)",
+                            color: "var(--steel)" }}>
+              Estimated
+            </span>
+          )}
+        </div>
+        <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+          {modified && (
+            <button className="secondary" style={{ fontSize: 12, padding: "4px 10px" }}
+                    onClick={onReset}>
+              <RefreshCw size={11} /> Reset to estimates
+            </button>
+          )}
+        </div>
+      </div>
+      <div className="card-sub" style={{ marginBottom: 10 }}>
+        Running times are estimated from segment chainage and the selected
+        traction speed. Edit any cell to match your Working Timetable data.
+        Loop availability controls whether the MILP can use that section for
+        dwell manoeuvres (holding to let traffic pass).
+      </div>
+
+      {loading && (
+        <div style={{ padding: "12px 0", fontSize: 13, color: "var(--grey-5)",
+                      display: "flex", alignItems: "center", gap: 8 }}>
+          <RefreshCw size={13} style={{ animation: "spin 1s linear infinite" }} />
+          Loading SRT estimates…
+        </div>
+      )}
+
+      {!loading && error && (
+        <div style={{ padding: "10px 12px", borderRadius: 8,
+                      background: "rgba(215,38,56,0.07)",
+                      border: "1px solid rgba(215,38,56,0.25)",
+                      display: "flex", alignItems: "flex-start",
+                      gap: 10, marginBottom: 8 }}>
+          <AlertTriangle size={15} style={{ color: "var(--brand)",
+                                             flexShrink: 0, marginTop: 1 }} />
+          <div style={{ flex: 1 }}>
+            <div style={{ fontSize: 12.5, color: "var(--brand)",
+                           fontWeight: 600, marginBottom: 4 }}>
+              Could not load SRT estimates
+            </div>
+            <div style={{ fontSize: 11.5, color: "var(--grey-6)",
+                           lineHeight: 1.5 }}>
+              {error}
+            </div>
+          </div>
+          <button className="secondary"
+                  style={{ fontSize: 11, padding: "4px 10px",
+                            flexShrink: 0, alignSelf: "flex-start" }}
+                  onClick={onRetry}>
+            <RefreshCw size={11} /> Retry
+          </button>
+        </div>
+      )}
+
+      {!loading && !error && rows && rows.length > 0 && (
+        <div style={{ overflowX: "auto" }}>
+          <table style={{ width: "100%", borderCollapse: "collapse",
+                          fontSize: 12.5 }}>
+            <thead>
+              <tr style={{ background: "var(--paper)",
+                            borderBottom: "2px solid var(--border)" }}>
+                {["From", "To", "NB (min)", "SB (min)", "Eng NB", "Eng SB", "Loop"].map((h) => (
+                  <th key={h} style={{ padding: "7px 10px", textAlign: "left",
+                                        fontWeight: 700, color: "var(--grey-6)",
+                                        fontSize: 11, letterSpacing: 0.3,
+                                        textTransform: "uppercase",
+                                        whiteSpace: "nowrap" }}>
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((seg, idx) => {
+                const orig = baseline?.[idx];
+                const nbChanged  = orig && seg.srt_nb !== orig.srt_nb;
+                const sbChanged  = orig && seg.srt_sb !== orig.srt_sb;
+                const loopChanged = orig && seg.loop_available !== orig.loop_available;
+                const engNbChanged = orig && seg.eng_nb !== orig.eng_nb;
+                const engSbChanged = orig && seg.eng_sb !== orig.eng_sb;
+                return (
+                  <tr key={idx}
+                      title={seg.notes ?? ""}
+                      style={{ borderBottom: "1px solid var(--border)",
+                                background: idx % 2 === 0 ? "#fff" : "var(--paper)",
+                                cursor: seg.notes ? "help" : undefined }}>
+                    <td style={{ padding: "6px 10px", color: "var(--grey-7)",
+                                  fontWeight: 500 }}>
+                      {seg.from_name}
+                    </td>
+                    <td style={{ padding: "6px 10px", color: "var(--grey-7)",
+                                  fontWeight: 500 }}>
+                      {seg.to_name}
+                    </td>
+                    <td style={{ padding: "4px 6px" }}>
+                      <input type="number" min={1} max={120}
+                             value={seg.srt_nb}
+                             onChange={(e) => updateRow(idx, "srt_nb", e.target.value)}
+                             style={{ width: 60, textAlign: "center",
+                                       borderColor: nbChanged
+                                         ? "var(--brand)" : undefined,
+                                       background: nbChanged
+                                         ? "rgba(215,38,56,0.05)" : undefined }} />
+                    </td>
+                    <td style={{ padding: "4px 6px" }}>
+                      <input type="number" min={1} max={120}
+                             value={seg.srt_sb}
+                             onChange={(e) => updateRow(idx, "srt_sb", e.target.value)}
+                             style={{ width: 60, textAlign: "center",
+                                       borderColor: sbChanged
+                                         ? "var(--brand)" : undefined,
+                                       background: sbChanged
+                                         ? "rgba(215,38,56,0.05)" : undefined }} />
+                    </td>
+                    <td style={{ padding: "4px 6px" }}>
+                      <input type="number" min={0} max={30}
+                             value={seg.eng_nb}
+                             onChange={(e) => updateRow(idx, "eng_nb", e.target.value)}
+                             style={{ width: 52, textAlign: "center",
+                                       borderColor: engNbChanged
+                                         ? "var(--brand)" : undefined,
+                                       background: engNbChanged
+                                         ? "rgba(215,38,56,0.05)" : undefined }} />
+                    </td>
+                    <td style={{ padding: "4px 6px" }}>
+                      <input type="number" min={0} max={30}
+                             value={seg.eng_sb}
+                             onChange={(e) => updateRow(idx, "eng_sb", e.target.value)}
+                             style={{ width: 52, textAlign: "center",
+                                       borderColor: engSbChanged
+                                         ? "var(--brand)" : undefined,
+                                       background: engSbChanged
+                                         ? "rgba(215,38,56,0.05)" : undefined }} />
+                    </td>
+                    <td style={{ padding: "4px 10px" }}>
+                      <label style={{ display: "flex", alignItems: "center",
+                                       gap: 6, cursor: "pointer" }}>
+                        <input type="checkbox"
+                               checked={seg.loop_available === 1}
+                               onChange={(e) =>
+                                 updateRow(idx, "loop_available",
+                                           e.target.checked ? "true" : "false")}
+                               style={{ accentColor: loopChanged
+                                          ? "var(--brand)" : "var(--steel)" }} />
+                        <span style={{ fontSize: 11,
+                                        color: loopChanged
+                                          ? "var(--brand)" : "var(--grey-6)" }}>
+                          {seg.loop_available === 1 ? "Yes" : "No"}
+                        </span>
+                      </label>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {!loading && !error && (!rows || rows.length === 0) && (
+        <div style={{ padding: "12px 0", fontSize: 13, color: "var(--grey-5)",
+                       fontStyle: "italic" }}>
+          Select a corridor above to load the SRT profile.
+        </div>
+      )}
+
+      <div style={{ marginTop: 10, fontSize: 11, color: "var(--grey-5)" }}>
+        <b>NB / SB</b> - scheduled run time in minutes per direction.{" "}
+        <b>Eng NB / SB</b> - TPR engineering allowance (timing load buffer) added
+        on top of SRT; initialised at 5% of SRT per segment (min 1 min).{" "}
+        <b>Loop</b> - whether the MILP may hold a new train on this section
+        to let conflicting traffic pass; validate against the NWR Sectional Appendix.{" "}
+        NB and SB are initialised identically - adjust for route gradients against
+        your Working Timetable.{" "}
+        Highlighted cells differ from the initial estimate.{" "}
+        Hover any row to see the estimation breakdown.
+      </div>
+    </div>
   );
 }

@@ -62,6 +62,7 @@ def create_run(payload: Run, background: BackgroundTasks,
         n_berths=payload.n_berths,
         endpoint_strictness=payload.endpoint_strictness,
         excluded_terminals=payload.excluded_terminals,
+        srt_json=payload.srt_json,
     )
     session.add(row); session.commit(); session.refresh(row)
     background.add_task(_launch, row.id)

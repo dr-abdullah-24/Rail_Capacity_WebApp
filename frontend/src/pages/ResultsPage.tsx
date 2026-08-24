@@ -63,7 +63,7 @@ export function ResultsPage() {
     return (
       <div className="card">
         <div style={{ color: "var(--grey-5)" }}>
-          Run #{run.id} is <b>{run.status}</b> — results appear here when
+          Run #{run.id} is <b>{run.status}</b> - results appear here when
           complete.
         </div>
       </div>
@@ -108,14 +108,12 @@ export function ResultsPage() {
       <div className="card">
         <h2><RouteIcon size={14} /> Space-time diagram</h2>
         <div className="card-sub">
-          Corridor junctions on the vertical axis, time-of-day on the
-          horizontal. Faint lines = existing traffic. Coloured lines =
-          MILP-inserted freight paths — press Play to see the placement
-          order.
+          Junctions (Y) vs time-of-day (X). Press Play to animate inserted paths.
         </div>
         {traffic ? (
           <SpaceTimeDiagram
             corridorNames={traffic.corridor_names}
+            chainages={traffic.junction_chainages}
             existing={traffic.existing}
             inserted={traffic.inserted}
             direction={stDir}
@@ -171,10 +169,10 @@ export function ResultsPage() {
         </div>
 
         <div className="card">
-          <h2><Grid3x3 size={14} /> Hourly capacity heatmap</h2>
+          <h2><Grid3x3 size={14} /> 15-minute capacity heatmap</h2>
           <div className="card-sub">
-            How busy is each corridor junction, each hour? Green dots mark
-            the MILP-inserted paths — pale cells reveal where new services
+            How busy is each corridor junction per 15-minute window? Green dots mark
+            the MILP-inserted paths - pale cells reveal where new services
             can fit. Toggle direction:
           </div>
           <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
@@ -186,6 +184,7 @@ export function ResultsPage() {
           {traffic ? (
             <CapacityHeatmap
               corridorNames={traffic.corridor_names}
+              junctionSeqs={traffic.junction_seqs}
               heatmap={traffic.heatmap}
               overlay={traffic.inserted_overlay}
               direction={hmDir} />

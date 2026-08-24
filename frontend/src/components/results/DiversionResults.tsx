@@ -302,38 +302,38 @@ export function DiversionResults({ run }: { run: Run }) {
                         {r.headcode || r.path_id}
                       </td>
                       <td style={{ fontSize: 11, color: "var(--grey-6)" }}>
-                        {r.direction || "—"}
+                        {r.direction || "-"}
                       </td>
                       <td style={{ fontSize: 11, maxWidth: 130,
                                    overflow: "hidden", textOverflow: "ellipsis",
                                    whiteSpace: "nowrap",
                                    color: "var(--steel)" }}
                           title={r.first_station}>
-                        {r.first_station || "—"}
+                        {r.first_station || "-"}
                       </td>
                       <td style={{ fontSize: 11, maxWidth: 130,
                                    overflow: "hidden", textOverflow: "ellipsis",
                                    whiteSpace: "nowrap",
                                    color: "var(--steel)" }}
                           title={r.last_station}>
-                        {r.last_station || "—"}
+                        {r.last_station || "-"}
                       </td>
                       <td style={{ fontSize: 11, maxWidth: 130,
                                    overflow: "hidden", textOverflow: "ellipsis",
                                    whiteSpace: "nowrap",
                                    color: "#d97706" }}
                           title={outcome?.target_first_station}>
-                        {outcome?.target_first_station || "—"}
+                        {outcome?.target_first_station || "-"}
                       </td>
                       <td style={{ fontSize: 11, maxWidth: 130,
                                    overflow: "hidden", textOverflow: "ellipsis",
                                    whiteSpace: "nowrap",
                                    color: "#d97706" }}
                           title={outcome?.target_last_station}>
-                        {outcome?.target_last_station || "—"}
+                        {outcome?.target_last_station || "-"}
                       </td>
                       <td>{r.original_hhmm}</td>
-                      <td>{r.assigned_hhmm || "—"}</td>
+                      <td>{r.assigned_hhmm || "-"}</td>
                       <td style={{
                             color: r.shift_min > 0 ? "var(--warn)"
                                  : r.shift_min < 0 ? "var(--steel)"
@@ -445,7 +445,7 @@ function SlotDetail({
 }: SlotDetailProps) {
   const color  = OUTCOME_COLOR[outcome] ?? "#64748b";
   const refMin = assignedMin ?? origMin;
-  // Logical coordinate width — SVG uses viewBox so it fills 100% of cell.
+  // Logical coordinate width - SVG uses viewBox so it fills 100% of cell.
   const W = 1000, H = 44;
   const lo    = origMin - flexMin;
   const hi    = origMin + flexMin;
@@ -467,7 +467,7 @@ function SlotDetail({
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
 
-      {/* ── SVG timeline — fills full expanded-row width ── */}
+      {/* ── SVG timeline - fills full expanded-row width ── */}
       <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H}
            style={{ display: "block", overflow: "visible" }}>
         {/* Background rail */}
@@ -500,7 +500,7 @@ function SlotDetail({
           );
         })()}
 
-        {/* Baseline trains — red if blocking, grey otherwise */}
+        {/* Baseline trains - red if blocking, grey otherwise */}
         {inWindow.map((b, idx) => {
           const x = toX(b.t_min);
           const isBlk = blockingSet.has(b.headcode + b.journey_num);
@@ -511,7 +511,7 @@ function SlotDetail({
           );
         })}
 
-        {/* Original departure — dashed steel line */}
+        {/* Original departure - dashed steel line */}
         <line x1={origX} y1={8} x2={origX} y2={36}
               stroke="#3d5a80" strokeWidth={2} strokeDasharray="5,3" />
 
@@ -598,7 +598,7 @@ function SlotDetail({
                   ({outcome === "SLOT" ? "no shift"
                     : `${assignedMin! - origMin >= 0 ? "+" : ""}${assignedMin! - origMin} min`})
                 </div>
-              : <div style={{ color }}>No feasible slot — <b>conflict</b></div>}
+              : <div style={{ color }}>No feasible slot - <b>conflict</b></div>}
             <div>Flex window: ±{flexMin} min</div>
             <div>
               Trains in window: <b>{inWindow.length}</b>
@@ -644,7 +644,7 @@ function SlotDetail({
           </div>
         )}
 
-        {/* All trains in window (excluding blocking — already shown) */}
+        {/* All trains in window (excluding blocking - already shown) */}
         {inWindow.filter((b) =>
             !blockingSet.has(b.headcode + b.journey_num)).length > 0 && (
           <div style={{ flex: 2, minWidth: 200 }}>

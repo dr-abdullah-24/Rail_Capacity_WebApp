@@ -6,6 +6,7 @@ type Dir = "northbound" | "southbound" | "both";
 
 interface Props {
   corridorNames: string[];
+  chainages?: number[];      // km from origin per junction seq; enables proportional Y spacing
   existing: CorridorTrain[];
   inserted: CorridorTrain[];
   direction: Dir;
@@ -23,7 +24,7 @@ interface Props {
  * on the animation clock.
  */
 export function SpaceTimeDiagram(props: Props) {
-  const { corridorNames, existing, inserted, direction,
+  const { corridorNames, chainages, existing, inserted, direction,
           onDirectionChange, operatingStart, operatingEnd } = props;
 
   const filteredExisting = useMemo(
@@ -43,8 +44,41 @@ export function SpaceTimeDiagram(props: Props) {
   const innerW = W - marginL - marginR;
   const innerH = H - marginT - marginB;
   const xFor = (m: number) => marginL + (m / 1440) * innerW;
-  const yFor = (seq: number) =>
-    marginT + (seq / Math.max(1, nJunc - 1)) * innerH;
+
+  const useChainages = chainages && chainages.length === nJunc;
+  const chainMin = useChainages ? Math.min(...chainages!) : 0;
+  const chainMax = useChainages ? Math.max(...chainages!) : 1;
+  const chainSpan = Math.max(1, chainMax - chainMin);
+
+  // Raw chainage-proportional positions, then enforce a minimum pixel gap so
+  // that labels and grid lines for geographically close stations don't overlap.
+  const MIN_Y_GAP = 18;
+  const rawYs = Array.from({ length: nJunc }, (_, i) =>
+    useChainages
+      ? marginT + ((chainages![i] - chainMin) / chainSpan) * innerH
+      : marginT + (i / Math.max(1, nJunc - 1)) * innerH
+  );
+  const yPositions = [...rawYs];
+  for (let i = 1; i < yPositions.length; i++) {
+    if (yPositions[i] - yPositions[i - 1] < MIN_Y_GAP) {
+      yPositions[i] = yPositions[i - 1] + MIN_Y_GAP;
+    }
+  }
+  // If minimum spacing pushed the last station beyond innerH, scale back to fit.
+  const lastY = yPositions[yPositions.length - 1] ?? marginT;
+  if (lastY > marginT + innerH) {
+    const span = lastY - marginT;
+    for (let i = 1; i < yPositions.length; i++) {
+      yPositions[i] = marginT + ((yPositions[i] - marginT) / span) * innerH;
+    }
+  }
+  // seq is used as a direct index into yPositions (corridor_names[seq] == station at seq).
+  // If a seq falls outside the array it means the backend sent stale data - clamp
+  // to the nearest valid position rather than silently snapping to the top.
+  const yFor = (seq: number) => {
+    if (seq < yPositions.length) return yPositions[seq];
+    return yPositions[yPositions.length - 1] ?? marginT;
+  };
 
   const [playing, setPlaying] = useState(false);
   const [step, setStep] = useState(0);
@@ -52,6 +86,12 @@ export function SpaceTimeDiagram(props: Props) {
   const insertedSorted = useMemo(
     () => [...filteredInserted].sort((a, b) => a.dep_min - b.dep_min),
     [filteredInserted]);
+
+  // Reset animation whenever the direction filter changes.
+  useEffect(() => {
+    setStep(0);
+    setPlaying(false);
+  }, [direction]);
 
   useEffect(() => {
     if (!playing) return;
@@ -81,13 +121,16 @@ export function SpaceTimeDiagram(props: Props) {
                 onClick={() => onDirectionChange?.("southbound")}>SB</button>
         <span style={{ width: 1, height: 24,
                        background: "var(--border)", margin: "0 4px" }} />
-        <button className="secondary" onClick={() => setStep(0)}>
+        <button className="secondary" onClick={() => { setStep(0); setPlaying(false); }}>
           <RotateCcw size={12} /> Reset
         </button>
-        <button onClick={() => {
-                  if (step >= insertedSorted.length) setStep(0);
-                  setPlaying((p) => !p);
-                }}>
+        <button
+          disabled={insertedSorted.length === 0}
+          onClick={() => {
+            if (insertedSorted.length === 0) return;
+            if (step >= insertedSorted.length) setStep(0);
+            setPlaying((p) => !p);
+          }}>
           {playing
             ? <><Pause size={12} /> Pause</>
             : <><Play size={12} /> Play</>}
@@ -203,9 +246,7 @@ export function SpaceTimeDiagram(props: Props) {
         })}
       </svg>
       <div style={{ fontSize: 11, color: "var(--grey-5)", marginTop: 6 }}>
-        Faint lines = existing corridor traffic ·
-        thick coloured = newly inserted freight paths ·
-        amber dots = holding at intermediate loop.
+        Faint = existing traffic · Coloured = inserted paths · Amber dot = loop hold
       </div>
     </div>
   );

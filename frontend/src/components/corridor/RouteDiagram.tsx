@@ -90,7 +90,7 @@ export function RouteDiagram({ corridor, showBerths = true }:
                   <text x={cx} y={y + 73} fontSize={10} fontWeight={700}
                         textAnchor="middle"
                         fill={nb > 0 ? berthFill(nb) : "#94a3b8"}>
-                    {nb > 0 ? `×${nb}` : "—"}
+                    {nb > 0 ? `×${nb}` : "-"}
                   </text>
                   {/* "berths" label under first station only */}
                   {i === 0 && (

@@ -66,13 +66,13 @@ export function CorridorMap({ corridor }: { corridor: CorridorDetail | null }) {
                     <table style={{ fontSize: 12, borderCollapse: "collapse" }}>
                       <tbody>
                         <tr><td style={{ color: "#64748b" }}>TIPLOC</td>
-                            <td style={{ paddingLeft: 8 }}>{s.tiploc || "—"}</td></tr>
+                            <td style={{ paddingLeft: 8 }}>{s.tiploc || "-"}</td></tr>
                         <tr><td style={{ color: "#64748b" }}>CRS</td>
-                            <td style={{ paddingLeft: 8 }}>{s.crs || "—"}</td></tr>
+                            <td style={{ paddingLeft: 8 }}>{s.crs || "-"}</td></tr>
                         <tr><td style={{ color: "#64748b" }}>STANOX</td>
-                            <td style={{ paddingLeft: 8 }}>{s.stanox || "—"}</td></tr>
+                            <td style={{ paddingLeft: 8 }}>{s.stanox || "-"}</td></tr>
                         <tr><td style={{ color: "#64748b" }}>STANME</td>
-                            <td style={{ paddingLeft: 8 }}>{s.stanme || "—"}</td></tr>
+                            <td style={{ paddingLeft: 8 }}>{s.stanme || "-"}</td></tr>
                         <tr><td style={{ color: "#64748b" }}>km</td>
                             <td style={{ paddingLeft: 8 }}>{s.chainage_km.toFixed(3)}</td></tr>
                       </tbody>

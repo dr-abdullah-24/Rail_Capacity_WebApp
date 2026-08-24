@@ -1,0 +1,65 @@
+{
+  "_source": "Network Rail Train Planning Rules — NW1001 (WCML slow, Crewe–Preston) and NW2015 (Chat Moss, Ordsall Lane–Edge Hill). Extracted from TPR 2021 V4 LNW (Section 5.5) and confirmed unchanged in TPR 2026 V3 NWC and TPR 2027 V1 NWC.",
+  "_note": "ea_min is the Engineering Allowance in minutes at the named approach station. Keys must match the 'name' field in corridors.json exactly. NB = forward direction (ascending seq), SB = reverse direction (descending seq).",
+
+  "NB": {
+    "Parkside Junction": {
+      "ea_min": 1,
+      "tpr_route": "NW2015",
+      "tpr_ref": "NW2015 Down: Approaching Parkside Jn  E=1"
+    },
+    "Olive Mount Junction": {
+      "ea_min": 1,
+      "tpr_route": "NW2015",
+      "tpr_ref": "NW2015 Down: Approaching Olive Mount Jn  E=1"
+    },
+    "Euxton Junction": {
+      "ea_min": 1,
+      "tpr_route": "NW1001",
+      "tpr_ref": "NW1001 Down: Approaching Euxton Jn  E=1"
+    },
+    "Preston": {
+      "ea_min": 1,
+      "tpr_route": "NW1001",
+      "tpr_ref": "NW1001 Down: Approaching Preston  E=1"
+    },
+    "Basford Hall Junction": {
+      "ea_min": 1,
+      "tpr_route": "NW1001",
+      "tpr_ref": "NW1001 Down: Approaching Basford Hall Jn  E=1"
+    },
+    "Colwich": {
+      "ea_min": 1,
+      "tpr_route": "NW1001",
+      "tpr_ref": "NW1001 Down: Approaching Colwich  E=1"
+    }
+  },
+
+  "SB": {
+    "Weaver Junction": {
+      "ea_min": 1,
+      "tpr_route": "NW1001",
+      "tpr_ref": "NW1001 Up: Approaching Weaver Jn  E=1"
+    },
+    "Crewe (Coal Yard / CS)": {
+      "ea_min": 1,
+      "tpr_route": "NW1001",
+      "tpr_ref": "NW1001 Up: Approaching Crewe Coal Yard  E=1"
+    },
+    "Crewe Coal Yard": {
+      "ea_min": 1,
+      "tpr_route": "NW1001",
+      "tpr_ref": "NW1001 Up: Approaching Crewe Coal Yard  E=1"
+    },
+    "Earlestown": {
+      "ea_min": 1,
+      "tpr_route": "NW2015",
+      "tpr_ref": "NW2015 Up: Approaching Earlestown  E=1"
+    },
+    "Ordsall Lane Junction": {
+      "ea_min": 1,
+      "tpr_route": "NW2015",
+      "tpr_ref": "NW2015 Up: Approaching Ordsall Lane Jn  E=1"
+    }
+  }
+}

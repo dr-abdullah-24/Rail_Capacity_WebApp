@@ -1,0 +1,702 @@
+{
+  "NW1001": {
+    "name": "WCML Slow Lines (Armitage Jn to Preston Fylde Jn)",
+    "description": "West Coast Main Line Slow and Freight Lines from Armitage Junction (inclusive) to Preston Fylde Junction, covering the Crewe Coal Yard to Warrington Bank Quay section relevant to the Crewe-Parkside corridor.",
+    "sort_order": 1,
+    "years": {
+      "2021": {
+        "version": "V4 LNW",
+        "ea": {
+          "Down": [
+            { "location": "Colwich",          "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "0545-2355 SX daily" },
+            { "location": "Colwich",          "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "0545-2355 SX daily" },
+            { "location": "Basford Hall Jn",  "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Basford Hall Jn",  "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Euxton Jn",        "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Euxton Jn",        "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Preston",          "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Preston",          "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" }
+          ],
+          "Up": [
+            { "location": "Weaver Jn",        "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Crewe Coal Yard",  "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Crewe Coal Yard",  "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Norton Bridge",    "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Class 1 and 9 passenger only" },
+            { "location": "Stafford",         "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "Does not apply to trains from NW5008 (Norton Bridge to Stone)" }
+          ]
+        },
+        "srt_adjustments": [
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Up (SB)",
+            "movement": "FL to SL",
+            "adj_min": "2",
+            "train_type": "All (Passenger and Freight)",
+            "condition": "Reduced speed required at turn-out. Apply between Winsford and Crewe Coal Yard."
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Up (SB)",
+            "movement": "FL to Independent Lines",
+            "adj_min": "2",
+            "train_type": "All (Passenger and Freight)",
+            "condition": "Reduced speed required at turn-out. Apply between Winsford and Crewe Coal Yard."
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Up (SB)",
+            "movement": "SL to Independent Lines",
+            "adj_min": "2",
+            "train_type": "All (Passenger and Freight)",
+            "condition": "Reduced speed required at turn-out. Apply between Winsford and Crewe Coal Yard."
+          },
+          {
+            "location": "Hartford Jn",
+            "direction": "Down (NB)",
+            "movement": "CLC line to Down Slow",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Acceleration, applied after Hartford Jn"
+          },
+          {
+            "location": "Hartford Jn",
+            "direction": "Up (SB)",
+            "movement": "Up Fast to CLC line",
+            "adj_min": "2",
+            "train_type": "All",
+            "condition": "Approach control, applied before Hartford Jn"
+          },
+          {
+            "location": "Acton Bridge",
+            "direction": "Up (SB)",
+            "movement": "FL to SL",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Reduced speed required"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Down (NB)",
+            "movement": "Down Main to Down Helsby",
+            "adj_min": "2",
+            "train_type": "All",
+            "condition": "Approach control and slow speed over junction, applied before Acton Grange Jn"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Down (NB)",
+            "movement": "Down Main to Down Helsby (acceleration)",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Acceleration away from junction, applied after Acton Grange Jn"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Down (NB)",
+            "movement": "Down Helsby to Down Main",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Acceleration away from junction, applied before Warrington Bank Quay"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Up (SB)",
+            "movement": "Up Helsby to Up Main",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control and slow speed over junction, applied before Acton Grange Jn"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Up (SB)",
+            "movement": "Up Helsby to Up Main (acceleration)",
+            "adj_min": "2",
+            "train_type": "All",
+            "condition": "Acceleration away from junction, applied after Acton Grange Jn"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Slow or Goods to Up Main direct to Acton Grange Jn",
+            "adj_min": "1",
+            "train_type": "Non-stop",
+            "condition": "Movement over and acceleration from 15mph crossover, approaching next timing point"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Fast to Platform 1",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control and slow speed crossover"
+          }
+        ],
+        "loops": [
+          { "name": "Stafford Platform 1",              "location": "Stafford", "line": "FL/ML", "length_slu": 48, "length_m": 311, "note": "Between signals LS5582 and SC9355" },
+          { "name": "Stafford Up Stafford Fast",         "location": "Stafford", "line": "FL",    "length_slu": 47, "length_m": 306, "note": "" },
+          { "name": "Stafford Down Stafford Fast",       "location": "Stafford", "line": "FL",    "length_slu": 45, "length_m": 290, "note": "" },
+          { "name": "Stafford Platform 3",               "location": "Stafford", "line": "SL",    "length_slu": 45, "length_m": 290, "note": "Between signals SC5591 and LS9346" },
+          { "name": "Stafford Up Stafford Slow P4",      "location": "Stafford", "line": "SL",    "length_slu": 45, "length_m": 290, "note": "Between signals LS5588 and SC9349" },
+          { "name": "Stafford Down Stafford Slow P5",    "location": "Stafford", "line": "SL",    "length_slu": 47, "length_m": 303, "note": "Between signals SC5587 and LS9350" },
+          { "name": "Stafford Platform 6",               "location": "Stafford", "line": "GL",    "length_slu": 47, "length_m": 301, "note": "" },
+          { "name": "Stafford Goods Loop",               "location": "Stafford", "line": "GL",    "length_slu": 47, "length_m": 301, "note": "" }
+        ]
+      },
+      "2026": {
+        "version": "V3 NWC",
+        "ea": {
+          "Down": [
+            { "location": "Colwich",              "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "0545-2355 SX daily" },
+            { "location": "Colwich",              "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "0545-2355 SX daily" },
+            { "location": "Basford Hall Jn",      "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Basford Hall Jn",      "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Euxton Jn",            "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Euxton Jn",            "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Preston Ribble Jn",    "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Does not apply to trains from NW6001, NW7007, NW7009" },
+            { "location": "Preston Ribble Jn",    "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "Does not apply to trains from NW6001, NW7007, NW7009" }
+          ],
+          "Up": [
+            { "location": "Weaver Jn",            "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Crewe Coal Yard",      "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Crewe Coal Yard",      "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Norton Bridge",        "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Passenger only" },
+            { "location": "Little Bridgeford Jn", "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "New in 2026 (replaces Approaching Stafford from 2021)" }
+          ]
+        },
+        "srt_adjustments": [
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Down (NB)",
+            "movement": "SL to FL",
+            "adj_min": "1.5 Pax / 3 Freight",
+            "train_type": "All",
+            "condition": "Acceleration, apply approaching next timing point"
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Down (NB)",
+            "movement": "Independent Lines to FL",
+            "adj_min": "1 Pax / 3 Freight",
+            "train_type": "All",
+            "condition": "Acceleration, apply approaching next timing point"
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Down (NB)",
+            "movement": "Independent Lines to SL (timed 75mph+)",
+            "adj_min": "1 Pax / 4 (90mph) / 4.5 Freight",
+            "train_type": "All",
+            "condition": "Acceleration, apply approaching next timing point"
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Down (NB)",
+            "movement": "Independent Lines to SL (timed below 75mph)",
+            "adj_min": "1 Pax / 2 Freight",
+            "train_type": "All",
+            "condition": "Acceleration, apply approaching next timing point"
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Up (SB)",
+            "movement": "FL to SL",
+            "adj_min": "2",
+            "train_type": "All",
+            "condition": "Approach control"
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Up (SB)",
+            "movement": "To Independent Lines",
+            "adj_min": "2",
+            "train_type": "All",
+            "condition": "Approach control"
+          },
+          {
+            "location": "Hartford Jn",
+            "direction": "Down (NB)",
+            "movement": "CLC line to Down Slow",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Acceleration, after Hartford Jn; also +0.5 after Acton Bridge if passing"
+          },
+          {
+            "location": "Hartford Jn",
+            "direction": "Up (SB)",
+            "movement": "Up Fast to CLC line",
+            "adj_min": "2",
+            "train_type": "All",
+            "condition": "Approach control, before Hartford Jn"
+          },
+          {
+            "location": "Acton Bridge",
+            "direction": "Down (NB)",
+            "movement": "Down Slow (timed over 60mph)",
+            "adj_min": "0.5",
+            "train_type": "All timed over 60mph",
+            "condition": "Acceleration, after Acton Bridge"
+          },
+          {
+            "location": "Acton Bridge",
+            "direction": "Up (SB)",
+            "movement": "FL to SL (not stopping at Acton Bridge)",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Reduced speed required"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Down (NB)",
+            "movement": "Down Main to Down Helsby",
+            "adj_min": "3 + 0.5 Pax acceleration",
+            "train_type": "All",
+            "condition": "Approach control (3 min), then acceleration after Acton Grange Jn (0.5 min Passenger)"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Down (NB)",
+            "movement": "Down Helsby to Down Main",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Acceleration away from junction, approaching next timing point"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Up (SB)",
+            "movement": "Up Helsby to Up Main",
+            "adj_min": "1 + 2",
+            "train_type": "All",
+            "condition": "Approach control (1 min before Acton Grange Jn) + acceleration (2 min after Acton Grange Jn)"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Slow or Goods to Up Main direct to Acton Grange Jn",
+            "adj_min": "1",
+            "train_type": "Non-stop",
+            "condition": "Acceleration, approaching next timing point"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Fast to Platform 1",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Slow to Up Goods Loop",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Fast to Up Helsby",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control"
+          }
+        ],
+        "loops": [
+          { "name": "Stafford Platform 1",                       "location": "Stafford",             "line": "FL/ML", "length_slu": 48,  "length_m": 311, "note": "Between signals LS5582 and SC9355" },
+          { "name": "Stafford Up Stafford Fast",                  "location": "Stafford",             "line": "FL",    "length_slu": 47,  "length_m": 306, "note": "" },
+          { "name": "Stafford Down Stafford Fast",                "location": "Stafford",             "line": "FL",    "length_slu": 45,  "length_m": 290, "note": "" },
+          { "name": "Stafford Platform 3",                        "location": "Stafford",             "line": "SL",    "length_slu": 45,  "length_m": 290, "note": "Between signals SC5591 and LS9346" },
+          { "name": "Stafford Up Stafford Slow Platform 4",       "location": "Stafford",             "line": "SL",    "length_slu": 45,  "length_m": 290, "note": "Between signals LS5588 and SC9349" },
+          { "name": "Stafford Down Stafford Slow Platform 5",     "location": "Stafford",             "line": "SL",    "length_slu": 47,  "length_m": 303, "note": "Between signals SC5587 and LS9350" },
+          { "name": "Stafford Platform 6",                        "location": "Stafford",             "line": "GL",    "length_slu": 47,  "length_m": 301, "note": "" },
+          { "name": "Stafford Down Goods Loop",                   "location": "Stafford",             "line": "GL",    "length_slu": 127, "length_m": 816, "note": "Between signals LS1296 and SC4313" },
+          { "name": "Stafford Goods Loop (Up and Down Goods)",    "location": "Stafford",             "line": "GL",    "length_slu": 47,  "length_m": 301, "note": "Between signals SC313 and LS4314" },
+          { "name": "Warrington Bank Quay Up Goods",              "location": "Warrington Bank Quay", "line": "GL",    "length_slu": 44,  "length_m": 282, "note": "" },
+          { "name": "Springs Branch Jn Down and Up Passenger Loop (Up)", "location": "Springs Branch Jn", "line": "GL", "length_slu": 109, "length_m": 701, "note": "" },
+          { "name": "Wigan South Jn Down and Up Passenger Loop (Down)", "location": "Wigan South Jn",  "line": "GL",  "length_slu": 73,  "length_m": 471, "note": "" }
+        ]
+      },
+      "2027": {
+        "version": "V1 NWC",
+        "ea": {
+          "Down": [
+            { "location": "Colwich",              "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Confirmed unchanged from 2026" },
+            { "location": "Colwich",              "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Basford Hall Jn",      "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Basford Hall Jn",      "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Euxton Jn",            "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Euxton Jn",            "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Preston Ribble Jn",    "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Preston Ribble Jn",    "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" }
+          ],
+          "Up": [
+            { "location": "Weaver Jn",            "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Crewe Coal Yard",      "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Crewe Coal Yard",      "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" },
+            { "location": "Norton Bridge",        "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Passenger only" },
+            { "location": "Little Bridgeford Jn", "line": "SL",    "ea_min": 1, "pa_min": 0, "note": "" }
+          ]
+        },
+        "srt_adjustments": [
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Down (NB)",
+            "movement": "Independent Lines to FL, or SL to FL",
+            "adj_min": "1 Pax; 1.5-3 Class 4 diesel freight by tonnage; 1.5-4 Class 6 diesel freight by tonnage; 3-4 Class 4/6 electric freight by tonnage",
+            "train_type": "All",
+            "condition": "Acceleration, apply approaching next timing point. Tonnage breakpoints: Class 4 diesel up to 800t=1.5, 801-1475t=2, 1476-1800t=3; Class 6 diesel up to 800t=1.5, 801-1200t=2, 1201-1800t=3, 1801t+=4; Electric up to 1250t=3, 1251t+=4."
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Down (NB)",
+            "movement": "Independent Lines to SL",
+            "adj_min": "1 Pax; 1.5-4 Class 4/6 diesel freight by tonnage; 3-4 electric freight by tonnage",
+            "train_type": "All",
+            "condition": "Acceleration, apply approaching next timing point. Class 4 diesel up to 1000t=1.5, 1200t+=2; Class 6 diesel up to 800t=1, 801-1200t=1.5, 1201-1400t=2, 1401-1800t=2.5, 1801-2200t=3, 2201t+=4."
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Up (SB)",
+            "movement": "FL to SL",
+            "adj_min": "2",
+            "train_type": "All",
+            "condition": "Approach control"
+          },
+          {
+            "location": "Crewe Coal Yard",
+            "direction": "Up (SB)",
+            "movement": "To Independent Lines",
+            "adj_min": "2",
+            "train_type": "All",
+            "condition": "Approach control"
+          },
+          {
+            "location": "Hartford Jn",
+            "direction": "Down (NB)",
+            "movement": "CLC line to Down Slow",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Acceleration, after Hartford Jn; also +0.5 after Acton Bridge if passing"
+          },
+          {
+            "location": "Hartford Jn",
+            "direction": "Up (SB)",
+            "movement": "Up Fast to CLC line",
+            "adj_min": "2",
+            "train_type": "All",
+            "condition": "Approach control, before Hartford Jn"
+          },
+          {
+            "location": "Acton Bridge",
+            "direction": "Down (NB)",
+            "movement": "Down Slow (timed over 60mph)",
+            "adj_min": "0.5",
+            "train_type": "All timed over 60mph",
+            "condition": "Acceleration, after Acton Bridge"
+          },
+          {
+            "location": "Acton Bridge",
+            "direction": "Up (SB)",
+            "movement": "FL to SL (not stopping at Acton Bridge)",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Reduced speed required"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Down (NB)",
+            "movement": "Down Main to Down Helsby",
+            "adj_min": "3 Pax / 4 Freight approach control + 0.5 Pax acceleration",
+            "train_type": "All",
+            "condition": "Approach control (3 min Pax / 4 min Freight before Acton Grange Jn), then acceleration after Acton Grange Jn (0.5 min Passenger)"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Down (NB)",
+            "movement": "Down Helsby to Down Main",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Acceleration away from junction, approaching next timing point"
+          },
+          {
+            "location": "Acton Grange Jn",
+            "direction": "Up (SB)",
+            "movement": "Up Helsby to Up Main",
+            "adj_min": "1 + 2",
+            "train_type": "All",
+            "condition": "Approach control (1 min before Acton Grange Jn) + acceleration (2 min after Acton Grange Jn)"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Down (NB)",
+            "movement": "Down Fast to Down Passenger Loop (Platform 4)",
+            "adj_min": "0.5",
+            "train_type": "All",
+            "condition": "Approach control. Not required if crossing from Down Helsby to Down Main at Acton Grange Jn."
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Down (NB)",
+            "movement": "Down Fast to Down Slow",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control. Not required if crossing from Down Helsby to Down Main at Acton Grange Jn."
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Slow or Goods to Up Main direct to Acton Grange Jn",
+            "adj_min": "1",
+            "train_type": "Non-stop",
+            "condition": "Acceleration, approaching next timing point"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Fast to Platform 1",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Slow to Up Goods Loop",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control"
+          },
+          {
+            "location": "Warrington Bank Quay",
+            "direction": "Up (SB)",
+            "movement": "Up Fast to Up Helsby",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control"
+          }
+        ],
+        "loops": [
+          { "name": "Stafford Platform 1",                       "location": "Stafford",             "line": "FL/ML", "length_slu": 48,  "length_m": 311, "note": "Between signals LS5582 and SC9355" },
+          { "name": "Stafford Up Stafford Fast",                  "location": "Stafford",             "line": "FL",    "length_slu": 47,  "length_m": 306, "note": "" },
+          { "name": "Stafford Down Stafford Fast",                "location": "Stafford",             "line": "FL",    "length_slu": 45,  "length_m": 290, "note": "" },
+          { "name": "Stafford Platform 3",                        "location": "Stafford",             "line": "SL",    "length_slu": 45,  "length_m": 290, "note": "Between signals SC5591 and LS9346" },
+          { "name": "Stafford Up Stafford Slow Platform 4",       "location": "Stafford",             "line": "SL",    "length_slu": 45,  "length_m": 290, "note": "Between signals LS5588 and SC9349" },
+          { "name": "Stafford Down Stafford Slow Platform 5",     "location": "Stafford",             "line": "SL",    "length_slu": 47,  "length_m": 303, "note": "Between signals SC5587 and LS9350" },
+          { "name": "Stafford Platform 6",                        "location": "Stafford",             "line": "GL",    "length_slu": 47,  "length_m": 301, "note": "" },
+          { "name": "Stafford Down Goods Loop",                   "location": "Stafford",             "line": "GL",    "length_slu": 127, "length_m": 816, "note": "Between signals LS1296 and SC4313" },
+          { "name": "Stafford Goods Loop (Up and Down Goods)",    "location": "Stafford",             "line": "GL",    "length_slu": 47,  "length_m": 301, "note": "Between signals SC313 and LS4314" },
+          { "name": "Warrington Bank Quay Up Goods",              "location": "Warrington Bank Quay", "line": "GL",    "length_slu": 44,  "length_m": 282, "note": "" },
+          { "name": "Springs Branch Jn Down and Up Passenger Loop (Up)", "location": "Springs Branch Jn", "line": "GL", "length_slu": 109, "length_m": 701, "note": "" },
+          { "name": "Wigan South Jn Down and Up Passenger Loop (Down)", "location": "Wigan South Jn",  "line": "GL",  "length_slu": 73,  "length_m": 471, "note": "" }
+        ]
+      }
+    }
+  },
+  "NW2015": {
+    "name": "Chat Moss (Ordsall Lane Jn to Edge Hill)",
+    "description": "Chat Moss Line from Ordsall Lane Junction to Edge Hill (Liverpool), covering the Weaver Junction to Parkside Junction section relevant to the Crewe-Parkside corridor.",
+    "sort_order": 2,
+    "years": {
+      "2021": {
+        "version": "V4 LNW",
+        "ea": {
+          "Down": [
+            { "location": "Liverpool Lime Street", "line": "FL/ML", "ea_min": 2, "pa_min": 0, "note": "May be taken anywhere between Huyton and Liverpool Lime Street" },
+            { "location": "Liverpool Lime Street", "line": "SL",    "ea_min": 2, "pa_min": 0, "note": "May be taken anywhere between Huyton and Liverpool Lime Street" }
+          ],
+          "Up": [
+            { "location": "Ordsall Lane Jn",       "line": "FL/ML", "ea_min": 2, "pa_min": 0, "note": "Does not apply to trains starting from Weaste or Eccles" }
+          ]
+        },
+        "srt_adjustments": [
+          {
+            "location": "Earlestown",
+            "direction": "Up (towards Manchester / from Liverpool Curve)",
+            "movement": "Passenger trains joining Up from Down and Up Liverpool Curve (Platform 3)",
+            "adj_min": "0.5 (1 for 6-car+ and all freight)",
+            "train_type": "Passenger / Freight",
+            "condition": "Slow speed crossover after Earlestown. 1 min for trains 6+ coaches and all freight."
+          },
+          {
+            "location": "Huyton",
+            "direction": "Down (NB)",
+            "movement": "Down Chat Moss to Down Chat Moss Slow (not stopping at Huyton)",
+            "adj_min": "1",
+            "train_type": "Freight",
+            "condition": "Slower speed junction (passenger and light engines: 0 min)"
+          },
+          {
+            "location": "Olive Mount Jn",
+            "direction": "Down (NB) - towards Olive Mount Chord",
+            "movement": "Down Freight train passing to Olive Mount Chord",
+            "adj_min": "1",
+            "train_type": "Freight",
+            "condition": "Approach control approaching Olive Mount Jn"
+          },
+          {
+            "location": "Olive Mount Jn",
+            "direction": "Up (SB) - from Olive Mount Chord",
+            "movement": "Up Freight train passing from Olive Mount Chord",
+            "adj_min": "1",
+            "train_type": "Freight",
+            "condition": "Acceleration to line speed after Olive Mount Jn"
+          }
+        ],
+        "loops": [
+          { "name": "Eccles Up Goods Loop",         "location": "Eccles",      "line": "GL",  "length_slu": 124, "length_m": 794, "note": "" },
+          { "name": "Up and Down Earlestown West",  "location": "Earlestown",  "line": "GL",  "length_slu": 55,  "length_m": 354, "note": "" }
+        ]
+      },
+      "2026": {
+        "version": "V3 NWC",
+        "ea": {
+          "Down": [
+            { "location": "Parkside Jn",           "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Does not apply to services to Golborne Jn. CHANGED from 2021 (was E=2 at Liverpool Lime Street)." },
+            { "location": "Olive Mount Jn",        "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Can be applied approaching Roby. New in 2026." }
+          ],
+          "Up": [
+            { "location": "Earlestown",            "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "New in 2026." },
+            { "location": "Ordsall Lane Jn",       "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Does not apply to trains starting from Weaste or Eccles. Reduced from E=2 in 2021 to E=1." }
+          ]
+        },
+        "srt_adjustments": [
+          {
+            "location": "Earlestown",
+            "direction": "Up (towards Manchester / from Liverpool Curve)",
+            "movement": "Passenger trains joining Up from Down and Up Liverpool Curve (Platform 3)",
+            "adj_min": "0.5 (1 for 6-car+ and all freight)",
+            "train_type": "Passenger / Freight",
+            "condition": "Slow speed crossover after Earlestown. Unchanged from 2021."
+          },
+          {
+            "location": "Huyton",
+            "direction": "Down (NB)",
+            "movement": "Down Chat Moss to Down Chat Moss Slow (not stopping at Huyton)",
+            "adj_min": "1",
+            "train_type": "Freight",
+            "condition": "Slower speed junction. Unchanged from 2021."
+          },
+          {
+            "location": "Olive Mount Jn",
+            "direction": "Down (NB) - towards Olive Mount Chord",
+            "movement": "Down Freight train passing to Olive Mount Chord",
+            "adj_min": "1",
+            "train_type": "Freight",
+            "condition": "Approach control approaching Olive Mount Jn. Unchanged from 2021."
+          },
+          {
+            "location": "Olive Mount Jn",
+            "direction": "Up (SB) - from Olive Mount Chord",
+            "movement": "Up Freight train passing from Olive Mount Chord",
+            "adj_min": "1",
+            "train_type": "Freight",
+            "condition": "Acceleration to line speed after Olive Mount Jn. Unchanged from 2021."
+          }
+        ],
+        "loops": [
+          { "name": "Eccles Up Goods Loop",         "location": "Eccles",      "line": "GL",  "length_slu": 124, "length_m": 794, "note": "Unchanged from 2021" },
+          { "name": "Up and Down Earlestown West",  "location": "Earlestown",  "line": "GL",  "length_slu": 55,  "length_m": 354, "note": "Unchanged from 2021" }
+        ]
+      },
+      "2027": {
+        "version": "V1 NWC",
+        "ea": {
+          "Down": [
+            { "location": "Parkside Jn",           "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Confirmed unchanged from 2026. Does not apply to services to Golborne Jn." },
+            { "location": "Olive Mount Jn",        "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Confirmed unchanged from 2026." }
+          ],
+          "Up": [
+            { "location": "Earlestown",            "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Confirmed unchanged from 2026." },
+            { "location": "Ordsall Lane Jn",       "line": "FL/ML", "ea_min": 1, "pa_min": 0, "note": "Confirmed unchanged from 2026. Does not apply to trains starting from Weaste or Eccles." }
+          ]
+        },
+        "srt_adjustments": [
+          {
+            "location": "Eccles",
+            "direction": "Down (NB)",
+            "movement": "Trains from Ordsall Lane Jn stopping in Eccles Up Goods Loop",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Approach control and slow speed crossover"
+          },
+          {
+            "location": "Eccles",
+            "direction": "Up (SB)",
+            "movement": "Depart Eccles Up Goods Loop towards Ordsall Lane Jn",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Speed differential, applies approaching next timing point"
+          },
+          {
+            "location": "Parkside Jn",
+            "direction": "Down (NB)",
+            "movement": "Trains to Golborne Jn from Parkside Jn",
+            "adj_min": "1.5",
+            "train_type": "All",
+            "condition": "Approach control for slow speed junction, applied approaching Parkside Jn"
+          },
+          {
+            "location": "Parkside Jn",
+            "direction": "Up (SB)",
+            "movement": "Trains from Golborne Jn routed to Parkside Jn",
+            "adj_min": "1",
+            "train_type": "All",
+            "condition": "Acceleration from slow speed junction, applies at next timing point after Parkside Jn"
+          },
+          {
+            "location": "Earlestown",
+            "direction": "Up (SB - from Liverpool Curve)",
+            "movement": "Passenger trains joining Up from Down and Up Liverpool Curve (Platform 3)",
+            "adj_min": "0.5 (1 for 6-car+ and all freight)",
+            "train_type": "Passenger / Freight",
+            "condition": "Slow speed crossover after Earlestown. 1 min for trains 6+ cars and all freight."
+          },
+          {
+            "location": "Huyton",
+            "direction": "Down (NB)",
+            "movement": "Down Chat Moss to Down Chat Moss Slow (not stopping at Huyton)",
+            "adj_min": "0.5 Pax / light engines; 1 Freight",
+            "train_type": "All",
+            "condition": "Slower speed junction"
+          },
+          {
+            "location": "Roby",
+            "direction": "Down (NB)",
+            "movement": "Down Chat Moss Slow to Down Chat Moss (not stopping at Roby)",
+            "adj_min": "0.5 Pax / 0.5 Freight up to 1000t / 1 Freight 1200-1400t / 1.5 Freight 1600t+",
+            "train_type": "All",
+            "condition": "Acceleration from slower speed junction, applies at next timing point after Roby. No adjustment for trains timed at 45mph or less."
+          },
+          {
+            "location": "Olive Mount Jn",
+            "direction": "Down (NB) - towards Olive Mount Chord",
+            "movement": "Down Freight train passing to Olive Mount Chord",
+            "adj_min": "1",
+            "train_type": "Freight",
+            "condition": "Approach control approaching Olive Mount Jn"
+          },
+          {
+            "location": "Olive Mount Jn",
+            "direction": "Up (SB) - from Olive Mount Chord",
+            "movement": "Up Freight train passing from Olive Mount Chord",
+            "adj_min": "1",
+            "train_type": "Freight",
+            "condition": "Acceleration to line speed after Olive Mount Jn"
+          },
+          {
+            "location": "Olive Mount Jn",
+            "direction": "Up (SB)",
+            "movement": "Up Passenger train stopping at Wavertree Technology Park then non-stop to Huyton",
+            "adj_min": "0.5",
+            "train_type": "Passenger",
+            "condition": "Acceleration to line speed after Olive Mount Jn"
+          }
+        ],
+        "loops": [
+          { "name": "Eccles Up Goods Loop",         "location": "Eccles",      "line": "GL",  "length_slu": 124, "length_m": 794, "note": "Unchanged from 2026" },
+          { "name": "Up and Down Earlestown West",  "location": "Earlestown",  "line": "GL",  "length_slu": 55,  "length_m": 354, "note": "Unchanged from 2026" }
+        ]
+      }
+    }
+  }
+}

@@ -19,7 +19,7 @@ export interface RunProgress {
 const IDLE: RunProgress = { phase: "idle", phase_pct: 0, percent: 0,
                              done_blocks: 0, total_blocks: 0, message: "" };
 
-export type Page = "home" | "upload" | "corridor" | "configure" | "runs" | "results";
+export type Page = "home" | "upload" | "corridor" | "configure" | "runs" | "results" | "tpr";
 
 interface AppState {
   page: Page;

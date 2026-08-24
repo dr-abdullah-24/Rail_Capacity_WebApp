@@ -80,6 +80,13 @@ class Run(SQLModel, table=True):
     div_objective_value: float | None = None
     div_solver_status: str | None = None
 
+    # User-defined SRT profile for generic corridors.  JSON string encoding
+    # a list of segment dicts: [{from_seq, to_seq, from_name, to_name,
+    # srt_nb, srt_sb, eng_nb, eng_sb, loop_available, notes}].
+    # When set, _run_generic_capacity skips derive_srt.py and writes this
+    # directly as srt_profile.csv so the MILP uses the user-supplied values.
+    srt_json: str | None = None
+
     created_at: datetime = Field(default_factory=_now_utc)
     started_at: datetime | None = None
     completed_at: datetime | None = None

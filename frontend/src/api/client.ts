@@ -198,13 +198,15 @@ export interface CorridorTrain {
   junctions: JunctionStop[];
 }
 export interface HeatmapCell {
-  junction_seq: number; direction: string; hour: number; count: number;
+  junction_seq: number; direction: string; bucket: number; count: number;
 }
 export interface InsertedOverlayCell {
-  junction_seq: number; direction: string; hour: number; path_id: string;
+  junction_seq: number; direction: string; bucket: number; path_id: string;
 }
 export interface RunTraffic {
   corridor_names: string[];
+  junction_chainages?: number[];
+  junction_seqs?: number[];
   existing: CorridorTrain[];
   inserted: CorridorTrain[];
   heatmap: HeatmapCell[];
@@ -280,6 +282,87 @@ export async function createCorridor(payload: {
 
 export async function deleteCorridor(id: string) {
   return (await api.delete(`/corridors/${id}`)).data;
+}
+
+export interface SrtSegment {
+  from_seq: number;
+  to_seq: number;
+  from_name: string;
+  to_name: string;
+  srt_nb: number;
+  srt_sb: number;
+  eng_nb: number;
+  eng_sb: number;
+  loop_available: number;  // 0 | 1
+  notes?: string;
+}
+
+export async function previewSrt(corridor_id: string, traction: string) {
+  return (await api.post<SrtSegment[]>("/srt/preview", { corridor_id, traction })).data;
+}
+
+export interface TprDocument {
+  year: number;
+  version: string;
+  route: string;
+  route_label: string;
+  filename: string;
+  folder: string;
+  size_bytes: number;
+}
+
+export async function listTprDocuments() {
+  return (await api.get<TprDocument[]>("/tpr/index")).data;
+}
+
+export function tprDocumentUrl(folder: string, filename: string) {
+  return `/api/tpr/document?folder=${encodeURIComponent(folder)}&filename=${encodeURIComponent(filename)}`;
+}
+
+export interface TprEaEntry {
+  location: string;
+  line: string;
+  ea_min: number;
+  pa_min: number;
+  note: string;
+}
+
+export interface TprSrtAdj {
+  location: string;
+  direction: string;
+  movement: string;
+  adj_min: string;
+  train_type: string;
+  condition: string;
+}
+
+export interface TprLoop {
+  name: string;
+  location: string;
+  line: string;
+  length_slu: number | null;
+  length_m: number | null;
+  note: string;
+}
+
+export interface TprRouteYear {
+  version: string;
+  ea: { Down: TprEaEntry[]; Up: TprEaEntry[] };
+  srt_adjustments: TprSrtAdj[];
+  loops: TprLoop[];
+}
+
+export interface TprRoute {
+  name: string;
+  description: string;
+  sort_order?: number;
+  years: Record<string, TprRouteYear>;
+}
+
+export type TprStructured = Record<string, TprRoute>;
+
+export async function listTprStructured() {
+  return (await api.get<TprStructured>("/tpr/structured")).data;
 }
 
 export function runLogStream(id: number,
