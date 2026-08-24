@@ -346,7 +346,7 @@ export function TprPage() {
                   <select value={filterRoute} onChange={(e) => setFilterRoute(e.target.value)} style={selectStyle}>
                     <option value="all">All routes</option>
                     {routeIds.map((r) => (
-                      <option key={r} value={r}>{r} — {structured![r].name}</option>
+                      <option key={r} value={r}>{r}: {structured![r].name}</option>
                     ))}
                   </select>
                 </label>
@@ -389,6 +389,48 @@ export function TprPage() {
                 ))}
               </div>
             )}
+
+            {/* Glossary */}
+            <div style={{
+              background: "var(--surface)", border: "1px solid var(--border)",
+              borderRadius: 6, padding: "0.85rem", marginBottom: "0.85rem",
+            }}>
+              <div style={{ fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.07em",
+                textTransform: "uppercase", color: "var(--muted)", marginBottom: "0.65rem" }}>
+                Notes
+              </div>
+              {[
+                {
+                  term: "EA (Engineering Allowance)",
+                  def: "Extra minutes added to a train path approaching a location to absorb speed restrictions imposed by engineering possessions.",
+                },
+                {
+                  term: "PA (Pathing Allowance)",
+                  def: "Extra minutes added to hold a train back behind slower or conflicting traffic at a junction.",
+                },
+                {
+                  term: "FL/ML · SL · GL",
+                  def: "Line type the allowance applies to: Fast/Main Line, Slow Line, or Goods Line.",
+                },
+                {
+                  term: "SRT Adjustment",
+                  def: "Correction to the Schedule Runtime (SRT) for specific movements, train types or operating conditions beyond standard EA/PA.",
+                },
+                {
+                  term: "Loops",
+                  def: "Passing-loop capacity data: loop name, location, line and length in Standard Locomotive Units (SLU) and metres.",
+                },
+              ].map(({ term, def }) => (
+                <div key={term} style={{ marginBottom: "0.6rem" }}>
+                  <div style={{ fontSize: "0.74rem", fontWeight: 600, color: "var(--fg)", marginBottom: "0.15rem" }}>
+                    {term}
+                  </div>
+                  <div style={{ fontSize: "0.72rem", color: "var(--muted)", lineHeight: 1.55 }}>
+                    {def}
+                  </div>
+                </div>
+              ))}
+            </div>
 
             {/* PDF archive */}
             <div style={{

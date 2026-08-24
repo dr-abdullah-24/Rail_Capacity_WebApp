@@ -1626,7 +1626,7 @@ function SrtEditor({ corridorName, rows, baseline, loading, modified, error,
             <thead>
               <tr style={{ background: "var(--paper)",
                             borderBottom: "2px solid var(--border)" }}>
-                {["From", "To", "NB (min)", "SB (min)", "Eng NB", "Eng SB", "Loop"].map((h) => (
+                {["From", "To", "Up (min)", "Down (min)", "Eng Up", "Eng Down", "Loop"].map((h) => (
                   <th key={h} style={{ padding: "7px 10px", textAlign: "left",
                                         fontWeight: 700, color: "var(--grey-6)",
                                         fontSize: 11, letterSpacing: 0.3,
@@ -1640,11 +1640,11 @@ function SrtEditor({ corridorName, rows, baseline, loading, modified, error,
             <tbody>
               {rows.map((seg, idx) => {
                 const orig = baseline?.[idx];
-                const nbChanged  = orig && seg.srt_nb !== orig.srt_nb;
-                const sbChanged  = orig && seg.srt_sb !== orig.srt_sb;
+                const nbChanged  = orig && seg.srt_up !== orig.srt_up;
+                const sbChanged  = orig && seg.srt_down !== orig.srt_down;
                 const loopChanged = orig && seg.loop_available !== orig.loop_available;
-                const engNbChanged = orig && seg.eng_nb !== orig.eng_nb;
-                const engSbChanged = orig && seg.eng_sb !== orig.eng_sb;
+                const engNbChanged = orig && seg.eng_up !== orig.eng_up;
+                const engSbChanged = orig && seg.eng_down !== orig.eng_down;
                 return (
                   <tr key={idx}
                       title={seg.notes ?? ""}
@@ -1661,8 +1661,8 @@ function SrtEditor({ corridorName, rows, baseline, loading, modified, error,
                     </td>
                     <td style={{ padding: "4px 6px" }}>
                       <input type="number" min={1} max={120}
-                             value={seg.srt_nb}
-                             onChange={(e) => updateRow(idx, "srt_nb", e.target.value)}
+                             value={seg.srt_up}
+                             onChange={(e) => updateRow(idx, "srt_up", e.target.value)}
                              style={{ width: 60, textAlign: "center",
                                        borderColor: nbChanged
                                          ? "var(--brand)" : undefined,
@@ -1671,8 +1671,8 @@ function SrtEditor({ corridorName, rows, baseline, loading, modified, error,
                     </td>
                     <td style={{ padding: "4px 6px" }}>
                       <input type="number" min={1} max={120}
-                             value={seg.srt_sb}
-                             onChange={(e) => updateRow(idx, "srt_sb", e.target.value)}
+                             value={seg.srt_down}
+                             onChange={(e) => updateRow(idx, "srt_down", e.target.value)}
                              style={{ width: 60, textAlign: "center",
                                        borderColor: sbChanged
                                          ? "var(--brand)" : undefined,
@@ -1681,8 +1681,8 @@ function SrtEditor({ corridorName, rows, baseline, loading, modified, error,
                     </td>
                     <td style={{ padding: "4px 6px" }}>
                       <input type="number" min={0} max={30}
-                             value={seg.eng_nb}
-                             onChange={(e) => updateRow(idx, "eng_nb", e.target.value)}
+                             value={seg.eng_up}
+                             onChange={(e) => updateRow(idx, "eng_up", e.target.value)}
                              style={{ width: 52, textAlign: "center",
                                        borderColor: engNbChanged
                                          ? "var(--brand)" : undefined,
@@ -1691,8 +1691,8 @@ function SrtEditor({ corridorName, rows, baseline, loading, modified, error,
                     </td>
                     <td style={{ padding: "4px 6px" }}>
                       <input type="number" min={0} max={30}
-                             value={seg.eng_sb}
-                             onChange={(e) => updateRow(idx, "eng_sb", e.target.value)}
+                             value={seg.eng_down}
+                             onChange={(e) => updateRow(idx, "eng_down", e.target.value)}
                              style={{ width: 52, textAlign: "center",
                                        borderColor: engSbChanged
                                          ? "var(--brand)" : undefined,
@@ -1732,12 +1732,12 @@ function SrtEditor({ corridorName, rows, baseline, loading, modified, error,
       )}
 
       <div style={{ marginTop: 10, fontSize: 11, color: "var(--grey-5)" }}>
-        <b>NB / SB</b> - scheduled run time in minutes per direction.{" "}
-        <b>Eng NB / SB</b> - TPR engineering allowance (timing load buffer) added
+        <b>Up / Down</b> - scheduled run time in minutes per direction.{" "}
+        <b>Eng Up / Down</b> - TPR engineering allowance (timing load buffer) added
         on top of SRT; initialised at 5% of SRT per segment (min 1 min).{" "}
         <b>Loop</b> - whether the MILP may hold a new train on this section
         to let conflicting traffic pass; validate against the NWR Sectional Appendix.{" "}
-        NB and SB are initialised identically - adjust for route gradients against
+        Up and Down are initialised identically - adjust for route gradients against
         your Working Timetable.{" "}
         Highlighted cells differ from the initial estimate.{" "}
         Hover any row to see the estimation breakdown.

@@ -1,12 +1,12 @@
-from_seq,to_seq,from_name,to_name,srt_min_northbound,srt_min_southbound,eng_alw_nb_min,eng_alw_sb_min,loop_available,notes
-0,1,CREWE,WINSFORD,5,5,0,0,1,Salop DGL / Winsford loop available
-1,2,WINSFORD,HARTFORD,1,1,1,0,0,STEER: eng alw applied on NB (into Parkside) only
-2,3,HARTFORD,HARTFORD JN,1,1,0,0,0,Hartford Jn is 2018 bottleneck (2 slow berths)
-3,4,HARTFORD JN,ACTON BRIDGE,2,2,1,0,1,Acton Bridge UGL available
-4,5,ACTON BRIDGE,WEAVER JN,1,1,0,0,0,
-5,6,WEAVER JN,ACTON GRANGE JN,7,7,1,0,0,WCML long 2-track section, most paths need pathing time (STEER)
-6,7,ACTON GRANGE JN,WARRINGTON BQ,3,3,0,0,0,
-7,8,WARRINGTON BQ,WINWICK JN,4,4,1,0,1,Warrington sidings available
-8,9,WINWICK JN,EARLESTOWN,4,4,0,0,0,Chat Moss transition; 4-min follow-freight headway starts here
-9,10,EARLESTOWN,NEWTON-LE-WILLOWS,4,4,0,0,1,Earlestown loop (STEER: 6 trains held near here)
-10,11,NEWTON-LE-WILLOWS,PARKSIDE JN,5,5,0,0,0,STEER: pass-to-pass SRT + 2 min stop @ Parkside
+from_seq,to_seq,from_name,to_name,srt_min_up,srt_min_down,eng_alw_up_min,eng_alw_down_min,loop_available,single_track,notes
+0,1,CREWE,WINSFORD,5,5,0,0,1,0,Salop DGL / Winsford loop available
+1,2,WINSFORD,HARTFORD,1,1,1,0,0,0,STEER: eng alw applied on Up (into Parkside) only
+2,3,HARTFORD,HARTFORD JN,1,1,0,0,0,0,Hartford Jn is 2018 bottleneck (2 slow berths)
+3,4,HARTFORD JN,ACTON BRIDGE,2,2,1,0,1,0,Acton Bridge UGL available
+4,5,ACTON BRIDGE,WEAVER JN,1,1,0,0,0,0,
+5,6,WEAVER JN,ACTON GRANGE JN,7,7,1,0,0,0,WCML long 2-track section most paths need pathing time (STEER)
+6,7,ACTON GRANGE JN,WARRINGTON BQ,3,3,0,0,0,0,
+7,8,WARRINGTON BQ,WINWICK JN,4,4,1,0,1,0,Warrington sidings available
+8,9,WINWICK JN,EARLESTOWN,4,4,0,0,0,0,Chat Moss transition; 4-min follow-freight headway starts here
+9,10,EARLESTOWN,NEWTON-LE-WILLOWS,4,4,0,0,1,0,Earlestown loop (STEER: 6 trains held near here)
+10,11,NEWTON-LE-WILLOWS,PARKSIDE JN,5,5,0,0,0,0,STEER: pass-to-pass SRT + 2 min stop @ Parkside

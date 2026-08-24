@@ -37,7 +37,7 @@ def _to_hhmm(mins: int) -> str:
 
 
 # Abbreviations that should stay uppercase in station names.
-_UPPER_ABBREVS = {"BQ", "GDS", "RTS", "NY", "SB", "NB", "NW"}
+_UPPER_ABBREVS = {"BQ", "GDS", "RTS", "NY", "NW"}
 
 def _display_name(raw: str) -> str:
     """Convert ALL-CAPS station name from baseline CSV to readable form.
@@ -62,9 +62,11 @@ def load_baseline(baseline_csv: Path) -> tuple[list[dict], dict, list[str]]:
     seq_to_name: dict[int, str] = {}
     if not baseline_csv.exists():
         return [], heat, []
+    _dir_norm = {"northbound": "up", "southbound": "down"}
     with baseline_csv.open(newline="", encoding="utf-8") as fh:
         for r in csv.DictReader(fh):
-            key = (r["headcode"], r["journey_num"], r["direction"])
+            d = _dir_norm.get(r["direction"], r["direction"])
+            key = (r["headcode"], r["journey_num"], d)
             j = int(r["junction_seq"])
             name = _display_name(r["junction_name"])
             grouped[key].append({
@@ -74,7 +76,6 @@ def load_baseline(baseline_csv: Path) -> tuple[list[dict], dict, list[str]]:
                 "line": r.get("line", ""),
             })
             seq_to_name.setdefault(j, name)
-            d = r["direction"]
             bucket = int(r["t_min"]) // 15
             heat.setdefault(j, {}).setdefault(d, {}).setdefault(bucket, 0)
             heat[j][d][bucket] += 1
@@ -138,8 +139,9 @@ def load_solution(solution_csv: Path,
                     "hhmm":  _to_hhmm(t),
                     "dwell": dwell,
                 })
-            direction = "northbound" if r["path_id"].startswith("NB") \
-                        else "southbound"
+            direction = r.get("direction", "")
+            if not direction:
+                direction = "up" if r["path_id"].startswith("UP") else "down"
             out.append({
                 "kind":        "inserted",
                 "path_id":     r["path_id"],

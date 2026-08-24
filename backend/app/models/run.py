@@ -62,8 +62,8 @@ class Run(SQLModel, table=True):
     excluded_terminals: str = Field(default="")           # comma-separated stanmes / tiplocs
 
     # Result fields — capacity model
-    nb_inserted: int | None = None
-    sb_inserted: int | None = None
+    up_inserted: int | None = None
+    down_inserted: int | None = None
     total_dwell_min: int | None = None
     blocks_hit_time_limit: int | None = None
     wall_solve_time_s: float | None = None
@@ -82,7 +82,7 @@ class Run(SQLModel, table=True):
 
     # User-defined SRT profile for generic corridors.  JSON string encoding
     # a list of segment dicts: [{from_seq, to_seq, from_name, to_name,
-    # srt_nb, srt_sb, eng_nb, eng_sb, loop_available, notes}].
+    # srt_up, srt_down, eng_up, eng_down, loop_available, notes}].
     # When set, _run_generic_capacity skips derive_srt.py and writes this
     # directly as srt_profile.csv so the MILP uses the user-supplied values.
     srt_json: str | None = None

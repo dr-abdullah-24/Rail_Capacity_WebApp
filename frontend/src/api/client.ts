@@ -45,8 +45,8 @@ export interface Run {
   n_berths: number;
   endpoint_strictness: string;
   excluded_terminals: string;
-  nb_inserted: number | null;
-  sb_inserted: number | null;
+  up_inserted: number | null;
+  down_inserted: number | null;
   total_dwell_min: number | null;
   blocks_hit_time_limit: number | null;
   wall_solve_time_s: number | null;
@@ -108,14 +108,14 @@ export interface Kpis {
   date?: string;
   headway_min?: number;
   chat_moss_headway_min?: number;
-  nb_inserted?: number;
-  sb_inserted?: number;
+  up_inserted?: number;
+  down_inserted?: number;
   total_dwell_min?: number;
   wall_solve_time_s?: number;
   blocks_hit_time_limit?: number;
   candidates_total?: number;
-  nb_candidates?: number;
-  sb_candidates?: number;
+  up_candidates?: number;
+  down_candidates?: number;
   steer_target?: { nb: number; sb: number; source: string };
   per_block?: {
     direction: string; block: number; inserted: number;
@@ -289,10 +289,10 @@ export interface SrtSegment {
   to_seq: number;
   from_name: string;
   to_name: string;
-  srt_nb: number;
-  srt_sb: number;
-  eng_nb: number;
-  eng_sb: number;
+  srt_up: number;
+  srt_down: number;
+  eng_up: number;
+  eng_down: number;
   loop_available: number;  // 0 | 1
   notes?: string;
 }

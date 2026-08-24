@@ -183,8 +183,8 @@ def preview_srt(body: SrtPreviewRequest) -> list[dict]:
         # ── Compute EA (Engineering Allowance) ───────────────────────────
         # TPR-sourced values take priority over the 5 % formula for the
         # specific approach locations listed in tpr_ea.json.
-        tpr_nb = _tpr_ea_for(t_name, "NB")
-        tpr_sb = _tpr_ea_for(t_name, "SB")
+        tpr_up = _tpr_ea_for(t_name, "NB")
+        tpr_down = _tpr_ea_for(t_name, "SB")
 
         def _ea(srt_val: int, tpr_entry: dict | None) -> tuple[int, str]:
             """Return (ea_minutes, source_note)."""
@@ -193,49 +193,49 @@ def preview_srt(body: SrtPreviewRequest) -> list[dict]:
             return max(_MIN_EA_MIN, round(srt_val * _EA_PCT)), "formula (5% min 1 min)"
 
         if wtt and wtt["srt_nb"] is not None and wtt["srt_sb"] is not None:
-            srt_nb = max(_MIN_SRT_MIN, wtt["srt_nb"])
-            srt_sb = max(_MIN_SRT_MIN, wtt["srt_sb"])
-            ea_nb, ea_nb_src = _ea(srt_nb, tpr_nb)
-            ea_sb, ea_sb_src = _ea(srt_sb, tpr_sb)
+            srt_up = max(_MIN_SRT_MIN, wtt["srt_nb"])
+            srt_down = max(_MIN_SRT_MIN, wtt["srt_sb"])
+            ea_up, ea_up_src = _ea(srt_up, tpr_up)
+            ea_down, ea_down_src = _ea(srt_down, tpr_down)
             loop   = 1 if km_track >= _LOOP_THRESHOLD_KM else 0
             span_note = (
                 f" (scaled from WTT pair {f_name}-{wtt['_span_to']})"
                 if "_span_to" in wtt else ""
             )
             note   = (
-                f"WTT freight p10{span_note}: NB {srt_nb} min (n={wtt['n_nb']}), "
-                f"SB {srt_sb} min (n={wtt['n_sb']}). "
-                f"EA NB={ea_nb} min [{ea_nb_src}], SB={ea_sb} min [{ea_sb_src}]. "
+                f"WTT freight p10{span_note}: Up {srt_up} min (n={wtt['n_nb']}), "
+                f"Down {srt_down} min (n={wtt['n_sb']}). "
+                f"EA Up={ea_up} min [{ea_up_src}], Down={ea_down} min [{ea_down_src}]. "
                 f"Source: wtt_data.json 4xxx/6xxx services."
             )
 
         elif wtt and (wtt["srt_nb"] is not None or wtt["srt_sb"] is not None):
             # One direction from WTT, other from formula.
             formula_srt = max(_MIN_SRT_MIN, round(km_track / km_per_min))
-            srt_nb = max(_MIN_SRT_MIN, wtt["srt_nb"]) if wtt["srt_nb"] else formula_srt
-            srt_sb = max(_MIN_SRT_MIN, wtt["srt_sb"]) if wtt["srt_sb"] else formula_srt
-            ea_nb, ea_nb_src = _ea(srt_nb, tpr_nb)
-            ea_sb, ea_sb_src = _ea(srt_sb, tpr_sb)
+            srt_up = max(_MIN_SRT_MIN, wtt["srt_nb"]) if wtt["srt_nb"] else formula_srt
+            srt_down = max(_MIN_SRT_MIN, wtt["srt_sb"]) if wtt["srt_sb"] else formula_srt
+            ea_up, ea_up_src = _ea(srt_up, tpr_up)
+            ea_down, ea_down_src = _ea(srt_down, tpr_down)
             loop   = 1 if km_track >= _LOOP_THRESHOLD_KM else 0
             span_note = (
                 f" (scaled from WTT pair {f_name}-{wtt['_span_to']})"
                 if "_span_to" in wtt else ""
             )
             note   = (
-                f"WTT partial{span_note}: NB n={wtt['n_nb']}, SB n={wtt['n_sb']}. "
+                f"WTT partial{span_note}: Up n={wtt['n_nb']}, Down n={wtt['n_sb']}. "
                 f"Direction(s) with <5 obs use formula fallback "
                 f"({max_mph:.0f} mph × {int(_SPEED_EFFICIENCY*100)}% = "
                 f"{eff_mph:.0f} mph eff, ~{km_track:.1f} km track). "
-                f"EA NB={ea_nb} min [{ea_nb_src}], SB={ea_sb} min [{ea_sb_src}]."
+                f"EA Up={ea_up} min [{ea_up_src}], Down={ea_down} min [{ea_down_src}]."
             )
 
         else:
             # ── Formula fallback ──────────────────────────────────────────
             formula_srt = max(_MIN_SRT_MIN, round(km_track / km_per_min))
-            srt_nb = formula_srt
-            srt_sb = formula_srt
-            ea_nb, ea_nb_src = _ea(srt_nb, tpr_nb)
-            ea_sb, ea_sb_src = _ea(srt_sb, tpr_sb)
+            srt_up = formula_srt
+            srt_down = formula_srt
+            ea_up, ea_up_src = _ea(srt_up, tpr_up)
+            ea_down, ea_down_src = _ea(srt_down, tpr_down)
             loop   = 1 if km_track >= _LOOP_THRESHOLD_KM else 0
             dist_str = (
                 f"{km_chainage:.1f} km haversine × {_TRACK_FACTOR_USER} "
@@ -249,8 +249,8 @@ def preview_srt(body: SrtPreviewRequest) -> list[dict]:
                 f"{max_mph:.0f} mph max × {int(_SPEED_EFFICIENCY*100)}% "
                 f"= {eff_mph:.0f} mph eff ({eff_kmph:.0f} km/h); "
                 f"SRT {formula_srt} min. "
-                f"EA NB={ea_nb} min [{ea_nb_src}], SB={ea_sb} min [{ea_sb_src}]. "
-                f"NB=SB: adjust for route gradients against WTT."
+                f"EA Up={ea_up} min [{ea_up_src}], Down={ea_down} min [{ea_down_src}]. "
+                f"Up=Down: adjust for route gradients against WTT."
             )
 
         segments.append({
@@ -258,10 +258,10 @@ def preview_srt(body: SrtPreviewRequest) -> list[dict]:
             "to_seq":         int(t["seq"]),
             "from_name":      f_name,
             "to_name":        t_name,
-            "srt_nb":         srt_nb,
-            "srt_sb":         srt_sb,
-            "eng_nb":         ea_nb,
-            "eng_sb":         ea_sb,
+            "srt_up":         srt_up,
+            "srt_down":       srt_down,
+            "eng_up":         ea_up,
+            "eng_down":       ea_down,
             "loop_available": loop,
             "notes":          note,
         })

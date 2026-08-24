@@ -43,23 +43,23 @@ def _write_srt_from_json(srt_json: str, out_path: Path) -> None:
     with out_path.open("w", newline="", encoding="utf-8") as fh:
         w = _csv.DictWriter(fh, fieldnames=[
             "from_seq", "to_seq", "from_name", "to_name",
-            "srt_min_northbound", "srt_min_southbound",
-            "eng_alw_nb_min", "eng_alw_sb_min",
+            "srt_min_up", "srt_min_down",
+            "eng_alw_up_min", "eng_alw_down_min",
             "loop_available", "notes",
         ])
         w.writeheader()
         for seg in segments:
             w.writerow({
-                "from_seq":            seg["from_seq"],
-                "to_seq":              seg["to_seq"],
-                "from_name":           seg["from_name"],
-                "to_name":             seg["to_name"],
-                "srt_min_northbound":  seg["srt_nb"],
-                "srt_min_southbound":  seg["srt_sb"],
-                "eng_alw_nb_min":      seg.get("eng_nb", 0),
-                "eng_alw_sb_min":      seg.get("eng_sb", 0),
-                "loop_available":      seg["loop_available"],
-                "notes":               seg.get("notes", "user_defined"),
+                "from_seq":         seg["from_seq"],
+                "to_seq":           seg["to_seq"],
+                "from_name":        seg["from_name"],
+                "to_name":          seg["to_name"],
+                "srt_min_up":       seg.get("srt_up") or seg.get("srt_nb", 0),
+                "srt_min_down":     seg.get("srt_down") or seg.get("srt_sb", 0),
+                "eng_alw_up_min":   seg.get("eng_up") or seg.get("eng_nb", 0),
+                "eng_alw_down_min": seg.get("eng_down") or seg.get("eng_sb", 0),
+                "loop_available":   seg["loop_available"],
+                "notes":            seg.get("notes", "user_defined"),
             })
 
 
@@ -132,7 +132,7 @@ def _tbz2_to_jsonl(tbz2_path: Path, jsonl_path: Path) -> tuple[int, int]:
 class ProgressTracker:
     """Tracks pipeline progress and turns log lines into progress events."""
 
-    _BLOCK_START  = re.compile(r"\[hourly\]\s+(\w+)\s+block\s+(\d+)\s+h(\d+)-h(\d+)")
+    _BLOCK_START  = re.compile(r"\[hourly\]\s+joint\s+block\s+(\d+)\s+h(\d+)-h(\d+)")
     _BLOCK_END    = re.compile(r"\[hourly\]\s+->\s+(\w+)\s+inserted=(\d+)/(\d+)\s+time=([\d.]+)s")
     _BLOCK_HOURS  = re.compile(r"block_hours=(\d+)")
 
@@ -171,7 +171,6 @@ class ProgressTracker:
                 self.done_blocks += 1
                 self.phase_pct = self.done_blocks / max(1, self.total_blocks)
                 extra = {
-                    "block_status": m.group(1),
                     "block_inserted": int(m.group(2)),
                     "block_candidates": int(m.group(3)),
                     "block_solve_s": float(m.group(4)),
@@ -184,14 +183,13 @@ class ProgressTracker:
             m = self._BLOCK_START.match(line.strip())
             if m:
                 self.current_block = {
-                    "direction": m.group(1),
-                    "index": int(m.group(2)),
-                    "hour_start": int(m.group(3)),
-                    "hour_end": int(m.group(4)),
+                    "index": int(m.group(1)),
+                    "hour_start": int(m.group(2)),
+                    "hour_end": int(m.group(3)),
                 }
                 return self._event(
-                    f"solving {m.group(1)} block {m.group(2)} "
-                    f"({m.group(3)}h-{m.group(4)}h)",
+                    f"solving joint block {m.group(1)} "
+                    f"({m.group(2)}h-{m.group(3)}h)",
                     extra={"current_block": self.current_block},
                 )
         elif self.phase == "extract":
@@ -417,7 +415,7 @@ async def _run_generic_capacity(
             segs = len(json.loads(run.srt_json))
             await broker.publish(run_id, {
                 "type": "log", "prefix": "baseline",
-                "line": f"user-defined SRT profile: {segs} segments — derive_srt skipped",
+                "line": f"user-defined SRT profile: {segs} segments - derive_srt skipped",
             })
         else:
             code = await _stream_subprocess(run_id, "baseline", [
@@ -479,8 +477,8 @@ async def _run_generic_capacity(
         if (run_dir / "kpis.json").exists():
             k = json.loads((run_dir / "kpis.json").read_text(encoding="utf-8"))
             kpi_fields = {
-                "nb_inserted":           k.get("nb_inserted"),
-                "sb_inserted":           k.get("sb_inserted"),
+                "up_inserted":           k.get("up_inserted"),
+                "down_inserted":         k.get("down_inserted"),
                 "total_dwell_min":       k.get("total_dwell_min"),
                 "blocks_hit_time_limit": k.get("blocks_hit_time_limit"),
                 "wall_solve_time_s":     k.get("wall_solve_time_s"),
@@ -646,8 +644,8 @@ async def run_capacity_pipeline(run_id: int) -> None:
         if (run_dir / "kpis.json").exists():
             k = json.loads((run_dir / "kpis.json").read_text(encoding="utf-8"))
             kpi_fields = {
-                "nb_inserted":            k.get("nb_inserted"),
-                "sb_inserted":            k.get("sb_inserted"),
+                "up_inserted":            k.get("up_inserted"),
+                "down_inserted":          k.get("down_inserted"),
                 "total_dwell_min":        k.get("total_dwell_min"),
                 "blocks_hit_time_limit":  k.get("blocks_hit_time_limit"),
                 "wall_solve_time_s":      k.get("wall_solve_time_s"),

@@ -25,8 +25,8 @@ export function ResultsPage() {
   const setPage = useAppStore((s) => s.setPage);
   const run = runs.find((r) => r.id === runId) ?? null;
 
-  const [stDir, setStDir] = useState<"northbound"|"southbound"|"both">("both");
-  const [hmDir, setHmDir] = useState<"northbound"|"southbound">("northbound");
+  const [stDir, setStDir] = useState<"up"|"down"|"both">("both");
+  const [hmDir, setHmDir] = useState<"up"|"down">("up");
 
   useEffect(() => {
     if (runId && !kpis) getKpis(runId).then(setKpis).catch(() => {});
@@ -36,8 +36,8 @@ export function ResultsPage() {
   const insertionData = useMemo(() => {
     if (!run) return [];
     return [
-      { direction: "NB", inserted: run.nb_inserted ?? 0 },
-      { direction: "SB", inserted: run.sb_inserted ?? 0 },
+      { direction: "Up", inserted: run.up_inserted ?? 0 },
+      { direction: "Down", inserted: run.down_inserted ?? 0 },
     ];
   }, [run]);
 
@@ -70,12 +70,12 @@ export function ResultsPage() {
     );
   }
 
-  const nb = run.nb_inserted ?? 0;
-  const sb = run.sb_inserted ?? 0;
-  const nbCandidates = kpis?.nb_candidates ?? 24;
-  const sbCandidates = kpis?.sb_candidates ?? 24;
-  const insertedTotal = nb + sb;
-  const candidateTotal = nbCandidates + sbCandidates;
+  const up = run.up_inserted ?? 0;
+  const dn = run.down_inserted ?? 0;
+  const upCandidates = kpis?.up_candidates ?? 24;
+  const dnCandidates = kpis?.down_candidates ?? 24;
+  const insertedTotal = up + dn;
+  const candidateTotal = upCandidates + dnCandidates;
   const placementPct = candidateTotal ? Math.round((insertedTotal / candidateTotal) * 100) : 0;
   const trainClass = TRACTION_CLASSES.find((item) => item.id === run.traction);
   const trainClassLabel = trainClass
@@ -99,8 +99,8 @@ export function ResultsPage() {
           <div><strong>{placementPct}%</strong><span>candidate<br />placement</span></div>
         </div>
         <div className="results-hero-facts">
-          <div><small>NORTHBOUND</small><strong>{nb} <em>paths</em></strong></div>
-          <div><small>SOUTHBOUND</small><strong>{sb} <em>paths</em></strong></div>
+          <div><small>UP</small><strong>{up} <em>paths</em></strong></div>
+          <div><small>DOWN</small><strong>{dn} <em>paths</em></strong></div>
           <div><small>TOTAL DWELL</small><strong>{run.total_dwell_min ?? 0} <em>min</em></strong></div>
         </div>
       </section>
@@ -160,7 +160,7 @@ export function ResultsPage() {
                      radius={[6, 6, 0, 0]}>
                   {insertionData.map((d, i) => (
                     <Cell key={i}
-                          fill={d.direction === "NB" ? "#3d5a80" : "#b7402e"} />
+                          fill={d.direction === "Up" ? "#3d5a80" : "#b7402e"} />
                   ))}
                 </Bar>
               </BarChart>
@@ -176,10 +176,10 @@ export function ResultsPage() {
             can fit. Toggle direction:
           </div>
           <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
-            <button className={hmDir === "northbound" ? "" : "secondary"}
-                    onClick={() => setHmDir("northbound")}>NB</button>
-            <button className={hmDir === "southbound" ? "" : "secondary"}
-                    onClick={() => setHmDir("southbound")}>SB</button>
+            <button className={hmDir === "up" ? "" : "secondary"}
+                    onClick={() => setHmDir("up")}>Up</button>
+            <button className={hmDir === "down" ? "" : "secondary"}
+                    onClick={() => setHmDir("down")}>Down</button>
           </div>
           {traffic ? (
             <CapacityHeatmap
