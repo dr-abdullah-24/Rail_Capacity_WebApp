@@ -25,8 +25,8 @@ export function ResultsPage() {
   const setPage = useAppStore((s) => s.setPage);
   const run = runs.find((r) => r.id === runId) ?? null;
 
-  const [stDir, setStDir] = useState<"up"|"down"|"both">("both");
-  const [hmDir, setHmDir] = useState<"up"|"down">("up");
+  const [stDir, setStDir] = useState<"northbound"|"southbound"|"both">("both");
+  const [hmDir, setHmDir] = useState<"northbound"|"southbound">("northbound");
 
   useEffect(() => {
     if (runId && !kpis) getKpis(runId).then(setKpis).catch(() => {});
@@ -176,10 +176,10 @@ export function ResultsPage() {
             can fit. Toggle direction:
           </div>
           <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
-            <button className={hmDir === "up" ? "" : "secondary"}
-                    onClick={() => setHmDir("up")}>Up</button>
-            <button className={hmDir === "down" ? "" : "secondary"}
-                    onClick={() => setHmDir("down")}>Down</button>
+            <button className={hmDir === "northbound" ? "" : "secondary"}
+                    onClick={() => setHmDir("northbound")}>Up</button>
+            <button className={hmDir === "southbound" ? "" : "secondary"}
+                    onClick={() => setHmDir("southbound")}>Down</button>
           </div>
           {traffic ? (
             <CapacityHeatmap

@@ -56,8 +56,8 @@ export function RunsPage() {
                   <td><RunIdentity run={run} /></td>
                   <td>{run.date_tag ?? "Not available"}</td>
                   <td><TractionBadge traction={run.traction} /></td>
-                  <td>{run.nb_inserted ?? "Not available"}</td>
-                  <td>{run.sb_inserted ?? "Not available"}</td>
+                  <td>{run.up_inserted ?? "Not available"}</td>
+                  <td>{run.down_inserted ?? "Not available"}</td>
                   <td>{run.total_dwell_min ?? "Not available"}</td>
                   <td>{run.blocks_hit_time_limit && run.blocks_hit_time_limit > 0 ? <span className="badge warn">{run.blocks_hit_time_limit}</span> : (run.blocks_hit_time_limit ?? "Not available")}</td>
                   <td>{run.wall_solve_time_s ?? "Not available"}</td>
@@ -104,7 +104,7 @@ export function RunsPage() {
       </div>
 
       <div className="card">
-        <h2><Cog size={14} /> Live output</h2>
+        <h2><Cog size={14} /> Run output</h2>
         <ProgressBar />
         <RunLog />
       </div>
@@ -116,7 +116,7 @@ export function RunsPage() {
               {active.model_type === "diversion" ? (
                 <>Run #{active.id} complete: <b>{active.div_placed ?? 0} diverted</b>, <b>{active.div_conflict ?? 0} conflicts</b>.</>
               ) : (
-                <>Run #{active.id} complete: <b>NB {active.nb_inserted ?? 0}</b>, <b>SB {active.sb_inserted ?? 0}</b>, dwell {active.total_dwell_min ?? 0} min.</>
+                <>Run #{active.id} complete: <b>NB {active.up_inserted ?? 0}</b>, <b>SB {active.down_inserted ?? 0}</b>, dwell {active.total_dwell_min ?? 0} min.</>
               )}
             </div>
             <button onClick={() => setPage("results")}><BarChart3 size={14} /> View full analysis</button>

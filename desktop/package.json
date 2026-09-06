@@ -1,0 +1,15 @@
+{
+  "name": "rail-insights-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "node node_modules/electron/install.js",
+    "test": "electron smoke.cjs",
+    "check": "node --check main.cjs"
+  },
+  "devDependencies": {
+    "electron": "^44.2.0"
+  }
+}

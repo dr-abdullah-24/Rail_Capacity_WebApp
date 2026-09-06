@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import {
   Activity, ArrowRight, BarChart3, CheckCircle2, ChevronRight,
   CircleDot, Clock3, Database, FileUp, Gauge, MapPinned,
@@ -35,7 +35,7 @@ export function HomePage() {
   const latestDiversion = completed.find((run) => run.model_type === "diversion");
   const twinRun = twinMode === "capacity" ? latestCapacity : latestDiversion;
   const twinResult = twinMode === "capacity"
-    ? (twinRun?.nb_inserted ?? 0) + (twinRun?.sb_inserted ?? 0)
+    ? (twinRun?.up_inserted ?? 0) + (twinRun?.down_inserted ?? 0)
     : twinRun?.div_placed ?? 0;
   // A completed backend run proves the full workflow has been completed.
   // An additional active run must not make the overall workflow look unfinished.
@@ -227,8 +227,8 @@ export function HomePage() {
                   </>
                 ) : (
                   <>
-                    <div><small>NORTHBOUND</small><strong>{latest.nb_inserted ?? 0}<em> paths</em></strong></div>
-                    <div><small>SOUTHBOUND</small><strong>{latest.sb_inserted ?? 0}<em> paths</em></strong></div>
+                    <div><small>NORTHBOUND</small><strong>{latest.up_inserted ?? 0}<em> paths</em></strong></div>
+                    <div><small>SOUTHBOUND</small><strong>{latest.down_inserted ?? 0}<em> paths</em></strong></div>
                   </>
                 )}
               </div>

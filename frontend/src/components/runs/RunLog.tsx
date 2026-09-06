@@ -65,7 +65,7 @@ export function RunLog() {
   if (!runId) {
     return (
       <div style={{ color: "var(--grey-5)", fontSize: 13 }}>
-        Select a run to see its live output.
+        Select a run to see its output.
       </div>
     );
   }
@@ -75,9 +75,7 @@ export function RunLog() {
     <>
       <div style={{ display: "flex", alignItems: "center", gap: 8,
                     marginBottom: 8, fontSize: 12, color: "var(--grey-6)" }}>
-        <Icon size={13}
-              color={wsStatus === "open" ? "var(--success)" : "var(--grey-4)"} />
-        WebSocket {wsStatus} · run #{runId}
+        Run #{runId} output
       </div>
       <pre ref={logRef} className="log-term">
         {log.map((l, i) => (

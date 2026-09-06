@@ -1,9 +1,8 @@
 import { useEffect } from "react";
-import { Header } from "./components/layout/Header";
-import { Sidebar } from "./components/layout/Sidebar";
+import { Header, Sidebar } from "./components/layout/RailChrome";
 import { ConfigPage } from "./pages/ConfigPage";
 import { CorridorPage } from "./pages/CorridorPage";
-import { HomePage } from "./pages/HomePage";
+import { HomePage } from "./pages/PlanningWorkbench";
 import { ResultsPage } from "./pages/ResultsPage";
 import { RunsPage } from "./pages/RunsPage";
 import { TprPage } from "./pages/TprPage";
